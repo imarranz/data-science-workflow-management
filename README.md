@@ -104,7 +104,7 @@ The following structure gives an idea how to organize a complex Data Science Pro
     * [d50_model_output]: Folder with outputs from modelling analysis.
     * [d60_reporting]: Folder with report data. Finally data.
     
-  * [docs]: Space for [Sphinx](https://www.sphinx-doc.org), [MkDocs](https://www.mkdocs.org/) or [Jupyterbooks](https://jupyterbook.org/) documentation. With jupyter notebooks is very easy to generate documentation by jupterbook.
+  * [docs]: Space for [Sphinx](https://www.sphinx-doc.org), [MkDocs](https://www.mkdocs.org/) or [Jupyterbooks](https://jupyterbook.org/) documentation. With jupyter notebooks is very easy to generate documentation using jupterbook.
   
   * [images]: Images necessaries to documents that they are no generated with code.
 
