@@ -34,12 +34,12 @@ The following structure gives an idea how to organize a complex Data Science Pro
 ├── config  
 │    
 ├── data  
-│   ├── 10_raw  
-│   ├── 20_intermediate  
-│   ├── 30_processed  
-│   ├── 40_models  
-│   ├── 50_model_output  
-│   └── 60_reporting  
+│   ├── d10_raw  
+│   ├── d20_intermediate  
+│   ├── d30_processed  
+│   ├── d40_models  
+│   ├── d50_model_output  
+│   └── d60_reporting  
 │    
 ├── docs  
 │    
@@ -54,34 +54,34 @@ The following structure gives an idea how to organize a complex Data Science Pro
 └── source   
     ├── __init__.py   
     │    
-    ├── d00_utils  
+    ├── s00_utils  
     │   └── YYYYMMDD-ima-remove_values.py  
     |   └── YYYYMMDD-ima-remove_samples.py  
     │   └── YYYYMMDD-ima-rename_samples.py    
     │    
-    ├── d10_data  
+    ├── s10_data  
     │   └── YYYYMMDD-ima-load_data.py    
     │    
-    ├── d20_intermediate  
+    ├── s20_intermediate  
     │   └── YYYYMMDD-ima-create_intermediate_data.py    
     │    
-    ├── d30_processing  
+    ├── s30_processing  
     │   └── YYYYMMDD-ima-create_master_table.py   
     |   └── YYYYMMDD-ima-create_descriptive_table.py   
     │    
-    ├── d40_modelling  
+    ├── s40_modelling  
     │   └── YYYYMMDD-ima-train_lr_model.py  
     │   └── YYYYMMDD-ima-train_svm_model.py  
     │   └── YYYYMMDD-ima-train_rf_model.py    
     │    
-    ├── d50_model_evaluation   
+    ├── s50_model_evaluation   
     │   └── YYYYMMDD-ima-calculate_performance_metrics.py    
     │        
-    ├── d60_reporting   
+    ├── s60_reporting   
     │   └── YYYYMMDD-ima-create_summary.py    
     │   └── YYYYMMDD-ima-create_report.py  
     │    
-    └── d70_visualisation   
+    └── s70_visualisation   
         └── YYYYMMDD-ima-visualise_model_results.py  
 ```        
 
@@ -97,12 +97,12 @@ The following structure gives an idea how to organize a complex Data Science Pro
 
   * [data]: Folder with data. According to the type of data, there are different subfolders.  
   
-    * [10_raw]: Folder with raw data. Data to read only.
-    * [20_intermediate]: Folder with transform data from raw data.
-    * [30_processed]: Folder with processed data: Normalization, ...
-    * [40_models]: Folder with data prepared to launch different models.
-    * [50_model_output]: Folder with outputs from modelling analysis.
-    * [60_reporting]: Folder with report data. Finally data.
+    * [d10_raw]: Folder with raw data. Data to read only.
+    * [d20_intermediate]: Folder with transform data from raw data.
+    * [d30_processed]: Folder with processed data: Normalization, ...
+    * [d40_models]: Folder with data prepared to launch different models.
+    * [d50_model_output]: Folder with outputs from modelling analysis.
+    * [d60_reporting]: Folder with report data. Finally data.
     
   * [docs]: Space for [Sphinx](https://www.sphinx-doc.org), [MkDocs](https://www.mkdocs.org/) or [Jupyterbooks](https://jupyterbook.org/) documentation. With jupyter notebooks is very easy to generate documentation by jupterbook.
   
@@ -117,14 +117,14 @@ The following structure gives an idea how to organize a complex Data Science Pro
   * [source]: Source code for use in this project. The names of files are only examples. Each project needs different analysis. As notebooks files, I propose to follow the same convention.
 
     * \_\_init\_\_.py: Makes src a Python module.
-    * [d00_utils]: Functions used across the project.
-    * [d10_data]: Scripts to reading and writing data.
-    * [d20_intermediate]: Scripts to transform data from raw to intermediate data.
-    * [d30_processing]: Scripts to turn intermediate data into modelling input.
-    * [d40_modelling]: Scripts to train models and use them.
-    * [d50_model_evaluation]: Scripts to analyze models.
-    * [d60_reporting]: Scrips to produce reporting tables and outputs.
-    * [d70_visualization]: Scripts to create frequently used plots.
+    * [s00_utils]: Functions used across the project.
+    * [s10_data]: Scripts to reading and writing data.
+    * [s20_intermediate]: Scripts to transform data from raw to intermediate data.
+    * [s30_processing]: Scripts to turn intermediate data into modelling input.
+    * [s40_modelling]: Scripts to train models and use them.
+    * [s50_model_evaluation]: Scripts to analyze models.
+    * [s60_reporting]: Scrips to produce reporting tables and outputs.
+    * [s70_visualization]: Scripts to create frequently used plots.
 
 ## Feedback
 
