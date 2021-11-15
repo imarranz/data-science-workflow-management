@@ -41,7 +41,7 @@ The following structure gives an idea how to organize a complex Data Science Pro
 ├── results   
 │  
 └── source   
-    ├── \__init\__.py   
+    ├── __init__.py   
     │    
     ├── d00_utils  
     │   └── YYYYMMDD-ima-remove_values.py  
@@ -105,7 +105,7 @@ The following structure gives an idea how to organize a complex Data Science Pro
   
   * [source]: Source code for use in this project. The names of files are only examples. Each project needs different analysis.
 
-    * \__init\__.py: Makes src a Python module.
+    * \_\_init\_\_.py: Makes src a Python module.
     * [d00_utils]: Functions used across the project.
     * [d10_data]: Scripts to reading and writing data.
     * [d20_intermediate]: Scripts to transform data from raw to intermediate data.
