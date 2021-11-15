@@ -60,7 +60,7 @@ The following structure gives an idea how to organize a complex Data Science Pro
     │    
     ├── d40_modelling  
     │   └── YYYYMMDD-ima-train_lr_model.py  
-    │   └── vtrain_svm_model.py  
+    │   └── YYYYMMDD-ima-train_svm_model.py  
     │   └── YYYYMMDD-ima-train_rf_model.py    
     │    
     ├── d50_model_evaluation   
