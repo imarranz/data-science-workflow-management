@@ -1,5 +1,7 @@
 # Data Science Workflow Management
 
+<img src="https://lh3.googleusercontent.com/r1ZzAiaqHpachkO4BB5f2ZXjnL8FNrAHryg0z-PtYIS5BFmPG7Mwz6pHwvPSifdQs0FS5UOTT8uSTU28PC4q=s0" height="300" width="500">
+
 ## Introducction
 
 A good workflow means better results and reproducible researchs. A first step is to work with a nice structure of files and folders. In this repository I want to show _my_ workflow, it is not the best (clearly) and for this reason I want to improve it. The icebreakeR was my first attempt at creating an efficient working structure. Later, new libraries and tools and Python as Data Science language were appearing. This changes made me to modify the primary structure. Besides, tools as github force us to add files as README.md or .gitignore.
