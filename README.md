@@ -15,7 +15,7 @@
 ## Structure
 
 The following structure gives an idea how to organize a complex Data Science Project.
-
+```
 ├── README.md  
 ├── requirements.txt  
 ├── .gitignore  
@@ -72,7 +72,7 @@ The following structure gives an idea how to organize a complex Data Science Pro
     │    
     └── d70_visualisation   
         └── visualise_model_results.py  
-        
+```        
         
   * README.md: The top-level README for developers. It is also the README of github.  
   
