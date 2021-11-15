@@ -73,7 +73,9 @@ The following structure gives an idea how to organize a complex Data Science Pro
     └── d70_visualisation   
         └── YYYYMMDD-ima-visualise_model_results.py  
 ```        
-        
+
+## Description
+
   * README.md: The top-level README for developers. It is also the README of github.  
   
   * requeriments.txt: The requirements file for reproducing the analysis environment.
