@@ -2,9 +2,11 @@
 
 ## Introducction
 
-
+A good workflow means better results and reproducible research. A first step is to work with a nice structure of files and folders.
 
 ## Links and Resources
+
+Links where I have learned about Data Science workflow.
 
 [Manage your Data Science project structure in early stage](https://towardsdatascience.com/manage-your-data-science-project-structure-in-early-stage-95f91d4d0600)  
 [Best practices organizing data science projects](https://www.thinkingondata.com/how-to-organize-data-science-projects/)  
@@ -14,7 +16,8 @@
 
 ## Structure
 
-The following structure gives an idea how to organize a complex Data Science Project.
+The following structure gives an idea how to organize a complex Data Science Project. The name of *.py files are only examples.
+
 ```
 ├── README.md  
 ├── requirements.txt  
@@ -97,13 +100,13 @@ The following structure gives an idea how to organize a complex Data Science Pro
   
   * [images]: Images necessaries to documents that they are no generated with code.
 
-  * [notebooks]: Jupyter notebooks. Naming convention is date YYYYMMDD (for ordering), the creator's initials, and a short `-` delimited description.
+  * [notebooks]: Jupyter notebooks. Naming convention is date YYYYMMDD (for ordering), the author's initials, and a short `-` delimited description.
   
   * [references]: Data dictionaries, manuals, etc (notes icebreaker).
   
   * [results]: Final analysis docs (output icebreaker). 
   
-  * [source]: Source code for use in this project. The names of files are only examples. Each project needs different analysis.
+  * [source]: Source code for use in this project. The names of files are only examples. Each project needs different analysis. As notebooks files, I propose to follow the same convention.
 
     * \_\_init\_\_.py: Makes src a Python module.
     * [d00_utils]: Functions used across the project.
@@ -115,3 +118,6 @@ The following structure gives an idea how to organize a complex Data Science Pro
     * [d60_reporting]: Scrips to produce reporting tables and outputs.
     * [d70_visualization]: Scripts to create frequently used plots.
 
+## Feedback
+
+Do you use other structure or you miss anything in this structure? Please, tell me. I want to improve and to share.
