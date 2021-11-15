@@ -44,34 +44,34 @@ The following structure gives an idea how to organize a complex Data Science Pro
     ├── \__init\__.py   
     │    
     ├── d00_utils  
-    │   └── remove_values.py  
-    |   └── remove_samples.py  
-    │   └── rename_samples.py    
+    │   └── YYYYMMDD-ima-remove_values.py  
+    |   └── YYYYMMDD-ima-remove_samples.py  
+    │   └── YYYYMMDD-ima-rename_samples.py    
     │    
     ├── d10_data  
-    │   └── load_data.py    
+    │   └── YYYYMMDD-ima-load_data.py    
     │    
     ├── d20_intermediate  
-    │   └── create_intermediate_data.py    
+    │   └── YYYYMMDD-ima-create_intermediate_data.py    
     │    
     ├── d30_processing  
-    │   └── create_master_table.py   
-    |   └── create_descriptive_table.py   
+    │   └── YYYYMMDD-ima-create_master_table.py   
+    |   └── YYYYMMDD-ima-create_descriptive_table.py   
     │    
     ├── d40_modelling  
-    │   └── train_lr_model.py  
-    │   └── train_svm_model.py  
-    │   └── train_rf_model.py    
+    │   └── YYYYMMDD-ima-train_lr_model.py  
+    │   └── vtrain_svm_model.py  
+    │   └── YYYYMMDD-ima-train_rf_model.py    
     │    
     ├── d50_model_evaluation   
-    │   └── calculate_performance_metrics.py    
+    │   └── YYYYMMDD-ima-calculate_performance_metrics.py    
     │        
     ├── d60_reporting   
-    │   └── create_summary.py    
-    │   └── create_report.py  
+    │   └── YYYYMMDD-ima-create_summary.py    
+    │   └── YYYYMMDD-ima-create_report.py  
     │    
     └── d70_visualisation   
-        └── visualise_model_results.py  
+        └── YYYYMMDD-ima-visualise_model_results.py  
 ```        
         
   * README.md: The top-level README for developers. It is also the README of github.  
