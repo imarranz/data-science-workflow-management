@@ -1,6 +1,6 @@
 # Data Science Workflow Management
 
-<img src="https://lh3.googleusercontent.com/r1ZzAiaqHpachkO4BB5f2ZXjnL8FNrAHryg0z-PtYIS5BFmPG7Mwz6pHwvPSifdQs0FS5UOTT8uSTU28PC4q=s0" height="300" width="500">
+![](./figures/data-science-workflow-management-logo.png)
 
 ## Introducction
 
