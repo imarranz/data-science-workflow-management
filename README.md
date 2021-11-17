@@ -6,9 +6,9 @@
 
 A good workflow means better results and reproducible researchs. A first step is to work with a nice structure of files and folders. In this repository I want to show _my_ workflow, it is not the best (clearly) and for this reason I want to improve it. The icebreakeR was my first attempt at creating an efficient working structure. Later, new libraries and tools and Python as Data Science language were appearing. This changes made me to modify the primary structure. Besides, tools as github force us to add files as README.md or .gitignore.
 
-## Links and Resources
+## Links & Resources
 
-Links where I have learned about Data Science workflow.
+Links where I have learned about Data Science workflow. Many of the ideas I post here come from these resources.
 
 ### Websites
 
@@ -18,13 +18,13 @@ Links where I have learned about Data Science workflow.
 [How to Structure a Python-Based Data Science Project (a short tutorial for beginners)](https://medium.com/swlh/how-to-structure-a-python-based-data-science-project-a-short-tutorial-for-beginners-7e00bff14f56)  
 [Practical Data Science](https://www.practicaldatascience.org/html/index.html)  
 
-### Documents
+### Documents & Books
 
 [icebreakeR](https://cran.r-project.org/doc/contrib/Robinson-icebreaker.pdf)
 
 ## Structure of a Data Science Project
 
-The following structure gives an idea how to organize a complex Data Science Project. The name of *.py files are only examples.
+The following structure gives an idea how to organize a complex Data Science Project. The source has been adapted from [here](https://medium.com/swlh/how-to-structure-a-python-based-data-science-project-a-short-tutorial-for-beginners-7e00bff14f56) and [here](https://github.com/dssg/hitchhikers-guide/tree/master/sources/curriculum/0_before_you_start/pipelines-and-project-workflow). The name of *.py files are only examples.
 
 ```
 ├── README.md  
@@ -105,6 +105,9 @@ The following structure gives an idea how to organize a complex Data Science Pro
     * [d60_reporting]: Folder with report data. Finally data.
     
   * [docs]: Space for [Sphinx](https://www.sphinx-doc.org), [MkDocs](https://www.mkdocs.org/) or [Jupyterbooks](https://jupyterbook.org/) documentation. With jupyter notebooks is very easy to generate documentation using jupterbook.
+    * [MkDocs]: A very useful tool to make a website with documentation and results. Easy to configure and easy to generate.
+    * [Sphinx]: A powerfull documentation tool. Unfortunately, I have not yet use it.
+    * [Jupyterbooks]: A tool to gerenate a website from markdown or directly from jupyter notebooks. An example can be see here: [PyGenMet Manual](http://www.imarranz.com/pygenmet-manual/docs/index.html)
   
   * [images]: Images necessaries to documents that they are no generated with code.
 
@@ -118,9 +121,13 @@ The following structure gives an idea how to organize a complex Data Science Pro
 
     * \_\_init\_\_.py: Makes src a Python module.
     * [s00_utils]: Functions used across the project.
-    * [s10_data]: Scripts to reading and writing data.
+    * [s10_data]: Scripts to reading and writing data. In this point, the source of data can be very heterogeneous and we must to 
     * [s20_intermediate]: Scripts to transform data from raw to intermediate data.
     * [s30_processing]: Scripts to turn intermediate data into modelling input.
+      * [s31_missing]: Examining and dropping data. Imputing data.
+      * [s32_clean]: Cleaning data. Outliers detection.
+      * [s33_eda]: Exploratory Data Analysis.
+      * [s34_poc]: Proof-of-Concept.
     * [s40_modelling]: Scripts to train models and use them.
     * [s50_model_evaluation]: Scripts to analyze models.
     * [s60_reporting]: Scrips to produce reporting tables and outputs.
