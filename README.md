@@ -22,6 +22,10 @@ Links where I have learned about Data Science workflow. Many of the ideas I post
 
 [icebreakeR](https://cran.r-project.org/doc/contrib/Robinson-icebreaker.pdf)
 
+### Articles
+
+[Toward collaborative open data science in metabolomics using Jupyter Notebooks and cloud computing](https://link.springer.com/article/10.1007%2Fs11306-019-1588-0)
+
 ## Structure of a Data Science Project
 
 The following structure gives an idea how to organize a complex Data Science Project. The source has been adapted from [here](https://medium.com/swlh/how-to-structure-a-python-based-data-science-project-a-short-tutorial-for-beginners-7e00bff14f56) and [here](https://github.com/dssg/hitchhikers-guide/tree/master/sources/curriculum/0_before_you_start/pipelines-and-project-workflow). The name of *.py files are only examples.
