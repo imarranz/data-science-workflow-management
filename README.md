@@ -117,7 +117,7 @@ The following structure gives an idea how to organize a complex Data Science Pro
 
   * [notebooks]: Jupyter notebooks. Naming convention is date YYYYMMDD (for ordering), the author's initials, and a short `-` delimited description.
   
-  * [references]: Data dictionaries, manuals, etc (notes icebreaker).
+  * [references]: Data dictionaries or metadata[^metadata], manuals, etc (notes icebreaker). Articles related to the project can also be stored in this folder.
   
   * [results]: Final analysis docs (output icebreaker). 
   
@@ -140,3 +140,6 @@ The following structure gives an idea how to organize a complex Data Science Pro
 ## Feedback
 
 Do you use other structure or you miss anything in this structure? Please, tell me. I want to improve and to share.
+
+
+[^metadata]: A data dictionary, or metadata repository, as defined in the IBM Dictionary of Computing, is a "centralized repository of information about data such as meaning, relationships to other data, origin, usage, and format"
