@@ -8,7 +8,7 @@ A good workflow means better results and reproducible researchs. A first step is
 
 In an efficient workflow, there is no only a good structure of files and folders, something more is needed. I usually use a [kanban](https://en.wikipedia.org/wiki/Kanban) methodology. A brief description of a kanban methodology starts with the means of _kanban_ word. It is a Japanese word that means _cards_. Each card identifies one process: definition, aim, person assings to that process and deadlines. Further, each _kanban_ is in blackboard that usually is divided in three columns: **to do**, **doing** (or in process) and **done**. Others columns can be added if the process requires it.
 
-![](https://media.istockphoto.com/vectors/kanban-board-with-blank-sticky-note-papers-for-writing-task-agile-vector-id1286100339?k=20&m=1286100339&s=612x612&w=0&h=2-wvZXgGvxySijsz2fHLpzOJekHpcsDc9wgyOVubj-o=)
+![](./figures/kanban_blackboard.svg)
 
 In this point I think github is a good tool to work with _kanban_. In each repository you can associate a project based in _kanban_ methodology.      
 
@@ -139,7 +139,7 @@ The following structure gives an idea how to organize a complex Data Science Pro
       * [s33_eda]: Exploratory Data Analysis.
       * [s34_poc]: Proof-of-Concept.
     * [s40_modelling]: Scripts to train models and use them.      
-      # [s41_feature_selection]: Scripts to select features that are useful or important to the model.
+      * [s41_feature_selection]: Scripts to select features that are useful or important to the model.
     * [s50_model_evaluation]: Scripts to analyze models.
     * [s60_reporting]: Scrips to produce reporting tables and outputs.
     * [s70_visualization]: Scripts to create frequently used plots.
