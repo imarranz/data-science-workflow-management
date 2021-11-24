@@ -97,7 +97,7 @@ The following structure gives an idea how to organize a complex Data Science Pro
 
 ## Description
 
-  * README.md: The top-level README for developers. It is also the README of github.  
+  * README.md: The top-level README for developers. It is also the README of github. In this file we can write a brief description about the project. 
   
   * requeriments.txt: The requirements file for reproducing the analysis environment.
   
@@ -143,7 +143,24 @@ The following structure gives an idea how to organize a complex Data Science Pro
     * [s50_model_evaluation]: Scripts to analyze models.
     * [s60_reporting]: Scrips to produce reporting tables and outputs.
     * [s70_visualization]: Scripts to create frequently used plots.
+                                                                      
+    
+### Requeriments
 
+```
+conda activate project
+
+conda list --export > project-package-list.txt
+conda list --explicit > project-package-explicit-list.txt
+conda info > project-info.txt
+conda env export > project-env.yaml
+```    
+
+Conda[^conda] [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
+
+### Config
+
+    
 ## Feedback
 
 Do you use other structure or you miss anything in this structure? Please, tell me. I want to improve and to share.
@@ -151,3 +168,4 @@ Do you use other structure or you miss anything in this structure? Please, tell 
 
 [^metadata]: A data dictionary, or metadata repository, as defined in the IBM Dictionary of Computing, is a "centralized repository of information about data such as meaning, relationships to other data, origin, usage, and format"
 [^yaml]: YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. 
+[^conda]: Conda is an open source package management system and environment management system that runs on Windows, macOS and Linux. Conda quickly installs, runs and updates packages and their dependencies.
