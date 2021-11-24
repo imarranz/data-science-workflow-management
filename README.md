@@ -1,10 +1,16 @@
 # Data Science Workflow Management
 
-![](./figures/data-science-workflow-management-logo.png)
+![](./figures/data-science-workflow-management-logo.svg)
 
 ## Introducction
 
-A good workflow means better results and reproducible researchs. A first step is to work with a nice structure of files and folders. In this repository I want to show _my_ workflow, it is not the best (clearly) and for this reason I want to improve it. The icebreakeR was my first attempt at creating an efficient working structure. Later, new libraries and tools and Python as Data Science language were appearing. This changes made me to modify the primary structure. Besides, tools as github force us to add files as README.md or .gitignore.
+A good workflow means better results and reproducible researchs. A first step is to work with a nice structure of files and folders. In this repository I want to show _my_ workflow, it is not the best (I know) and for this reason I want to improve it. First, I followed the icebreakeR guidelines, and that was my first attempt at creating an efficient working structure. Later, new libraries and tools and Python as Data Science language were appearing. This changes made me to modify the primary structure. Besides, tools as github force us to add files as README.md or .gitignore.
+
+In an efficient workflow, there is no only a good structure of files and folders, something more is needed. I usually use a [kanban](https://en.wikipedia.org/wiki/Kanban) methodology. A brief description of a kanban methodology starts with the means of _kanban_ word. It is a Japanese word that means _cards_. Each card identifies one process: definition, aim, person assings to that process and deadlines. Further, each _kanban_ is in blackboard that usually is divided in three columns: **to do**, **doing** (or in process) and **done**. Others columns can be added if the process requires it.
+
+![](https://media.istockphoto.com/vectors/kanban-board-with-blank-sticky-note-papers-for-writing-task-agile-vector-id1286100339?k=20&m=1286100339&s=612x612&w=0&h=2-wvZXgGvxySijsz2fHLpzOJekHpcsDc9wgyOVubj-o=)
+
+In this point I think github is a good tool to work with _kanban_. In each repository you can associate a project based in _kanban_ methodology.      
 
 ## Links & Resources
 
@@ -97,7 +103,7 @@ The following structure gives an idea how to organize a complex Data Science Pro
   
   * .gitignore: Avoids uploading data, credentials, outputs, system files, etc.   
 
-  * [config]: Space for credentials and global configuration. For example, *.yaml files.  
+  * [config]: Space for credentials and global configuration. For example, *.yaml[^yaml] files.  
 
   * [data]: Folder with data. According to the type of data, there are different subfolders.  
   
@@ -111,7 +117,7 @@ The following structure gives an idea how to organize a complex Data Science Pro
   * [docs]: Space for [Sphinx](https://www.sphinx-doc.org), [MkDocs](https://www.mkdocs.org/) or [Jupyterbooks](https://jupyterbook.org/) documentation. With jupyter notebooks is very easy to generate documentation using jupterbook.
     * [MkDocs]: A very useful tool to make a website with documentation and results. Easy to configure and easy to generate.
     * [Sphinx]: A powerfull documentation tool. Unfortunately, I have not yet use it.
-    * [Jupyterbooks]: A tool to gerenate a website from markdown or directly from jupyter notebooks. An example can be see here: [PyGenMet Manual](http://www.imarranz.com/pygenmet-manual/docs/index.html)
+    * [Jupyterbooks]: A tool to generate a website from markdown or directly from jupyter notebooks. An example can be see here: [PyGenMet Manual](http://www.imarranz.com/pygenmet-manual/docs/index.html)
   
   * [images]: Images necessaries to documents that they are no generated with code.
 
@@ -132,7 +138,8 @@ The following structure gives an idea how to organize a complex Data Science Pro
       * [s32_clean]: Cleaning data. Outliers detection.
       * [s33_eda]: Exploratory Data Analysis.
       * [s34_poc]: Proof-of-Concept.
-    * [s40_modelling]: Scripts to train models and use them.
+    * [s40_modelling]: Scripts to train models and use them.      
+      # [s41_feature_selection]: Scripts to select features that are useful or important to the model.
     * [s50_model_evaluation]: Scripts to analyze models.
     * [s60_reporting]: Scrips to produce reporting tables and outputs.
     * [s70_visualization]: Scripts to create frequently used plots.
@@ -143,3 +150,4 @@ Do you use other structure or you miss anything in this structure? Please, tell 
 
 
 [^metadata]: A data dictionary, or metadata repository, as defined in the IBM Dictionary of Computing, is a "centralized repository of information about data such as meaning, relationships to other data, origin, usage, and format"
+[^yaml]: YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. 
