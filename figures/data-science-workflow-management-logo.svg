@@ -16,7 +16,7 @@
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
-   sodipodi:docname="data-science-workflow-management.svg"
+   sodipodi:docname="data-science-workflow-management-logo.svg"
    inkscape:export-filename="C:\Users\Ibon.DOMINIO\Desktop\to_github\data-science-workflow-management\figures\data-science-workflow-management-logo.png"
    inkscape:export-xdpi="150"
    inkscape:export-ydpi="150">
@@ -52,16 +52,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.83107389"
-     inkscape:cx="574.28"
-     inkscape:cy="-8.5372979"
+     inkscape:zoom="2.140625"
+     inkscape:cx="320"
+     inkscape:cy="84.216011"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      units="px"
      inkscape:window-width="1920"
-     inkscape:window-height="1058"
-     inkscape:window-x="1912"
+     inkscape:window-height="1018"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
   <metadata
@@ -72,7 +72,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -81,6 +81,13 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(0,-732.36216)">
+    <rect
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="rect8113"
+       width="640"
+       height="320"
+       x="0"
+       y="732.36218" />
     <g
        id="g8137"
        transform="translate(-18.566113,2.4686278)"

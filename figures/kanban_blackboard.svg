@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="707.08667"
-   height="431.14252"
-   viewBox="0 0 707.08666 431.14255"
+   width="640"
+   height="320"
+   viewBox="0 0 639.99999 320.00002"
    id="svg2"
    version="1.1"
    inkscape:version="0.91 r13725"
@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="1"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.87144933"
-     inkscape:cx="940.14334"
-     inkscape:cy="-240.11262"
+     inkscape:zoom="1.0458682"
+     inkscape:cx="402.3334"
+     inkscape:cy="84.703205"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -57,17 +57,17 @@
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-113.58286,-323.10157)">
+     transform="translate(-113.58286,-434.24409)">
     <rect
        style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
        id="rect8087"
-       width="707.08673"
-       height="431.14255"
+       width="640.00006"
+       height="320.00003"
        x="113.58283"
-       y="323.10156" />
+       y="434.24408" />
     <g
        id="g8086"
-       transform="matrix(3.9899627,0,0,3.9899627,-350.20287,-2170.9405)">
+       transform="matrix(2.8346368,0,0,2.8111408,-154.65282,-1318.206)">
       <rect
          ry="10"
          rx="10"
@@ -194,15 +194,15 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-style:normal;font-weight:normal;font-size:75.88201141px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="306.28482"
-       y="747.56622"
-       id="text8084"
+       style="font-style:normal;font-weight:normal;font-size:25px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="206.63383"
+       y="745.74152"
+       id="text8187"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
-         id="tspan8086"
-         x="306.28482"
-         y="747.56622"
-         style="font-size:15.17640209px;fill:#666666">https://github.com/imarranz/data-science-workflow-management</tspan></text>
+         id="tspan8189"
+         x="206.63383"
+         y="745.74152"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#808080">github/imarranz/data-science-workflow-management</tspan></text>
   </g>
 </svg>
