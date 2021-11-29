@@ -117,11 +117,11 @@ The following structure gives an idea how to organize a complex Data Science Pro
   * [docs]: Space for [Sphinx](https://www.sphinx-doc.org), [MkDocs](https://www.mkdocs.org/) or [Jupyterbooks](https://jupyterbook.org/) documentation. With jupyter notebooks is very easy to generate documentation using jupterbook.
     * [MkDocs]: A very useful tool to make a website with documentation and results. Easy to configure and easy to generate.
     * [Sphinx]: A powerfull documentation tool. Unfortunately, I have not yet use it.
-    * [Jupyterbooks]: A tool to generate a website from markdown or directly from jupyter notebooks. An example can be see here: [PyGenMet Manual](http://www.imarranz.com/pygenmet-manual/docs/index.html)
+    * [Jupyterbooks]: A tool to generate a website from markdown or directly from jupyter notebooks. An example can be seen here: [PyGenMet Manual](http://www.imarranz.com/pygenmet-manual/docs/index.html)
   
   * [images]: Images necessaries to documents that they are no generated with code.
 
-  * [notebooks]: Jupyter notebooks. Naming convention is date YYYYMMDD (for ordering), the author's initials, and a short `-` delimited description.
+  * [notebooks]: Jupyter notebooks. Naming convention is date YYYYMMDD (for ordering), the author's initials, and a short `-` delimited description. 
   
   * [references]: Data dictionaries or metadata[^metadata], manuals, etc (notes icebreaker). Articles related to the project can also be stored in this folder.
   
@@ -144,6 +144,8 @@ The following structure gives an idea how to organize a complex Data Science Pro
     * [s60_reporting]: Scrips to produce reporting tables and outputs.
     * [s70_visualization]: Scripts to create frequently used plots.
                                                                       
+
+### README
     
 ### Requeriments
 
@@ -158,7 +160,38 @@ conda env export > project-env.yaml
 
 Conda[^conda] [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
 
+### .gitignore
+
 ### Config
+
+### Data
+
+### Docs
+
+If is necessary to keep the project with documentation in this folder we can do it. I like working with MkDocs and JupyterBooks. MkDocs is very easy to use. Normally I save my Jupyter Notebooks to markdown and with a brief configuration file is very fast to built a website. 
+
+First, we need to convert the notebook to markdown. We can do it with [nbconvert](https://nbconvert.readthedocs.io/en/latest/index.html).
+
+```
+jupyter nbconvert --to markdown mynotebook.ipynb
+```
+
+### Images
+
+Any image that you do not generate with code. For example: logos, images above methodology, ...
+
+### Notebooks
+
+Since 2016 I usually use Jupyter Notebooks, before I used Rstudio (a wonderful IDE for R) but I work more efficiently with Notebooks. I organize my work with Notebooks.
+
+### References
+
+There are always documentation before to start any Data Science Work. For example, bibliography, previos documents, ... It is also important to keep manuals about libraries, especially if you use it for first time.
+
+### Results
+
+
+### Source
 
     
 ## Feedback
