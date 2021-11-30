@@ -166,6 +166,8 @@ Conda[^conda] [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downlo
 
 ### Data
 
+![](./figures/data.svg)
+
 ### Docs
 
 If is necessary to keep the project with documentation in this folder we can do it. I like working with MkDocs and JupyterBooks. MkDocs is very easy to use. Normally I save my Jupyter Notebooks to markdown and with a brief configuration file is very fast to built a website. 
