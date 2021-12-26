@@ -166,6 +166,13 @@ Conda[^conda] [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downlo
 
 ### Data
 
+Usually, data has the following process:
+
+  1. First, we need to collect the data from different and heterogeneous sources. Maybe, the data has different structures or formats.
+  2. We must to coerce all different data in a same structure and format (a SQL or NoSQL Database).
+  3. In this point, we need to normalizate all variables: same units, same categories, ... clean the data.
+  4. Once we have the standardized data, we can start the modelling process.
+
 ![](./figures/data.svg)
 
 ### Docs
