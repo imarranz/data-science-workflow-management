@@ -162,6 +162,8 @@ Conda[^conda] [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downlo
 
 ### .gitignore
 
+The `.gitignore`file is a specific file to work with git. In this file we can add the files or folder without tracking.
+
 ### Config
 
 ### Data
