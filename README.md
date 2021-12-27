@@ -146,6 +146,12 @@ The following structure gives an idea how to organize a complex Data Science Pro
                                                                       
 
 ### README
+
+A README file contains information about the project and other files in a directory or archives. Usually, a README is a form of documentation, it is a simple plain text. Is very common to use markdown to write a README ([more](https://en.wikipedia.org/wiki/README)). 
+
+If you need more information about markdown in github you can go [here](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+
+
     
 ### Requeriments
 
