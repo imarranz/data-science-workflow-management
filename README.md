@@ -201,6 +201,10 @@ Any image that you do not generate with code. For example: logos, images above m
 
 Since 2016 I usually use Jupyter Notebooks, before I used Rstudio (a wonderful IDE for R) but I work more efficiently with Notebooks. I organize my work with Notebooks.
 
+[Organise your Jupyter Notebook](https://towardsdatascience.com/organise-your-jupyter-notebook-with-these-tips-d164d5dcd51f)  
+[8 Guidelines to Create Professional Data Science Notebooks](https://towardsdatascience.com/8-guidelines-to-create-professional-data-science-notebooks-97572894b2e5)  
+[Interactive Reporting in Jupyter Notebook](https://towardsdatascience.com/interactive-reporting-in-jupyter-notebook-92a4fa90c09a)
+
 ### References
 
 There are always documentation before to start any Data Science Work. For example, bibliography, previos documents, ... It is also important to keep manuals about libraries, especially if you use it for first time.
