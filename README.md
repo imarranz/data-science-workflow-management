@@ -193,6 +193,10 @@ First, we need to convert the notebook to markdown. We can do it with [nbconvert
 jupyter nbconvert --to markdown mynotebook.ipynb
 ```
 
+[MkDocs](https://www.mkdocs.org/)  
+[Sphinx](https://www.sphinx-doc.org/en/master/)  
+[Jupyter Book](https://jupyterbook.org/intro.html)  
+
 ### Images
 
 Any image that you do not generate with code. For example: logos, images above methodology, ...
