@@ -92,7 +92,11 @@ The following structure gives an idea how to organize a complex Data Science Pro
     │   └── YYYYMMDD-ima-create_report.py  
     │    
     └── s70_visualisation   
-        └── YYYYMMDD-ima-visualise_model_results.py  
+        └── YYYYMMDD-ima-count_plot_for_categorical_features.py          
+        └── YYYYMMDD-ima-distribution_plot_for_continuous_features.py          
+        └── YYYYMMDD-ima-relational_plots.py          
+        └── YYYYMMDD-ima-outliers_analysis_plots.py 
+        └── YYYYMMDD-ima-visualise_model_results.py          
 ```        
 
 ## Description
@@ -143,6 +147,11 @@ The following structure gives an idea how to organize a complex Data Science Pro
     * [s50_model_evaluation]: Scripts to analyze models.
     * [s60_reporting]: Scrips to produce reporting tables and outputs.
     * [s70_visualization]: Scripts to create frequently used plots.
+      * [s71_count]: Examining categorical variables.
+      * [s72_distribution]: Examining continuous variables.
+      * [s73_relational]: Pair plots, correlation plots, ...
+      * [s74_outliers]: Examining outliers.
+      * [s75_modelling]: Visualize models results.
                                                                       
 
 ### README
