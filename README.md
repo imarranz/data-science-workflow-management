@@ -252,7 +252,7 @@ Any image that you do not generate with code. For example: logos, images above m
 
 ### Notebooks
 
-Since 2016 I usually use Jupyter Notebooks, before I used Rstudio (a wonderful IDE for R) but I work more efficiently with Notebooks. I organize my work with Notebooks.
+Since 2016 I usually use Jupyter Notebooks, before I used Rstudio (a wonderful IDE for R) but I work more efficiently with Notebooks. I organize my work with Notebooks. Some awesome tips about organization:
 
   * [Organise your Jupyter Notebook](https://towardsdatascience.com/organise-your-jupyter-notebook-with-these-tips-d164d5dcd51f)  
   * [8 Guidelines to Create Professional Data Science Notebooks](https://towardsdatascience.com/8-guidelines-to-create-professional-data-science-notebooks-97572894b2e5)  
@@ -260,7 +260,7 @@ Since 2016 I usually use Jupyter Notebooks, before I used Rstudio (a wonderful I
 
 ### References
 
-There are always documentation before to start any Data Science Work. For example, bibliography, previos documents, ... It is also important to keep manuals about libraries, especially if you use it for first time.
+There are always documentation before to start any Data Science Work. For example, bibliography, references, previously documentation, ... It is also important to keep manuals about libraries, especially if you use it for first time.
 
 ### Results
 
@@ -270,7 +270,7 @@ There are always documentation before to start any Data Science Work. For exampl
     
 ## Feedback
 
-Do you use other structure or you miss anything in this structure? Please, tell me. I want to improve and to share.
+Organization is essential in any Data Science project. I like to plan and structure my projects and for that reason I have generated this repository, to have a general structure that serves as a guideline. Do you use other structure or you miss anything in this structure? Please, tell me. I want to improve and to share.
 
 
 [^metadata]: A data dictionary, or metadata repository, as defined in the IBM Dictionary of Computing, is a "centralized repository of information about data such as meaning, relationships to other data, origin, usage, and format"
