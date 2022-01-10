@@ -200,7 +200,7 @@ How `.gitignore` fil works:
   
   * **Wildcard**: The symbol `*` matches with 0 or more characters. For example, `*.pdf` matches with any files ending with the `*.pdf` extension. We can also use the symbol `?` which matches any character except `/`. 
   
-  * **Negation**: We can use the symbol `!` to avoid a file that we cannot ignore. For example:
+  * **Negation**: We can use the symbol `!` to avoid a file that we don't want to ignore. For example:
   
   ```
   *.pdf
