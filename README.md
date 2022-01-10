@@ -175,10 +175,38 @@ conda info > project-info.txt
 conda env export > project-env.yaml
 ```    
 
+The first lines of the file `project-env.yaml` have the following code (as example):
+
+```
+name: project
+channels:
+  - conda-forge
+  - r
+  - defaults
+dependencies:
+  - alabaster=0.7.12=py_0
+  - anyio=3.3.4=py37h03978a9_0
+```
+
+If we want to reproduce the analysis we can create or reproduce the same environment
+
 
 ```
 conda env create -f project-env.yaml 
 ```
+
+And then, we can activate the environment
+
+```
+conda activate project
+```
+
+When we do not need this environment we can remove it
+
+```
+conda env remove --name project
+```
+
 
 Conda[^conda] [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
 
