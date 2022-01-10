@@ -12,6 +12,11 @@ In an efficient workflow, there is no only a good structure of files and folders
 
 At this point I think github is a good tool to work with _kanban_. In each repository you can associate a project based on the _kanban_ methodology. Initially, in github each _kanban_ is associated with a problem or issue and allows you to follow its process.
 
+## Reproducible Research
+
+[Reproducible Science](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/get-started-open-reproducible-science/)
+
+
 ## Links & Resources
 
 Links where I have learned about Data Science workflow. Many of the ideas I post here come from these resources.
