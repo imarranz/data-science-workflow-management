@@ -79,7 +79,8 @@ The following structure gives an idea how to organize a complex Data Science Pro
     │   └── YYYYMMDD-ima-create_master_table.py   
     |   └── YYYYMMDD-ima-create_descriptive_table.py   
     │    
-    ├── s40_modelling  
+    ├── s40_modelling
+    │   └── YYYYMMDD-ima-importance_features.py       
     │   └── YYYYMMDD-ima-train_lr_model.py  
     │   └── YYYYMMDD-ima-train_svm_model.py  
     │   └── YYYYMMDD-ima-train_rf_model.py    
@@ -177,7 +178,40 @@ Conda[^conda] [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downlo
 
 ### .gitignore
 
-The `.gitignore`file is a specific file to work with git. In this file we can add the files or folder without tracking.
+The `.gitignore` file is a specific file to work with git. In this file we can add the files or folder without tracking.
+
+How `.gitignore` fil works:
+
+  * **Ignore files**: To ignore a specific file
+  
+  ```
+  namefile.ext
+  ``` 
+  
+  This will ignore the file `namefile.ext`. 
+  
+  * **Ignore directories**: To ignore a specific directory:
+  
+  ```
+  namefolder/
+  ```
+  
+  This will ignore the folder `namefolder`. We cannot forget the `/` on the end.            
+  
+  * **Wildcard**: The symbol `*` matches with 0 or more characters. For example, `*.pdf` matches with any files ending with the `*.pdf` extension. We can also use the symbol `?` which matches any character except `/`. 
+  
+  * **Negation**: We can use the symbol `!` to avoid a file that we cannot ignore. For example:
+  
+  ```
+  *.pdf
+  CV.pdf
+  ```   
+  
+  In this example, we will ignore all pdf files, except the `CV.pdf`.
+  
+<!--
+https://www.pluralsight.com/guides/how-to-use-gitignore-file
+-->
 
 ### Config
 
