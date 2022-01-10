@@ -165,6 +165,7 @@ If you need more information about markdown in github you can go [here](https://
     
 ### Requeriments
 
+
 ```
 conda activate project
 
@@ -173,6 +174,11 @@ conda list --explicit > project-package-explicit-list.txt
 conda info > project-info.txt
 conda env export > project-env.yaml
 ```    
+
+
+```
+conda env create -f project-env.yaml 
+```
 
 Conda[^conda] [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
 
@@ -236,9 +242,9 @@ First, we need to convert the notebook to markdown. We can do it with [nbconvert
 jupyter nbconvert --to markdown mynotebook.ipynb
 ```
 
-[MkDocs](https://www.mkdocs.org/)  
-[Sphinx](https://www.sphinx-doc.org/en/master/)  
-[Jupyter Book](https://jupyterbook.org/intro.html)  
+  * [MkDocs](https://www.mkdocs.org/)  
+  * [Sphinx](https://www.sphinx-doc.org/en/master/)  
+  * [Jupyter Book](https://jupyterbook.org/intro.html)  
 
 ### Images
 
@@ -248,9 +254,9 @@ Any image that you do not generate with code. For example: logos, images above m
 
 Since 2016 I usually use Jupyter Notebooks, before I used Rstudio (a wonderful IDE for R) but I work more efficiently with Notebooks. I organize my work with Notebooks.
 
-[Organise your Jupyter Notebook](https://towardsdatascience.com/organise-your-jupyter-notebook-with-these-tips-d164d5dcd51f)  
-[8 Guidelines to Create Professional Data Science Notebooks](https://towardsdatascience.com/8-guidelines-to-create-professional-data-science-notebooks-97572894b2e5)  
-[Interactive Reporting in Jupyter Notebook](https://towardsdatascience.com/interactive-reporting-in-jupyter-notebook-92a4fa90c09a)
+  * [Organise your Jupyter Notebook](https://towardsdatascience.com/organise-your-jupyter-notebook-with-these-tips-d164d5dcd51f)  
+  * [8 Guidelines to Create Professional Data Science Notebooks](https://towardsdatascience.com/8-guidelines-to-create-professional-data-science-notebooks-97572894b2e5)  
+  * [Interactive Reporting in Jupyter Notebook](https://towardsdatascience.com/interactive-reporting-in-jupyter-notebook-92a4fa90c09a)
 
 ### References
 
