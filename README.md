@@ -217,9 +217,9 @@ conda env remove --name project
 
 More information:
 
-[conda](https://docs.conda.io/en/latest/)
-[conda list](https://docs.conda.io/projects/conda/en/latest/commands/list.html)               
-[conda info](https://docs.conda.io/projects/conda/en/latest/commands/info.html)
+  * [conda](https://docs.conda.io/en/latest/)  
+  * [conda list](https://docs.conda.io/projects/conda/en/latest/commands/list.html)               
+  * [conda info](https://docs.conda.io/projects/conda/en/latest/commands/info.html)
 
 Conda[^conda] [cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf).
 
