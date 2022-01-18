@@ -251,7 +251,7 @@ How `.gitignore` fil works:
   
   ```
   *.pdf
-  CV.pdf
+  !CV.pdf
   ```   
   
   In this example, we will ignore all pdf files, except the `CV.pdf`.
