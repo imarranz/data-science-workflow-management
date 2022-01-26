@@ -309,6 +309,19 @@ The results can be
 
 ### Source
 
+#### Utils
+
+#### Data
+
+
+#### Processing
+
+#### Modelling
+
+#### Visualization
+
+[Ideas for Better Visualization](https://uxdesign.cc/20-ideas-for-better-data-visualization-73f7e3c2782d)
+
     
 ## Feedback
 
