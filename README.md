@@ -305,7 +305,7 @@ There are always documentation before to start any Data Science Work. For exampl
 
 ### Results
 
-The results can be
+The results must be show 
 
 ### Source
 
