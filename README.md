@@ -193,9 +193,10 @@ channels:
 dependencies:
   - alabaster=0.7.12=py_0
   - anyio=3.3.4=py37h03978a9_0
+  - ...
 ```
 
-If we want to reproduce the analysis we can create or reproduce the same environment
+If we want to reproduce the analysis we can create or reproduce the same environment. 
 
 
 ```
