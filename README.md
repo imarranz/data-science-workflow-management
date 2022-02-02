@@ -203,6 +203,13 @@ If we want to reproduce the analysis we can create or reproduce the same environ
 conda env create -f project-env.yaml 
 ```
 
+You can explicit the name of the new environment
+
+```
+conda env create -n new-name -f project-env.yaml
+conda env create --name new-name --file project-env.yaml
+```
+
 And then, we can activate the environment
 
 ```
