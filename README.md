@@ -324,11 +324,21 @@ The results must be show
 
 #### Processing
 
+##### Clean
+
+##### Exploratory Data Analysis, EDA
+
+[MITO, Python Data Analysis](https://www.trymito.io/)  
+
+
+##### Proof of Concept, POC
+
 #### Modelling
 
 #### Visualization
 
-[Ideas for Better Visualization](https://uxdesign.cc/20-ideas-for-better-data-visualization-73f7e3c2782d)
+[Ideas for Better Visualization](https://uxdesign.cc/20-ideas-for-better-data-visualization-73f7e3c2782d)  
+[33 Data Visualization Techniques all Professionals Should Know](https://dipesious.medium.com/33-data-visualization-techniques-all-professionals-should-know-ab999abe601a)
 
     
 ## Feedback
