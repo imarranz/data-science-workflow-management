@@ -281,6 +281,14 @@ Usually, data has the following process:
 
 ![](./figures/data.svg)
 
+
+#### SQL
+
+[3 SQL things I wish I knew as a data beginner](https://medium.com/@etrossat/3-sql-things-i-wish-i-knew-as-a-data-beginner-78efe6ab775c)
+
+#### SQLite
+
+
 ### Docs
 
 If is necessary to keep the project with documentation in this folder we can do it. I like working with MkDocs and JupyterBooks. MkDocs is very easy to use. Normally I save my Jupyter Notebooks to markdown and with a brief configuration file is very fast to built a website. 
@@ -328,7 +336,8 @@ The results must be show
 
 ##### Exploratory Data Analysis, EDA
 
-[MITO, Python Data Analysis](https://www.trymito.io/)  
+[MITO, Python Data Analysis](https://www.trymito.io/)    
+[Exploratory Data Analysis in Python](https://medium.com/@siddhardhan23/exploratory-data-analysis-25b7c0f0bfec)
 
 
 ##### Proof of Concept, POC
