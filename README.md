@@ -345,6 +345,40 @@ The results must be show
 
 #### Modelling
 
+```mermaid
+flowchart TB
+ A[("Initial Dataset")] --Data Cleaning<br>Data Curation<br>Remove redundant features--> B[("Pre-processed<br>Dataset")]
+ A[("Initial Dataset")] ---> C["Exploratory<br>Data Analysis"]
+ C["Exploratory<br>Data Analysis"] --> C1[PCA]
+ C["Exploratory<br>Data Analysis"] --> C2[SOM]
+ B[("Pre-processed<br>Dataset")] --> D{"Data | Splitting"}
+ D{"Data | Splitting"} --80%--> D1[("Use as<br>Training set")]
+ D{"Data | Splitting"} --20%--> D2[("Use as<br>Test set")]
+ D1[("Use as<br>Training set")] --> D11((Learning<br>Algorithms))
+ subgraph SU1["Machine Learning"]
+  D11((Learning<br>Algorithms)) <--> D11A([SVM])
+  D11((Learning<br>Algorithms)) <--> D11B([Random Forest])
+  D11((Learning<br>Algorithms)) <--> D11C([KNN])
+  D11((Learning<br>Algorithms)) <--> D11D([RL])
+  D11((Learning<br>Algorithms)) <--> D11E([NNET])
+ end
+ D11((Learining<br>Algorithms)) --Hyperparameter<br>optimization--> E{Feature<br>Selection}
+ E{Feature<br>Selection} --> E1{{Cross-Validation<br>Model}}
+ E{Feature<br>Selection} --> E2{{Trained<br>Model}}
+ D2[("Use as<br>Test set")] ---> E2{{Trained<br>Model}}
+ E2{{Trained<br>Model}} --> F[Predicted<br> Y Values]
+ F[Predicted<br> Y Values] --> G[Evaluation<br>Model<br>Performance]
+ G[Evaluation<br>Model<br>Performance] --> G1[Regression]
+ G[Evaluation<br>Model<br>Performance] --> G2[Classification]
+ G1[Regression] --> G1A([R2])
+ G1[Regression] --> G1B([MSE])
+ G1[Regression] --> G1C([RMSE])
+ G2[Classification] --> G2A([Accuracy])
+ G2[Classification] --> G2B([Sensitivity])
+ G2[Classification] --> G2C([Specificity])
+ G2[Classification] --> G2D([MCC])
+```
+
 #### Visualization
 
 [Ideas for Better Visualization](https://uxdesign.cc/20-ideas-for-better-data-visualization-73f7e3c2782d)  
