@@ -337,7 +337,8 @@ The results must be show
 ##### Exploratory Data Analysis, EDA
 
 [MITO, Python Data Analysis](https://www.trymito.io/)    
-[Exploratory Data Analysis in Python](https://medium.com/@siddhardhan23/exploratory-data-analysis-25b7c0f0bfec)
+[Exploratory Data Analysis in Python](https://medium.com/@siddhardhan23/exploratory-data-analysis-25b7c0f0bfec)  
+[Exploratory Data Analysis](https://mugekuskon.medium.com/how-to-perform-exploratory-data-analysis-5c3d944c13ff)
 
 
 ##### Proof of Concept, POC
