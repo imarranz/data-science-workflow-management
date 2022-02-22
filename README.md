@@ -379,6 +379,40 @@ flowchart TB
  G2[Classification] --> G2D([MCC])
 ```
 
+```mermaid
+flowchart TB
+ subgraph D["Data to knowledge"]
+   D1(["Descriptive Analysis"]) --> D11(["Correlation"])
+   D1(["Descriptive Analysis"]) --> D12(["Statistics"])
+   D2(["Unsupervised Methods"]) --> D21(["PCA"])
+   D2(["Unsupervised Methods"]) --> D22(["Clustering"])
+   D3(["Supervised Methods"]) --> D31(["Genetic Programming"])
+   D3(["Supervised Methods"]) --> D32(["Other ML Methods"])
+ end
+ subgraph C["Cleaned Data"]
+   C1(["Final Data Set"])
+   C1(["Final Data Set"]) --> D1(["Descriptive Analysis"])
+   C1(["Final Data Set"]) --> D2(["Unsupervised Methods"])
+   C1(["Final Data Set"]) --> D3(["Supervised Methods"])
+ end 
+ subgraph B["Data Pre-procesing"]
+   B1(["Data Normalization"]) --> B2(["Sample Outliers"])
+   B1(["Data Normalization"]) --> B3(["Biological Experiments"])
+   B1(["Data Normalization"]) --> B4(["Variable Outliers"])
+   B3(["Biological Experiments"]) --> B2(["Sample Outliers"])
+   B3(["Biological Experiments"]) --> B4(["Variable Outliers"])
+   B3(["Biological Experiments"]) --> C1(["Final Data Set"])
+   B2(["Sample Outliers"]) --> C1(["Final Data Set"])
+   B4(["Variable Outliers"]) --> C1(["Final Data Set"])
+ end 
+ subgraph A["Experimental Design and Meta-Data Capture"]
+   A1(["Biological Experiments"]) --> A2(["Analysis"])
+   A2(["Analysis"]) --> A3(["Raw Data"])
+   A3(["Raw Data"]) --> B1(["Data Normalization"])
+ end 
+```
+
+
 #### Visualization
 
 [Ideas for Better Visualization](https://uxdesign.cc/20-ideas-for-better-data-visualization-73f7e3c2782d)  
