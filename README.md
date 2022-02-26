@@ -400,8 +400,8 @@ flowchart TB
    B1(["Data Normalization"]) --> B3(["Biological Experiments"])
    B1(["Data Normalization"]) --> B4(["Variable Outliers"])
    B3(["Biological Experiments"]) --> B2(["Sample Outliers"])
-   B3(["Biological Experiments"]) --> B4(["Variable Outliers"])
    B3(["Biological Experiments"]) --> C1(["Final Data Set"])
+   B3(["Biological Experiments"]) --> B4(["Variable Outliers"])
    B2(["Sample Outliers"]) --> C1(["Final Data Set"])
    B4(["Variable Outliers"]) --> C1(["Final Data Set"])
  end 
