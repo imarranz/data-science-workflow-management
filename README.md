@@ -284,7 +284,9 @@ Usually, data has the following process:
 
 #### SQL
 
-[3 SQL things I wish I knew as a data beginner](https://medium.com/@etrossat/3-sql-things-i-wish-i-knew-as-a-data-beginner-78efe6ab775c)
+[3 SQL things I wish I knew as a data beginner](https://medium.com/@etrossat/3-sql-things-i-wish-i-knew-as-a-data-beginner-78efe6ab775c)  
+[Four SQL Best Practices](https://medium.com/@Hong_Tang/four-sql-best-practices-helped-me-in-my-sql-interviews-68e686b6d28a)  
+[SQL with notebooks](https://franherreragon.medium.com/lets-do-some-magic-with-sql-and-python-30ce38e37539)                
 
 #### SQLite
 
@@ -333,6 +335,9 @@ The results must be show
 #### Processing
 
 ##### Clean
+
+[5 Simple Tips to Writing CLEAN Python Code](https://medium.com/@Sabrina-Carpenter/5-simple-tips-to-writing-clean-python-code-and-save-time-f57970ca53ae)  
+[Data Cleaning Techniques using Python](https://duarohan18.medium.com/data-cleaning-techniques-using-python-b6399f2550d5)  
 
 ##### Exploratory Data Analysis, EDA
 
@@ -400,8 +405,8 @@ flowchart TB
    B1(["Data Normalization"]) --> B3(["Biological Experiments"])
    B1(["Data Normalization"]) --> B4(["Variable Outliers"])
    B3(["Biological Experiments"]) --> B2(["Sample Outliers"])
-   B3(["Biological Experiments"]) --> C1(["Final Data Set"])
    B3(["Biological Experiments"]) --> B4(["Variable Outliers"])
+   B3(["Biological Experiments"]) --> C1(["Final Data Set"])
    B2(["Sample Outliers"]) --> C1(["Final Data Set"])
    B4(["Variable Outliers"]) --> C1(["Final Data Set"])
  end 
