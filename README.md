@@ -29,7 +29,8 @@ Links where I have learned about Data Science workflow. Many of the ideas I post
 [Data Science Project Folder Structure](https://dzone.com/articles/data-science-project-folder-structure)  
 [How to Structure a Python-Based Data Science Project (a short tutorial for beginners)](https://medium.com/swlh/how-to-structure-a-python-based-data-science-project-a-short-tutorial-for-beginners-7e00bff14f56)  
 [Practical Data Science](https://www.practicaldatascience.org/html/index.html)  
-[How To Organize Your Project: Best Practices for Open Reproducible Science](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/get-started-open-reproducible-science/best-practices-for-organizing-open-reproducible-science/)
+[How To Organize Your Project: Best Practices for Open Reproducible Science](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/get-started-open-reproducible-science/best-practices-for-organizing-open-reproducible-science/)  
+[The Good way to structure a Python Project](https://medium.com/@thehippieandtheboss/the-good-way-to-structure-a-python-project-d914f27dfcc9)
 
 ### Documents & Books
 
@@ -343,7 +344,8 @@ The results must be show
 
 [MITO, Python Data Analysis](https://www.trymito.io/)    
 [Exploratory Data Analysis in Python](https://medium.com/@siddhardhan23/exploratory-data-analysis-25b7c0f0bfec)  
-[Exploratory Data Analysis](https://mugekuskon.medium.com/how-to-perform-exploratory-data-analysis-5c3d944c13ff)
+[Exploratory Data Analysis](https://mugekuskon.medium.com/how-to-perform-exploratory-data-analysis-5c3d944c13ff)  
+[Advanced Exlporatory Data Analysis (EDA) with Python](https://medium.com/epfl-extension-school/advanced-exploratory-data-analysis-eda-with-python-536fa83c578a)
 
 
 ##### Proof of Concept, POC
