@@ -273,6 +273,16 @@ https://www.pluralsight.com/guides/how-to-use-gitignore-file
 
 ### Data
 
+#### Data Analysis (DA)
+
+[Data Analysis with Python](https://medium.com/geekculture/data-analysis-da-with-python-c570264edeab)  
+
+Data Analysis is the previous step before any analysis. Usually Data Analysis has three categories:
+
+  1. Descriptive. This step is usually [Exploratory Data Analysis](#exploratory-data-analysis,-eda). What information do we have?
+  2. Diagnostic. To answer our questions. What does the data say us?  
+  3. Predictive. Use our data to [predict](#modelling) new events.
+
 Usually, data has the following process:
 
   1. First, we need to collect the data from different and heterogeneous sources. Maybe, the data has different structures or formats.
