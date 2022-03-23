@@ -269,6 +269,11 @@ How `.gitignore` fil works:
 https://www.pluralsight.com/guides/how-to-use-gitignore-file
 -->
 
+### Commits
+
+[Git Commit Emojis](https://gist.github.com/parmentf/035de27d6ed1dce0b36a)  
+[Commit Message Emoji](https://github.com/dannyfritz/commit-message-emoji)  
+
 ### Config
 
 ### Data
