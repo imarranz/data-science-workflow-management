@@ -47,3 +47,146 @@ It is a model validation technique for evaluating how the outcomes of a statisti
 For more follow : Instagram.com/machinelearninginfo
 .
 
+What is a recommender system? 
+
+Recommender systems are software tools and techniques that provide suggestions for items that are most likely of interest to a particular user.
+
+What are the other clustering algorithms do you know?
+
+k-medoids: Takes the most central point instead of the mean value as the center of the cluster. This makes it more robust to noise.
+
+Agglomerative Hierarchical Clustering (AHC): hierarchical clusters combining the nearest clusters starting with each point as its own cluster.
+
+DIvisive ANAlysis Clustering (DIANA): hierarchical clustering starting with one cluster containing all points and splitting the clusters until each point describes its own cluster.
+
+Density-Based Spatial Clustering of Applications with Noise (DBSCAN): Cluster defined as maximum set of density-connected points.
+
+datascienceinfo:
+👉 What is linear regression? When do we use it? 
+
+• Linear regression is a model that assumes a linear relationship between the input variables (X) and the single output variable (y).
+
+With a simple equation:
+
+y = B0 + B1*x1 + ... + Bn * xN
+
+• B is regression coefficients, x values are the independent (explanatory) variables and y is dependent variable.
+
+• The case of one explanatory variable is called simple linear regression. For more than one explanatory variable, the process is called multiple linear regression.
+
+Simple linear regression:
+
+y = B0 + B1*x1
+Multiple linear regression:
+
+y = B0 + B1*x1 + ... + Bn * xN
+
+What are the main assumptions of linear regression?
+
+There are several assumptions of linear regression. If any of them is violated, model predictions and interpretation may be worthless or misleading.
+
+1) Linear relationship between features and target variable.
+
+2) Additivity means that the effect of changes in one of the features on the target variable does not depend on values of other features. For example, a model for predicting revenue of a company have of two features - the number of items a sold and the number of items b sold. When company sells more items a the revenue increases and this is independent of the number of items b sold. But, if customers who buy a stop buying b, the additivity assumption is violated.
+
+3) Features are not correlated (no collinearity) since it can be difficult to separate out the individual effects of collinear features on the target variable.
+
+4) Errors are independently and identically normally distributed (yi = B0 + B1*x1i + ... + errori):
+
+i) No correlation between errors (consecutive errors in the case of time series data).
+
+ii) Constant variance of errors - homoscedasticity. For example, in case of time series, seasonal patterns can increase errors in seasons with higher activity.
+
+iii) Errors are normaly distributed, otherwise some features will have more influence on the target variable than to others. If the error distribution is significantly non-normal, confidence intervals may be too wide or too narrow.
+
+What is overfitting? 
+
+When your model perform very well on your training set but can't generalize the test set, because it adjusted a lot to the training set.
+
+How to validate your models? 
+
+One of the most common approaches is splitting data into train, validation and test parts.
+
+ Models are trained on train data, hyperparameters (for example early stopping) are selected based on the validation data, the final measurement is done on test dataset. 
+
+Another approach is cross-validation: split dataset into K folds and each time train models on training folds and measure the performance on the validation folds. 
+
+Also you could combine these approaches: make a test/holdout dataset and do cross-validation on the rest of the data. The final quality is measured on test dataset.
+
+What is K-fold cross-validation? 
+
+K fold cross validation is a method of cross validation where we select a hyperparameter k. The dataset is now divided into k parts. Now, we take the 1st part as validation set and remaining k-1 as training set. Then we take the 2nd part as validation set and remaining k-1 parts as training set. Like this, each part is used as validation set once and the remaining k-1 parts are taken together and used as training set. It should not be used in a time series data.
+
+What is logistic regression? When do we need to use it? 
+
+Logistic regression is a Machine Learning algorithm that is used for binary classification. You should use logistic regression when your Y variable takes only two values, e.g. True and False, "spam" and "not spam", "churn" and "not churn" and so on. The variable is said to be a "binary" or "dichotomous".
+
+Is accuracy always a good metric? 
+
+Accuracy is not a good performance metric when there is imbalance in the dataset. For example, in binary classification with 95% of A class and 5% of B class, a constant prediction of A class would have an accuracy of 95%. In case of imbalance dataset, we need to choose Precision, recall, or F1 Score depending on the problem we are trying to solve.
+
+What are precision, recall, and F1-score? 
+
+Precision and recall are classification evaluation metrics:
+P = TP / (TP + FP) and R = TP / (TP + FN).
+
+Where TP is true positives, FP is false positives and FN is false negatives
+
+In both cases the score of 1 is the best: we get no false positives or false negatives and only true positives.
+
+F1 is a combination of both precision and recall in one score (harmonic mean):
+F1 = 2 * PR / (P + R).
+Max F score is 1 and min is 0, with 1 being the best.
+
+What is the ROC curve? When to use it?
+
+ROC stands for Receiver Operating Characteristics. The diagrammatic representation that shows the contrast between true positive rate vs false positive rate.
+
+ It is used when we need to predict the probability of the binary outcome.
+
+What is AUC (AU ROC)? When to use it?
+
+AUC stands for Area Under the ROC Curve. ROC is a probability curve and AUC represents degree or measure of separability. It's used when we need to value how much model is capable of distinguishing between classes. The value is between 0 and 1, the higher the better.
+
+What is the PR (precision-recall) curve?
+
+A precision-recall curve (or PR Curve) is a plot of the precision (y-axis) and the recall (x-axis) for different probability thresholds. Precision-recall curves (PR curves) are recommended for highly skewed domains where ROC curves may provide an excessively optimistic view of the performance.
+
+What is the area under the PR curve? Is it a useful metric?
+
+The Precision-Recall AUC is just like the ROC AUC, in that it summarizes the curve with a range of threshold values as a single score.
+
+A high area under the curve represents both high recall and high precision, where high precision relates to a low false positive rate, and high recall relates to a low false negative rate.
+
+What’s the difference between L2 and L1 regularization?
+
+Penalty terms: L1 regularization uses the sum of the absolute values of the weights, while L2 regularization uses the sum of the weights squared.
+
+Feature selection: L1 performs feature selection by reducing the coefficients of some predictors to 0, while L2 does not.
+
+Computational efficiency: L2 has an analytical solution, while L1 does not.
+
+Multicollinearity: L2 addresses multicollinearity by constraining the coefficient norm.
+
+What is feature selection? Why do we need it? 
+
+Feature Selection is a method used to select the relevant features for the model to train on. We need feature selection to remove the irrelevant features which leads the model to under-perform.
+
+What are the decision trees? 
+
+This is a type of supervised learning algorithm that is mostly used for classification problems. Surprisingly, it works for both categorical and continuous dependent variables.
+
+In this algorithm, we split the population into two or more homogeneous sets. This is done based on most significant attributes/ independent variables to make as distinct groups as possible.
+
+A decision tree is a flowchart-like tree structure, where each internal node (non-leaf node) denotes a test on an attribute, each branch represents an outcome of the test, and each leaf node (or terminal node) holds a value for the target variable.
+
+Various techniques : like Gini, Information Gain, Chi-square, entropy.
+
+What is random forest? 
+
+Random Forest is a machine learning method for regression and classification which is composed of many decision trees. Random Forest belongs to a larger class of ML algorithms called ensemble methods (in other words, it involves the combination of several models to solve a single prediction problem).
+
+What is unsupervised learning? 
+
+Unsupervised learning aims to detect paterns in data where no labels are given.
+
