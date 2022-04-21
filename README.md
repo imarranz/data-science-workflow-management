@@ -34,7 +34,15 @@ Links where I have learned about Data Science workflow. Many of the ideas I post
 
 ### Documents & Books
 
-[icebreakeR](https://cran.r-project.org/doc/contrib/Robinson-icebreaker.pdf)
+[icebreakeR](https://cran.r-project.org/doc/contrib/Robinson-icebreaker.pdf)  
+
+[GIT Notes for Professionals](https://books.goalkicker.com/GitBook/GitNotesForProfessionals.pdf) 
+
+[MySQL Notes for Professionals](https://books.goalkicker.com/MySQLBook/MySQLNotesForProfessionals.pdf)  
+[MongoDB Notes for Professionals](https://books.goalkicker.com/MongoDBBook/MongoDBNotesForProfessionals.pdf)  
+[SQL Notes for Professionals](https://books.goalkicker.com/SQLBook/SQLNotesForProfessionals.pdf)  
+
+
 
 ### Articles
 
