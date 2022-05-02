@@ -281,6 +281,7 @@ https://www.pluralsight.com/guides/how-to-use-gitignore-file
 
 [Git Commit Emojis](https://gist.github.com/parmentf/035de27d6ed1dce0b36a)  
 [Commit Message Emoji](https://github.com/dannyfritz/commit-message-emoji)  
+[Git commands](https://bootcamp.uxdesign.cc/git-commands-nobody-has-told-you-cd7025bea8db)  
 
 ### Config
 
