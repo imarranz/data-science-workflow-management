@@ -30,7 +30,8 @@ Links where I have learned about Data Science workflow. Many of the ideas I post
 [How to Structure a Python-Based Data Science Project (a short tutorial for beginners)](https://medium.com/swlh/how-to-structure-a-python-based-data-science-project-a-short-tutorial-for-beginners-7e00bff14f56)  
 [Practical Data Science](https://www.practicaldatascience.org/html/index.html)  
 [How To Organize Your Project: Best Practices for Open Reproducible Science](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/get-started-open-reproducible-science/best-practices-for-organizing-open-reproducible-science/)  
-[The Good way to structure a Python Project](https://medium.com/@thehippieandtheboss/the-good-way-to-structure-a-python-project-d914f27dfcc9)
+[The Good way to structure a Python Project](https://medium.com/@thehippieandtheboss/the-good-way-to-structure-a-python-project-d914f27dfcc9)  
+[Data Science Project Management](https://neptune.ai/blog/data-science-project-management)
 
 ### Documents & Books
 
