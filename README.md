@@ -182,6 +182,9 @@ If you need more information about markdown in github you can go [here](https://
     
 ### Requeriments
 
+With _requirements_ we are referring to the technical configuration of the project. If we are working with Python we have to describe the environment, list the packages used and their versions, ...
+
+In the following codes I show how to work with the environments and how to save the project configuration. This is a very important step since it will allow us to reproduce the same analysis in the future even if the versions of the packages change.
 
 ```
 conda activate project
