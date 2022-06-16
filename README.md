@@ -334,6 +334,8 @@ jupyter nbconvert --to markdown mynotebook.ipynb
   * [MkDocs](https://www.mkdocs.org/)  
   * [Sphinx](https://www.sphinx-doc.org/en/master/)  
   * [Jupyter Book](https://jupyterbook.org/intro.html)  
+  
+[Build Your Python Project Documentation With MkDocs](https://realpython.com/python-project-documentation-with-mkdocs/?utm_source=realpython&utm_medium=rss)  
 
 ### Images
 
