@@ -268,7 +268,8 @@ Usually, data has the following process:
 [SQL Coding Best Practices for Writing Clean Code](https://towardsdatascience.com/sql-coding-best-practices-for-writing-clean-code-a1eca1cccb93)  
 [When Python meets SQL](https://medium.com/@jperezllorente/when-python-meets-sql-57b4d7ab2182)  
 [Best practices for writing SQL queries](https://medium.com/@abdelilah.moulida/best-practices-for-writing-sql-queries-7c20b1b9d21e)  
-[7 SQL Queries You Should Know as Data Analyst](https://medium.com/@alfiramdhan/7-sql-queries-you-should-know-as-data-analyst-6a16602fffbe)
+[7 SQL Queries You Should Know as Data Analyst](https://medium.com/@alfiramdhan/7-sql-queries-you-should-know-as-data-analyst-6a16602fffbe)  
+[TOP 8 Best practices for writing SQL queries!!!](https://medium.com/@abdelilah.moulida/best-practices-for-writing-sql-queries-7c20b1b9d21e)
 
 #### SQLite
 
@@ -404,6 +405,11 @@ flowchart TB
  end 
 ```
 
+##### Performance
+
+[Overcoming overfitting a model in Machine Learning](https://medium.com/@jwbtmf/overcoming-overfitting-a-model-in-machine-learning-7dd6324d15bf) 
+
+![Underfitting and overfitting](https://miro.medium.com/max/700/0*Nw-HZ6-PN1impGNC.png)
 
 #### Visualization
 
