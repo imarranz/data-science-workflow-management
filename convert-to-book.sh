@@ -12,16 +12,7 @@ cat book/050_feedback.md >> data-science-workflow-management.md
 
 pandoc data-science-workflow-management.md \
     -o data-science-workflow-management.epub \
-    -f markown-raw_tex \
-    -f markdown-implicit_figures \
-    -f markdown+emoji \
-    -V papersize=a4paper \
-    -V geometry:top=4cm \
-    -V geometry:left=4cm \
-    -V geometry:right=4cm \
-    -V geometry:bottom=4cm \
-    -V fontsize=12pt \
-    --toc     
+    --standalone \
+    --toc    
     
 rm data-science-workflow-management.md
- 
