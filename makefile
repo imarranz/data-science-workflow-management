@@ -14,6 +14,7 @@ epub:
 	pandoc data-science-workflow-management.md \
 	-o data-science-workflow-management.epub \
 	--standalone \
+	--css style.css \
 	--toc    
 
 clean: 
