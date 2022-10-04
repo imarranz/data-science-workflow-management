@@ -235,6 +235,93 @@ https://www.pluralsight.com/guides/how-to-use-gitignore-file
 [Emojis for Better Git Commit Messages](https://babakks.github.io/article/2020/07/03/emojis-in-git-commit-messages.html)  
 [Emoji Commit Messages](https://github.com/cooperka/emoji-commit-messages)  
 [Git commands](https://bootcamp.uxdesign.cc/git-commands-nobody-has-told-you-cd7025bea8db)  
+[Semantic Commit Messages with Emojis](https://gist.github.com/alpteo/e93d754e5e09907c6362c4230fb66f87)
+
+
+#### Semantic Commit Messages with Emojis
+
+Commit format: `<emoji_type> <commit_type>(<scope>): <subject>. <issue_reference>`
+
+##### Example
+```
+:sparkles: feat(Component): Add a new feature. Closes: #
+^--------^ ^--^ ^-------^   ^---------------^  ^------^
+|          |    |           |                  |
+|          |    |           |                  +--> (Optional) Issue reference: if the commit closes or fixes an issue
+|          |    |           |
+|          |    |           +---------------------> Commit summary
+|          |    |
+|          |    +---------------------------------> (Optional) Commit scope in the project
+|          |
+|          +--------------------------------------> Commit type: feat, fix, docs, refactor, test, style, chore, build, perf or ci
+|
++-------------------------------------------------> (Optional) Emoji type. See: https://gitmoji.carloscuesta.me/
+```
+
+**The commit message will be:**
+
+> feat: Add a new feature
+
+**With optional features emoji, scope and issue reference:**
+
+> :sparkles: feat(Component): Add a new feature. Closes: #..
+
+##### Commit Message Types
+
+- **feat**: introducing a new feature to the codebase
+- **fix**: fixing a bug in the codebase
+- **docs**: adding or updating the documentation
+- **refactor**: refactoring the production code
+- **build**/**conf**: changes related to the build system (involving scripts, configurations) and package dependencies
+- **test**: adding tests (no production code change)
+- **ci**: changes related to the continuous integration and deployment system
+- **style**: improving structure/format of the code e.g. missing semi colons (no production code change)
+- **chore**: updating grunt tasks etc. (no production code change)
+- **perf**: changes related to backward-compatible performance improvements
+
+##### Supported Emojis by Commit Message Types
+
+| Type     | Emoji                                           |
+| -------- | ----------------------------------------------- |
+| feat     | :sparkles: `:sparkles:`                         |
+| fix      | :bug: `:bug:`                                   |
+| docs     | :memo: `:memo:`                                 |
+| refactor | :recycle: `:recycle:`                           |
+| build    | :construction: `:construction:`                 |
+| test     | :white_check_mark: `:white_check_mark:`         |
+| ci       | :green_heart: `:green_heart:`                   |
+| style    | :art: `:art:`                                   |
+| chore    | :wrench: `:wrench:`                             |
+| perf     | :zap: `:zap:`                                   |
+
+Besides the emojis of these commit types, other related emojis can also be used in the commit messages. For example:
+
+`:construction_worker: build(Electron): Bump version 7 to 9 :arrow_up:`
+
+> :construction_worker: build(Electron): Bump version 7 to 9 :arrow_up:
+
+##### Issue Referencing
+
+Keywords to close an related issue with the commit:
+- close
+- closes
+- closed
+- fix
+- fixes
+- fixed
+- resolve
+- resolves
+- resolved
+
+You can use the phrase: `Fixes: #1` or `Fixes #1`.
+Once the branch is merged into the default branch, the issue will close.
+
+##### References
+ - https://gitmoji.carloscuesta.me/
+ - http://karma-runner.github.io/1.0/dev/git-commit-msg.html
+ - https://nitayneeman.com/posts/understanding-semantic-commit-messages-using-git-and-angular/
+
+
 
 ### Config
 
@@ -270,7 +357,8 @@ Usually, data has the following process:
 [When Python meets SQL](https://medium.com/@jperezllorente/when-python-meets-sql-57b4d7ab2182)  
 [Best practices for writing SQL queries](https://medium.com/@abdelilah.moulida/best-practices-for-writing-sql-queries-7c20b1b9d21e)  
 [7 SQL Queries You Should Know as Data Analyst](https://medium.com/@alfiramdhan/7-sql-queries-you-should-know-as-data-analyst-6a16602fffbe)  
-[TOP 8 Best practices for writing SQL queries!!!](https://medium.com/@abdelilah.moulida/best-practices-for-writing-sql-queries-7c20b1b9d21e)
+[TOP 8 Best practices for writing SQL queries!!!](https://medium.com/@abdelilah.moulida/best-practices-for-writing-sql-queries-7c20b1b9d21e)  
+[9 SQL Core Concepts](https://towardsdatascience.com/9-sql-core-concepts-that-helped-me-get-my-first-data-analyst-job-a582f892276f)  
 
 #### SQLite
 
