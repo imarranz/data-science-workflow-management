@@ -12,6 +12,7 @@ epub:
 	cat book/050_feedback.md >> data-science-workflow-management.md
 
 	pandoc data-science-workflow-management.md \
+	-f markdown+emoji \
 	-o data-science-workflow-management.epub \
 	--standalone \
 	--css style.css \
