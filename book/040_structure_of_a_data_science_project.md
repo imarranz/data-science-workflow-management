@@ -509,6 +509,15 @@ flowchart TB
 [Data Visualization with Pandas in Action](https://levelup.gitconnected.com/data-visualization-with-pandas-in-action-1-98582b69ee8b)  
 [Data Visualization in Seaborn with Awesome Examples](https://medium.com/@shankar.t3234/data-visualisation-in-seaborn-with-awesome-examples-b20cc5e2e271)  
     
+    
+#### Save Data
+
+It is important to save data or models in order to reproduce the investigation. Python has to important libraries to do that:
+
+  * [pickle](https://docs.python.org/3/library/pickle.html): The pickle module implements binary protocols for serializing and de-serializing a Python object structure.
+  * [joblib](https://joblib.readthedocs.io/en/latest/): Joblib is a set of tools to provide **lightweight pipelining in Python**.
+
+[Is it betteer to save models using joblib or pickle?](https://medium.com/nlplanet/is-it-better-to-save-models-using-joblib-or-pickle-7767722b5a095)
 
 [^metadata]: A data dictionary, or metadata repository, as defined in the IBM Dictionary of Computing, is a "centralized repository of information about data such as meaning, relationships to other data, origin, usage, and format"
 [^yaml]: YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. 
