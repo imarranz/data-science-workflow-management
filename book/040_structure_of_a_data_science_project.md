@@ -230,6 +230,8 @@ https://www.pluralsight.com/guides/how-to-use-gitignore-file
 
 ### Commits
 
+A commit in GitHub (or others) is a saved change to a repository. It stores a snapshot of the changes made to a repository and includes a commit message describing the change. Commits are tracked and can be reverted if needed. They can also be shared and compared with other versions of a repository.
+
 [Git Commit Emojis](https://gist.github.com/parmentf/035de27d6ed1dce0b36a)  
 [Commit Message Emoji](https://github.com/dannyfritz/commit-message-emoji)  
 [Emojis for Better Git Commit Messages](https://babakks.github.io/article/2020/07/03/emojis-in-git-commit-messages.html)  
@@ -349,6 +351,8 @@ Usually, data has the following process:
 
 #### SQL
 
+SQL (Structured Query Language) is a special-purpose language used to communicate with databases. It is used to store, retrieve, manipulate and delete data in relational database systems. With SQL, you can create and modify databases, as well as control user access to them. It is also used to create and execute queries on the data stored in the databases, and to generate reports from the data. SQL is also used to define and modify the structure of the databases, and to add data integrity constraints to the data.
+
 [3 SQL things I wish I knew as a data beginner](https://medium.com/@etrossat/3-sql-things-i-wish-i-knew-as-a-data-beginner-78efe6ab775c)  
 [Four SQL Best Practices](https://medium.com/@Hong_Tang/four-sql-best-practices-helped-me-in-my-sql-interviews-68e686b6d28a)  
 [SQL with notebooks](https://franherreragon.medium.com/lets-do-some-magic-with-sql-and-python-30ce38e37539)  
@@ -362,6 +366,7 @@ Usually, data has the following process:
 
 #### SQLite
 
+SQLite is an open source, self-contained, serverless, zero-configuration, transactional SQL database engine. It is the most widely deployed SQL database engine in the world. It is used in various applications such as web browsers, operating systems, and embedded systems. SQLite does not have a client/server architecture, but operates as a local, embedded database engine. It is ACID-compliant and implements most of the SQL standard, using a dynamically and weakly typed SQL syntax that is similar to but slightly different from standard SQL.
 
 ### Docs
 
@@ -415,6 +420,8 @@ The results must be show
 
 ##### Exploratory Data Analysis, EDA
 
+Exploratory data analysis (EDA) is a statistical process for analyzing and summarizing data to discover meaningful patterns, correlations, and insights. These insights can then be used to build more accurate predictive models and better understand the data set. EDA involves exploratory graphs such as histograms, scatterplots, boxplots and more, as well as various measures of central tendency and variability. By exploring the data, we can gain a better understanding of our data and the underlying relationships between variables.
+
 [MITO, Python Data Analysis](https://www.trymito.io/)    
 [Exploratory Data Analysis in Python](https://medium.com/@siddhardhan23/exploratory-data-analysis-25b7c0f0bfec)  
 [Exploratory Data Analysis](https://mugekuskon.medium.com/how-to-perform-exploratory-data-analysis-5c3d944c13ff)  
@@ -424,6 +431,14 @@ The results must be show
 
 
 ##### Proof of Concept, POC
+
+A proof of concept (POC) in data science is a prototype or small experiment used to demonstrate the potential of a data-driven solution or analytic model. The purpose of a proof of concept is to provide evidence that an idea is feasible and can be further developed into a successful product, solution, or project. This typically involves collecting, analyzing, and visualizing data in order to test the viability of the original hypothesis or concept.
+
+By proving the concept, a data scientist can assess the impact a particular product or solution could have on the organization, and whether it is worth the risk and cost to move forward with the project.
+
+A POC generally involves a small subset of data and a portion of the proposed solution being tested. This may include analyzing small customer segmentation samples or creating a limited version of the model or algorithms to be used. Once the data is acquired and the model is built, the data scientist can then assess if the model provides useful results, and if the solution proposed is feasible.
+
+The proof of concept is an important step for any project that requires data science and analytics. It helps to identify any errors or weaknesses in the data or the proposed solution, before investing further resources into the project and provides a way to inform the decision makers of the organization if a particular project or solution is viable or not.
 
 #### Modelling
 
@@ -496,11 +511,27 @@ flowchart TB
 
 ##### Performance
 
+A performance of a model in data science is a measure of how well the model is able to learn from data and make predictions. In other words, it is a way to measure the accuracy, robustness, and usability of the model. A good performance of a model usually indicates that the model is able to generalize well, meaning that it is able to accurately predict or make decisions with data that it has not been trained on before.
+
+The performance of a model can be measured with different metrics such as accuracy, precision, recall, F1-score, confusion matrix, and the area under the curve. Accuracy is the percentage of correct predictions or the number of correct predictions divided by the total number of predictions made. Precision is the number of correct positive predictions divided by the total number of positive predictions made. Recall is the number of correct positive predictions divided by the total number of positive cases. F1-score is a metric that combines accuracy and recall, and it is computed by taking the harmonic mean of precision and recall. A confusion matrix is a table that helps to summarize the performance of a model by presenting the number of true positives, false positives, true negatives, and false negatives. Finally, the area under the curve of a model is generally calculated by plotting the true positive rate against the false positive rate, and then computing the area under the resulting curve.
+
+The performance of a model depends on the type of model that is built and the data used to train it. A model with better performance should be able to learn from data quickly and accurately, while also being able to generalize well to unseen data. Data scientists use different techniques such as feature selection, hyperparameter tuning, cross-validation, and ensemble learning to improve the performance of a model and make sure that it can accurately predict or make decisions with data that it has not been trained on before.
+
 [Overcoming overfitting a model in Machine Learning](https://medium.com/@jwbtmf/overcoming-overfitting-a-model-in-machine-learning-7dd6324d15bf) 
 
 ![Underfitting and overfitting](https://miro.medium.com/max/700/0*Nw-HZ6-PN1impGNC.png)
 
 #### Visualization
+
+Data visualization is a critical component of data science, allowing researchers and decision-makers to better understand, communicate, and draw insights from large datasets. While its use has long been a major aspect of descriptive statistics, modern data visualization has become increasingly complex and sophisticated, now utilizing a wide range of advanced graphical techniques and interactive displays.
+
+At its core, data visualization involves the use of graphical elements such as charts, graphs, and maps to visually display numeric values and other data in an organized way. This can help reveal the underlying story in a dataset, allowing the user to make more informed decisions and predictions. Data visualization tools can also reveal correlations and patterns in data that may not be otherwise detectable using traditional methods of analysis.
+
+The rise of big data has increased the importance of data visualization. With the sheer volume of data that is now being generated, using traditional methods of analysis is often not feasible. Data visualization helps put a face on big data, allowing users to quickly get an overview of what it contains and to analyze it in more depth.
+
+Data visualization also helps bridge the gap between data analysis and communication. Through the use of visuals, data can be quickly and easily communicated to a wide audience, regardless of their technical knowledge. It also helps to reinforce the credibility of the message being conveyed, as the visuals can make it easier to draw insights from the data and to make sure that everyone has the same understanding of the data.
+
+Data visualization has become a crucial tool for data science, enabling researchers and decision-makers to extract key insights from large datasets and to communicate them to a wide audience. By utilizing advanced graphical techniques and interactive displays, data visualization allows users to quickly get an overview of a dataset and to easily convey their findings to others.
 
 [Ideas for Better Visualization](https://uxdesign.cc/20-ideas-for-better-data-visualization-73f7e3c2782d)  
 [33 Data Visualization Techniques all Professionals Should Know](https://dipesious.medium.com/33-data-visualization-techniques-all-professionals-should-know-ab999abe601a)  
