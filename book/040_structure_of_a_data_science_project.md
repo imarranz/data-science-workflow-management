@@ -1,5 +1,13 @@
 ## Structure of a Data Science Project
 
+Data science projects are a vital part of the modern world. They are used to inform decision making, to gain insight from data, and to streamline processes. By structuring data science projects, it is possible to ensure that data science projects are completed effectively, efficiently, and with a minimal degree of error.
+
+Structuring a data science project involves planning the project from start to finish. It requires identifying the objectives, collecting and organizing the data, building and training models, analyzing the results, and creating actionable insights. A clearly defined structure with well-defined goals will help guide data scientists in the development process and ensure that the project is successful.
+
+In addition to creating structure, structuring a data science project also provides an opportunity for collaboration. By breaking the project into smaller tasks, data science teams can work together to identify and solve problems, share insights, and develop solutions quickly. This type of teamwork can help to reduce project duration and maximize the quality of the results.
+
+Structuring a data science project is essential for its successful completion. It ensures that the project is organized, well-defined, and that it can be completed in an efficient and timely manner. 
+
 The following structure gives an idea how to organize a complex Data Science Project. The source has been adapted from [here](https://medium.com/swlh/how-to-structure-a-python-based-data-science-project-a-short-tutorial-for-beginners-7e00bff14f56) and [here](https://github.com/dssg/hitchhikers-guide/tree/master/sources/curriculum/0_before_you_start/pipelines-and-project-workflow). The name of *.py files are only examples.
 
 ```
