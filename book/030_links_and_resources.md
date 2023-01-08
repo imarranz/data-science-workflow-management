@@ -1,6 +1,16 @@
 ## Links & Resources
 
-Links where I have learned about Data Science workflow. Many of the ideas I post here come from these resources.
+Data science is a rapidly evolving field that combines mathematics, computer science, and logical reasoning to analyze, interpret, and extract meaningful insights from large datasets. The main goal of data science is to discover patterns in data that are useful for making decisions and understanding trends.
+
+Links and resources are essential components of data science. They provide data scientists with the ability to access a wide range of data sources, tools, and techniques needed to obtain meaningful results. Links and resources help data scientists to quickly gather information, quickly access and analyze large datasets, and make informed decisions.
+
+Links and resources also help to give data scientists an overview of a data set, enabling them to quickly identify relevant data points, understand the interrelationships between the data points, and apply the appropriate methods to explore and analyze the data. This helps to identify key trends, generate predictions, and provide insights.
+
+Moreover, links and resources also provide data scientists with the ability to leverage powerful technologies and tools for processing, analyzing, and visualizing data. This helps to enrich data-driven insights and make informed decisions.
+
+In short, links and resources are one of the essential components of data science, and they play a vital role in enabling data scientists to effectively analyze data, extract meaningful insights, and make informed decisions.
+
+The following links where I have learned about Data Science workflow. Many of the ideas I post here come from these resources.
 
 ### Websites
 
