@@ -9,3 +9,21 @@ Overall, the goal of reproducible research is to ensure the work of scientists i
   * [Reproducible Science](https://www.earthdatascience.org/courses/intro-to-earth-data-science/open-reproducible-science/get-started-open-reproducible-science/)
   * [Open Science](https://openscience.org/what-exactly-is-open-science/)
   
+### watermark
+
+Watermark is a powerful and highly useful Python package designed to aid researchers in their efforts to produce reproducible research. This package provides a simple and efficient method to capture the state of a Jupyter notebook or Python script and print it out in a human-readable format. Watermark can display information about the versions of all the packages used in the notebook, the execution time of the code, the system and hardware information, and any other relevant metadata.
+
+The ability to easily capture and display this information is crucial for researchers who need to ensure that their work is reproducible. With Watermark, researchers can easily share their work with others, confident that their code is up to date and that any dependencies are well-documented. Furthermore, Watermark provides a simple and efficient way to track changes to a codebase over time, which can be invaluable in ensuring that the code remains relevant and up to date.
+
+Overall, Watermark is an essential tool for anyone engaged in data science or research. It enables researchers to share their work with others, maintain their codebase, and ensure that their research is reproducible. With its simple and efficient interface, Watermark is a must-have package for anyone who wants to produce high-quality, reproducible research.
+
+```
+%watermark \
+    --author "Ibon Martínez-Arranz" \
+    --updated --time --date \
+    --python --machine\
+    --packages pandas,numpy,matplotlib,seaborn,scipy,yaml \
+    --githash --gitrepo
+```
+
+[watermark on github](https://github.com/rasbt/watermark)
