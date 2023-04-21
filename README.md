@@ -473,3 +473,61 @@ Organization is essential in any Data Science project. I like to plan and struct
 [^metadata]: A data dictionary, or metadata repository, as defined in the IBM Dictionary of Computing, is a "centralized repository of information about data such as meaning, relationships to other data, origin, usage, and format"
 [^yaml]: YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. 
 [^conda]: Conda is an open source package management system and environment management system that runs on Windows, macOS and Linux. Conda quickly installs, runs and updates packages and their dependencies.
+
+
+## Index
+
+  * Introduction
+    * What is Data Science Workflow Management?
+    * Why is Data Science Workflow Management Important?
+  * Fundamentals of Data Science
+    * What is Data Science?
+    * Data Science Process
+    * Programming Languages for Data Science
+    * Data Science Tools and Technologies
+  * Workflow Management Concepts
+    * What is Workflow Management?
+    * Why is Workflow Management Important?
+    * Workflow Management Models
+    * Workflow Management Tools and Technologies
+    * Practical Example: How to Structure a Data Science Project Using Well-Organized Folders and Files
+  * Project Planning
+    * What is Project Planning?
+    * Problem Definition and Objectives
+    * Selection of Modeling Techniques
+    * Selection of Tools and Technologies
+    * Workflow Design
+    * Practical Example: How to Use a Project Management Tool to Plan and Organize the Workflow of a Data Science Project
+  * Data Acquisition and Preparation
+    * What is Data Acquisition?
+    * Selection of Data Sources
+    * Data Extraction and Transformation
+    * Data Cleaning
+    * Data Integration
+    * Practical Example: How to Use a Data Extraction and Cleaning Tool to Prepare a Dataset for Use in a Data Science Project
+  * Exploratory Data Analysis
+    * What is Exploratory Data Analysis?
+    * Data Visualization
+    * Statistical Analysis
+    * Trend Analysis
+    * Correlation Analysis
+    * Practical Example: How to Use a Data Visualization Library to Explore and Analyze a Dataset
+  * Modeling and Data Validation
+    * What is Data Modeling?
+    * Selection of Modeling Algorithms
+    * Model Training and Validation
+    * Selection of Best Model
+    * Model Evaluation
+    * Practical Example: How to Use a Machine Learning Library to Train and Evaluate a Prediction Model
+  * Model Implementation and Maintenance
+    * What is Model Implementation?
+    * Selection of Implementation Platform
+    * Integration with Existing Systems
+    * Testing and Validation of the Model
+    * Model Maintenance and Updating
+    * Practical Example: How to Implement a Model on a Web Server Using a Model Implementation Library
+  * Monitoring and Continuous Improvement
+    * What is Monitoring and Continuous Improvement?
+    * Model Performance Monitoring
+    * Problem Identification
+    * Continuous Model Improvement
