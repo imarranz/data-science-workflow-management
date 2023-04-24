@@ -7,6 +7,7 @@ epub:
 	cat book/000_title.md >> data-science-workflow-management.md
 	cat book/010_introduction.md >> data-science-workflow-management.md
 	cat book/020_fundamentals_of_data_science.md >> data-science-workflow-management.md
+	cat book/030_workflow_management_concepts.md >> data-science-workflow-management.md
 	pandoc data-science-workflow-management.md \
 	-f markdown+emoji \
 	-o data-science-workflow-management.epub \
