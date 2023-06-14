@@ -27,17 +27,6 @@ Effective data science workflow management also requires a strong understanding 
 
 Overall, data science workflow management is an essential aspect of modern data science. By implementing best practices and utilizing the right tools and technologies, data scientists and other professionals involved in the data science process can ensure that their workflows are efficient, effective, and scalable. This, in turn, can lead to more accurate and actionable insights that drive innovation and improve decision-making across a wide range of industries and domains.
 
-### References
-
-  * Peng, R. D. (2016). R programming for data science. Available at [https://bookdown.org/rdpeng/rprogdatascience/](https://bookdown.org/rdpeng/rprogdatascience/)  
-  
-  * Wickham, H., & Grolemund, G. (2017). R for data science: import, tidy, transform, visualize, and model data. Available at [https://r4ds.had.co.nz/](https://r4ds.had.co.nz/)  
-  
-  * Géron, A. (2019). Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, tools, and techniques to build intelligent systems. Available at [https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)  
-  
-  * Shrestha, S. (2020). Data Science Workflow Management: From Basics to Deployment. Available at [https://www.springer.com/gp/book/9783030495362](https://www.springer.com/gp/book/9783030495362)
-  
-  
 ## Why is Data Science Workflow Management Important?
 
 Effective data science workflow management is critical to the success of any data science project. By organizing and coordinating the various tasks and activities involved in the data science process, data science workflow management helps ensure that projects are completed on time, within budget, and with high levels of accuracy and reproducibility.
@@ -53,7 +42,17 @@ There are a number of software tools available for data science workflow managem
 Overall, data science workflow management is an essential aspect of modern data science. By promoting a more structured, methodological approach to data science and leveraging the right tools and technologies, data scientists and other professionals involved in the data science process can ensure that their projects are completed on time, within budget, and with high levels of accuracy and reproducibility.
 
 
-### References
+## References
+
+### Books
+
+  * Peng, R. D. (2016). R programming for data science. Available at [https://bookdown.org/rdpeng/rprogdatascience/](https://bookdown.org/rdpeng/rprogdatascience/)
+
+  * Wickham, H., & Grolemund, G. (2017). R for data science: import, tidy, transform, visualize, and model data. Available at [https://r4ds.had.co.nz/](https://r4ds.had.co.nz/)
+
+  * Géron, A. (2019). Hands-on machine learning with Scikit-Learn, Keras, and TensorFlow: Concepts, tools, and techniques to build intelligent systems. Available at [https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/](https://www.oreilly.com/library/view/hands-on-machine-learning/9781492032632/)
+
+  * Shrestha, S. (2020). Data Science Workflow Management: From Basics to Deployment. Available at [https://www.springer.com/gp/book/9783030495362](https://www.springer.com/gp/book/9783030495362)
 
   * Grollman, D., & Spencer, B. (2018). Data science project management: from conception to deployment. Apress.   
   

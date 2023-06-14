@@ -1,7 +1,6 @@
 
 # Fundamentals of Data Science
 
-
 Data science is an interdisciplinary field that combines techniques from statistics, mathematics, and computer science to extract knowledge and insights from data. The rise of big data and the increasing complexity of modern systems have made data science an essential tool for decision-making across a wide range of industries, from finance and healthcare to transportation and retail.
 
 The field of data science has a rich history, with roots in statistics and data analysis dating back to the 19th century. However, it was not until the 21st century that data science truly came into its own, as advancements in computing power and the development of sophisticated algorithms made it possible to analyze larger and more complex datasets than ever before.
@@ -19,19 +18,6 @@ Data science has become increasingly important in recent years due to the expone
 To be successful in data science, one needs a strong foundation in mathematics and statistics, as well as programming skills and domain-specific knowledge. Data scientists must also be able to communicate effectively and work collaboratively with teams of experts from different backgrounds.
 
 Overall, data science has the potential to revolutionize the way we understand and interact with the world around us, from improving healthcare and education to driving innovation and economic growth.
-
-### References
-
-  * Peng, R. D. (2015). Exploratory Data Analysis with R. Springer.  
-  
-  * Hastie, T., Tibshirani, R., & Friedman, J. (2009). The elements of statistical learning: data mining, inference, and prediction. Springer.  
-  
-  * Provost, F., & Fawcett, T. (2013). Data science and its relationship to big data and data-driven decision making. Big Data, 1(1), 51-59.  
-  
-  * Press, W. H., Teukolsky, S. A., Vetterling, W. T., & Flannery, B. P. (2007). Numerical recipes: The art of scientific computing. Cambridge University Press.  
-  
-  * James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An introduction to statistical learning. Springer.
-
 
 ## Data Science Process
 
@@ -77,15 +63,6 @@ One of the key strengths of R is its flexibility and versatility. It allows user
 
 Some popular applications of R include data exploration and visualization, statistical modeling, and machine learning. R is also commonly used in academic research and has been used in many published papers across a variety of fields.
 
-#### References
-
-  * The R Project for Statistical Computing: [https://www.r-project.org/](https://www.r-project.org/)  
-  
-  * RStudio: [https://www.rstudio.com/](https://www.rstudio.com/)  
-  
-  * Wickham, H., & Grolemund, G. (2017). R for data science: import, tidy, transform, visualize, and model data. O'Reilly Media, Inc.
-
-  
 ### Python
 
 Python is a popular general-purpose programming language that has become increasingly popular in data science due to its versatility and powerful libraries such as NumPy, Pandas, and Scikit-learn. Python's simplicity and readability make it an excellent choice for data analysis and machine learning tasks.
@@ -95,19 +72,6 @@ One of the key strengths of Python is its extensive library of packages. The Num
 Python is also an excellent language for data visualization, with packages such as Matplotlib, Seaborn, and Plotly providing tools for creating a wide range of visualizations.
 
 Python's popularity in the data science community has led to the development of many tools and frameworks specifically designed for data analysis and machine learning. Some popular tools include Jupyter Notebook, Anaconda, and TensorFlow.
-
-#### References
-
-  * Python: [https://www.python.org/](https://www.python.org/)  
-  * NumPy: [https://numpy.org/](https://numpy.org/)
-  * Pandas: [https://pandas.pydata.org/](https://pandas.pydata.org/)
-  * Scikit-learn: [https://scikit-learn.org/](https://scikit-learn.org/)
-  * Matplotlib: [https://matplotlib.org/](https://matplotlib.org/)
-  * Seaborn: [https://seaborn.pydata.org/](https://seaborn.pydata.org/)
-  * Plotly: [https://plotly.com/](https://plotly.com/)
-  * Jupyter Notebook: [https://jupyter.org/](https://jupyter.org/)
-  * Anaconda: [https://www.anaconda.com/](https://www.anaconda.com/)
-  * TensorFlow: [https://www.tensorflow.org/](https://www.tensorflow.org/)
   
 ### SQL
 
@@ -121,14 +85,70 @@ There are several popular implementations of SQL, including MySQL, Oracle, Micro
 
 In data science, SQL is often used in combination with other tools and languages, such as Python or R, to extract and manipulate data from databases.
 
-#### References
+#### How to Use
 
-  * SQL: [https://www.w3schools.com/sql/](https://www.w3schools.com/sql/)
-  * MySQL: [https://www.mysql.com/](https://www.mysql.com/)
-  * PostgreSQL: [https://www.postgresql.org/](https://www.postgresql.org/) 
-  * SQLite: [https://www.sqlite.org/index.html](https://www.sqlite.org/index.html)
-  * DuckDB: [https://duckdb.org/](https://duckdb.org/)
-  
+
+
+**iris table**
+
+
+| sepal_length | sepal_width | petal_length | petal_width | species   |
+|--------------|-------------|--------------|-------------|-----------|
+| 5.1          | 3.5         | 1.4          | 0.2         | Setosa    |
+| 4.9          | 3.0         | 1.4          | 0.2         | Setosa    |
+| 4.7          | 3.2         | 1.3          | 0.2         | Setosa    |
+| 4.6          | 3.1         | 1.5          | 0.2         | Setosa    |
+| 5.0          | 3.6         | 1.4          | 0.2         | Setosa    |
+| 5.4          | 3.9         | 1.7          | 0.4         | Setosa    |
+| 4.6          | 3.4         | 1.4          | 0.3         | Setosa    |
+| 5.0          | 3.4         | 1.5          | 0.2         | Setosa    |
+| 4.4          | 2.9         | 1.4          | 0.2         | Setosa    |
+| 4.9          | 3.1         | 1.5          | 0.1         | Setosa    |
+
+
+**species table**
+
+| id         | name           | category   | color      |
+|------------|----------------|------------|------------|
+| 1          | Setosa         | Flower     | Red        |
+| 2          | Versicolor     | Flower     | Blue       |
+| 3          | Virginica      | Flower     | Purple     |
+| 4          | Pseudacorus    | Plant      | Yellow     |
+| 5          | Sibirica       | Plant      | White      |
+| 6          | Spiranthes     | Plant      | Pink       |
+| 7          | Colymbada      | Animal     | Brown      |
+| 8          | Amanita        | Fungus     | Red        |
+| 9          | Cerinthe       | Plant      | Orange     |
+| 10         | Holosericeum   | Fungus     | Yellow     |
+
+
+**Data Retrieval:**
+
+| SQL Command     | Purpose                                 | Example                                                         |
+|-----------------|-----------------------------------------|-----------------------------------------------------------------|
+| SELECT          | Retrieve data from a table              | SELECT * FROM iris                                              |
+| WHERE           | Filter rows based on a condition        | SELECT * FROM iris WHERE sepal_length > 5.0                     |
+| ORDER BY        | Sort the result set                     | SELECT * FROM iris ORDER BY sepal_width DESC                    |
+| LIMIT           | Limit the number of rows returned       | SELECT * FROM iris LIMIT 10                                     |
+| JOIN            | Combine rows from multiple tables        | SELECT * FROM iris JOIN species ON iris.species = species.name |
+
+**Data Manipulation:**
+
+| SQL Command     | Purpose                                 | Example                                                        |
+|-----------------|-----------------------------------------|----------------------------------------------------------------|
+| INSERT INTO     | Insert new records into a table         | INSERT INTO iris (sepal_length, sepal_width) VALUES (6.3, 2.8) |
+| UPDATE          | Update existing records in a table      | UPDATE iris SET petal_length = 1.5 WHERE species = 'Setosa'    |
+| DELETE FROM     | Delete records from a table             | DELETE FROM iris WHERE species = 'Versicolor'                  |
+
+**Data Aggregation:**
+
+| SQL Command     | Purpose                                 | Example                                                                 |
+|-----------------|-----------------------------------------|-------------------------------------------------------------------------|
+| GROUP BY        | Group rows by a column(s)               | SELECT species, COUNT(*) FROM iris GROUP BY species                     |
+| HAVING          | Filter groups based on a condition      | SELECT species, COUNT(*) FROM iris GROUP BY species HAVING COUNT(*) > 5 |
+| SUM             | Calculate the sum of a column           | SELECT species, SUM(petal_length) FROM iris GROUP BY species            |
+| AVG             | Calculate the average of a column       | SELECT species, AVG(sepal_width) FROM iris GROUP BY species             |
+
 ## Data Science Tools and Technologies
 
 Data science is a rapidly evolving field, and as such, there are a vast number of tools and technologies available to data scientists to help them effectively analyze and draw insights from data. These tools range from programming languages and libraries to data visualization platforms, data storage technologies, and cloud-based computing resources.
@@ -143,21 +163,83 @@ In addition to these core tools, there are a wide variety of other technologies 
 
 Given the vast number of tools and technologies available, it's important for data scientists to carefully evaluate their options and choose the tools that are best suited for their particular use case. This requires a deep understanding of the strengths and weaknesses of each tool, as well as a willingness to experiment and try out new technologies as they emerge.
 
-### References
+## References
+
+### Books
+
+  * Peng, R. D. (2015). Exploratory Data Analysis with R. Springer.
+
+  * Hastie, T., Tibshirani, R., & Friedman, J. (2009). The elements of statistical learning: data mining, inference, and prediction. Springer.
+
+  * Provost, F., & Fawcett, T. (2013). Data science and its relationship to big data and data-driven decision making. Big Data, 1(1), 51-59.
+
+  * Press, W. H., Teukolsky, S. A., Vetterling, W. T., & Flannery, B. P. (2007). Numerical recipes: The art of scientific computing. Cambridge University Press.
+
+  * James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An introduction to statistical learning. Springer.
+
+  * Wickham, H., & Grolemund, G. (2017). R for data science: import, tidy, transform, visualize, and model data. O'Reilly Media, Inc.
+
+### SQL and DataBases
+
+  * SQL: [https://www.w3schools.com/sql/](https://www.w3schools.com/sql/)
+
+  * MySQL: [https://www.mysql.com/](https://www.mysql.com/)
+
+  * PostgreSQL: [https://www.postgresql.org/](https://www.postgresql.org/)
+
+  * SQLite: [https://www.sqlite.org/index.html](https://www.sqlite.org/index.html)
+
+  * DuckDB: [https://duckdb.org/](https://duckdb.org/)
+
+
+### Software
 
   * Python: [https://www.python.org/](https://www.python.org/)
-  * R: [https://www.r-project.org/](https://www.r-project.org/)
+
+  * The R Project for Statistical Computing: [https://www.r-project.org/](https://www.r-project.org/)
+
   * Tableau: [https://www.tableau.com/](https://www.tableau.com/)
+
   * PowerBI: [https://powerbi.microsoft.com/](https://powerbi.microsoft.com/)
+
   * Hadoop: [https://hadoop.apache.org/](https://hadoop.apache.org/)
+
   * Apache Spark: [https://spark.apache.org/](https://spark.apache.org/)
+
   * AWS: [https://aws.amazon.com/](https://aws.amazon.com/)
+
   * GCP: [https://cloud.google.com/](https://cloud.google.com/)
+
   * Azure: [https://azure.microsoft.com/](https://azure.microsoft.com/)
+
   * TensorFlow: [https://www.tensorflow.org/](https://www.tensorflow.org/)
+
   * scikit-learn: [https://scikit-learn.org/](https://scikit-learn.org/)
+
   * Apache Kafka: [https://kafka.apache.org/](https://kafka.apache.org/)
+
   * Apache Beam: [https://beam.apache.org/](https://beam.apache.org/)
+
   * spaCy: [https://spacy.io/](https://spacy.io/)
+
   * NLTK: [https://www.nltk.org/](https://www.nltk.org/)
   
+  * NumPy: [https://numpy.org/](https://numpy.org/)
+
+  * Pandas: [https://pandas.pydata.org/](https://pandas.pydata.org/)
+
+  * Scikit-learn: [https://scikit-learn.org/](https://scikit-learn.org/)
+
+  * Matplotlib: [https://matplotlib.org/](https://matplotlib.org/)
+
+  * Seaborn: [https://seaborn.pydata.org/](https://seaborn.pydata.org/)
+
+  * Plotly: [https://plotly.com/](https://plotly.com/)
+
+  * Jupyter Notebook: [https://jupyter.org/](https://jupyter.org/)
+
+  * Anaconda: [https://www.anaconda.com/](https://www.anaconda.com/)
+
+  * TensorFlow: [https://www.tensorflow.org/](https://www.tensorflow.org/)
+
+  * RStudio: [https://www.rstudio.com/](https://www.rstudio.com/)

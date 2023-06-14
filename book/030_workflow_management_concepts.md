@@ -20,16 +20,6 @@ Automating workflows can greatly improve efficiency and reduce the risk of error
 Workflow management also involves ensuring the quality of the output produced by workflows. This requires implementing quality control measures at each stage of the workflow to ensure that the data being produced is accurate, consistent, and meets stakeholder requirements.
 
 In the context of data science, workflow management is essential to ensure that data science projects are delivered on time, within budget, and to the satisfaction of stakeholders. By implementing effective workflow management practices, data scientists can improve the efficiency and effectiveness of their work, and ultimately deliver better insights and value to their organizations.
-
-### References
-
-  * Workflow Modeling: Tools for Process Improvement and Application Development by Alec Sharp and Patrick McDermott  
-  
-  * Workflow Handbook 2003 by Layna Fischer  
-  
-  * Business Process Management: Concepts, Languages, Architectures by Mathias Weske  
-  
-  * Workflow Patterns: The Definitive Guide by Nick Russell and Wil van der Aalst
   
 ## Why is Workflow Management Important?
 
@@ -157,5 +147,14 @@ In this example, we have a main folder called `project-name` which contains seve
 
 By organizing the project files in this way, it becomes much easier to navigate and find specific files. It also makes it easier for collaborators to understand the structure of the project and contribute to it.
 
+## References
+
+  * Workflow Modeling: Tools for Process Improvement and Application Development by Alec Sharp and Patrick McDermott
+
+  * Workflow Handbook 2003 by Layna Fischer
+
+  * Business Process Management: Concepts, Languages, Architectures by Mathias Weske
+
+  * Workflow Patterns: The Definitive Guide by Nick Russell and Wil van der Aalst
 
 

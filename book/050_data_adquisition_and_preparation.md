@@ -208,7 +208,7 @@ By following this practical workflow and leveraging the appropriate tools and li
 
 Example Tools and Libraries:
 
-  * **Python**: pandas, NumPy, BeautifulSoup, requests, scikit-learn, TensorFlow, PyTorch, Great Expectations, Git
-  * **R**: dplyr, tidyr, caret, tidymodels, SQLite, RSQLite, Git
+  * **Python**: pandas, NumPy, BeautifulSoup, requests, scikit-learn, TensorFlow, PyTorch, Git, ...
+  * **R**: dplyr, tidyr, caret, tidymodels, SQLite, RSQLite, Git, ...
 
 This example highlights a selection of tools commonly used in data extraction and cleaning processes, but it is essential to choose the tools that best fit the specific requirements and preferences of the data science project.
