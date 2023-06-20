@@ -179,6 +179,25 @@ Data transformation plays a vital role in preparing the data for analysis. It he
 
   * **Outlier Treatment:** Outliers can significantly impact the analysis and model performance. Transformations such as winsorization or logarithmic transformation can help reduce the influence of outliers without losing valuable information.
 
+| **Purpose** | **Library Name** | **Description** | **Website** |
+|-------------------|-----------------|-----------------|--------------|
+| **Data Cleaning** |                 |                 |              |
+|                   | Pandas (Python) | A powerful data manipulation library for cleaning and preprocessing data. | [Pandas](https://pandas.pydata.org/) |
+|                   | dplyr (R)       | Provides a set of functions for data wrangling and data manipulation tasks. | [dplyr](https://dplyr.tidyverse.org/) |
+| **Normalization** |                 |                 |              |
+|                   | scikit-learn (Python) | Offers various normalization techniques such as Min-Max scaling and Z-score normalization. | [scikit-learn](https://scikit-learn.org/) |
+|                   | caret (R)       | Provides pre-processing functions, including normalization, for building machine learning models. | [caret](https://topepo.github.io/caret/) |
+| **Feature Engineering** |            |                 |              |
+|                   | Featuretools (Python) | A library for automated feature engineering that can generate new features from existing ones. | [Featuretools](https://www.featuretools.com/) |
+|                   | recipes (R)     | Offers a framework for feature engineering, allowing users to create custom feature transformation pipelines. | [recipes](https://recipes.tidymodels.org/) |
+| **Non-Linearity Handling** |         |                 |              |
+|                   | TensorFlow (Python) | A deep learning library that supports building and training non-linear models using neural networks. | [TensorFlow](https://www.tensorflow.org/) |
+|                   | keras (R)       | Provides high-level interfaces for building and training neural networks with non-linear activation functions. | [keras](https://keras.io/) |
+| **Outlier Treatment** |              |                 |              |
+|                   | PyOD (Python)   | A comprehensive library for outlier detection and removal using various algorithms and models. | [PyOD](https://pyod.readthedocs.io/) |
+|                   | outliers (R)    | Implements various methods for detecting and handling outliers in datasets. | [outliers](https://cran.r-project.org/web/packages/outliers/index.html) |
+
+
 ### Types of Data Transformation
 
 There are several common types of data transformation techniques used in exploratory data analysis:
@@ -198,6 +217,22 @@ There are several common types of data transformation techniques used in explora
 By employing these transformation techniques, data scientists can enhance the quality of the dataset, uncover hidden patterns, and enable more accurate and meaningful analyses.
 
 Keep in mind that the selection and application of specific data transformation techniques depend on the characteristics of the dataset and the objectives of the analysis. It is essential to understand the data and choose the appropriate transformations to derive valuable insights.
+
+Por supuesto, aquí tienes la tabla solicitada:
+
+| Transformation     | Mathematical Equation                   | Pros                                                          | Cons                                                             |
+|--------------------|-----------------------------------------|---------------------------------------------------------------|------------------------------------------------------------------|
+| Logarithmic        | $y = \log(x)$                           | - Reduces the impact of extreme values                         | - Does not work with zero or negative values                     |
+| Square Root        | $y = \sqrt{x}$                          | - Reduces the impact of extreme values                         | - Does not work with negative values                             |
+| Exponential        | $y = \exp^x$                            | - Increases separation between small values                     | - Amplifies the differences between large values                  |
+| Box-Cox            | $y = \dfrac{x^\lambda -1}{\lambda}$     | - Adapts to different types of data                             | - Requires estimation of the λ parameter                          |
+| Power              | $y = x^p$                               | - Allows customization of the transformation                   | - Sensitivity to the choice of power value                        |
+| Square             | $y = x^2$                               | - Preserves the order of values                                | - Amplifies the differences between large values                  |
+| Inverse            | $y = \dfrac{1}{x}$                      | - Reduces the impact of large values                            | - Does not work with zero or negative values                     |
+| Min-Max Scaling    | $y = \dfrac{x - min_x}{max_x - min_x}$  | - Scales the data to a specific range                           | - Sensitive to outliers                                          |
+| Z-Score Scaling    | $y = \frac{x - \bar{x}}{\sigma_{x}}$    | - Centers the data around zero and scales with standard deviation | - Sensitive to outliers                                          |
+| Rank Transformation| Assigns rank values to the data points  | - Preserves the order of values and handles ties gracefully     | - Loss of information about the original values                   |
+
 
 ## Practical Example: How to Use a Data Visualization Library to Explore and Analyze a Dataset 
 

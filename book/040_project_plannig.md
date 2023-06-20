@@ -170,23 +170,23 @@ In conclusion, workflow design is a critical component of project planning in da
 
 In this practical example, we will explore how to utilize a project management tool to plan and organize the workflow of a data science project effectively. A project management tool provides a centralized platform to track tasks, monitor progress, collaborate with team members, and ensure timely project completion. Let's dive into the step-by-step process:
 
-  1. **Define Project Goals and Objectives**: Start by clearly defining the goals and objectives of your data science project. Identify the key deliverables, timelines, and success criteria. This will provide a clear direction for the entire project.
+  * **Define Project Goals and Objectives**: Start by clearly defining the goals and objectives of your data science project. Identify the key deliverables, timelines, and success criteria. This will provide a clear direction for the entire project.
 
-  2. **Break Down the Project into Tasks**: Divide the project into smaller, manageable tasks. For example, you can have tasks such as data collection, data preprocessing, exploratory data analysis, model development, model evaluation, and result interpretation. Make sure to consider dependencies and prerequisites between tasks.
+  * **Break Down the Project into Tasks**: Divide the project into smaller, manageable tasks. For example, you can have tasks such as data collection, data preprocessing, exploratory data analysis, model development, model evaluation, and result interpretation. Make sure to consider dependencies and prerequisites between tasks.
 
-  3. **Create a Project Schedule**: Determine the sequence and timeline for each task. Use the project management tool to create a schedule, assigning start and end dates for each task. Consider task dependencies to ensure a logical flow of activities.
+  * **Create a Project Schedule**: Determine the sequence and timeline for each task. Use the project management tool to create a schedule, assigning start and end dates for each task. Consider task dependencies to ensure a logical flow of activities.
 
-  4. **Assign Responsibilities**: Assign team members to each task based on their expertise and availability. Clearly communicate roles and responsibilities to ensure everyone understands their contributions to the project.
+  * **Assign Responsibilities**: Assign team members to each task based on their expertise and availability. Clearly communicate roles and responsibilities to ensure everyone understands their contributions to the project.
 
-  5. **Track Task Progress**: Regularly update the project management tool with the progress of each task. Update task status, add comments, and highlight any challenges or roadblocks. This provides transparency and allows team members to stay informed about the project's progress.
+  * **Track Task Progress**: Regularly update the project management tool with the progress of each task. Update task status, add comments, and highlight any challenges or roadblocks. This provides transparency and allows team members to stay informed about the project's progress.
 
-  6. **Collaborate and Communicate**: Leverage the collaboration features of the project management tool to facilitate communication among team members. Use the tool's messaging or commenting functionalities to discuss task-related issues, share insights, and seek feedback.
+  * **Collaborate and Communicate**: Leverage the collaboration features of the project management tool to facilitate communication among team members. Use the tool's messaging or commenting functionalities to discuss task-related issues, share insights, and seek feedback.
 
-  7. **Monitor and Manage Resources**: Utilize the project management tool to monitor and manage resources. This includes tracking data storage, computational resources, software licenses, and any other relevant project assets. Ensure that resources are allocated effectively to avoid bottlenecks or delays.
+  * **Monitor and Manage Resources**: Utilize the project management tool to monitor and manage resources. This includes tracking data storage, computational resources, software licenses, and any other relevant project assets. Ensure that resources are allocated effectively to avoid bottlenecks or delays.
 
-  8. **Manage Project Risks**: Identify potential risks and uncertainties that may impact the project. Utilize the project management tool's risk management features to document and track risks, assign risk owners, and develop mitigation strategies.
+  * **Manage Project Risks**: Identify potential risks and uncertainties that may impact the project. Utilize the project management tool's risk management features to document and track risks, assign risk owners, and develop mitigation strategies.
 
-  9. **Review and Evaluate**: Conduct regular project reviews to evaluate the progress and quality of work. Use the project management tool to document review outcomes, capture lessons learned, and make necessary adjustments to the workflow if required.
+  * **Review and Evaluate**: Conduct regular project reviews to evaluate the progress and quality of work. Use the project management tool to document review outcomes, capture lessons learned, and make necessary adjustments to the workflow if required.
 
 By following these steps and leveraging a project management tool, data science projects can benefit from improved organization, enhanced collaboration, and efficient workflow management. The tool serves as a central hub for project-related information, enabling data scientists to stay focused, track progress, and ultimately deliver successful outcomes.
 

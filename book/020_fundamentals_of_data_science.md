@@ -35,16 +35,6 @@ To support the data science process, there are a variety of software tools and p
 
 Overall, the data science process is a powerful approach for solving complex problems and driving decision-making based on data-driven insights. It requires a combination of technical and non-technical skills, and relies on a variety of software tools and platforms to support the process.
 
-### References
-
-  * Wickham, H., & Grolemund, G. (2017). R for data science: import, tidy, transform, visualize, and model data. O'Reilly Media, Inc.  
-  
-  * VanderPlas, J. (2016). Python data science handbook: Essential tools for working with data. O'Reilly Media, Inc.  
-  
-  * Hastie, T., Tibshirani, R., & Friedman, J. (2009). The elements of statistical learning: data mining, inference, and prediction. Springer.  
-  
-  * Provost, F., & Fawcett, T. (2013). Data science and its relationship to big data and data-driven decision making. Big Data, 1(1), 51-59.
-
 ## Programming Languages for Data Science
 
 Data Science is an interdisciplinary field that combines statistical and computational methodologies to extract insights and knowledge from data. Programming is an essential part of this process, as it allows us to manipulate and analyze data using software tools specifically designed for data science tasks. There are several programming languages that are widely used in data science, each with its strengths and weaknesses.
@@ -87,11 +77,11 @@ In data science, SQL is often used in combination with other tools and languages
 
 #### How to Use
 
-
+In this section, we will explore the usage of SQL commands with two tables: `iris` and `species`. The `iris` table contains information about flower measurements, while the `species` table provides details about different species of flowers. SQL (Structured Query Language) is a powerful tool for managing and manipulating relational databases.
 
 **iris table**
 
-
+```
 | sepal_length | sepal_width | petal_length | petal_width | species   |
 |--------------|-------------|--------------|-------------|-----------|
 | 5.1          | 3.5         | 1.4          | 0.2         | Setosa    |
@@ -104,10 +94,11 @@ In data science, SQL is often used in combination with other tools and languages
 | 5.0          | 3.4         | 1.5          | 0.2         | Setosa    |
 | 4.4          | 2.9         | 1.4          | 0.2         | Setosa    |
 | 4.9          | 3.1         | 1.5          | 0.1         | Setosa    |
-
+```
 
 **species table**
 
+```
 | id         | name           | category   | color      |
 |------------|----------------|------------|------------|
 | 1          | Setosa         | Flower     | Red        |
@@ -120,6 +111,9 @@ In data science, SQL is often used in combination with other tools and languages
 | 8          | Amanita        | Fungus     | Red        |
 | 9          | Cerinthe       | Plant      | Orange     |
 | 10         | Holosericeum   | Fungus     | Yellow     |
+```
+
+Using the `iris` and `species` tables as examples, we can perform various SQL operations to extract meaningful insights from the data. Some of the commonly used SQL commands with these tables include:
 
 
 **Data Retrieval:**
@@ -130,7 +124,7 @@ In data science, SQL is often used in combination with other tools and languages
 | WHERE           | Filter rows based on a condition        | SELECT * FROM iris WHERE sepal_length > 5.0                     |
 | ORDER BY        | Sort the result set                     | SELECT * FROM iris ORDER BY sepal_width DESC                    |
 | LIMIT           | Limit the number of rows returned       | SELECT * FROM iris LIMIT 10                                     |
-| JOIN            | Combine rows from multiple tables        | SELECT * FROM iris JOIN species ON iris.species = species.name |
+| JOIN            | Combine rows from multiple tables       | SELECT * FROM iris JOIN species ON iris.species = species.name  |
 
 **Data Manipulation:**
 
@@ -178,6 +172,8 @@ Given the vast number of tools and technologies available, it's important for da
   * James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An introduction to statistical learning. Springer.
 
   * Wickham, H., & Grolemund, G. (2017). R for data science: import, tidy, transform, visualize, and model data. O'Reilly Media, Inc.
+
+  * VanderPlas, J. (2016). Python data science handbook: Essential tools for working with data. O'Reilly Media, Inc.
 
 ### SQL and DataBases
 
@@ -243,3 +239,4 @@ Given the vast number of tools and technologies available, it's important for da
   * TensorFlow: [https://www.tensorflow.org/](https://www.tensorflow.org/)
 
   * RStudio: [https://www.rstudio.com/](https://www.rstudio.com/)
+

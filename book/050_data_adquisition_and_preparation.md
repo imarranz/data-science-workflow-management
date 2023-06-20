@@ -61,7 +61,6 @@ The selection of data sources requires a balance between the richness of the dat
 
 In conclusion, the selection of data sources is a critical step in any data science project. By carefully considering the project's objectives, data requirements, quality standards, and available resources, data scientists can choose the most relevant and reliable sources of data for analysis. This thoughtful selection process sets the stage for accurate, meaningful, and impactful data exploration and analysis, leading to valuable insights and informed decision-making.
 
-
 ## Data Extraction and Transformation
 
 In the dynamic field of data science, data extraction and transformation are fundamental processes that enable organizations to extract valuable insights from raw data and make it suitable for analysis. These processes involve gathering data from various sources, cleaning, reshaping, and integrating it into a unified and meaningful format that can be effectively utilized for further exploration and analysis.
@@ -100,12 +99,17 @@ The importance of data cleaning lies in its ability to enhance data quality, rel
 
 Several common techniques are employed in data cleaning, including:
 
-  1. **Handling Missing Data**: Dealing with missing values by imputation, deletion, or interpolation methods to avoid biased or erroneous analyses.
-  2. **Outlier Detection**: Identifying and addressing outliers, which can significantly impact statistical measures and models.
-  3. **Data Deduplication**: Identifying and removing duplicate entries to avoid duplication bias and ensure data integrity.
-  4. **Standardization and Formatting**: Converting data into a consistent format, ensuring uniformity and compatibility across variables.
-  5. **Data Validation and Verification**: Verifying the accuracy, completeness, and consistency of the data through various validation techniques.
-  6. **Data Transformation**: Converting data into a suitable format, such as scaling numerical variables or transforming categorical variables.
+  * **Handling Missing Data**: Dealing with missing values by imputation, deletion, or interpolation methods to avoid biased or erroneous analyses.
+
+  * **Outlier Detection**: Identifying and addressing outliers, which can significantly impact statistical measures and models.
+
+  * **Data Deduplication**: Identifying and removing duplicate entries to avoid duplication bias and ensure data integrity.
+
+  * **Standardization and Formatting**: Converting data into a consistent format, ensuring uniformity and compatibility across variables.
+
+  * **Data Validation and Verification**: Verifying the accuracy, completeness, and consistency of the data through various validation techniques.
+
+  * **Data Transformation**: Converting data into a suitable format, such as scaling numerical variables or transforming categorical variables.
 
 Python and R offer a rich ecosystem of libraries and packages that aid in data cleaning tasks. Some widely used libraries and packages for data cleaning in Python include:
 
@@ -138,27 +142,17 @@ Data cleaning is particularly critical in metabolomics due to the high dimension
 
 To ensure robust and reliable metabolomic data analysis, several techniques are commonly applied during the data cleaning process:
 
-  1. **Missing Data Imputation**: Since metabolomic datasets may have missing values due to various reasons (e.g., analytical limitations, low abundance), imputation methods are employed to estimate and fill in the missing values, enabling the inclusion of complete data in subsequent analyses.
+  * **Missing Data Imputation**: Since metabolomic datasets may have missing values due to various reasons (e.g., analytical limitations, low abundance), imputation methods are employed to estimate and fill in the missing values, enabling the inclusion of complete data in subsequent analyses.
 
-  2. **Batch Effect Correction**: Batch effects, which arise from technical variations during sample processing, can obscure true biological signals in metabolomic data. Various statistical methods, such as ComBat, remove or adjust for batch effects, allowing for accurate comparisons and identification of significant metabolites.
+  * **Batch Effect Correction**: Batch effects, which arise from technical variations during sample processing, can obscure true biological signals in metabolomic data. Various statistical methods, such as ComBat, remove or adjust for batch effects, allowing for accurate comparisons and identification of significant metabolites.
 
-  3. **Outlier Detection and Removal**: Outliers can arise from experimental errors or biological variations, potentially skewing statistical analyses. Robust outlier detection methods, such as median absolute deviation (MAD) or robust regression, are employed to identify and remove outliers, ensuring the integrity of the data.
+  * **Outlier Detection and Removal**: Outliers can arise from experimental errors or biological variations, potentially skewing statistical analyses. Robust outlier detection methods, such as median absolute deviation (MAD) or robust regression, are employed to identify and remove outliers, ensuring the integrity of the data.
 
-  4. **Normalization**: Normalization techniques, such as median scaling or probabilistic quotient normalization (PQN), are applied to adjust for systematic variations and ensure comparability between samples, enabling meaningful comparisons across different experimental conditions.
+  * **Normalization**: Normalization techniques, such as median scaling or probabilistic quotient normalization (PQN), are applied to adjust for systematic variations and ensure comparability between samples, enabling meaningful comparisons across different experimental conditions.
 
-  5. **Feature Selection**: In metabolomics, feature selection methods help identify the most relevant metabolites associated with the biological question under investigation. By reducing the dimensionality of the data, these techniques improve model interpretability and enhance the detection of meaningful metabolic patterns.
+  * **Feature Selection**: In metabolomics, feature selection methods help identify the most relevant metabolites associated with the biological question under investigation. By reducing the dimensionality of the data, these techniques improve model interpretability and enhance the detection of meaningful metabolic patterns.
 
 Data cleaning in metabolomics is a rapidly evolving field, and several tools and algorithms have been developed to address these challenges. Notable software packages include XCMS, MetaboAnalyst, and MZmine, which offer comprehensive functionalities for data preprocessing, quality control, and data cleaning in metabolomics studies.
-
-To delve deeper into the topic of data cleaning in metabolomics, researchers can refer to the following references:
-
-  1. Smith CA, Want EJ, O'Maille G, et al. "XCMS: Processing Mass Spectrometry Data for Metabolite Profiling Using Nonlinear Peak Alignment, Matching, and Identification." Analytical Chemistry, vol. 78, no. 3, 2006, pp. 779-787.
-
-  2. Xia J, Sinelnikov IV, Han B, Wishart DS. "MetaboAnalyst 3.0—Making Metabolomics More Meaningful." Nucleic Acids Research, vol. 43, no. W1, 2015, pp. W251-W257.
-
-  3. Pluskal T, Castillo S, Villar-Briones A, Oresic M. "MZmine 2: Modular Framework for Processing, Visualizing, and Analyzing Mass Spectrometry-Based Molecular Profile Data." BMC Bioinformatics, vol. 11, no. 1, 2010, p. 395.
-
-These references serve as valuable resources for further exploration of data cleaning techniques in the context of metabolomics research, providing researchers with comprehensive insights and practical guidance in handling and preparing metabolomic data for downstream analyses.
 
 ## Data Integration
 
@@ -212,3 +206,11 @@ Example Tools and Libraries:
   * **R**: dplyr, tidyr, caret, tidymodels, SQLite, RSQLite, Git, ...
 
 This example highlights a selection of tools commonly used in data extraction and cleaning processes, but it is essential to choose the tools that best fit the specific requirements and preferences of the data science project.
+
+## References
+
+  * Smith CA, Want EJ, O'Maille G, et al. "XCMS: Processing Mass Spectrometry Data for Metabolite Profiling Using Nonlinear Peak Alignment, Matching, and Identification." Analytical Chemistry, vol. 78, no. 3, 2006, pp. 779-787.
+
+  * Xia J, Sinelnikov IV, Han B, Wishart DS. "MetaboAnalyst 3.0—Making Metabolomics More Meaningful." Nucleic Acids Research, vol. 43, no. W1, 2015, pp. W251-W257.
+
+  * Pluskal T, Castillo S, Villar-Briones A, Oresic M. "MZmine 2: Modular Framework for Processing, Visualizing, and Analyzing Mass Spectrometry-Based Molecular Profile Data." BMC Bioinformatics, vol. 11, no. 1, 2010, p. 395.
