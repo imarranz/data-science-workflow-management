@@ -32,6 +32,9 @@ epub:
 	--toc
 
 pdf:
+
+	rm data-science-workflow-management.md
+
 	touch data-science-workflow-management.md
 
 	cat book/000_title.md >> data-science-workflow-management.md
@@ -44,9 +47,11 @@ pdf:
 	cat book/070_modeling_and_data_validation.md >> data-science-workflow-management.md
 	cat book/080_model_implementation_and_maintenance.md >> data-science-workflow-management.md
 	cat book/090_monitoring_and_continuos_improvement.md >> data-science-workflow-management.md
+
 	pandoc data-science-workflow-management.md \
 	-f markdown+emoji \
 	-o data-science-workflow-management.pdf \
+	--pdf-engine pdflatex \
 	--standalone \
 	--css style.css \
 	--toc
