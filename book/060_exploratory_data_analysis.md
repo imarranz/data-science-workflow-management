@@ -225,7 +225,7 @@ Por supuesto, aquí tienes la tabla solicitada:
 | Logarithmic        | $y = \log(x)$                           | - Reduces the impact of extreme values                         | - Does not work with zero or negative values                     |
 | Square Root        | $y = \sqrt{x}$                          | - Reduces the impact of extreme values                         | - Does not work with negative values                             |
 | Exponential        | $y = \exp^x$                            | - Increases separation between small values                     | - Amplifies the differences between large values                  |
-| Box-Cox            | $y = \dfrac{x^\lambda -1}{\lambda}$     | - Adapts to different types of data                             | - Requires estimation of the λ parameter                          |
+| Box-Cox            | $y = \dfrac{x^\lambda -1}{\lambda}$     | - Adapts to different types of data                             | - Requires estimation of the $\lambda$ parameter                          |
 | Power              | $y = x^p$                               | - Allows customization of the transformation                   | - Sensitivity to the choice of power value                        |
 | Square             | $y = x^2$                               | - Preserves the order of values                                | - Amplifies the differences between large values                  |
 | Inverse            | $y = \dfrac{1}{x}$                      | - Reduces the impact of large values                            | - Does not work with zero or negative values                     |
@@ -260,7 +260,6 @@ Product A,Region 2,1100
 Product B,Region 3,1600
 Product C,Region 3,750
 ```
-
 
 ### Importing the Required Libraries
 
