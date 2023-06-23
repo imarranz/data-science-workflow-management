@@ -1,3 +1,13 @@
+**Version and Activity**
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/imarranz/data-science-workflow-management)
+![GitHub Release Date](https://img.shields.io/github/release-date/imarranz/data-science-workflow-management)
+![GitHub commits since tagged version](https://img.shields.io/github/commits-since/imarranz/data-science-workflow-management/dswm.23.06.22)
+![GitHub last commit](https://img.shields.io/github/last-commit/imarranz/data-science-workflow-management)
+![GitHub all releases](https://img.shields.io/github/downloads/imarranz/data-science-workflow-management/total)<br>
+**Analysis**
+![GitHub top language](https://img.shields.io/github/languages/top/imarranz/data-science-workflow-management)
+![GitHub language count](https://img.shields.io/github/languages/count/imarranz/data-science-workflow-management)<br>
+
 # Data Science Workflow Management
 
 ![](./figures/data-science-workflow-management-logo.svg)
