@@ -262,7 +262,7 @@ By embracing continuous model improvement, organizations can unlock the full pot
 
   * James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). An Introduction to Statistical Learning: with Applications in R. Springer.
 
-### Scientif Articles
+### Scientific Articles
 
   * Kohavi, R., & Longbotham, R. (2017). Online Controlled Experiments and A/B Testing: Identifying, Understanding, and Evaluating Variations. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (pp. 1305-1306). ACM.
 
