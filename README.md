@@ -486,6 +486,41 @@ Organization is essential in any Data Science project. I like to plan and struct
 [^yaml]: YAML is a human-readable data-serialization language. It is commonly used for configuration files and in applications where data is being stored or transmitted. 
 [^conda]: Conda is an open source package management system and environment management system that runs on Windows, macOS and Linux. Conda quickly installs, runs and updates packages and their dependencies.
 
+## Libraries
+
+  * Data Processing and Analysis
+    * **pandas**: A powerful library for data manipulation and analysis, providing data structures and functions for efficiently handling structured data.
+
+  * Numerical Computing and Arrays
+    * **numpy**: A fundamental library for numerical operations in Python, providing support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on them.
+
+  * Scientific and Statistical Computing
+    * **scipy**: An extensive library for scientific and statistical computations, offering modules for optimization, interpolation, integration, linear algebra, signal processing, and more.
+
+  * Machine Learning
+    * **scikit-learn**: A comprehensive library for machine learning, offering a wide range of algorithms for classification, regression, clustering, dimensionality reduction, and model selection, along with utilities for data preprocessing and evaluation.
+
+  * Data Visualization
+    * **matplotlib**: A versatile plotting library for creating a wide variety of visualizations, including line plots, bar plots, scatter plots, histograms, and more.
+    * **seaborn**: A high-level data visualization library based on matplotlib, providing a simplified interface and additional statistical functionalities for creating attractive and informative statistical graphics.
+    * **altair**: A declarative visualization library that allows you to create interactive visualizations using a concise and intuitive syntax based on the grammar of graphics.
+
+  * Web Scraping and Text Processing
+    * **beautiful soup**: A popular library for parsing HTML and XML documents, making it easy to extract information from web pages.
+    * **scrapy**: A powerful and flexible framework for web scraping and crawling, enabling you to extract structured data from websites efficiently.
+
+  * Statistics and Data Analysis
+    * **pingouin**: A statistical library with an emphasis on easy-to-use functions for various statistical tests, correlation analysis, ANOVA, linear regression, and more.
+    * **statannot**: A library for adding statistical annotations to visualizations, allowing you to easily display statistical significance indicators on your plots.
+    * **tableone**: A library for creating summary statistics tables, useful for generating descriptive statistics and comparing groups in a tabular format.
+    * **missingno**: A library for visualizing missing data patterns in datasets, helping you identify and understand the extent and nature of missing values.
+
+  * Database
+    * **sqlite3**: A Python module for interacting with SQLite databases, allowing you to create, query, and manipulate databases using SQL.
+    * **yaml**: A library for reading and writing YAML (Yet Another Markup Language) files, providing a human-readable format for configuring and storing data.
+
+  * Deep Learning
+    * **tensorflow**: A popular open-source library for deep learning, offering a comprehensive set of tools and APIs for building and training neural networks, as well as tools for deploying models in production.
 
 ## Index
 
