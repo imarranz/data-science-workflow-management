@@ -32,29 +32,27 @@ epub:
 	--toc
 
 pdf:
+	pandoc book/000_title.md \
+		book/010_introduction.md \
+		book/020_fundamentals_of_data_science.md \
+		book/040_project_plannig.md \
+		book/050_data_adquisition_and_preparation.md \
+		book/060_exploratory_data_analysis.md \
+		book/070_modeling_and_data_validation.md \
+		book/080_model_implementation_and_maintenance.md \
+		book/090_monitoring_and_continuos_improvement.md \
+		--output data-science-workflow-management.pdf \
+		--from markdown \
+		--template "./templates/eisvogel.tex" \
+		--toc \
+		--listings \
+		--variable titlepage=True \
+		--variable titlepage-color="D8DE2C" \
+		--variable page-background="./figures/page-background-template.png" \
+		--variable page-background-opacity=0.8 \
+		--metadata=title:"Data Science Workflow Management" \
+		--metadata=author:"Ibon Martínez-Arranz"
 
-	rm data-science-workflow-management.md
-
-	touch data-science-workflow-management.md
-
-	cat book/000_title.md >> data-science-workflow-management.md
-	cat book/010_introduction.md >> data-science-workflow-management.md
-	cat book/020_fundamentals_of_data_science.md >> data-science-workflow-management.md
-	cat book/030_workflow_management_concepts.md >> data-science-workflow-management.md
-	cat book/040_project_plannig.md >> data-science-workflow-management.md
-	cat book/050_data_adquisition_and_preparation.md >> data-science-workflow-management.md
-	cat book/060_exploratory_data_analysis.md >> data-science-workflow-management.md
-	cat book/070_modeling_and_data_validation.md >> data-science-workflow-management.md
-	cat book/080_model_implementation_and_maintenance.md >> data-science-workflow-management.md
-	cat book/090_monitoring_and_continuos_improvement.md >> data-science-workflow-management.md
-
-	pandoc data-science-workflow-management.md \
-	-f markdown+emoji \
-	-o data-science-workflow-management.pdf \
-	--pdf-engine pdflatex \
-	--standalone \
-	--css style.css \
-	--toc
 
 clean: 
 	rm data-science-workflow-management.md 
