@@ -47,15 +47,18 @@ In this chapter, we will provide an overview of the most commonly used programmi
 
 ### R
 
+::: info
 R is a programming language specifically designed for statistical computing and graphics. It is an open-source language that is widely used in data science for tasks such as data cleaning, visualization, and statistical modeling. R has a vast library of packages that provide tools for data manipulation, machine learning, and visualization.
-
+:::
 One of the key strengths of R is its flexibility and versatility. It allows users to easily import and manipulate data from a wide range of sources and provides a wide range of statistical techniques for data analysis. R also has an active and supportive community that provides regular updates and new packages for users.
 
 Some popular applications of R include data exploration and visualization, statistical modeling, and machine learning. R is also commonly used in academic research and has been used in many published papers across a variety of fields.
 
 ### Python
 
+::: info
 Python is a popular general-purpose programming language that has become increasingly popular in data science due to its versatility and powerful libraries such as NumPy, Pandas, and Scikit-learn. Python's simplicity and readability make it an excellent choice for data analysis and machine learning tasks.
+:::
 
 One of the key strengths of Python is its extensive library of packages. The NumPy package, for example, provides powerful tools for mathematical operations, while Pandas is a package designed for data manipulation and analysis. Scikit-learn is a machine learning package that provides tools for classification, regression, clustering, and more.
 
@@ -65,7 +68,9 @@ Python's popularity in the data science community has led to the development of 
   
 ### SQL
 
+::: info
 Structured Query Language (SQL) is a specialized language designed for managing and manipulating relational databases. SQL is widely used in data science for managing and extracting information from databases.
+:::
 
 SQL allows users to retrieve and manipulate data stored in a relational database. Users can create tables, insert data, update data, and delete data. SQL also provides powerful tools for querying and aggregating data.
 

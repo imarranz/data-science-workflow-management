@@ -2,7 +2,9 @@
 
 # Exploratory Data Analysis
 
-Exploratory Data Analysis (EDA) is a crucial step in the data science workflow that involves analyzing and visualizing data to gain insights, identify patterns, and understand the underlying structure of the dataset. It plays a vital role in uncovering relationships, detecting anomalies, and informing subsequent modeling and decision-making processes.
+:::important
+**Exploratory Data Analysis (EDA)** is a crucial step in the data science workflow that involves analyzing and visualizing data to gain insights, identify patterns, and understand the underlying structure of the dataset. It plays a vital role in uncovering relationships, detecting anomalies, and informing subsequent modeling and decision-making processes.
+:::
 
 The importance of EDA lies in its ability to provide a comprehensive understanding of the dataset before diving into more complex analysis or modeling techniques. By exploring the data, data scientists can identify potential issues such as missing values, outliers, or inconsistencies that need to be addressed before proceeding further. EDA also helps in formulating hypotheses, generating ideas, and guiding the direction of the analysis.
 
