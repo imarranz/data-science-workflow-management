@@ -45,14 +45,26 @@ pdf:
 		--from markdown \
 		--template "./templates/eisvogel.tex" \
 		--toc \
+		--variable book=True \
+		--top-level-division="chapter" \
 		--listings \
 		--variable titlepage=True \
-		--variable titlepage-color="D8DE2C" \
-		--variable page-background="./figures/page-background-template.png" \
+		--variable titlepage-color="EEEEEE" \
+		--variable titlepage-rule-height=8 \
+		--variable titlepage-background="./figures/titlepage-background-template.pdf" \
+		--variable page-background="./figures/page-background-template.pdf" \
+		--variable footer-right="Page \thepage" \
 		--variable page-background-opacity=0.8 \
+		--variable linkcolor=primaryowlorange \
+		--variable urlcolor=primaryowlorange \
+		--filter pandoc-latex-environment \
 		--metadata=title:"Data Science Workflow Management" \
 		--metadata=author:"Ibon Martínez-Arranz"
 
+# https://github.com/Wandmalfarbe/pandoc-latex-template
+# https://pypi.org/project/pandoc-latex-environment/
+# https://pandoc-latex-tip.readthedocs.io/en/latest/index.html
+# https://pandoc-latex-environment.readthedocs.io/en/latest/
 
 clean: 
 	rm data-science-workflow-management.md 
