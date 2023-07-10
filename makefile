@@ -53,10 +53,11 @@ pdf:
 		--variable titlepage-rule-height=8 \
 		--variable titlepage-background="./figures/titlepage-background-template.pdf" \
 		--variable page-background="./figures/page-background-template.pdf" \
-		--variable footer-right="Page \thepage" \
 		--variable page-background-opacity=0.8 \
+		--variable footer-right="Page \thepage" \
 		--variable linkcolor=primaryowlorange \
 		--variable urlcolor=primaryowlorange \
+		--variable institute="Data Science Manager at Rubió Metabolomics" \
 		--filter pandoc-latex-environment \
 		--metadata=title:"Data Science Workflow Management" \
 		--metadata=author:"Ibon Martínez-Arranz"
