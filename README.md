@@ -581,3 +581,7 @@ Organization is essential in any Data Science project. I like to plan and struct
 
     
     prueba
+
+```
+tlmgr install adjustbox babel-german background bidi collectbox csquotes everypage filehook footmisc footnotebackref framed fvextra letltxmacro ly1 mdframed mweights needspace pagecolor sourcecodepro sourcesanspro titling ucharcat ulem unicode-math upquote xecjk xurl zref
+```
