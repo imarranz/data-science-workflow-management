@@ -91,6 +91,10 @@ For classification problems, the objective is to predict a categorical or discre
 
   * **statsmodels**: `Statsmodels` is a powerful Python library that focuses on statistical modeling and analysis. With a comprehensive set of functions, it enables researchers and data scientists to perform a wide range of statistical tasks, including regression analysis, time series analysis, hypothesis testing, and more. The library provides a user-friendly interface for estimating and interpreting statistical models, making it an essential tool for data exploration, inference, and model diagnostics. Statsmodels is widely used in academia and industry for its robust functionality and its ability to handle complex statistical analyses with ease. Explore more about `Statsmodels` at their official website: [Statsmodels](https://www.statsmodels.org/)
 
+  * **pycaret**: `PyCaret` is a high-level, low-code Python library designed for automating end-to-end machine learning workflows. It simplifies the process of building and deploying machine learning models by providing a wide range of functionalities, including data preprocessing, feature selection, model training, hyperparameter tuning, and model evaluation. With PyCaret, data scientists can quickly prototype and iterate on different models, compare their performance, and generate valuable insights. The library integrates with popular machine learning frameworks and provides a user-friendly interface for both beginners and experienced practitioners. PyCaret's ease of use, extensive library of prebuilt algorithms, and powerful experimentation capabilities make it an excellent choice for accelerating the development of machine learning models. Explore more about `PyCaret` at their official website: [PyCaret](https://www.pycaret.org/)
+
+  * **MLflow**: `MLflow` is a comprehensive open-source platform for managing the end-to-end machine learning lifecycle. It provides a set of intuitive APIs and tools to track experiments, package code and dependencies, deploy models, and monitor their performance. With MLflow, data scientists can easily organize and reproduce their experiments, enabling better collaboration and reproducibility. The platform supports multiple programming languages and seamlessly integrates with popular machine learning frameworks. MLflow's extensive capabilities, including experiment tracking, model versioning, and deployment options, make it an invaluable tool for managing machine learning projects. To learn more about `MLflow`, visit their official website: [MLflow](https://mlflow.org/)
+
 ## Model Training and Validation
 
 In the process of model training and validation, various methodologies are employed to ensure the robustness and generalizability of the models. These methodologies involve creating cohorts for training and validation, and the selection of appropriate metrics to evaluate the model's performance.
@@ -145,6 +149,19 @@ Proper model evaluation helps to identify potential issues such as overfitting o
 | F1 Score                      | Combines precision and recall into a single metric, providing a balanced measure of model performance. | scikit-learn: `f1_score`                  |
 | ROC AUC                       | Quantifies the model's ability to distinguish between classes by plotting the true positive rate against the false positive rate. | scikit-learn: `roc_auc_score`             |
 
+## Model Interpretability
+
+Interpreting machine learning models has become a challenge due to the complexity and black-box nature of some advanced models. However, there are libraries like `SHAP` (SHapley Additive exPlanations) that can help shed light on model predictions and feature importance. SHAP provides tools to explain individual predictions and understand the contribution of each feature in the model's output. By leveraging SHAP, data scientists can gain insights into complex models and make informed decisions based on the interpretation of the underlying algorithms. It offers a valuable approach to interpretability, making it easier to understand and trust the predictions made by machine learning models. To explore more about `SHAP` and its interpretation capabilities, refer to the official documentation: [SHAP](https://github.com/slundberg/shap)
+
+| Library     | Description                                                | Website                                          |
+|-------------|------------------------------------------------------------|--------------------------------------------------|
+| SHAP        | Utilizes Shapley values to explain individual predictions and assess feature importance, providing insights into complex models.  | [SHAP](https://github.com/slundberg/shap)       |
+| LIME        | Generates local approximations to explain predictions of complex models, aiding in understanding model behavior for specific instances.  | [LIME](https://github.com/marcotcr/lime)        |
+| ELI5        | Provides detailed explanations of machine learning models, including feature importance and prediction breakdowns.  | [ELI5](https://github.com/TeamHG-Memex/eli5)   |
+| Yellowbrick | Focuses on model visualization, enabling exploration of feature relationships, evaluation of feature importance, and performance diagnostics.  | [Yellowbrick](https://github.com/DistrictDataLabs/yellowbrick) |
+| Skater      | Enables interpretation of complex models through function approximation and sensitivity analysis, supporting global and local explanations.  | [Skater](https://github.com/datascienceinc/Skater) |
+
+These libraries offer various techniques and tools to interpret machine learning models, helping to understand the underlying factors driving predictions and providing valuable insights for decision-making.
 
 ## Practical Example: How to Use a Machine Learning Library to Train and Evaluate a Prediction Model 
 
@@ -217,3 +234,7 @@ Finally, we print the cross-validation accuracy, which is the mean of the accura
   * Date, C. J. (2003). An Introduction to Database Systems. Addison-Wesley.
 
   * Silberschatz, A., Korth, H. F., & Sudarshan, S. (2010). Database System Concepts. McGraw-Hill Education.
+
+## Scientific Articles
+
+  * Lundberg SM, Nair B, Vavilala MS, Horibe M, Eisses MJ, Adams T, Liston DE, Low DK, Newman SF, Kim J, Lee SI. (2018). Explainable machine-learning predictions for the prevention of hypoxaemia during surgery. Nat Biomed Eng. 2018 Oct;2(10):749-760. doi: 10.1038/s41551-018-0304-0.

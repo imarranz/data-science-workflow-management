@@ -97,6 +97,52 @@ To enhance collaboration and reproducibility in data science projects, effective
 
   * **Documentation Tools**: Leverage documentation tools such as MkDocs, Jupyter Notebooks, or Jupyter Book to create structured, user-friendly documentation. These tools enable easy navigation, code execution, and integration of rich media elements like images, tables, and interactive visualizations.
 
+Documenting your notebook provides valuable context and information about the analysis or code contained within it, enhancing its readability and reproducibility. [watermark](https://pypi.org/project/watermark/), specifically, allows you to add essential metadata, such as the version of Python, the versions of key libraries, and the execution time of the notebook.
+
+By including this information, you enable others to understand the environment in which your notebook was developed, ensuring they can reproduce the results accurately. It also helps identify potential issues related to library versions or package dependencies. Additionally, documenting the execution time provides insights into the time required to run specific cells or the entire notebook, allowing for better performance optimization.
+
+Moreover, detailed documentation in a notebook improves collaboration among team members, making it easier to share knowledge and understand the rationale behind the analysis. It serves as a valuable resource for future reference, ensuring that others can follow your work and build upon it effectively.
+
+```python
+%load_ext watermark
+%watermark \
+    --author "Ibon Martínez-Arranz" \
+    --updated --time --date \
+    --python --machine\
+    --packages pandas,numpy,matplotlib,seaborn,scipy,yaml \
+    --githash --gitrepo
+```
+
+```
+Author: Ibon Martínez-Arranz
+
+Last updated: 2023-03-09 09:58:17
+
+Python implementation: CPython
+Python version       : 3.7.9
+IPython version      : 7.33.0
+
+pandas    : 1.3.5
+numpy     : 1.21.6
+matplotlib: 3.3.3
+seaborn   : 0.12.1
+scipy     : 1.7.3
+yaml      : 6.0
+
+Compiler    : GCC 9.3.0
+OS          : Linux
+Release     : 5.4.0-144-generic
+Machine     : x86_64
+Processor   : x86_64
+CPU cores   : 4
+Architecture: 64bit
+
+Git hash: ----------------------------------------
+
+Git repo: ----------------------------------------
+
+```
+
 By prioritizing reproducibility and adopting effective project documentation practices, data science teams can enhance collaboration, promote transparency, and foster trust in their work. Reproducible projects not only benefit individual researchers but also contribute to the advancement of the field by enabling others to build upon existing knowledge and drive further discoveries.
 
 | Name            | Description                                                 | Website                                              |
@@ -127,31 +173,68 @@ In summary, structuring a data science project using well-organized folders and 
 
 ```
 project-name/
-├── data/
-│   ├── raw/
-│   ├── interim/
-│   ├── processed/
-│   └── external/
-├── notebooks/
-│   ├── exploratory/
-│   ├── preprocessing/
-│   ├── modeling/
-│   └── evaluation/
-├── src/
-│   ├── data/
-│   ├── models/
-│   ├── visualization/
-│   └── utils/
-├── reports/
-│   ├── figures/
-│   ├── tables/
-│   ├── paper/
-│   ├── presentation/
-│   └── summary.md
-├── environment.yaml
-├── README.md
-├── LICENSE
-└── .gitignore
+\-- README.md
+\-- requirements.txt
+\-- environment.yaml
+\-- .gitignore
+\
+\-- config
+\
+\-- data/
+\   \-- d10_raw
+\   \-- d20_interim
+\   \-- d30_processed
+\   \-- d40_models
+\   \-- d50_model_output
+\   \-- d60_reporting
+\
+\-- docs
+\
+\-- images
+\
+\-- notebooks
+\
+\-- references
+\
+\-- results
+\
+\-- source
+    \-- __init__.py
+    \
+    \-- s00_utils
+    \   \-- YYYYMMDD-ima-remove_values.py
+    \   \-- YYYYMMDD-ima-remove_samples.py
+    \   \-- YYYYMMDD-ima-rename_samples.py
+    \
+    \-- s10_data
+    \   \-- YYYYMMDD-ima-load_data.py
+    \
+    \-- s20_intermediate
+    \   \-- YYYYMMDD-ima-create_intermediate_data.py
+    \
+    \-- s30_processing
+    \   \-- YYYYMMDD-ima-create_master_table.py
+    \   \-- YYYYMMDD-ima-create_descriptive_table.py
+    \
+    \-- s40_modelling
+    \   \-- YYYYMMDD-ima-importance_features.py
+    \   \-- YYYYMMDD-ima-train_lr_model.py
+    \   \-- YYYYMMDD-ima-train_svm_model.py
+    \   \-- YYYYMMDD-ima-train_rf_model.py
+    \
+    \-- s50_model_evaluation
+    \   \-- YYYYMMDD-ima-calculate_performance_metrics.py
+    \
+    \-- s60_reporting
+    \   \-- YYYYMMDD-ima-create_summary.py
+    \   \-- YYYYMMDD-ima-create_report.py
+    \
+    \-- s70_visualisation
+        \-- YYYYMMDD-ima-count_plot_for_categorical_features.py
+        \-- YYYYMMDD-ima-distribution_plot_for_continuous_features.py
+        \-- YYYYMMDD-ima-relational_plots.py
+        \-- YYYYMMDD-ima-outliers_analysis_plots.py
+        \-- YYYYMMDD-ima-visualise_model_results.py
 
 ``` 
 
@@ -160,7 +243,7 @@ In this example, we have a main folder called `project-name` which contains seve
   * `data`: This folder is used to store all the data files. It is further divided into three subfolders:
 
     * `raw`: This folder contains the raw data files, which are the original files that have not been processed or cleaned in any way.
-    * `interim`: This folder is used to store intermediate data that has been processed during the data cleaning and preprocessing stage. 
+    * `interim`: This folder is used to store intermediate data that has been processed during the data cleaning and preprocessing stage. Interim Analysis.
     * `processed`: This folder contains the processed data files, which are the files that have been cleaned and prepared for analysis.
     * `external`: This folder contains any external data files that are used in the project, but are not generated as part of the project itself.
 
@@ -171,7 +254,7 @@ In this example, we have a main folder called `project-name` which contains seve
     * `modeling`: This folder contains the Jupyter notebooks used for model training and testing.
     * `evaluation`: This folder contains the Jupyter notebooks used for evaluating model performance.
 
-  * `src`: This folder contains all the source code used in the project. It is further divided into four subfolders:
+  * `source`: This folder contains all the source code used in the project. It is further divided into four subfolders:
 
     * `data`: This folder contains the code for loading and processing data.
     * `models`: This folder contains the code for building and training models.
@@ -186,13 +269,16 @@ In this example, we have a main folder called `project-name` which contains seve
     * `presentation`: This folder contains the presentation slides used to present the project to stakeholders.
 
   * `README.md`: This file contains a brief description of the project and the folder structure.
-  * `environment.yaml`: This file that specifies the conda environment used for the project.
+  * `environment.yaml`: This file that specifies the conda/pip environment used for the project.
+  * `requirements.txt`: File with other requeriments necessary for the project.
   * `LICENSE`: File that specifies the license of the project.
   * `.gitignore`: File that specifies the files and folders to be ignored by Git.
 
 By organizing the project files in this way, it becomes much easier to navigate and find specific files. It also makes it easier for collaborators to understand the structure of the project and contribute to it.
 
 ## References
+
+### Books
 
   * Workflow Modeling: Tools for Process Improvement and Application Development by Alec Sharp and Patrick McDermott
 
