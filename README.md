@@ -509,6 +509,9 @@ Organization is essential in any Data Science project. I like to plan and struct
     * **beautiful soup**: A popular library for parsing HTML and XML documents, making it easy to extract information from web pages.
     * **scrapy**: A powerful and flexible framework for web scraping and crawling, enabling you to extract structured data from websites efficiently.
 
+  * Web Application Development
+    * **streamlit**: A library for creating interactive web applications for data visualization and analysis.
+
   * Statistics and Data Analysis
     * **pingouin**: A statistical library with an emphasis on easy-to-use functions for various statistical tests, correlation analysis, ANOVA, linear regression, and more.
     * **statannot**: A library for adding statistical annotations to visualizations, allowing you to easily display statistical significance indicators on your plots.
@@ -521,6 +524,27 @@ Organization is essential in any Data Science project. I like to plan and struct
 
   * Deep Learning
     * **tensorflow**: A popular open-source library for deep learning, offering a comprehensive set of tools and APIs for building and training neural networks, as well as tools for deploying models in production.
+
+
+| **Group**                    | **Library**     | **Description**                                                        | **Project & Documentation**                            |
+|------------------------------|-----------------|------------------------------------------------------------------------|-------------------------------------------------------|
+| Data Processing | pandas          | A powerful library for data manipulation and analysis.                 | [Project](https://pandas.pydata.org/)                 |
+| Numerical Computing | numpy           | A fundamental library for numerical operations in Python.              | [Project](https://numpy.org/)                         |
+| Scientific Computing | scipy           | An extensive library for scientific and statistical computations.       | [Project](https://www.scipy.org/)                    |
+|                              | scikit-learn    | A comprehensive library for machine learning.                           | [Project](https://scikit-learn.org/stable/index.html) |
+| Data Visualization           | matplotlib      | A versatile plotting library for creating various visualizations.       | [Project](https://matplotlib.org/)                   |
+|                              | seaborn         | A high-level data visualization library based on matplotlib.           | [Project](https://seaborn.pydata.org/)               |
+|                              | altair          | A declarative visualization library for creating interactive visuals.    | [Project](https://altair-viz.github.io/)            |
+| Web Scraping and Text        | beautiful soup  | A popular library for parsing HTML and XML documents.                   | [Project](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) |
+| Processing                   | scrapy          | A powerful and flexible framework for web scraping and crawling.       | [Project](https://scrapy.org/)                      |
+| Statistics and Data Analysis | pingouin        | A statistical library with a focus on easy-to-use functions.           | [Project](https://pingouin-stats.org/)               |
+|                              | statannot       | A library for adding statistical annotations to visualizations.         | [Project](https://github.com/webermarcolivier/statannot) |
+|                              | tableone        | A library for creating summary statistics tables.                       | [Project](https://github.com/tompollard/tableone)  |
+|                              | missingno       | A library for visualizing missing data patterns in datasets.           | [Project](https://github.com/ResidentMario/missingno) |
+| Database                     | sqlite3         | A Python module for interacting with SQLite databases.                  | [Documentation](https://docs.python.org/3/library/sqlite3.html) |
+|                              | yaml            | A library for reading and writing YAML files.                           | [Project](https://pyyaml.org/)                      |
+| Deep Learning                | tensorflow      | A popular open-source library for deep learning.                        | [Project](https://www.tensorflow.org/)              |
+| Web Application Development  | streamlit       | A library for creating interactive web applications for data visualization and analysis. | [Project](https://www.streamlit.io/) |
 
 ## Index
 
