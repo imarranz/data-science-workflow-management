@@ -526,7 +526,7 @@ Organization is essential in any Data Science project. I like to plan and struct
     * **tensorflow**: A popular open-source library for deep learning, offering a comprehensive set of tools and APIs for building and training neural networks, as well as tools for deploying models in production.
 
 
-| **Group**                    | **Library**     | **Description**                                                        | **Project & Documentation**                            |
+| **Purpose**                    | **Library**     | **Description**                                                        | **Project & Documentation**                            |
 |------------------------------|-----------------|------------------------------------------------------------------------|-------------------------------------------------------|
 | Data Processing | pandas          | A powerful library for data manipulation and analysis.                 | [Project](https://pandas.pydata.org/)                 |
 | Numerical Computing | numpy           | A fundamental library for numerical operations in Python.              | [Project](https://numpy.org/)                         |
