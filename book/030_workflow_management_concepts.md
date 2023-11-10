@@ -145,6 +145,7 @@ Git repo: ----------------------------------------
 
 By prioritizing reproducibility and adopting effective project documentation practices, data science teams can enhance collaboration, promote transparency, and foster trust in their work. Reproducible projects not only benefit individual researchers but also contribute to the advancement of the field by enabling others to build upon existing knowledge and drive further discoveries.
 
+<!--
 | Name            | Description                                                 | Website                                              |
 |-----------------|-------------------------------------------------------------|------------------------------------------------------|
 | Jupyter nbconvert | A command-line tool to convert Jupyter notebooks to various formats, including HTML, PDF, and Markdown. | [nbconvert](https://nbconvert.readthedocs.io)    |
@@ -153,6 +154,31 @@ By prioritizing reproducibility and adopting effective project documentation pra
 | Sphinx          | A documentation generator that allows you to write documentation in reStructuredText or Markdown and can output various formats, including HTML and PDF. | [sphinx](https://www.sphinx-doc.org)         |
 | GitBook         | A modern documentation platform that allows you to write documentation using Markdown and provides features like versioning, collaboration, and publishing options. | [gitbook](https://www.gitbook.com)            |
 | DocFX           | A documentation generation tool specifically designed for API documentation, supporting multiple programming languages and output formats. | [docfx](https://dotnet.github.io/docfx)    |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=1.8\hsize}X|>{\hsize=0.6\hsize}X|}
+\hline\hline
+\textbf{Name} & \textbf{Description} & \textbf{Website} \\
+\hline
+Jupyter nbconvert & A command-line tool to convert Jupyter notebooks to various formats, including HTML, PDF, and Markdown. & \href{https://nbconvert.readthedocs.io}{nbconvert} \\
+\hline
+MkDocs & A static site generator specifically designed for creating project documentation from Markdown files. & \href{https://www.mkdocs.org}{mkdocs} \\
+\hline
+Jupyter Book & A tool for building online books with Jupyter Notebooks, including features like page navigation, cross-referencing, and interactive outputs. & \href{https://jupyterbook.org}{jupyterbook} \\
+\hline
+Sphinx & A documentation generator that allows you to write documentation in reStructuredText or Markdown and can output various formats, including HTML and PDF. & \href{https://www.sphinx-doc.org}{sphinx} \\
+\hline
+GitBook & A modern documentation platform that allows you to write documentation using Markdown and provides features like versioning, collaboration, and publishing options. & \href{https://www.gitbook.com}{gitbook} \\
+\hline
+DocFX & A documentation generation tool specifically designed for API documentation, supporting multiple programming languages and output formats. & \href{https://dotnet.github.io/docfx}{docfx} \\
+\hline\hline
+\end{tabularx}
+\caption{Overview of tools for documentation generation and conversion.}
+\end{table}
+
+
 
 ## Practical Example: How to Structure a Data Science Project Using Well-Organized Folders and Files
 

@@ -123,6 +123,9 @@ Using the `iris` and `species` tables as examples, we can perform various SQL op
 
 **Data Retrieval:**
 
+SQL (Structured Query Language) is essential for accessing and retrieving data stored in relational databases. The primary command used for data retrieval is `SELECT`, which allows users to specify exactly what data they want to see. This command can be combined with other clauses like `WHERE` for filtering, `ORDER BY` for sorting, and `JOIN` for merging data from multiple tables. Mastery of these commands enables users to efficiently query large databases, extracting only the relevant information needed for analysis or reporting.
+
+<!--
 | SQL Command     | Purpose                                 | Example                                                         |
 |-----------------|-----------------------------------------|-----------------------------------------------------------------|
 | SELECT          | Retrieve data from a table              | SELECT * FROM iris                                              |
@@ -130,23 +133,72 @@ Using the `iris` and `species` tables as examples, we can perform various SQL op
 | ORDER BY        | Sort the result set                     | SELECT * FROM iris ORDER BY sepal_width DESC                    |
 | LIMIT           | Limit the number of rows returned       | SELECT * FROM iris LIMIT 10                                     |
 | JOIN            | Combine rows from multiple tables       | SELECT * FROM iris JOIN species ON iris.species = species.name  |
+-->
+
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.5\hsize}X|>{\hsize=0.8\hsize}X|>{\hsize=1.7\hsize}X|}
+\hline\hline
+\textbf{SQL Command} & \textbf{Purpose}                                   & \textbf{Example}                                                    \\ \hline
+SELECT               & Retrieve data from a table                         & SELECT * FROM iris                                                  \\
+WHERE                & Filter rows based on a condition                   & SELECT * FROM iris WHERE sepal\_length > 5.0                        \\
+ORDER BY             & Sort the result set                                & SELECT * FROM iris ORDER BY sepal\_width DESC                       \\
+LIMIT                & Limit the number of rows returned                  & SELECT * FROM iris LIMIT 10                                        \\
+JOIN                 & Combine rows from multiple tables                  & SELECT * FROM iris JOIN species ON iris.species = species.name     \\ \hline\hline
+\end{tabularx}
+\caption{Common SQL commands for data retrieval.}
+\end{table}
 
 **Data Manipulation:**
 
+Data manipulation is a critical aspect of database management, allowing users to modify existing data, add new data, or delete unwanted data. The key SQL commands for data manipulation are `INSERT INTO` for adding new records, `UPDATE` for modifying existing records, and `DELETE FROM` for removing records. These commands are powerful tools for maintaining and updating the content within a database, ensuring that the data remains current and accurate.
+
+<!--
 | SQL Command     | Purpose                                 | Example                                                        |
 |-----------------|-----------------------------------------|----------------------------------------------------------------|
 | INSERT INTO     | Insert new records into a table         | INSERT INTO iris (sepal_length, sepal_width) VALUES (6.3, 2.8) |
 | UPDATE          | Update existing records in a table      | UPDATE iris SET petal_length = 1.5 WHERE species = 'Setosa'    |
 | DELETE FROM     | Delete records from a table             | DELETE FROM iris WHERE species = 'Versicolor'                  |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.5\hsize}X|>{\hsize=0.8\hsize}X|>{\hsize=1.7\hsize}X|}
+\hline\hline
+\textbf{SQL Command} & \textbf{Purpose}                          & \textbf{Example}                                                           \\ \hline
+INSERT INTO          & Insert new records into a table           & INSERT INTO iris (sepal\_length, sepal\_width) VALUES (6.3, 2.8)          \\
+UPDATE               & Update existing records in a table        & UPDATE iris SET petal\_length = 1.5 WHERE species = 'Setosa'              \\
+DELETE FROM          & Delete records from a table               & DELETE FROM iris WHERE species = 'Versicolor'                             \\ \hline\hline
+\end{tabularx}
+\caption{Common SQL commands for modifying and managing data.}
+\end{table}
 
 **Data Aggregation:**
 
+SQL provides robust functionality for aggregating data, which is essential for statistical analysis and generating meaningful insights from large datasets. Commands like `GROUP BY` enable grouping of data based on one or more columns, while `SUM`, `AVG`, `COUNT`, and other aggregation functions allow for the calculation of sums, averages, and counts. The `HAVING` clause can be used in conjunction with `GROUP BY` to filter groups based on specific conditions. These aggregation capabilities are crucial for summarizing data, facilitating complex analyses, and supporting decision-making processes.
+
+<!--
 | SQL Command     | Purpose                                 | Example                                                                 |
 |-----------------|-----------------------------------------|-------------------------------------------------------------------------|
 | GROUP BY        | Group rows by a column(s)               | SELECT species, COUNT(*) FROM iris GROUP BY species                     |
 | HAVING          | Filter groups based on a condition      | SELECT species, COUNT(*) FROM iris GROUP BY species HAVING COUNT(*) > 5 |
 | SUM             | Calculate the sum of a column           | SELECT species, SUM(petal_length) FROM iris GROUP BY species            |
 | AVG             | Calculate the average of a column       | SELECT species, AVG(sepal_width) FROM iris GROUP BY species             |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.5\hsize}X|>{\hsize=0.8\hsize}X|>{\hsize=1.7\hsize}X|}
+\hline\hline
+\textbf{SQL Command} & \textbf{Purpose}                          & \textbf{Example}                                                        \\ \hline
+GROUP BY             & Group rows by a column(s)                & SELECT species, COUNT(*) FROM iris GROUP BY species                      \\
+HAVING               & Filter groups based on a condition       & SELECT species, COUNT(*) FROM iris GROUP BY species HAVING COUNT(*) > 5  \\
+SUM                  & Calculate the sum of a column            & SELECT species, SUM(petal\_length) FROM iris GROUP BY species            \\
+AVG                  & Calculate the average of a column        & SELECT species, AVG(sepal\_width) FROM iris GROUP BY species             \\ \hline\hline
+\end{tabularx}
+\caption{Common SQL commands for data aggregation and analysis.}
+\end{table}
 
 ## Data Science Tools and Technologies
 
