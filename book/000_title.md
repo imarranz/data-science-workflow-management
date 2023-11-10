@@ -12,6 +12,8 @@ header-includes:
   \definecolor{secundaryowlgray}{rgb}{0.57,0.56,0.56}
   \definecolor{secundaryowlmagenta}{rgb}{0.57,0.06,0.33}
   \usepackage{tcolorbox}
+  \usepackage{tabularx}
+  \usepackage{float}
   \newtcolorbox{info-box}{colback=secundaryowlblue!5!white,arc=0pt,outer arc=0pt,colframe=secundaryowlblue!60!black}
   \newtcolorbox{warning-box}{colback=orange!5!white,arc=0pt,outer arc=0pt,colframe=orange!80!black}
   \newtcolorbox{error-box}{colback=red!5!white,arc=0pt,outer arc=0pt,colframe=red!75!black}
