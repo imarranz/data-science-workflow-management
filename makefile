@@ -1,4 +1,22 @@
 
+
+# Uso de Variables
+# https://ftp.gnu.org/old-gnu/Manuals/make-3.79.1/html_chapter/make_6.html
+
+TEMPLATE = "./templates/dswm-template.tex"
+TOP_LEVEL_DIVISION = "chapter"
+TITLEPAGE_COLOR = "EEEEEE"
+TITLEPAGE_RULE_HEIGHT = 8
+TITLEPAGE_BACKGROUND = "./templates/figures/titlepage-background-template.pdf"
+PAGE_BACKGROUND = "./templates/figures/page-background-template.pdf"
+PAGE_BACKGROUND_OPACITY = 0.8
+FOOTER_RIGHT = "Page \thepage"
+INSTITUTE = "Ibon Martínez-Arranz"
+AUTHOR = "Ibon Martínez-Arranz"
+TITLE = "Data Science Workflow Management"
+OUTPUT = "book"
+
+
 all: epub pdf
 
 epub:
@@ -14,10 +32,12 @@ epub:
 		book/080_model_implementation_and_maintenance.md \
 		book/090_monitoring_and_continuos_improvement.md \
 		-f markdown+emoji \
-		--output data-science-workflow-management.epub \
+		--output $(TITLE)".epub" \
 		--standalone \
 		--css style.css \
-		--toc
+		--toc \
+		--metadata=title:$(TITLE) \
+		--metadata=author:$(AUTHOR)
 
 pdf:
 	pandoc book/000_title.md \
@@ -30,26 +50,29 @@ pdf:
 		book/070_modeling_and_data_validation.md \
 		book/080_model_implementation_and_maintenance.md \
 		book/090_monitoring_and_continuos_improvement.md \
-		--output data-science-workflow-management.pdf \
+		--output $(OUTPUT)".pdf" \
 		--from markdown \
-		--template "./templates/eisvogel.tex" \
+		--template $(TEMPLATE) \
 		--toc \
 		--variable book=True \
-		--top-level-division="chapter" \
+		--top-level-division $(TOP_LEVEL_DIVISION) \
 		--listings \
 		--variable titlepage=True \
-		--variable titlepage-color="EEEEEE" \
-		--variable titlepage-rule-height=8 \
-		--variable titlepage-background="./figures/titlepage-background-template.pdf" \
-		--variable page-background="./figures/page-background-template.pdf" \
-		--variable page-background-opacity=0.8 \
-		--variable footer-right="Page \thepage" \
+		--variable titlepage-color=$(TITLEPAGE_COLOR) \
+		--variable titlepage-rule-height=$(TITLEPAGE_RULE_HEIGHT) \
+		--variable titlepage-background=$(TITLEPAGE_BACKGROUND) \
+		--variable page-background=$(PAGE_BACKGROUND) \
+		--variable page-background-opacity=$(PAGE_BACKGROUND_OPACITY) \
+		--variable footer-right=$(FOOTER_RIGHT) \
 		--variable linkcolor=primaryowlorange \
 		--variable urlcolor=primaryowlorange \
-		--variable institute="Data Science Manager at Rubió Metabolomics" \
+		--variable institute=$(INSTITUTE) \
 		--filter pandoc-latex-environment \
-		--metadata=title:"Data Science Workflow Management" \
-		--metadata=author:"Ibon Martínez-Arranz"
+		--metadata=title:$(TITLE) \
+		--metadata=author:$(AUTHOR)
+
+	pdftk templates/figures/cover.pdf $(OUTPUT)".pdf" cat output Data\ Science\ Workflow\ Management.pdf
+	rm $(OUTPUT)".pdf"
 
 # https://github.com/Wandmalfarbe/pandoc-latex-template
 # https://pypi.org/project/pandoc-latex-environment/
