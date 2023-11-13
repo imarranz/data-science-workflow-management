@@ -4,6 +4,12 @@
 
 The final chapter of this book focuses on the critical aspect of monitoring and continuous improvement in the context of data science projects. While developing and implementing a model is an essential part of the data science lifecycle, it is equally important to monitor the model's performance over time and make necessary improvements to ensure its effectiveness and relevance.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/chapters/090_monitoring_and_continuos_improvement.png}
+    \caption*{The concluding chapter of this book centers around the essential topic of monitoring and continuous improvement within the context of data science projects.}
+\end{figure}
+
 Monitoring refers to the ongoing observation and assessment of the model's performance and behavior. It involves tracking key performance metrics, identifying any deviations or anomalies, and taking proactive measures to address them. Continuous improvement, on the other hand, emphasizes the iterative process of refining the model, incorporating feedback and new data, and enhancing its predictive capabilities.
 
 Effective monitoring and continuous improvement help in several ways. First, it ensures that the model remains accurate and reliable as real-world conditions change. By closely monitoring its performance, we can identify any drift or degradation in accuracy and take corrective actions promptly. Second, it allows us to identify and understand the underlying factors contributing to the model's performance, enabling us to make informed decisions about enhancements or modifications. Finally, it facilitates the identification of new opportunities or challenges that may require adjustments to the model.
@@ -67,7 +73,7 @@ To effectively monitor performance, data scientists can leverage various techniq
 By actively monitoring performance metrics, data scientists can identify areas that require attention and make data-driven decisions regarding model maintenance, retraining, or enhancement. This iterative process ensures that the deployed models remain reliable, accurate, and aligned with the evolving needs of the business or application.
 
 Here is a table showcasing different Python libraries for generating dashboards:
-
+<!--
 | Library       | Description                                   | Website                                                |
 |---------------|-----------------------------------------------|--------------------------------------------------------|
 | Dash          | A framework for building analytical web apps   | [dash.plotly.com](https://dash.plotly.com/)             |
@@ -77,6 +83,25 @@ Here is a table showcasing different Python libraries for generating dashboards:
 | Plotly        | Data visualization library with interactive plots | [plotly.com](https://plotly.com/python/)             |
 | Flask         | Micro web framework for building dashboards     | [flask.palletsprojects.com](https://flask.palletsprojects.com/) |
 | Voila         | Convert Jupyter notebooks into interactive dashboards | [voila.readthedocs.io](https://voila.readthedocs.io/)  |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize}X|>{\hsize=1.8\hsize}X|>{\hsize=0.8\hsize}X|}
+\hline\hline
+\textbf{Library} & \textbf{Description} & \textbf{Website} \\
+\hline
+Dash & A framework for building analytical web apps & \href{https://dash.plotly.com/}{dash.plotly.com} \\
+Streamlit & A simple and efficient tool for data apps & \href{https://www.streamlit.io/}{www.streamlit.io} \\
+Bokeh & Interactive visualization library & \href{https://docs.bokeh.org/}{docs.bokeh.org} \\
+Panel & A high-level app and dashboarding solution & \href{https://panel.holoviz.org/}{panel.holoviz.org} \\
+Plotly & Data visualization library with interactive plots & \href{https://plotly.com/python/}{plotly.com} \\
+Flask & Micro web framework for building dashboards & \href{https://flask.palletsprojects.com/}{flask.palletsprojects.com} \\
+Voila & Convert Jupyter notebooks into interactive dashboards & \href{https://voila.readthedocs.io/}{voila.readthedocs.io} \\
+\hline\hline
+\end{tabularx}
+\caption{Python web application and visualization libraries.}
+\end{table}
 
 These libraries provide different functionalities and features for building interactive and visually appealing dashboards. Dash and Streamlit are popular choices for creating web applications with interactive visualizations. Bokeh and Plotly offer powerful tools for creating interactive plots and charts. Panel provides a high-level app and dashboarding solution with support for different visualization libraries. Flask is a micro web framework that can be used to create customized dashboards. Voila is useful for converting Jupyter notebooks into standalone dashboards.
 
@@ -179,13 +204,29 @@ The process of A/B testing typically follows these steps:
 A/B testing provides a robust methodology for comparing and selecting models or variations based on real-world performance data. By conducting controlled experiments, data scientists can objectively evaluate different approaches and make data-driven decisions. This iterative process allows for continuous improvement, as underperforming models can be discarded or refined, and successful models can be further optimized or enhanced.
 
 In summary, A/B testing is a powerful technique in data science that enables the comparison of different models or variations to identify the most effective approach. By designing and conducting controlled experiments, data scientists can gather empirical evidence and make informed decisions based on observed performance. A/B testing plays a vital role in the continuous improvement of models and the optimization of key performance metrics.
-
+<!--
 | Library      | Description                                                                                   | Website                                           |
 |--------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------|
 | Statsmodels  | A statistical library providing robust functionality for experimental design and analysis, including A/B testing. | [Statsmodels](https://www.statsmodels.org/stable/index.html)                  |
 | SciPy        | A library offering statistical and numerical tools for Python. It includes functions for hypothesis testing, such as t-tests and chi-square tests, commonly used in A/B testing. | [SciPy](https://docs.scipy.org/doc/scipy/reference/index.html)               |
 | pyAB         | A library specifically designed for conducting A/B tests in Python. It provides a user-friendly interface for designing and running A/B experiments, calculating performance metrics, and performing statistical analysis. | [pyAB](https://github.com/rahulpsathyaraj/pyAB)                     |
 | Evan         | Evan is a Python library for A/B testing. It offers functions for random treatment assignment, performance statistic calculation, and report generation. | [Evan](https://evan.readthedocs.io/en/latest/)              |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize}X|>{\hsize=2.0\hsize}X|>{\hsize=0.6\hsize}X|}
+\hline\hline
+\textbf{Library} & \textbf{Description} & \textbf{Website} \\
+\hline
+Statsmodels & A statistical library providing robust functionality for experimental design and analysis, including A/B testing. & \href{https://www.statsmodels.org/stable/index.html}{Statsmodels} \\
+SciPy & A library offering statistical and numerical tools for Python. It includes functions for hypothesis testing, such as t-tests and chi-square tests, commonly used in A/B testing. & \href{https://docs.scipy.org/doc/scipy/reference/index.html}{SciPy} \\
+pyAB & A library specifically designed for conducting A/B tests in Python. It provides a user-friendly interface for designing and running A/B experiments, calculating performance metrics, and performing statistical analysis. & \href{https://github.com/rahulpsathyaraj/pyAB}{pyAB} \\
+Evan & Evan is a Python library for A/B testing. It offers functions for random treatment assignment, performance statistic calculation, and report generation. & \href{https://evan.readthedocs.io/en/latest/}{Evan} \\
+\hline\hline
+\end{tabularx}
+\caption{Python libraries for A/B testing and experimental design.}
+\end{table}
 
 ## Model Performance Monitoring
 

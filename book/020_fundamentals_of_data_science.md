@@ -3,6 +3,12 @@
 
 Data science is an interdisciplinary field that combines techniques from statistics, mathematics, and computer science to extract knowledge and insights from data. The rise of big data and the increasing complexity of modern systems have made data science an essential tool for decision-making across a wide range of industries, from finance and healthcare to transportation and retail.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/chapters/020_fundamentals_of_data_science.png}
+    \caption*{Data science is a multidisciplinary area that blends methods from statistics, mathematics, and computer science to derive wisdom and gain understanding from data. The emergence of big data and the growing intricacy of contemporary systems have transformed data science into a crucial instrument for informed decision-making in various sectors, including finance, healthcare, transportation, and retail.}
+\end{figure}
+
 The field of data science has a rich history, with roots in statistics and data analysis dating back to the 19th century. However, it was not until the 21st century that data science truly came into its own, as advancements in computing power and the development of sophisticated algorithms made it possible to analyze larger and more complex datasets than ever before.
 
 This chapter will provide an overview of the fundamentals of data science, including the key concepts, tools, and techniques used by data scientists to extract insights from data. We will cover topics such as data visualization, statistical inference, machine learning, and deep learning, as well as best practices for data management and analysis.
@@ -145,7 +151,7 @@ SELECT               & Retrieve data from a table                         & SELE
 WHERE                & Filter rows based on a condition                   & SELECT * FROM iris WHERE sepal\_length > 5.0                        \\
 ORDER BY             & Sort the result set                                & SELECT * FROM iris ORDER BY sepal\_width DESC                       \\
 LIMIT                & Limit the number of rows returned                  & SELECT * FROM iris LIMIT 10                                        \\
-JOIN                 & Combine rows from multiple tables                  & SELECT * FROM iris JOIN species ON iris.species = species.name     \\ \hline\hline
+JOIN                 & Combine rows from \mbox{multiple} tables                  & SELECT * FROM iris JOIN species ON iris.species = species.name     \\ \hline\hline
 \end{tabularx}
 \caption{Common SQL commands for data retrieval.}
 \end{table}
@@ -169,7 +175,7 @@ Data manipulation is a critical aspect of database management, allowing users to
 \textbf{SQL Command} & \textbf{Purpose}                          & \textbf{Example}                                                           \\ \hline
 INSERT INTO          & Insert new records into a table           & INSERT INTO iris (sepal\_length, sepal\_width) VALUES (6.3, 2.8)          \\
 UPDATE               & Update existing records in a table        & UPDATE iris SET petal\_length = 1.5 WHERE species = 'Setosa'              \\
-DELETE FROM          & Delete records from a table               & DELETE FROM iris WHERE species = 'Versicolor'                             \\ \hline\hline
+DELETE FROM          & Delete records from a \mbox{table}        & DELETE FROM iris WHERE species = 'Versicolor'                             \\ \hline\hline
 \end{tabularx}
 \caption{Common SQL commands for modifying and managing data.}
 \end{table}
@@ -191,8 +197,8 @@ SQL provides robust functionality for aggregating data, which is essential for s
 \centering
 \begin{tabularx}{\textwidth}{|>{\hsize=0.5\hsize}X|>{\hsize=0.8\hsize}X|>{\hsize=1.7\hsize}X|}
 \hline\hline
-\textbf{SQL Command} & \textbf{Purpose}                          & \textbf{Example}                                                        \\ \hline
-GROUP BY             & Group rows by a column(s)                & SELECT species, COUNT(*) FROM iris GROUP BY species                      \\
+\textbf{SQL Command} & \textbf{Purpose}                         & \textbf{Example}                                                        \\ \hline
+GROUP BY             & Group rows by a \mbox{column(s)}         & SELECT species, COUNT(*) FROM iris GROUP BY species                      \\
 HAVING               & Filter groups based on a condition       & SELECT species, COUNT(*) FROM iris GROUP BY species HAVING COUNT(*) > 5  \\
 SUM                  & Calculate the sum of a column            & SELECT species, SUM(petal\_length) FROM iris GROUP BY species            \\
 AVG                  & Calculate the average of a column        & SELECT species, AVG(sepal\_width) FROM iris GROUP BY species             \\ \hline\hline

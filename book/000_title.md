@@ -18,6 +18,31 @@ header-includes:
   \newtcolorbox{warning-box}{colback=orange!5!white,arc=0pt,outer arc=0pt,colframe=orange!80!black}
   \newtcolorbox{error-box}{colback=red!5!white,arc=0pt,outer arc=0pt,colframe=red!75!black}
 
+  \newcommand{\bookTitle}{Data Science Workflow Management}
+  \newcommand{\bookPDFTitle}{Data Science Workflow Management}
+  \newcommand{\bookAuthor}{Ibon Mart\'inez-Arranz}
+  \newcommand{\bookSubject}{Data Science}
+  \newcommand{\bookProducer}{Ibon Mart\'inez-Arranz}
+  \newcommand{\bookCreator}{Ibon Mart\'inez-Arranz}
+  \newcommand{\bookKeywords}{Data Science,Machine Learning,Python,matplotlib,pandas,numpy,scipy,jupyter}
+
+  \hypersetup{
+      breaklinks=true,
+      bookmarks=true,
+      pdftitle={\bookPDFTitle},
+      pdfauthor={\bookAuthor},
+      pdfsubject={\bookSubject},
+      pdfproducer={\bookProducer},
+      pdfcreator={\bookCreator},
+      pdfkeywords={\bookKeywords},
+      pdftoolbar=true, % show or hide Acrobat’s toolbar
+      pdfmenubar=true, % show or hide Acrobat’s menu
+      pdffitwindow=true, % resize document window to fit document size
+      pdfstartview={FitH}, % fit the width of the page to the window (,{FitV})
+      bookmarksopen=true,
+      pdfborder={0 0 0}
+  }
+
   ```
 pandoc-latex-environment:
   noteblock: [note]

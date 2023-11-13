@@ -3,6 +3,12 @@
 
 In the field of data science, modeling plays a crucial role in deriving insights, making predictions, and solving complex problems. Models serve as representations of real-world phenomena, allowing us to understand and interpret data more effectively. However, the success of any model depends on the quality and reliability of the underlying data.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/chapters/070_modeling_and_data_validation.png}
+    \caption*{In Data Science area, modeling holds an important position in extracting insights, making predictions, and addressing intricate challenges.}
+\end{figure}
+
 The process of modeling involves creating mathematical or statistical representations that capture the patterns, relationships, and trends present in the data. By building models, data scientists can gain a deeper understanding of the underlying mechanisms driving the data and make informed decisions based on the model's outputs.
 
 But before delving into modeling, it is paramount to address the issue of data validation. Data validation encompasses the process of ensuring the accuracy, completeness, and reliability of the data used for modeling. Without proper data validation, the results obtained from the models may be misleading or inaccurate, leading to flawed conclusions and erroneous decision-making.
@@ -125,6 +131,9 @@ In some cases, ensemble methods can be employed to combine the predictions of mu
 
 Ultimately, the selection of the best model should be based on a combination of factors, including evaluation metrics, model complexity, interpretability, and generalization performance. It is important to carefully evaluate and compare the models to make an informed decision that aligns with the specific goals and requirements of the data science project.
 
+\clearpage
+\vfill
+
 ## Model Evaluation
 
 Model evaluation is a crucial step in the modeling and data validation process. It involves assessing the performance of a trained model to determine its accuracy and generalizability. The goal is to understand how well the model performs on unseen data and to make informed decisions about its effectiveness.
@@ -137,6 +146,10 @@ Additionally, cross-validation techniques are commonly employed to evaluate mode
 
 Proper model evaluation helps to identify potential issues such as overfitting or underfitting, allowing for model refinement and selection of the best performing model. By understanding the strengths and limitations of the model, data scientists can make informed decisions and enhance the overall quality of their modeling efforts.
 
+\clearpage
+\vfill
+
+<!--
 | Metric                        | Description                                      | Library/Function                         |
 |-------------------------------|--------------------------------------------------|------------------------------------------|
 | Mean Squared Error (MSE)      | Measures the average squared difference between predicted and actual values in regression tasks. | scikit-learn: `mean_squared_error`       |
@@ -148,11 +161,36 @@ Proper model evaluation helps to identify potential issues such as overfitting o
 | Recall (Sensitivity)          | Measures the proportion of true positive predictions among all actual positive instances in classification tasks. | scikit-learn: `recall_score`              |
 | F1 Score                      | Combines precision and recall into a single metric, providing a balanced measure of model performance. | scikit-learn: `f1_score`                  |
 | ROC AUC                       | Quantifies the model's ability to distinguish between classes by plotting the true positive rate against the false positive rate. | scikit-learn: `roc_auc_score`             |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.8\hsize}X|>{\hsize=1.2\hsize}X|>{\hsize=1.0\hsize}X|}
+\hline\hline
+\textbf{Metric} & \textbf{Description} & \textbf{Library or Function} \\
+\hline
+Mean Squared Error (MSE) & Measures the average squared difference between predicted and actual values in regression tasks. & scikit-learn: \texttt{\verb|mean_squared_error|}  \\ \hline
+Root Mean Squared Error (RMSE) & Represents the square root of the MSE, providing a measure of the average magnitude of the error. & scikit-learn: \texttt{\verb|mean_squared_error|} followed by \texttt{\verb|np.sqrt|} \\ \hline
+Mean Absolute Error (MAE) & Computes the average absolute difference between predicted and actual values in regression tasks. & scikit-learn: \texttt{\verb|mean_absolute_error|} \\ \hline
+R-squared & Measures the proportion of the variance in the dependent variable that can be explained by the model. & statsmodels: \texttt{\verb|R-squared|} \\ \hline
+Accuracy & Calculates the ratio of correctly classified instances to the total number of instances in classification tasks. & scikit-learn: \texttt{\verb|accuracy_score|} \\ \hline
+Precision & Represents the proportion of true positive predictions among all positive predictions in classification tasks. & scikit-learn: \texttt{\verb|precision_score|} \\ \hline
+Recall (Sensitivity) & Measures the proportion of true positive predictions among all actual positive instances in classification tasks. & scikit-learn: \texttt{\verb|recall_score|} \\ \hline
+F1 Score & Combines precision and recall into a single metric, providing a balanced measure of model performance. & scikit-learn: \texttt{\verb|f1_score|} \\ \hline
+ROC AUC & Quantifies the model's ability to distinguish between classes by plotting the true positive rate against the false positive rate. & scikit-learn: \texttt{\verb|roc_auc_score|} \\ \hline
+\hline\hline
+\end{tabularx}
+\caption{Common machine learning evaluation metrics and their corresponding libraries.}
+\end{table}
+
+\clearpage
+\vfill
 
 ## Model Interpretability
 
 Interpreting machine learning models has become a challenge due to the complexity and black-box nature of some advanced models. However, there are libraries like `SHAP` (SHapley Additive exPlanations) that can help shed light on model predictions and feature importance. SHAP provides tools to explain individual predictions and understand the contribution of each feature in the model's output. By leveraging SHAP, data scientists can gain insights into complex models and make informed decisions based on the interpretation of the underlying algorithms. It offers a valuable approach to interpretability, making it easier to understand and trust the predictions made by machine learning models. To explore more about `SHAP` and its interpretation capabilities, refer to the official documentation: [SHAP](https://github.com/slundberg/shap)
 
+<!--
 | Library     | Description                                                | Website                                          |
 |-------------|------------------------------------------------------------|--------------------------------------------------|
 | SHAP        | Utilizes Shapley values to explain individual predictions and assess feature importance, providing insights into complex models.  | [SHAP](https://github.com/slundberg/shap)       |
@@ -160,8 +198,27 @@ Interpreting machine learning models has become a challenge due to the complexit
 | ELI5        | Provides detailed explanations of machine learning models, including feature importance and prediction breakdowns.  | [ELI5](https://github.com/TeamHG-Memex/eli5)   |
 | Yellowbrick | Focuses on model visualization, enabling exploration of feature relationships, evaluation of feature importance, and performance diagnostics.  | [Yellowbrick](https://github.com/DistrictDataLabs/yellowbrick) |
 | Skater      | Enables interpretation of complex models through function approximation and sensitivity analysis, supporting global and local explanations.  | [Skater](https://github.com/datascienceinc/Skater) |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize}X|>{\hsize=2.0\hsize}X|>{\hsize=0.6\hsize}X|}
+\hline\hline
+\textbf{Library} & \textbf{Description} & \textbf{Website} \\
+\hline
+SHAP & Utilizes Shapley values to explain individual predictions and assess feature importance, providing insights into complex models. & \href{https://github.com/slundberg/shap}{SHAP} \\
+LIME & Generates local approximations to explain predictions of complex models, aiding in understanding model behavior for specific instances. & \href{https://github.com/marcotcr/lime}{LIME} \\
+ELI5 & Provides detailed explanations of machine learning models, including feature importance and prediction breakdowns. & \href{https://github.com/TeamHG-Memex/eli5}{ELI5} \\
+Yellowbrick & Focuses on model visualization, enabling exploration of feature relationships, evaluation of feature importance, and performance diagnostics. & \href{https://github.com/DistrictDataLabs/yellowbrick}{Yellowbrick} \\
+Skater & Enables interpretation of complex models through function approximation and sensitivity analysis, supporting global and local explanations. & \href{https://github.com/datascienceinc/Skater}{Skater} \\
+\hline\hline
+\end{tabularx}
+\caption{Python libraries for model interpretability and explanation.}
+\end{table}
 
 These libraries offer various techniques and tools to interpret machine learning models, helping to understand the underlying factors driving predictions and providing valuable insights for decision-making.
+
+\vfill
 
 ## Practical Example: How to Use a Machine Learning Library to Train and Evaluate a Prediction Model 
 

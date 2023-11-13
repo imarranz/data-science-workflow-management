@@ -5,6 +5,13 @@
 
 In the realm of data science projects, data acquisition and preparation are fundamental steps that lay the foundation for successful analysis and insights generation. This stage involves obtaining relevant data from various sources, transforming it into a suitable format, and performing necessary preprocessing steps to ensure its quality and usability. Let's delve into the intricacies of data acquisition and preparation and understand their significance in the context of data science projects.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/chapters/050_data_adquisition_and_preparation.png}
+    \caption*{In the area of data science projects, data acquisition and preparation serve as foundational steps that underpin the successful generation of insights and analysis. During this phase, the focus is on sourcing pertinent data from diverse origins, converting it into an appropriate format, and executing essential preprocessing procedures to guarantee its quality and suitability for use.}
+\end{figure}
+
+
 **Data Acquisition: Gathering the Raw Materials**
 
 Data acquisition encompasses the process of gathering data from diverse sources. This involves identifying and accessing relevant datasets, which can range from structured data in databases, unstructured data from text documents or images, to real-time streaming data. The sources may include internal data repositories, public datasets, APIs, web scraping, or even data generated from Internet of Things (IoT) devices.
@@ -77,6 +84,8 @@ In addition to pandas and dplyr, several other Python and R packages play signif
 
 The power of data extraction and transformation lies in their ability to convert raw data into a clean, structured, and unified form that facilitates efficient analysis and meaningful insights. These processes are essential for data scientists to ensure the accuracy, reliability, and integrity of the data they work with. By leveraging the capabilities of programming languages and packages designed for data extraction and transformation, data scientists can unlock the full potential of their data and drive impactful discoveries in the field of data science.
 
+
+<!--
 | Purpose             | Library/Package          | Description                                                                                                                | Website                                          |
 |---------------------|--------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | Data Manipulation   | pandas                   | A powerful library for data manipulation and analysis in Python, providing data structures and functions for data cleaning and transformation. | [pandas](https://pandas.pydata.org)               |
@@ -86,8 +95,34 @@ The power of data extraction and transformation lies in their ability to convert
 |                      | XML                      | An R package for working with XML data, offering functions to parse, manipulate, and extract information from XML documents. | [XML](https://cran.r-project.org/package=XML)     |
 | API Integration     | requests                 | A Python library for making HTTP requests, commonly used for interacting with APIs and retrieving data from web services.    | [requests](https://requests.readthedocs.io)      |
 |                      | httr                     | An R package for making HTTP requests, providing functions for interacting with web services and APIs.                     | [httr](https://cran.r-project.org/package=httr)   |
+-->
+\vfill
+\clearpage
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.8\hsize}X|>{\hsize=1.9\hsize}X|>{\hsize=0.7\hsize}X|}
+\hline\hline
+\textbf{Purpose} & \textbf{Library/Package} & \textbf{Description} & \textbf{Website} \\
+\hline
+Data \mbox{Manipulation} & pandas & A powerful library for data manipulation and analysis in Python, providing data \mbox{structures} and functions for data cleaning and transformation. & \href{https://pandas.pydata.org}{pandas} \\
+ & dplyr & A popular package in R for data \mbox{manipulation}, offering a consistent syntax and \mbox{functions} for filtering, grouping, and \mbox{summarizing} data. & \href{https://dplyr.tidyverse.org}{dplyr} \\
+\hline
+Web Scraping & BeautifulSoup & A Python library for parsing HTML and XML documents, commonly used for web \mbox{scraping} and extracting data from web pages. & \href{https://www.crummy.com/software/BeautifulSoup/}{BeautifulSoup} \\
+ & Scrapy & A Python framework for web \mbox{scraping}, \mbox{providing} a high-level API for extracting data from websites efficiently. & \href{https://scrapy.org}{Scrapy} \\
+ & XML & An R package for working with XML data, \mbox{offering} functions to parse, \mbox{manipulate}, and extract information from XML \mbox{documents}. & \href{https://cran.r-project.org/package=XML}{XML} \\
+\hline
+API \mbox{Integration} & requests & A Python library for making HTTP requests, commonly used for interacting with APIs and retrieving data from web services. & \href{https://requests.readthedocs.io}{requests} \\
+ & httr & An R package for making HTTP requests, providing functions for interacting with web services and APIs. & \href{https://cran.r-project.org/package=httr}{httr} \\
+\hline\hline
+\end{tabularx}
+\caption{Libraries and packages for data manipulation, web scraping, and API integration.}
+\end{table}
+
 
 These libraries and packages are widely used in the data science community and offer powerful functionalities for various data-related tasks, such as data manipulation, web scraping, and API integration. Feel free to explore their respective websites for more information, documentation, and examples of their usage.
+
+\vfill
 
 ## Data Cleaning
 
@@ -113,6 +148,7 @@ Several common techniques are employed in data cleaning, including:
 
 Python and R offer a rich ecosystem of libraries and packages that aid in data cleaning tasks. Some widely used libraries and packages for data cleaning in Python include:
 
+<!--
 | Purpose                  | Library/Package    | Description                                                                                                                                                  | Website                                           |
 |--------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
 | Missing Data Handling    | pandas             | A versatile library for data manipulation in Python, providing functions for handling missing data, imputation, and data cleaning.                            | [pandas](https://pandas.pydata.org)                |
@@ -120,9 +156,34 @@ Python and R offer a rich ecosystem of libraries and packages that aid in data c
 | Data Deduplication       | pandas             | Alongside its data manipulation capabilities, pandas also provides methods for identifying and removing duplicate data entries, ensuring data integrity.       | [pandas](https://pandas.pydata.org)                |
 | Data Formatting          | pandas             | pandas offers extensive functionalities for data transformation, including data type conversion, formatting, and standardization.                               | [pandas](https://pandas.pydata.org)                |
 | Data Validation          | pandas-schema      | A Python library that enables the validation and verification of data against predefined schema or constraints, ensuring data quality and integrity.           | [pandas-schema](https://github.com/alexrsdesenv/pandas-schema) |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.8\hsize}X|>{\hsize=1.9\hsize}X|>{\hsize=0.7\hsize}X|}
+\hline\hline
+\textbf{Purpose} & \textbf{Library/Package} & \textbf{Description} & \textbf{Website} \\
+\hline
+Missing Data Handling & pandas & A versatile library for data manipulation in Python, providing functions for \mbox{handling} missing data, imputation, and data \mbox{cleaning}. & \href{https://pandas.pydata.org}{pandas} \\
+\hline
+Outlier \mbox{Detection} & scikit-learn & A comprehensive machine learning library in Python that offers various outlier \mbox{detection} algorithms, enabling robust \mbox{identification} and handling of outliers. & \href{https://scikit-learn.org}{scikit-learn} \\
+\hline
+Data \mbox{Deduplication} & pandas & Alongside its data manipulation \mbox{capabilities}, pandas also provides methods for identifying and removing duplicate data entries, ensuring data integrity. & \href{https://pandas.pydata.org}{pandas} \\
+\hline
+Data \mbox{Formatting} & pandas & pandas offers extensive \mbox{functionalities} for data transformation, including data type conversion, formatting, and \mbox{standardization}. & \href{https://pandas.pydata.org}{pandas} \\
+\hline
+Data \mbox{Validation} & pandas-schema & A Python library that enables the \mbox{validation} and verification of data against \mbox{predefined} schema or constraints, ensuring data \mbox{quality} and integrity. & \href{https://github.com/alexrsdesenv/pandas-schema}{pandas-schema} \\
+\hline\hline
+\end{tabularx}
+\caption{Key Python libraries and packages for data handling and processing.}
+\end{table}
+
+\hfill
+\clearpage
 
 In R, various packages are specifically designed for data cleaning tasks:
 
+<!--
 | Purpose                  | Package            | Description                                                                                                                                                  | Website                                           |
 |--------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
 | Missing Data Handling    | tidyr              | A package in R that offers functions for handling missing data, reshaping data, and tidying data into a consistent format.                                     | [tidyr](https://tidyr.tidyverse.org)               |
@@ -131,6 +192,30 @@ In R, various packages are specifically designed for data cleaning tasks:
 | Data Validation          | validate           | An R package that provides a declarative approach for defining validation rules and validating data against them, ensuring data quality and integrity.            | [validate](https://cran.r-project.org/package=validate) |
 | Data Transformation     | tidyr              | tidyr offers functions for reshaping and transforming data, facilitating tasks such as pivoting, gathering, and spreading variables.                           | [tidyr](https://tidyr.tidyverse.org)               |
 |                        | stringr            | A package that provides various string manipulation functions in R, useful for data cleaning tasks involving text data.                                       | [stringr](https://stringr.tidyverse.org)           |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.7\hsize}X|>{\hsize=0.5\hsize}X|>{\hsize=2.3\hsize}X|>{\hsize=0.5\hsize}X|}
+\hline\hline
+\textbf{Purpose} & \textbf{Package} & \textbf{Description} & \textbf{Website} \\
+\hline
+Missing Data Handling & tidyr & A package in R that offers functions for handling missing data, reshaping data, and tidying data into a consistent format. & \href{https://tidyr.tidyverse.org}{tidyr} \\
+\hline
+Outlier \mbox{Detection} & dplyr & As a part of the tidyverse, dplyr provides functions for data manipulation in R, including outlier detection and handling. & \href{https://dplyr.tidyverse.org}{dplyr} \\
+\hline
+Data \mbox{Formatting} & lubridate & A package in R that facilitates handling and formatting dates and times, ensuring consistency and compatibility within the dataset. & \href{https://lubridate.tidyverse.org}{lubridate} \\
+\hline
+Data \mbox{Validation} & validate & An R package that provides a declarative approach for defining validation rules and validating data against them, ensuring data quality and integrity. & \href{https://cran.r-project.org/package=validate}{validate} \\
+\hline
+Data \mbox{Transformation} & tidyr & tidyr offers functions for reshaping and transforming data, facilitating tasks such as pivoting, gathering, and spreading variables. & \href{https://tidyr.tidyverse.org}{tidyr} \\
+\hline
+& stringr & A package that provides various string manipulation functions in R, useful for data cleaning tasks involving text data. & \href{https://stringr.tidyverse.org}{stringr} \\
+\hline\hline
+\end{tabularx}
+\caption{Essential R packages for data handling and analysis.}
+\end{table}
+
 
 These libraries and packages offer a wide range of functionalities for data cleaning in both Python and R. They empower data scientists to efficiently handle missing data, detect outliers, remove duplicates, standardize formatting, validate data, and transform variables to ensure high-quality and reliable datasets for analysis. Feel free to explore their respective websites for more information, documentation, and examples of their usage.
 

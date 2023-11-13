@@ -6,6 +6,12 @@
 **Exploratory Data Analysis (EDA)** is a crucial step in the data science workflow that involves analyzing and visualizing data to gain insights, identify patterns, and understand the underlying structure of the dataset. It plays a vital role in uncovering relationships, detecting anomalies, and informing subsequent modeling and decision-making processes.
 :::
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/chapters/060_exploratory_data_analysis.png}
+    \caption*{Exploratory Data Analysis (EDA) stands as an important phase within the data science workflow, encompassing the examination and visualization of data to glean insights, detect patterns, and comprehend the inherent structure of the dataset.}
+\end{figure}
+
 The importance of EDA lies in its ability to provide a comprehensive understanding of the dataset before diving into more complex analysis or modeling techniques. By exploring the data, data scientists can identify potential issues such as missing values, outliers, or inconsistencies that need to be addressed before proceeding further. EDA also helps in formulating hypotheses, generating ideas, and guiding the direction of the analysis.
 
 There are several types of exploratory data analysis techniques that can be applied depending on the nature of the dataset and the research questions at hand. These techniques include:
@@ -82,34 +88,88 @@ Effective data visualization relies on selecting appropriate chart types based o
 
 These variables represent numerical data and can be further classified into continuous or discrete variables. Common chart types for visualizing quantitative variables include:
 
+<!--
    | Variable Type    | Chart Type            | Description                                | Python Code                                 |
    |------------------|-----------------------|--------------------------------------------|---------------------------------------------|
    | Continuous       | Line Plot             | Shows the trend and patterns over time     | `plt.plot(x, y)`                            |
    | Continuous       | Histogram             | Displays the distribution of values        | `plt.hist(data)`                            |
    | Discrete         | Bar Chart             | Compares values across different categories| `plt.bar(x, y)`                             |
    | Discrete         | Scatter Plot          | Examines the relationship between variables| `plt.scatter(x, y)`                         |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.5\hsize}X|>{\hsize=1.7\hsize}X|>{\hsize=1.2\hsize}X|}
+\hline\hline
+\textbf{Variable Type} & \textbf{Chart Type} & \textbf{Description} & \textbf{Python Code} \\
+\hline
+Continuous & Line Plot & Shows the trend and patterns over time & \texttt{plt.plot(x, y)} \\
+Continuous & Histogram & Displays the distribution of values & \texttt{plt.hist(data)} \\
+Discrete & Bar Chart & Compares values across different \mbox{categories} & \texttt{plt.bar(x, y)} \\
+Discrete & Scatter Plot & Examines the relationship between variables & \texttt{plt.scatter(x, y)} \\
+\hline\hline
+\end{tabularx}
+\caption{Types of charts and their descriptions in Python.}
+\end{table}
 
 ### Categorical Variables
 
 These variables represent qualitative data that fall into distinct categories. Common chart types for visualizing categorical variables include:
 
+<!--
    | Variable Type    | Chart Type            | Description                                              | Python Code                    |
    |------------------|-----------------------|----------------------------------------------------------|--------------------------------|
    | Categorical      | Bar Chart             | Displays the frequency or count of categories            | `plt.bar(x, y)`                |
    | Categorical      | Pie Chart             | Represents the proportion of each category               | `plt.pie(data, labels=labels)` |
    | Categorical      | Heatmap               | Shows the relationship between two categorical variables | `sns.heatmap(data)`            |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.5\hsize}X|>{\hsize=1.7\hsize}X|>{\hsize=1.2\hsize}X|}
+\hline\hline
+\textbf{Variable Type} & \textbf{Chart Type} & \textbf{Description} & \textbf{Python Code} \\
+\hline
+Categorical & Bar Chart & Displays the frequency or count of \mbox{categories} & \texttt{plt.bar(x, y)} \\
+Categorical & Pie Chart & Represents the proportion of each \mbox{category} & \texttt{plt.pie(data, labels=labels)} \\
+Categorical & Heatmap & Shows the relationship between two categorical variables & \texttt{sns.heatmap(data)} \\
+\hline\hline
+\end{tabularx}
+\caption{Types of charts for categorical data visualization in Python.}
+\end{table}
 
 ### Ordinal Variables
 
 These variables have a natural order or hierarchy. Chart types suitable for visualizing ordinal variables include:
 
+
+<!--
    | Variable Type    | Chart Type            | Description                                  | Python Code                                 |
    |------------------|-----------------------|----------------------------------------------|---------------------------------------------|
    | Ordinal          | Bar Chart             | Compares values across different categories  | `plt.bar(x, y)`                             |
    | Ordinal          | Box Plot              | Displays the distribution and outliers       | `sns.boxplot(x, y)`                         |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.5\hsize}X|>{\hsize=1.7\hsize}X|>{\hsize=1.2\hsize}X|}
+\hline\hline
+\textbf{Variable Type} & \textbf{Chart Type} & \textbf{Description} & \textbf{Python Code} \\
+\hline
+Ordinal & Bar Chart & Compares values across different \mbox{categories} & \texttt{plt.bar(x, y)} \\
+Ordinal & Box Plot & Displays the distribution and outliers & \texttt{sns.boxplot(x, y)} \\
+\hline\hline
+\end{tabularx}
+\caption{Types of charts for ordinal data visualization in Python.}
+\end{table}
 
 Data visualization libraries like Matplotlib, Seaborn, and Plotly in Python provide a wide range of functions and tools to create these visualizations. By utilizing these libraries and their corresponding commands, we can generate visually appealing and informative plots for EDA.
 
+
+\hfill
+\clearpage
+
+<!--
 | Library    | Description                                                           | Website                                                      |
 |------------|-----------------------------------------------------------------------|--------------------------------------------------------------|
 | Matplotlib | Matplotlib is a versatile plotting library for creating static, animated, and interactive visualizations in Python. It offers a wide range of chart types and customization options. | [Matplotlib](https://matplotlib.org)                         |
@@ -119,10 +179,28 @@ Data visualization libraries like Matplotlib, Seaborn, and Plotly in Python prov
 | ggplot     | ggplot is a plotting system for Python based on the Grammar of Graphics. It provides a powerful and flexible way to create aesthetically pleasing and publication-quality visualizations. | [ggplot](http://ggplot.yhathq.com)                           |
 | Bokeh      | Bokeh is a Python library for creating interactive visualizations for the web. It focuses on providing elegant and concise APIs for creating dynamic plots with interactivity and streaming capabilities. | [Bokeh](https://bokeh.org)                                   |
 | Plotnine   | Plotnine is a Python implementation of the Grammar of Graphics. It allows users to create visually appealing and highly customizable plots using a simple and intuitive syntax. | [Plotnine](https://plotnine.readthedocs.io)                  |
+-->
 
-Please note that the descriptions provided above are simplified summaries, and for more detailed information, it is recommended to visit the respective websites of each library.
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.4\hsize}X|>{\hsize=2.2\hsize}X|>{\hsize=0.4\hsize}X|}
+\hline\hline
+\textbf{Library} & \textbf{Description} & \textbf{Website} \\
+\hline
+Matplotlib & Matplotlib is a versatile plotting library for creating static, animated, and interactive visualizations in Python. It offers a wide range of chart types and customization options. & \href{https://matplotlib.org}{Matplotlib} \\ \hline
+Seaborn & Seaborn is a statistical data visualization library built on top of Matplotlib. It provides a high-level interface for creating attractive and informative statistical graphics. & \href{https://seaborn.pydata.org}{Seaborn} \\ \hline
+Altair & Altair is a declarative statistical visualization library in Python. It allows users to create interactive visualizations with concise and \mbox{expressive} syntax, based on the Vega-Lite grammar. & \href{https://altair-viz.github.io}{Altair} \\ \hline
+Plotly & Plotly is an open-source, web-based library for creating interactive visualizations. It offers a wide range of chart types, including 2D and 3D plots, and supports interactivity and sharing capabilities. & \href{https://plotly.com/python}{Plotly} \\ \hline
+ggplot & ggplot is a plotting system for Python based on the Grammar of \mbox{Graphics}. It provides a powerful and flexible way to create aesthetically pleasing and publication-quality visualizations. & \href{http://ggplot.yhathq.com}{ggplot} \\ \hline
+Bokeh & Bokeh is a Python library for creating interactive visualizations for the web. It focuses on providing elegant and concise APIs for creating dynamic plots with interactivity and streaming capabilities. & \href{https://bokeh.org}{Bokeh} \\ \hline
+Plotnine & Plotnine is a Python implementation of the Grammar of Graphics. It allows users to create visually appealing and highly customizable plots using a simple and intuitive syntax. & \href{https://plotnine.readthedocs.io}{Plotnine} \\
+\hline\hline
+\end{tabularx}
+\caption{Python data visualization libraries.}
+\end{table}
 
-Please note that the Python code provided above is a simplified representation and may require additional customization based on the specific data and plot requirements.
+
+Please note that the descriptions provided above are simplified summaries, and for more detailed information, it is recommended to visit the respective websites of each library. Please note that the Python code provided above is a simplified representation and may require additional customization based on the specific data and plot requirements.
 
 ## Correlation Analysis
 
@@ -181,6 +259,7 @@ Data transformation plays a vital role in preparing the data for analysis. It he
 
   * **Outlier Treatment:** Outliers can significantly impact the analysis and model performance. Transformations such as winsorization or logarithmic transformation can help reduce the influence of outliers without losing valuable information.
 
+<!--
 | **Purpose** | **Library Name** | **Description** | **Website** |
 |-------------------|-----------------|-----------------|--------------|
 | **Data Cleaning** |                 |                 |              |
@@ -198,6 +277,43 @@ Data transformation plays a vital role in preparing the data for analysis. It he
 | **Outlier Treatment** |              |                 |              |
 |                   | PyOD (Python)   | A comprehensive library for outlier detection and removal using various algorithms and models. | [PyOD](https://pyod.readthedocs.io/) |
 |                   | outliers (R)    | Implements various methods for detecting and handling outliers in datasets. | [outliers](https://cran.r-project.org/web/packages/outliers/index.html) |
+-->
+
+\begin{table}[H]
+\centering
+
+\begin{tabularx}{\textwidth}{|>{\hsize=0.5\hsize}X|>{\hsize=0.7\hsize}X|>{\hsize=2.1\hsize}X|>{\hsize=0.7\hsize}X|}
+\hline\hline
+\textbf{Purpose} & \textbf{Library Name} & \textbf{Description} & \textbf{Website} \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Data Cleaning}} \\
+\hline
+& Pandas (Python) & A powerful data manipulation library for \mbox{cleaning} and preprocessing data. & \href{https://pandas.pydata.org/}{Pandas} \\
+& dplyr (R) & Provides a set of functions for data wrangling and data manipulation tasks. & \href{https://dplyr.tidyverse.org/}{dplyr} \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Normalization}} \\
+\hline
+& scikit-learn (Python) & Offers various normalization techniques such as Min-Max scaling and Z-score normalization. & \href{https://scikit-learn.org/}{scikit-learn} \\
+& caret (R) & Provides pre-processing functions, including normalization, for building machine learning models. & \href{https://topepo.github.io/caret/}{caret} \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Feature Engineering}} \\
+\hline
+& Featuretools (Python) & A library for automated feature engineering that can generate new features from existing ones. & \href{https://www.featuretools.com/}{Featuretools} \\
+& recipes (R) & Offers a framework for feature engineering, \mbox{allowing} users to create custom feature \mbox{transformation} pipelines. & \href{https://recipes.tidymodels.org/}{recipes} \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Non-Linearity Handling}} \\
+\hline
+& TensorFlow (Python) & A deep learning library that supports building and training non-linear models using neural \mbox{networks}. & \href{https://www.tensorflow.org/}{TensorFlow} \\
+& keras (R) & Provides high-level interfaces for building and training neural networks with non-linear \mbox{activation} functions. & \href{https://keras.io/}{keras} \\
+\hline
+\multicolumn{4}{|l|}{\textbf{Outlier Treatment}} \\
+\hline
+& PyOD (Python) & A comprehensive library for outlier detection and removal using various algorithms and \mbox{models}. & \href{https://pyod.readthedocs.io/}{PyOD} \\
+& outliers (R) & Implements various methods for detecting and handling outliers in datasets. & \href{https://cran.r-project.org/web/packages/outliers/index.html}{outliers} \\
+\hline\hline
+\end{tabularx}
+\caption{Data preprocessing and machine learning libraries.}
+\end{table}
 
 
 ### Types of Data Transformation
@@ -220,8 +336,8 @@ By employing these transformation techniques, data scientists can enhance the qu
 
 Keep in mind that the selection and application of specific data transformation techniques depend on the characteristics of the dataset and the objectives of the analysis. It is essential to understand the data and choose the appropriate transformations to derive valuable insights.
 
-Por supuesto, aquí tienes la tabla solicitada:
 
+<!--
 | Transformation     | Mathematical Equation                   | Pros                                                          | Cons                                                             |
 |--------------------|-----------------------------------------|---------------------------------------------------------------|------------------------------------------------------------------|
 | Logarithmic        | $y = \log(x)$                           | - Reduces the impact of extreme values                         | - Does not work with zero or negative values                     |
@@ -234,7 +350,31 @@ Por supuesto, aquí tienes la tabla solicitada:
 | Min-Max Scaling    | $y = \dfrac{x - min_x}{max_x - min_x}$  | - Scales the data to a specific range                           | - Sensitive to outliers                                          |
 | Z-Score Scaling    | $y = \frac{x - \bar{x}}{\sigma_{x}}$    | - Centers the data around zero and scales with standard deviation | - Sensitive to outliers                                          |
 | Rank Transformation| Assigns rank values to the data points  | - Preserves the order of values and handles ties gracefully     | - Loss of information about the original values                   |
+-->
 
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.7\hsize}X|>{\hsize=0.9\hsize}X|>{\hsize=1.2\hsize}X|>{\hsize=1.2\hsize}X|}
+\hline\hline
+\textbf{Transformation} & \textbf{Mathematical Equation} & \textbf{Advantages} & \textbf{Disadvantages} \\
+\hline
+Logarithmic & $y = \log(x)$ & - Reduces the impact of extreme values & - Does not work with zero or negative values \\ \hline
+Square Root & $y = \sqrt{x}$ & - Reduces the impact of extreme values & - Does not work with negative values \\ \hline
+Exponential & $y = \exp^x$ & - Increases separation between small values & - Amplifies the differences between large values \\ \hline
+Box-Cox & $y = \dfrac{x^\lambda -1}{\lambda}$ & - Adapts to different types of data & - Requires estimation of the $\lambda$ parameter \\ \hline
+Power & $y = x^p$ & - Allows customization of the transformation & - Sensitivity to the choice of power value \\ \hline
+Square & $y = x^2$ & - Preserves the order of values & - Amplifies the differences between large values \\ \hline
+Inverse & $y = \dfrac{1}{x}$ & - Reduces the impact of large values & - Does not work with zero or negative values \\ \hline
+Min-Max \mbox{Scaling} & $y = \dfrac{x - min_x}{max_x - min_x}$ & - Scales the data to a specific range & - Sensitive to outliers \\ \hline
+Z-Score Scaling & $y = \dfrac{x - \bar{x}}{\sigma_{x}}$ & - Centers the data around zero and scales with standard deviation & - Sensitive to outliers \\ \hline
+Rank \mbox{Transformation} & Assigns rank values to the data points & - Preserves the order of values and handles ties gracefully & - Loss of information about the original values \\
+\hline\hline
+\end{tabularx}
+\caption{Data transformation methods in statistics.}
+\end{table}
+
+\clearpage
+\vfill
 
 ## Practical Example: How to Use a Data Visualization Library to Explore and Analyze a Dataset 
 

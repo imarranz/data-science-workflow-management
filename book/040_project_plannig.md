@@ -3,6 +3,13 @@
 
 Effective project planning is essential for successful data science projects. Planning involves defining clear objectives, outlining project tasks, estimating resources, and establishing timelines. In the field of data science, where complex analysis and modeling are involved, proper project planning becomes even more critical to ensure smooth execution and achieve desired outcomes.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/chapters/040_project_plannig.png}
+    \caption*{Efficient project planning plays an important role in the success of data science projects. This entails setting well-defined goals, delineating project responsibilities, gauging resource requirements, and establishing timeframes. In the realm of data science, where intricate analysis and modeling are central, meticulous project planning becomes even more vital to facilitate seamless execution and attain the desired results.}
+\end{figure}
+
+
 In this chapter, we will explore the intricacies of project planning specifically tailored to data science projects. We will delve into the key elements and strategies that help data scientists effectively plan their projects from start to finish. A well-structured and thought-out project plan sets the foundation for efficient teamwork, mitigates risks, and maximizes the chances of delivering actionable insights.
 
 The first step in project planning is to define the project goals and objectives. This involves understanding the problem at hand, defining the scope of the project, and aligning the objectives with the needs of stakeholders. Clear and measurable goals help to focus efforts and guide decision-making throughout the project lifecycle.
@@ -111,6 +118,7 @@ Version control systems, such as Git, are essential for managing code and collab
 In conclusion, the selection of tools and technologies is a crucial aspect of project planning in data science. Data scientists carefully evaluate programming languages, IDEs, data storage solutions, distributed computing frameworks, visualization tools, and version control systems to create a well-rounded and efficient workflow. The chosen tools and technologies should align with the project requirements, data characteristics, and computational resources available. By leveraging the right set of tools, data scientists can streamline their workflows, enhance productivity, and deliver high-quality and impactful results in their data science projects.
 :::
 
+<!--
 | Purpose       | Library        | Description                                                    | Website                                      |
 |---------------|----------------|----------------------------------------------------------------|----------------------------------------------|
 | Data Analysis | NumPy          | Numerical computing library for efficient array operations     | [NumPy](https://numpy.org)                    |
@@ -118,41 +126,142 @@ In conclusion, the selection of tools and technologies is a crucial aspect of pr
 |               | SciPy          | Scientific computing library for advanced mathematical functions and algorithms | [SciPy](https://www.scipy.org)        |
 |               | scikit-learn   | Machine learning library with various algorithms and utilities | [scikit-learn](https://scikit-learn.org)      |
 |               | statsmodels    | Statistical modeling and testing library                       | [statsmodels](https://www.statsmodels.org)    |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.6\hsize}X|>{\hsize=2.2\hsize}X|>{\hsize=0.6\hsize}X|}
+\hline\hline
+\textbf{Purpose} & \textbf{Library} & \textbf{Description} & \textbf{Website} \\
+\hline
+Data Analysis & NumPy & Numerical computing library for efficient array \mbox{operations} & \href{https://numpy.org}{NumPy} \\
+& pandas & Data manipulation and analysis library & \href{https://pandas.pydata.org}{pandas} \\
+& SciPy & Scientific computing library for advanced \mbox{mathematical} functions and algorithms & \href{https://www.scipy.org}{SciPy} \\
+& scikit-learn & Machine learning library with various algorithms and utilities & \href{https://scikit-learn.org}{scikit-learn} \\
+& statsmodels & Statistical modeling and testing library & \href{https://www.statsmodels.org}{statsmodels} \\
+\hline\hline
+\end{tabularx}
+\caption{Data analysis libraries in Python.}
+\end{table}
 
 
+<!--
 | Purpose       | Library        | Description                                                    | Website                                      |
 |---------------|----------------|----------------------------------------------------------------|----------------------------------------------|
 | Visualization | Matplotlib     | 2D plotting library                                            | [Matplotlib](https://matplotlib.org)          |
 |               | Seaborn        | Statistical data visualization library                         | [Seaborn](https://seaborn.pydata.org)         |
 |               | Plotly         | Interactive visualization library                              | [Plotly](https://plotly.com/python)           |
 |               | ggplot2        | Grammar of Graphics-based plotting system (Python via `plotnine`) | [ggplot2](https://ggplot2.tidyverse.org)    |
+-->
 
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.6\hsize}X|>{\hsize=2.2\hsize}X|>{\hsize=0.6\hsize}X|}
+\hline\hline
+\textbf{Purpose} & \textbf{Library} & \textbf{Description} & \textbf{Website} \\
+\hline
+Visualization & Matplotlib & 2D plotting library & \href{https://matplotlib.org}{Matplotlib} \\
+& Seaborn & Statistical data visualization library & \href{https://seaborn.pydata.org}{Seaborn} \\
+& Plotly & Interactive visualization library & \href{https://plotly.com/python}{Plotly} \\
+& ggplot2 & Grammar of Graphics-based plotting system (Python via \texttt{plotnine}) & \href{https://ggplot2.tidyverse.org}{ggplot2} \\
+\hline\hline
+\end{tabularx}
+\caption{Data visualization libraries in Python.}
+\end{table}
+
+<!--
 | Purpose       | Library        | Description                                                    | Website                                      |
 |---------------|----------------|----------------------------------------------------------------|----------------------------------------------|
 | Deep Learning | TensorFlow     | Open-source deep learning framework                            | [TensorFlow](https://www.tensorflow.org)      |
 |               | Keras          | High-level neural networks API (works with TensorFlow)         | [Keras](https://keras.io)                     |
 |               | PyTorch        | Deep learning framework with dynamic computational graphs       | [PyTorch](https://pytorch.org)                |
+-->
 
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.6\hsize}X|>{\hsize=2.2\hsize}X|>{\hsize=0.6\hsize}X|}
+\hline\hline
+\textbf{Purpose} & \textbf{Library} & \textbf{Description} & \textbf{Website} \\
+\hline
+Deep \mbox{Learning} & TensorFlow & Open-source deep learning framework & \href{https://www.tensorflow.org}{TensorFlow} \\
+& Keras & High-level neural networks API (works with \mbox{TensorFlow}) & \href{https://keras.io}{Keras} \\
+& PyTorch & Deep learning framework with dynamic \mbox{computational} graphs & \href{https://pytorch.org}{PyTorch} \\
+\hline\hline
+\end{tabularx}
+\caption{Deep learning frameworks in Python.}
+\end{table}
+
+<!--
 | Purpose       | Library        | Description                                                    | Website                                      |
 |---------------|----------------|----------------------------------------------------------------|----------------------------------------------|
 | Database      | SQLAlchemy     | SQL toolkit and Object-Relational Mapping (ORM) library        | [SQLAlchemy](https://www.sqlalchemy.org)      |
 |               | PyMySQL        | Pure-Python MySQL client library                               | [PyMySQL](https://pymysql.readthedocs.io)     |
 |               | psycopg2       | PostgreSQL adapter for Python                                  | [psycopg2](https://www.psycopg.org)           |
 |               | SQLite3        | Python's built-in SQLite3 module                               | [SQLite3](https://docs.python.org/3/library/sqlite3.html) |
+-->
 
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.6\hsize}X|>{\hsize=2.2\hsize}X|>{\hsize=0.6\hsize}X|}
+\hline\hline
+\textbf{Purpose} & \textbf{Library} & \textbf{Description} & \textbf{Website} \\
+\hline
+Database & SQLAlchemy & SQL toolkit and Object-Relational Mapping (ORM) library & \href{https://www.sqlalchemy.org}{SQLAlchemy} \\
+& PyMySQL & Pure-Python MySQL client library & \href{https://pymysql.readthedocs.io}{PyMySQL} \\
+& psycopg2 & PostgreSQL adapter for Python & \href{https://www.psycopg.org}{psycopg2} \\
+& SQLite3 & Python's built-in SQLite3 module & \href{https://docs.python.org/3/library/sqlite3.html}{SQLite3} \\
+\hline\hline
+\end{tabularx}
+\caption{Database libraries in Python.}
+\end{table}
+
+<!--
 | Purpose       | Library        | Description                                                    | Website                                      |
 |---------------|----------------|----------------------------------------------------------------|----------------------------------------------|
 | Workflow      | Jupyter Notebook | Interactive and collaborative coding environment               | [Jupyter](https://jupyter.org)                |
 |               | Apache Airflow | Platform to programmatically author, schedule, and monitor workflows | [Apache Airflow](https://airflow.apache.org) |
 |               | Luigi          | Python package for building complex pipelines of batch jobs    | [Luigi](https://luigi.readthedocs.io)          |
 |               | Dask           | Parallel computing library for scaling Python workflows        | [Dask](https://dask.org)                      |
+-->
 
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.6\hsize}X|>{\hsize=2.2\hsize}X|>{\hsize=0.6\hsize}X|}
+\hline\hline
+\textbf{Purpose} & \textbf{Library} & \textbf{Description} & \textbf{Website} \\
+\hline
+Workflow & Jupyter Notebook & Interactive and collaborative coding environment & \href{https://jupyter.org}{Jupyter} \\
+& Apache \mbox{Airflow} & Platform to programmatically author, schedule, and monitor workflows & \href{https://airflow.apache.org}{Apache \mbox{Airflow}} \\
+& Luigi & Python package for building complex pipelines of batch jobs & \href{https://luigi.readthedocs.io}{Luigi} \\
+& Dask & Parallel computing library for scaling Python \mbox{workflows} & \href{https://dask.org}{Dask} \\
+\hline\hline
+\end{tabularx}
+\caption{Workflow and task automation libraries in Python.}
+\end{table}
 
+<!--
 | Purpose       | Library        | Description                                                    | Website                                      |
 |---------------|----------------|----------------------------------------------------------------|----------------------------------------------|
 | Version Control | Git           | Distributed version control system                             | [Git](https://git-scm.com)                    |
 |               | GitHub         | Web-based Git repository hosting service                       | [GitHub](https://github.com)                  |
 |               | GitLab         | Web-based Git repository management and CI/CD platform         | [GitLab](https://gitlab.com)                  |
+-->
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.6\hsize}X|>{\hsize=0.6\hsize}X|>{\hsize=2.2\hsize}X|>{\hsize=0.6\hsize}X|}
+\hline
+\textbf{Purpose} & \textbf{Library} & \textbf{Description} & \textbf{Website} \\
+\hline\hline
+Version \mbox{Control} & Git & Distributed version control system & \href{https://git-scm.com}{Git} \\
+& GitHub & Web-based Git repository hosting service & \href{https://github.com}{GitHub} \\
+& GitLab & Web-based Git repository management and CI/CD platform & \href{https://gitlab.com}{GitLab} \\
+\hline\hline
+\end{tabularx}
+\caption{Version control and repository hosting services.}
+\end{table}
+
 
 ## Workflow Design
 
