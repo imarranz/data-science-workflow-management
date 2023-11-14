@@ -177,7 +177,7 @@ Accuracy & Calculates the ratio of correctly classified instances to the total n
 Precision & Represents the proportion of true positive predictions among all positive predictions in classification tasks. & scikit-learn: \texttt{\verb|precision_score|} \\ \hline
 Recall (Sensitivity) & Measures the proportion of true positive predictions among all actual positive instances in classification tasks. & scikit-learn: \texttt{\verb|recall_score|} \\ \hline
 F1 Score & Combines precision and recall into a single metric, providing a balanced measure of model performance. & scikit-learn: \texttt{\verb|f1_score|} \\ \hline
-ROC AUC & Quantifies the model's ability to distinguish between classes by plotting the true positive rate against the false positive rate. & scikit-learn: \texttt{\verb|roc_auc_score|} \\ \hline
+ROC AUC & Quantifies the model's ability to distinguish between classes by plotting the true positive rate against the false positive rate. & scikit-learn: \texttt{\verb|roc_auc_score|} \\
 \hline\hline
 \end{tabularx}
 \caption{Common machine learning evaluation metrics and their corresponding libraries.}
@@ -185,6 +185,40 @@ ROC AUC & Quantifies the model's ability to distinguish between classes by plott
 
 \clearpage
 \vfill
+
+###  Common Cross-Validation Techniques for Model Evaluation
+
+Cross-validation is a fundamental technique in machine learning for robustly estimating model performance. Below, I describe some of the most common cross-validation techniques:
+
+  * **K-Fold Cross-Validation**: In this technique, the dataset is divided into approximately equal-sized k partitions (folds). The model is trained and evaluated k times, each time using k-1 folds as training data and 1 fold as test data. The evaluation metric (e.g., accuracy, mean squared error, etc.) is calculated for each iteration, and the results are averaged to obtain an estimate of the model's performance.
+
+  * **Leave-One-Out (LOO) Cross-Validation**: In this approach, the number of folds is equal to the number of samples in the dataset. In each iteration, the model is trained with all samples except one, and the excluded sample is used for testing. This method can be computationally expensive and may not be practical for large datasets, but it provides a precise estimate of model performance.
+
+  * **Stratified Cross-Validation**: Similar to k-fold cross-validation, but it ensures that the class distribution in each fold is similar to the distribution in the original dataset. Particularly useful for imbalanced datasets where one class has many more samples than others.
+
+  * **Randomized Cross-Validation (Shuffle-Split)**: Instead of fixed k-fold splits, random divisions are made in each iteration. Useful when you want to perform a specific number of iterations with random splits rather than a predefined k.
+
+  * **Group K-Fold Cross-Validation**: Used when the dataset contains groups or clusters of related samples, such as subjects in a clinical study or users on a platform. Ensures that samples from the same group are in the same fold, preventing the model from learning information that doesn't generalize to new groups.
+
+These are some of the most commonly used cross-validation techniques. The choice of the appropriate technique depends on the nature of the data and the problem you are addressing, as well as computational constraints. Cross-validation is essential for fair model evaluation and reducing the risk of overfitting or underfitting.
+
+
+\begin{table}[H]
+\centering
+\begin{tabularx}{\textwidth}{|>{\hsize=0.8\hsize}X|>{\hsize=1.4\hsize}X|>{\hsize=0.8\hsize}X|}
+\hline\hline
+\textbf{Cross-Validation \mbox{Technique}} & \textbf{Description} & \textbf{Python Function} \\ \hline
+\hline
+K-Fold Cross-Validation & Divides the dataset into k partitions and trains/tests the model k times. It's widely used and versatile. & \texttt{.KFold} \\ \hline
+Leave-One-Out (LOO) \mbox{Cross-Validation} & Uses the number of partitions equal to the number of samples in the dataset, leaving one sample as the test set in each iteration. Precise but computationally expensive. & \texttt{.LeaveOneOut} \\ \hline
+Stratified \mbox{Cross-Validation} & Similar to k-fold but ensures that the class distribution is similar in each fold. Useful for imbalanced datasets. & \texttt{.StratifiedKFold} \\ \hline
+Randomized \mbox{Cross-Validation} (\mbox{Shuffle-Split}) & Performs random splits in each iteration. Useful for a specific number of iterations with random splits. & \texttt{.ShuffleSplit} \\ \hline
+Group K-Fold \mbox{Cross-Validation} & Designed for datasets with groups or clusters of related samples. Ensures that samples from the same group are in the same fold. & Custom implementation (use group indices and customize splits). \\
+\hline\hline
+\end{tabularx}
+\caption{Cross-Validation techniques in machine learning. Functions from module \texttt{sklearn.model\_selection}.}
+\label{tab:cross-validation-techniques}
+\end{table}
 
 ## Model Interpretability
 
@@ -206,10 +240,10 @@ Interpreting machine learning models has become a challenge due to the complexit
 \hline\hline
 \textbf{Library} & \textbf{Description} & \textbf{Website} \\
 \hline
-SHAP & Utilizes Shapley values to explain individual predictions and assess feature importance, providing insights into complex models. & \href{https://github.com/slundberg/shap}{SHAP} \\
-LIME & Generates local approximations to explain predictions of complex models, aiding in understanding model behavior for specific instances. & \href{https://github.com/marcotcr/lime}{LIME} \\
-ELI5 & Provides detailed explanations of machine learning models, including feature importance and prediction breakdowns. & \href{https://github.com/TeamHG-Memex/eli5}{ELI5} \\
-Yellowbrick & Focuses on model visualization, enabling exploration of feature relationships, evaluation of feature importance, and performance diagnostics. & \href{https://github.com/DistrictDataLabs/yellowbrick}{Yellowbrick} \\
+SHAP & Utilizes Shapley values to explain individual predictions and assess feature importance, providing insights into complex models. & \href{https://github.com/slundberg/shap}{SHAP} \\ \hline
+LIME & Generates local approximations to explain predictions of complex models, aiding in understanding model behavior for specific instances. & \href{https://github.com/marcotcr/lime}{LIME} \\ \hline
+ELI5 & Provides detailed explanations of machine learning models, including feature importance and prediction breakdowns. & \href{https://github.com/TeamHG-Memex/eli5}{ELI5} \\ \hline
+Yellowbrick & Focuses on model visualization, enabling exploration of feature relationships, evaluation of feature importance, and performance diagnostics. & \href{https://github.com/DistrictDataLabs/yellowbrick}{Yellowbrick} \\ \hline
 Skater & Enables interpretation of complex models through function approximation and sensitivity analysis, supporting global and local explanations. & \href{https://github.com/datascienceinc/Skater}{Skater} \\
 \hline\hline
 \end{tabularx}
