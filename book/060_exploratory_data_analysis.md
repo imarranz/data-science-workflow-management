@@ -358,16 +358,16 @@ Keep in mind that the selection and application of specific data transformation 
 \hline\hline
 \textbf{Transformation} & \textbf{Mathematical Equation} & \textbf{Advantages} & \textbf{Disadvantages} \\
 \hline
-Logarithmic & $y = \log(x)$ & - Reduces the impact of extreme values & - Does not work with zero or negative values \\ \hline
-Square Root & $y = \sqrt{x}$ & - Reduces the impact of extreme values & - Does not work with negative values \\ \hline
-Exponential & $y = \exp^x$ & - Increases separation between small values & - Amplifies the differences between large values \\ \hline
+Logarithmic & $y = \log(x)$ & - Reduces the impact of \mbox{extreme} values & - Does not work with zero or negative values \\ \hline
+Square Root & $y = \sqrt{x}$ & - Reduces the impact of \mbox{extreme} values & - Does not work with negative values \\ \hline
+Exponential & $y = \exp^x$ & - Increases separation \mbox{between} small values & - Amplifies the differences between large values \\ \hline
 Box-Cox & $y = \dfrac{x^\lambda -1}{\lambda}$ & - Adapts to different types of data & - Requires estimation of the $\lambda$ parameter \\ \hline
 Power & $y = x^p$ & - Allows customization of the transformation & - Sensitivity to the choice of power value \\ \hline
-Square & $y = x^2$ & - Preserves the order of values & - Amplifies the differences between large values \\ \hline
+Square & $y = x^2$ & - Preserves the order of \mbox{values} & - Amplifies the differences between large values \\ \hline
 Inverse & $y = \dfrac{1}{x}$ & - Reduces the impact of large values & - Does not work with zero or negative values \\ \hline
-Min-Max \mbox{Scaling} & $y = \dfrac{x - min_x}{max_x - min_x}$ & - Scales the data to a specific range & - Sensitive to outliers \\ \hline
-Z-Score Scaling & $y = \dfrac{x - \bar{x}}{\sigma_{x}}$ & - Centers the data around zero and scales with standard deviation & - Sensitive to outliers \\ \hline
-Rank \mbox{Transformation} & Assigns rank values to the data points & - Preserves the order of values and handles ties gracefully & - Loss of information about the original values \\
+Min-Max \mbox{Scaling} & $y = \dfrac{x - min_x}{max_x - min_x}$ & - Scales the data to a \mbox{specific} range & - Sensitive to outliers \\ \hline
+Z-Score Scaling & $y = \dfrac{x - \bar{x}}{\sigma_{x}}$ & - Centers the data around zero and scales with \mbox{standard} deviation & - Sensitive to outliers \\ \hline
+Rank \mbox{Transformation} & Assigns rank values to the data points & - Preserves the order of values and handles ties \mbox{gracefully} & - Loss of information about the original values \\
 \hline\hline
 \end{tabularx}
 \caption{Data transformation methods in statistics.}
