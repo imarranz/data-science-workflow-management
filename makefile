@@ -15,6 +15,7 @@ INSTITUTE = "Ibon Martínez-Arranz"
 AUTHOR = "Ibon Martínez-Arranz"
 TITLE = "Data Science Workflow Management"
 OUTPUT = "book"
+INFO = "pdf.info"
 
 
 all: epub pdf
@@ -71,8 +72,9 @@ pdf:
 		--metadata=title:$(TITLE) \
 		--metadata=author:$(AUTHOR)
 
-	pdftk templates/figures/cover.pdf $(OUTPUT)".pdf" cat output Data\ Science\ Workflow\ Management.pdf
-	rm $(OUTPUT)".pdf"
+	pdftk templates/figures/cover.pdf $(OUTPUT)".pdf" cat output $(OUTPUT)"2.pdf"
+	pdftk $(OUTPUT)"2.pdf" update_info_utf8 $(INFO) output $(TITLE)".pdf"
+	rm $(OUTPUT)".pdf" $(OUTPUT)"2.pdf"
 
 # https://github.com/Wandmalfarbe/pandoc-latex-template
 # https://pypi.org/project/pandoc-latex-environment/
