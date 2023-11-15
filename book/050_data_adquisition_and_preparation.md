@@ -11,6 +11,8 @@ In the realm of data science projects, data acquisition and preparation are fund
     \caption*{In the area of data science projects, data acquisition and preparation serve as foundational steps that underpin the successful generation of insights and analysis. During this phase, the focus is on sourcing pertinent data from diverse origins, converting it into an appropriate format, and executing essential preprocessing procedures to guarantee its quality and suitability for use.}
 \end{figure}
 
+\clearpage
+\vfill
 
 **Data Acquisition: Gathering the Raw Materials**
 
@@ -105,14 +107,14 @@ The power of data extraction and transformation lies in their ability to convert
 \hline\hline
 \textbf{Purpose} & \textbf{Library/Package} & \textbf{Description} & \textbf{Website} \\
 \hline
-Data \mbox{Manipulation} & pandas & A powerful library for data manipulation and analysis in Python, providing data \mbox{structures} and functions for data cleaning and transformation. & \href{https://pandas.pydata.org}{pandas} \\
+Data \mbox{Manipulation} & pandas & A powerful library for data manipulation and analysis in Python, providing data \mbox{structures} and functions for data cleaning and transformation. & \href{https://pandas.pydata.org}{pandas} \\ \cline{2-4}
  & dplyr & A popular package in R for data \mbox{manipulation}, offering a consistent syntax and \mbox{functions} for filtering, grouping, and \mbox{summarizing} data. & \href{https://dplyr.tidyverse.org}{dplyr} \\
 \hline
-Web Scraping & BeautifulSoup & A Python library for parsing HTML and XML documents, commonly used for web \mbox{scraping} and extracting data from web pages. & \href{https://www.crummy.com/software/BeautifulSoup/}{BeautifulSoup} \\
- & Scrapy & A Python framework for web \mbox{scraping}, \mbox{providing} a high-level API for extracting data from websites efficiently. & \href{https://scrapy.org}{Scrapy} \\
+Web Scraping & BeautifulSoup & A Python library for parsing HTML and XML documents, commonly used for web \mbox{scraping} and extracting data from web pages. & \href{https://www.crummy.com/software/BeautifulSoup/}{BeautifulSoup} \\ \cline{2-4}
+ & Scrapy & A Python framework for web \mbox{scraping}, \mbox{providing} a high-level API for extracting data from websites efficiently. & \href{https://scrapy.org}{Scrapy} \\ \cline{2-4}
  & XML & An R package for working with XML data, \mbox{offering} functions to parse, \mbox{manipulate}, and extract information from XML \mbox{documents}. & \href{https://cran.r-project.org/package=XML}{XML} \\
 \hline
-API \mbox{Integration} & requests & A Python library for making HTTP requests, commonly used for interacting with APIs and retrieving data from web services. & \href{https://requests.readthedocs.io}{requests} \\
+API \mbox{Integration} & requests & A Python library for making HTTP requests, commonly used for interacting with APIs and retrieving data from web services. & \href{https://requests.readthedocs.io}{requests} \\ \cline{2-4}
  & httr & An R package for making HTTP requests, providing functions for interacting with web services and APIs. & \href{https://cran.r-project.org/package=httr}{httr} \\
 \hline\hline
 \end{tabularx}
@@ -209,7 +211,7 @@ Data \mbox{Formatting} & lubridate & A package in R that facilitates handling an
 Data \mbox{Validation} & validate & An R package that provides a declarative approach for defining validation rules and validating data against them, ensuring data quality and integrity. & \href{https://cran.r-project.org/package=validate}{validate} \\
 \hline
 Data \mbox{Transformation} & tidyr & tidyr offers functions for reshaping and transforming data, facilitating tasks such as pivoting, gathering, and spreading variables. & \href{https://tidyr.tidyverse.org}{tidyr} \\
-\hline
+\cline{2-4}
 & stringr & A package that provides various string manipulation functions in R, useful for data cleaning tasks involving text data. & \href{https://stringr.tidyverse.org}{stringr} \\
 \hline\hline
 \end{tabularx}

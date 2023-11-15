@@ -203,16 +203,23 @@ Cross-validation is a fundamental technique in machine learning for robustly est
 These are some of the most commonly used cross-validation techniques. The choice of the appropriate technique depends on the nature of the data and the problem you are addressing, as well as computational constraints. Cross-validation is essential for fair model evaluation and reducing the risk of overfitting or underfitting.
 
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\textwidth]{figures/model-selection.pdf}
+    \caption{We visually compare the cross-validation behavior of many scikit-learn cross-validation functions. Next, we'll walk through several common cross-validation methods and visualize the behavior of each method. The figure was created by adapting the code from \href{https://scikit-learn.org/stable/auto\_examples/model\_selection/plot\_cv\_indices.html}{https://scikit-learn.org/stable/auto\_examples/model\_selection/plot\_cv\_indices.html}.}
+\end{figure}
+
+
 \begin{table}[H]
 \centering
 \begin{tabularx}{\textwidth}{|>{\hsize=0.8\hsize}X|>{\hsize=1.4\hsize}X|>{\hsize=0.8\hsize}X|}
 \hline\hline
 \textbf{Cross-Validation \mbox{Technique}} & \textbf{Description} & \textbf{Python Function} \\ \hline
 \hline
-K-Fold Cross-Validation & Divides the dataset into k partitions and trains/tests the model k times. It's widely used and versatile. & \texttt{.KFold} \\ \hline
-Leave-One-Out (LOO) \mbox{Cross-Validation} & Uses the number of partitions equal to the number of samples in the dataset, leaving one sample as the test set in each iteration. Precise but computationally expensive. & \texttt{.LeaveOneOut} \\ \hline
-Stratified \mbox{Cross-Validation} & Similar to k-fold but ensures that the class distribution is similar in each fold. Useful for imbalanced datasets. & \texttt{.StratifiedKFold} \\ \hline
-Randomized \mbox{Cross-Validation} (\mbox{Shuffle-Split}) & Performs random splits in each iteration. Useful for a specific number of iterations with random splits. & \texttt{.ShuffleSplit} \\ \hline
+K-Fold Cross-Validation & Divides the dataset into k partitions and trains/tests the model k times. It's widely used and versatile. & \texttt{.KFold()} \\ \hline
+Leave-One-Out (LOO) \mbox{Cross-Validation} & Uses the number of partitions equal to the number of samples in the dataset, leaving one sample as the test set in each iteration. Precise but computationally expensive. & \texttt{.LeaveOneOut()} \\ \hline
+Stratified \mbox{Cross-Validation} & Similar to k-fold but ensures that the class distribution is similar in each fold. Useful for imbalanced datasets. & \texttt{.StratifiedKFold()} \\ \hline
+Randomized \mbox{Cross-Validation} (\mbox{Shuffle-Split}) & Performs random splits in each iteration. Useful for a specific number of iterations with random splits. & \texttt{.ShuffleSplit()} \\ \hline
 Group K-Fold \mbox{Cross-Validation} & Designed for datasets with groups or clusters of related samples. Ensures that samples from the same group are in the same fold. & Custom implementation (use group indices and customize splits). \\
 \hline\hline
 \end{tabularx}
