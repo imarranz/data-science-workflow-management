@@ -6,7 +6,7 @@ In the field of data science and machine learning, model implementation and main
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/080_model_implementation_and_maintenance.png}
-    \caption*{In data science and machine learning field, the implementation and ongoing maintenance of models assume a vital role in translating the predictive capabilities of models into practical real-world applications.}
+    \caption*{In data science and machine learning field, the implementation and ongoing maintenance of models assume a vital role in translating the predictive capabilities of models into practical real-world applications. Image generated with DALL-E.}
 \end{figure}
 
 This chapter explores the various aspects of model implementation and maintenance, focusing on the practical considerations and best practices involved. It covers topics such as deploying models in production environments, integrating models with data pipelines, monitoring model performance, and handling model updates and retraining.

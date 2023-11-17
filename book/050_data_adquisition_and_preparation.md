@@ -8,7 +8,7 @@ In the realm of data science projects, data acquisition and preparation are fund
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/050_data_adquisition_and_preparation.png}
-    \caption*{In the area of data science projects, data acquisition and preparation serve as foundational steps that underpin the successful generation of insights and analysis. During this phase, the focus is on sourcing pertinent data from diverse origins, converting it into an appropriate format, and executing essential preprocessing procedures to guarantee its quality and suitability for use.}
+    \caption*{In the area of data science projects, data acquisition and preparation serve as foundational steps that underpin the successful generation of insights and analysis. During this phase, the focus is on sourcing pertinent data from diverse origins, converting it into an appropriate format, and executing essential preprocessing procedures to guarantee its quality and suitability for use. Image generated with DALL-E.}
 \end{figure}
 
 \clearpage

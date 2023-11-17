@@ -6,7 +6,7 @@ Effective project planning is essential for successful data science projects. Pl
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/040_project_plannig.png}
-    \caption*{Efficient project planning plays an important role in the success of data science projects. This entails setting well-defined goals, delineating project responsibilities, gauging resource requirements, and establishing timeframes. In the realm of data science, where intricate analysis and modeling are central, meticulous project planning becomes even more vital to facilitate seamless execution and attain the desired results.}
+    \caption*{Efficient project planning plays an important role in the success of data science projects. This entails setting well-defined goals, delineating project responsibilities, gauging resource requirements, and establishing timeframes. In the realm of data science, where intricate analysis and modeling are central, meticulous project planning becomes even more vital to facilitate seamless execution and attain the desired results. Image generated with DALL-E.}
 \end{figure}
 
 

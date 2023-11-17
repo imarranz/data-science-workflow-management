@@ -9,7 +9,7 @@
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/060_exploratory_data_analysis.png}
-    \caption*{Exploratory Data Analysis (EDA) stands as an important phase within the data science workflow, encompassing the examination and visualization of data to glean insights, detect patterns, and comprehend the inherent structure of the dataset.}
+    \caption*{Exploratory Data Analysis (EDA) stands as an important phase within the data science workflow, encompassing the examination and visualization of data to glean insights, detect patterns, and comprehend the inherent structure of the dataset. Image generated with DALL-E.}
 \end{figure}
 
 The importance of EDA lies in its ability to provide a comprehensive understanding of the dataset before diving into more complex analysis or modeling techniques. By exploring the data, data scientists can identify potential issues such as missing values, outliers, or inconsistencies that need to be addressed before proceeding further. EDA also helps in formulating hypotheses, generating ideas, and guiding the direction of the analysis.

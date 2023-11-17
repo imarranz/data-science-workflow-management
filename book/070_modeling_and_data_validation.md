@@ -6,7 +6,7 @@ In the field of data science, modeling plays a crucial role in deriving insights
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/070_modeling_and_data_validation.png}
-    \caption*{In Data Science area, modeling holds an important position in extracting insights, making predictions, and addressing intricate challenges.}
+    \caption*{In Data Science area, modeling holds an important position in extracting insights, making predictions, and addressing intricate challenges. Image generated with DALL-E.}
 \end{figure}
 
 The process of modeling involves creating mathematical or statistical representations that capture the patterns, relationships, and trends present in the data. By building models, data scientists can gain a deeper understanding of the underlying mechanisms driving the data and make informed decisions based on the model's outputs.

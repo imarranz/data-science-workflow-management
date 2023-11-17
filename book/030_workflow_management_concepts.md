@@ -6,7 +6,7 @@ Data science is a complex and iterative process that involves numerous steps and
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/030_workflow_management_concepts.png}
-    \caption*{The field of data science is characterized by its intricate and iterative nature, encompassing a multitude of stages and tools, from data gathering to model deployment. To proficiently oversee this procedure, a comprehensive grasp of workflow management principles is indispensable. Workflow management encompasses the definition, execution, and supervision of processes to guarantee their efficient and effective implementation.}
+    \caption*{The field of data science is characterized by its intricate and iterative nature, encompassing a multitude of stages and tools, from data gathering to model deployment. To proficiently oversee this procedure, a comprehensive grasp of workflow management principles is indispensable. Workflow management encompasses the definition, execution, and supervision of processes to guarantee their efficient and effective implementation. Image generated with DALL-E.}
 \end{figure}
 
 In the context of data science, workflow management involves managing the process of data collection, cleaning, analysis, modeling, and deployment. It requires a systematic approach to handling data and leveraging appropriate tools and technologies to ensure that data science projects are delivered on time, within budget, and to the satisfaction of stakeholders.
