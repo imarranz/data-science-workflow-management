@@ -14,7 +14,7 @@ FOOTER_RIGHT = "Page \thepage"
 INSTITUTE = "Ibon Martínez-Arranz"
 AUTHOR = "Ibon Martínez-Arranz"
 TITLE = "Data Science Workflow Management"
-OUTPUT = "book"
+INTERMEDIATE_OUTPUT = "book"
 INFO = "pdf.info"
 
 
@@ -51,7 +51,7 @@ pdf:
 		book/070_modeling_and_data_validation.md \
 		book/080_model_implementation_and_maintenance.md \
 		book/090_monitoring_and_continuos_improvement.md \
-		--output $(OUTPUT)".pdf" \
+		--output $(INTERMEDIATE_OUTPUT)".pdf" \
 		--from markdown \
 		--template $(TEMPLATE) \
 		--toc \
@@ -72,9 +72,9 @@ pdf:
 		--metadata=title:$(TITLE) \
 		--metadata=author:$(AUTHOR)
 
-	pdftk templates/figures/cover.pdf $(OUTPUT)".pdf" cat output $(OUTPUT)"2.pdf"
-	pdftk $(OUTPUT)"2.pdf" update_info_utf8 $(INFO) output $(TITLE)".pdf"
-	rm $(OUTPUT)".pdf" $(OUTPUT)"2.pdf"
+	pdftk templates/figures/cover.pdf $(INTERMEDIATE_OUTPUT)".pdf" cat output $(INTERMEDIATE_OUTPUT)"2.pdf"
+	pdftk $(INTERMEDIATE_OUTPUT)"2.pdf" update_info_utf8 $(INFO) output $(TITLE)".pdf"
+	rm $(INTERMEDIATE_OUTPUT)".pdf" $(INTERMEDIATE_OUTPUT)"2.pdf"
 
 # https://github.com/Wandmalfarbe/pandoc-latex-template
 # https://pypi.org/project/pandoc-latex-environment/
