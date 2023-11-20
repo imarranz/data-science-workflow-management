@@ -2,7 +2,7 @@
 
 # Exploratory Data Analysis
 
-:::important
+::: important
 **Exploratory Data Analysis (EDA)** is a crucial step in the data science workflow that involves analyzing and visualizing data to gain insights, identify patterns, and understand the underlying structure of the dataset. It plays a vital role in uncovering relationships, detecting anomalies, and informing subsequent modeling and decision-making processes.
 :::
 
@@ -51,18 +51,18 @@ There are several key descriptive statistics commonly used to summarize data:
 Now, let's see some examples of how to calculate these descriptive statistics using Python:
 
 ```python
-import numpy as np
+import numpy as npy
 
 data = [10, 12, 14, 16, 18, 20]
 
-mean = np.mean(data)
-median = np.median(data)
-mode = np.mode(data)
-variance = np.var(data)
-std_deviation = np.std(data)
-data_range = np.ptp(data)
-percentile_25 = np.percentile(data, 25)
-percentile_75 = np.percentile(data, 75)
+mean = npy.mean(data)
+median = npy.median(data)
+mode = npy.mode(data)
+variance = npy.var(data)
+std_deviation = npy.std(data)
+data_range = npy.ptp(data)
+percentile_25 = npy.percentile(data, 25)
+percentile_75 = npy.percentile(data, 75)
 
 print("Mean:", mean)
 print("Median:", median)
@@ -78,11 +78,70 @@ In the above example, we use the NumPy library in Python to calculate the descri
 
 Descriptive statistics provide a concise summary of data, allowing data scientists to understand its central tendencies, variability, and distribution characteristics. These statistics serve as a foundation for further data analysis and decision-making in various fields, including data science, finance, social sciences, and more.
 
+With pandas library, it's even easier.
+
+```python
+import pandas as pd
+
+# Create a dictionary with sample data
+data = {
+    'Name': ['John', 'Maria', 'Carlos', 'Anna', 'Luis'],
+    'Age': [28, 24, 32, 22, 30],
+    'Height (cm)': [175, 162, 180, 158, 172],
+    'Weight (kg)': [75, 60, 85, 55, 70]
+}
+
+# Create a DataFrame from the dictionary
+df = pd.DataFrame(data)
+
+# Display the DataFrame
+print("DataFrame:")
+print(df)
+
+# Get basic descriptive statistics
+descriptive_stats = df.describe()
+
+# Display the descriptive statistics
+print("\nDescriptive Statistics:")
+print(descriptive_stats)
+```
+
+\clearpage
+\vfill
+
+and the expected results
+
+```bash
+DataFrame:
+     Name  Age  Height (cm)  Weight (kg)
+0    John   28          175           75
+1   Maria   24          162           60
+2  Carlos   32          180           85
+3    Anna   22          158           55
+4    Luis   30          172           70
+
+Descriptive Statistics:
+            Age  Height (cm)  Weight (kg)
+count   5.000000      5.00000     5.000000
+mean   27.200000    169.40000    69.000000
+std     4.509250      9.00947    11.704700
+min    22.000000    158.00000    55.000000
+25%    24.000000    162.00000    60.000000
+50%    28.000000    172.00000    70.000000
+75%    30.000000    175.00000    75.000000
+max    32.000000    180.00000    85.000000
+```
+
+The code creates a DataFrame with sample data about names, ages, heights, and weights and then uses `describe()` to obtain basic descriptive statistics such as count, mean, standard deviation, minimum, maximum, and quartiles for the numeric columns in the DataFrame.
+
 ## Data Visualization
 
 Data visualization is a critical component of exploratory data analysis (EDA) that allows us to visually represent data in a meaningful and intuitive way. It involves creating graphical representations of data to uncover patterns, relationships, and insights that may not be apparent from raw data alone. By leveraging various visual techniques, data visualization enables us to communicate complex information effectively and make data-driven decisions.
 
 Effective data visualization relies on selecting appropriate chart types based on the type of variables being analyzed. We can broadly categorize variables into three types:
+
+\clearpage
+\vfill
 
 ### Quantitative Variables
 
@@ -137,6 +196,9 @@ Categorical & Heatmap & Shows the relationship between two categorical variables
 \end{tabularx}
 \caption{Types of charts for categorical data visualization in Python.}
 \end{table}
+
+\clearpage
+\vfill
 
 ### Ordinal Variables
 

@@ -52,7 +52,9 @@ Moreover, data quality is of utmost importance in the data acquisition process. 
 
 As technology continues to evolve, data acquisition methods are constantly evolving as well. Advancements in data acquisition techniques, such as web scraping, APIs, IoT devices, and machine learning algorithms, have expanded the possibilities of accessing and capturing data. These technologies enable organizations to acquire vast amounts of data in real-time, providing valuable insights for dynamic decision-making.
 
-In conclusion, data acquisition serves as a critical foundation for successful data-driven projects. By effectively identifying, collecting, and ensuring the quality of data, organizations can unlock the potential of data to gain valuable insights and drive informed decision-making. It is through strategic data acquisition practices that organizations can derive actionable intelligence, stay competitive, and fuel innovation in today's data-driven world.
+::: tip
+Data acquisition serves as a critical foundation for successful data-driven projects. By effectively identifying, collecting, and ensuring the quality of data, organizations can unlock the potential of data to gain valuable insights and drive informed decision-making. It is through strategic data acquisition practices that organizations can derive actionable intelligence, stay competitive, and fuel innovation in today's data-driven world.
+:::
 
 ## Selection of Data Sources: Choosing the Right Path to Data Exploration
 
@@ -68,7 +70,9 @@ Furthermore, data scientists must consider the feasibility and practicality of a
 
 The selection of data sources requires a balance between the richness of the data and the available resources. Sometimes, compromises may need to be made due to limitations in terms of data availability, cost, or time constraints. Data scientists must weigh the potential benefits of using certain data sources against the associated costs and effort required for data acquisition and preparation.
 
-In conclusion, the selection of data sources is a critical step in any data science project. By carefully considering the project's objectives, data requirements, quality standards, and available resources, data scientists can choose the most relevant and reliable sources of data for analysis. This thoughtful selection process sets the stage for accurate, meaningful, and impactful data exploration and analysis, leading to valuable insights and informed decision-making.
+:::important
+The selection of data sources is a critical step in any data science project. By carefully considering the project's objectives, data requirements, quality standards, and available resources, data scientists can choose the most relevant and reliable sources of data for analysis. This thoughtful selection process sets the stage for accurate, meaningful, and impactful data exploration and analysis, leading to valuable insights and informed decision-making.
+:::
 
 ## Data Extraction and Transformation
 
@@ -264,6 +268,24 @@ In this practical example, we will explore the process of using a data extractio
 ### Data Extraction
 
 The first step in the workflow is to extract data from different sources. This may involve retrieving data from databases, APIs, web scraping, or accessing data stored in different file formats such as CSV, Excel, or JSON. Popular tools for data extraction include Python libraries like pandas, BeautifulSoup, and requests, which provide functionalities for fetching and parsing data from different sources.
+
+#### CSV
+
+::: info
+**CSV (Comma-Separated Values)**: CSV files are a common and simple way to store structured data. They consist of plain text where each line represents a data record, and fields within each record are separated by commas. CSV files are widely supported by various programming languages and data analysis tools. They are easy to create and manipulate using tools like Microsoft Excel, Python's Pandas library, or R. CSV files are an excellent choice for tabular data, making them suitable for tasks like storing datasets, exporting data, or sharing information in a machine-readable format.
+:::
+
+#### JSON
+
+::: info
+**JSON (JavaScript Object Notation)**: JSON files are a lightweight and flexible data storage format. They are human-readable and easy to understand, making them a popular choice for both data exchange and configuration files. JSON stores data in a key-value pair format, allowing for nested structures. It is particularly useful for semi-structured or hierarchical data, such as configuration settings, API responses, or complex data objects in web applications. JSON files can be easily parsed and generated using programming languages like Python, JavaScript, and many others.
+:::
+
+#### Excel
+
+::: info
+Excel files, often in the XLSX format, are widely used for data storage and analysis, especially in business and finance. They provide a spreadsheet-based interface that allows users to organize data in tables and perform calculations, charts, and visualizations. Excel offers a rich set of features for data manipulation and visualization. While primarily known for its user-friendly interface, Excel files can be programmatically accessed and manipulated using libraries like Python's openpyxl or libraries in other languages. They are suitable for storing structured data that requires manual data entry, complex calculations, or polished presentation.
+:::
 
 ### Data Cleaning
 

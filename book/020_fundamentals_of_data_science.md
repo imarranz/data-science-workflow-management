@@ -56,6 +56,7 @@ In this chapter, we will provide an overview of the most commonly used programmi
 ::: info
 R is a programming language specifically designed for statistical computing and graphics. It is an open-source language that is widely used in data science for tasks such as data cleaning, visualization, and statistical modeling. R has a vast library of packages that provide tools for data manipulation, machine learning, and visualization.
 :::
+
 One of the key strengths of R is its flexibility and versatility. It allows users to easily import and manipulate data from a wide range of sources and provides a wide range of statistical techniques for data analysis. R also has an active and supportive community that provides regular updates and new packages for users.
 
 Some popular applications of R include data exploration and visualization, statistical modeling, and machine learning. R is also commonly used in academic research and has been used in many published papers across a variety of fields.

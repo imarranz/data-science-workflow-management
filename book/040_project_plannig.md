@@ -160,10 +160,11 @@ Data Analysis & NumPy & Numerical computing library for efficient array \mbox{op
 \hline\hline
 \textbf{Purpose} & \textbf{Library} & \textbf{Description} & \textbf{Website} \\
 \hline
-Visualization & Matplotlib & 2D plotting library & \href{https://matplotlib.org}{Matplotlib} \\
+Visualization & Matplotlib & Matplotlib is a Python library for creating various types of data visualizations, such as charts and graphs & \href{https://matplotlib.org}{Matplotlib} \\
 & Seaborn & Statistical data visualization library & \href{https://seaborn.pydata.org}{Seaborn} \\
 & Plotly & Interactive visualization library & \href{https://plotly.com/python}{Plotly} \\
 & ggplot2 & Grammar of Graphics-based plotting system (Python via \texttt{plotnine}) & \href{https://ggplot2.tidyverse.org}{ggplot2} \\
+& Altair & Altair is a Python library for declarative data visualization. It provides a simple and intuitive API for creating interactive and informative charts from data & \href{https://altair-viz.github.io/}{Altair} \\
 \hline\hline
 \end{tabularx}
 \caption{Data visualization libraries in Python.}
@@ -211,6 +212,7 @@ Database & SQLAlchemy & SQL toolkit and Object-Relational Mapping (ORM) library 
 & PyMySQL & Pure-Python MySQL client library & \href{https://pymysql.readthedocs.io}{PyMySQL} \\
 & psycopg2 & PostgreSQL adapter for Python & \href{https://www.psycopg.org}{psycopg2} \\
 & SQLite3 & Python's built-in SQLite3 module & \href{https://docs.python.org/3/library/sqlite3.html}{SQLite3} \\
+& DuckDB & DuckDB is a high-performance, in-memory database engine designed for interactive data analytics & \href{https://duckdb.org/}{DuckDB}\\
 \hline\hline
 \end{tabularx}
 \caption{Database libraries in Python.}
@@ -231,7 +233,7 @@ Database & SQLAlchemy & SQL toolkit and Object-Relational Mapping (ORM) library 
 \hline\hline
 \textbf{Purpose} & \textbf{Library} & \textbf{Description} & \textbf{Website} \\
 \hline
-Workflow & Jupyter Notebook & Interactive and collaborative coding environment & \href{https://jupyter.org}{Jupyter} \\
+Workflow & Jupyter \mbox{Notebook} & Interactive and collaborative coding environment & \href{https://jupyter.org}{Jupyter} \\
 & Apache \mbox{Airflow} & Platform to programmatically author, schedule, and monitor workflows & \href{https://airflow.apache.org}{Apache \mbox{Airflow}} \\
 & Luigi & Python package for building complex pipelines of batch jobs & \href{https://luigi.readthedocs.io}{Luigi} \\
 & Dask & Parallel computing library for scaling Python \mbox{workflows} & \href{https://dask.org}{Dask} \\
@@ -280,7 +282,7 @@ Moreover, workflow design also encompasses considerations for quality assurance 
 To aid in workflow design and management, various tools and technologies can be leveraged. Workflow management systems like Apache Airflow, Luigi, or Dask provide a framework for defining, scheduling, and monitoring the execution of tasks in a data pipeline. These tools enable data scientists to automate and orchestrate complex workflows, ensuring that tasks are executed in the desired order and with the necessary dependencies.
 
 ::: tip
-In conclusion, workflow design is a critical component of project planning in data science. It involves the thoughtful organization and structuring of tasks, resource allocation, sequencing, and quality assurance to achieve the project objectives efficiently. By carefully designing the workflow and leveraging appropriate tools and technologies, data scientists can streamline the project execution, enhance collaboration, and deliver high-quality results in a timely manner.
+Workflow design is a critical component of project planning in data science. It involves the thoughtful organization and structuring of tasks, resource allocation, sequencing, and quality assurance to achieve the project objectives efficiently. By carefully designing the workflow and leveraging appropriate tools and technologies, data scientists can streamline the project execution, enhance collaboration, and deliver high-quality results in a timely manner.
 :::
 
 ## Practical Example: How to Use a Project Management Tool to Plan and Organize the Workflow of a Data Science Project 
