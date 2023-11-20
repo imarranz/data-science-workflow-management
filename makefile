@@ -72,7 +72,11 @@ pdf:
 		--metadata=title:$(TITLE) \
 		--metadata=author:$(AUTHOR)
 
-	pdftk templates/figures/cover.pdf $(INTERMEDIATE_OUTPUT)".pdf" cat output $(INTERMEDIATE_OUTPUT)"2.pdf"
+	pdftk templates/figures/cover.pdf \
+	      templates/figures/page-white-template.pdf \
+	      templates/figures/page-authors-template.pdf \
+	      templates/figures/page-white-template.pdf \
+	      $(INTERMEDIATE_OUTPUT)".pdf" cat output $(INTERMEDIATE_OUTPUT)"2.pdf"
 	pdftk $(INTERMEDIATE_OUTPUT)"2.pdf" update_info_utf8 $(INFO) output $(TITLE)".pdf"
 	rm $(INTERMEDIATE_OUTPUT)".pdf" $(INTERMEDIATE_OUTPUT)"2.pdf"
 
