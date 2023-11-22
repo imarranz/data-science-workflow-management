@@ -277,7 +277,6 @@ There are several types of correlation analysis commonly used:
 Calculation of correlation coefficients can be performed using Python:
 
 ```python
-import numpy as np
 import pandas as pd
 
 # Generate sample data
@@ -377,6 +376,8 @@ Data transformation plays a vital role in preparing the data for analysis. It he
 \caption{Data preprocessing and machine learning libraries.}
 \end{table}
 
+\clearpage
+\vfill
 
 ### Types of Data Transformation
 

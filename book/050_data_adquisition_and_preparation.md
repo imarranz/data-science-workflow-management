@@ -184,6 +184,15 @@ Data \mbox{Validation} & pandas-schema & A Python library that enables the \mbox
 \caption{Key Python libraries and packages for data handling and processing.}
 \end{table}
 
+
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/data-cleaning.pdf}
+    \caption{Essential data preparation steps: From handling missing data to data transformation.}
+\end{figure}
+
 \hfill
 \clearpage
 
@@ -271,21 +280,48 @@ The first step in the workflow is to extract data from different sources. This m
 
 #### CSV
 
-::: info
-**CSV (Comma-Separated Values)**: CSV files are a common and simple way to store structured data. They consist of plain text where each line represents a data record, and fields within each record are separated by commas. CSV files are widely supported by various programming languages and data analysis tools. They are easy to create and manipulate using tools like Microsoft Excel, Python's Pandas library, or R. CSV files are an excellent choice for tabular data, making them suitable for tasks like storing datasets, exporting data, or sharing information in a machine-readable format.
-:::
+\begin{figure}[h]
+  \begin{minipage}{0.15\textwidth}
+    \includegraphics[width=\linewidth]{figures/csv.pdf}
+  \end{minipage}
+  \hfill
+  \vline
+  \hfill
+  \begin{minipage}{0.80\textwidth}
+    {\bfseries CSV (Comma-Separated Values)}: CSV files are a common and simple way to store structured data. They consist of plain text where each line represents a data record, and fields within each record are separated by commas. CSV files are widely supported by various programming languages and data analysis tools. They are easy to create and manipulate using tools like Microsoft Excel, Python's Pandas library, or R. CSV files are an excellent choice for tabular data, making them suitable for tasks like storing datasets, exporting data, or sharing information in a machine-readable format.
+  \end{minipage}
+\end{figure}
 
 #### JSON
 
-::: info
-**JSON (JavaScript Object Notation)**: JSON files are a lightweight and flexible data storage format. They are human-readable and easy to understand, making them a popular choice for both data exchange and configuration files. JSON stores data in a key-value pair format, allowing for nested structures. It is particularly useful for semi-structured or hierarchical data, such as configuration settings, API responses, or complex data objects in web applications. JSON files can be easily parsed and generated using programming languages like Python, JavaScript, and many others.
-:::
+\begin{figure}[h]
+  \begin{minipage}{0.15\textwidth}
+    \includegraphics[width=\linewidth]{figures/json.pdf}
+  \end{minipage}
+  \hfill
+  \vline
+  \hfill
+  \begin{minipage}{0.80\textwidth}
+    {\bfseries JSON (JavaScript Object Notation)}: JSON files are a lightweight and flexible data storage format. They are human-readable and easy to understand, making them a popular choice for both data exchange and configuration files. JSON stores data in a key-value pair format, allowing for nested structures. It is particularly useful for semi-structured or hierarchical data, such as configuration settings, API responses, or complex data objects in web applications. JSON files can be easily parsed and generated using programming languages like Python, JavaScript, and many others.
+  \end{minipage}
+\end{figure}
+
+\clearpage
+\vfill
 
 #### Excel
 
-::: info
-Excel files, often in the XLSX format, are widely used for data storage and analysis, especially in business and finance. They provide a spreadsheet-based interface that allows users to organize data in tables and perform calculations, charts, and visualizations. Excel offers a rich set of features for data manipulation and visualization. While primarily known for its user-friendly interface, Excel files can be programmatically accessed and manipulated using libraries like Python's openpyxl or libraries in other languages. They are suitable for storing structured data that requires manual data entry, complex calculations, or polished presentation.
-:::
+\begin{figure}[h]
+  \begin{minipage}{0.15\textwidth}
+    \includegraphics[width=\linewidth]{figures/xlsx.pdf}
+  \end{minipage}
+  \hfill
+  \vline
+  \hfill
+  \begin{minipage}{0.80\textwidth}
+    Excel files, often in the XLSX format, are widely used for data storage and analysis, especially in business and finance. They provide a spreadsheet-based interface that allows users to organize data in tables and perform calculations, charts, and visualizations. Excel offers a rich set of features for data manipulation and visualization. While primarily known for its user-friendly interface, Excel files can be programmatically accessed and manipulated using libraries like Python's openpyxl or libraries in other languages. They are suitable for storing structured data that requires manual data entry, complex calculations, or polished presentation.
+  \end{minipage}
+\end{figure}
 
 ### Data Cleaning
 

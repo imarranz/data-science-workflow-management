@@ -310,5 +310,5 @@ In this practical example, we will explore how to utilize a project management t
 By following these steps and leveraging a project management tool, data science projects can benefit from improved organization, enhanced collaboration, and efficient workflow management. The tool serves as a central hub for project-related information, enabling data scientists to stay focused, track progress, and ultimately deliver successful outcomes.
 
 ::: tip
-Remember, there are various project management tools available, such as Trello, Asana, Jira, or Microsoft Project, each offering different features and functionalities. Choose a tool that aligns with your project requirements and team preferences to maximize productivity and project success.
+Remember, there are various project management tools available, such as [Trello](https://trello.com/), [Asana](https://asana.com/), or [Jira](https://www.atlassian.com/software/jira), each offering different features and functionalities. Choose a tool that aligns with your project requirements and team preferences to maximize productivity and project success.
 :::

@@ -42,6 +42,13 @@ The process of monitoring and continuous improvement involves various activities
 
 By implementing robust monitoring and continuous improvement practices, data science teams can ensure that their models remain accurate, reliable, and provide value to the organization. It fosters a culture of learning and adaptation, allowing for the identification of new opportunities and the optimization of existing models.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.9\textwidth]{figures/drift-detection.pdf}
+    \caption{Illustration of Drift Detection in Modeling. The model's performance gradually deteriorates over time, necessitating retraining upon drift detection to maintain accuracy.}
+\end{figure}
+
+
 ### Performance Monitoring
 
 Performance monitoring is a critical aspect of the monitoring and continuous improvement process in data science. It involves tracking and evaluating key performance metrics to assess the effectiveness and reliability of deployed models. By monitoring these metrics, data scientists can gain insights into the model's performance, detect anomalies or deviations, and make informed decisions regarding model maintenance and enhancement.

@@ -266,7 +266,7 @@ These libraries offer various techniques and tools to interpret machine learning
 Here's an example of how to use a machine learning library, specifically `scikit-learn`, to train and evaluate a prediction model using the popular Iris dataset.
 
 ```python
-import numpy as np
+import numpy as npy
 from sklearn.datasets import load_iris
 from sklearn.model_selection import cross_val_score
 from sklearn.linear_model import LogisticRegression
@@ -280,10 +280,10 @@ X, y = iris.data, iris.target
 model = LogisticRegression()
 
 # Perform k-fold cross-validation
-cv_scores = cross_val_score(model, X, y, cv=5)
+cv_scores = cross_val_score(model, X, y, cv = 5)
 
 # Calculate the mean accuracy across all folds
-mean_accuracy = np.mean(cv_scores)
+mean_accuracy = npy.mean(cv_scores)
 
 # Train the model on the entire dataset
 model.fit(X, y)
