@@ -398,7 +398,9 @@ pdfchapter08:
 	      templates/figures/page-authors-template.pdf \
 	      templates/figures/page-white-template.pdf \
 	      $(INTERMEDIATE_OUTPUT)".pdf" cat output $(INTERMEDIATE_OUTPUT)"2.pdf"
+
 	pdftk $(INTERMEDIATE_OUTPUT)"2.pdf" update_info_utf8 $(INFO) output $(TITLECHAPTER08)".pdf"
+
 	rm $(INTERMEDIATE_OUTPUT)".pdf" $(INTERMEDIATE_OUTPUT)"2.pdf"
 
 	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$(TITLECHAPTER08)"2.pdf" $(TITLECHAPTER08)".pdf"
@@ -411,3 +413,11 @@ pdfchapter08:
 # https://pypi.org/project/pandoc-latex-environment/
 # https://pandoc-latex-tip.readthedocs.io/en/latest/index.html
 # https://pandoc-latex-environment.readthedocs.io/en/latest/
+
+## PDFTK
+# https://opensource.com/article/22/1/pdf-metadata-pdftk
+
+## pdf.info
+# InfoBegin
+# InfoKey: Title
+# InfoValue: Data Science Workflow Management
