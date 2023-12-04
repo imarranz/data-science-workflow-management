@@ -1,6 +1,12 @@
+#                    _           __  _  _
+#                   | |         / _|(_)| |
+#  _ __ ___    __ _ | | __ ___ | |_  _ | |  ___
+# | '_ ` _ \  / _` || |/ // _ \|  _|| || | / _ \
+# | | | | | || (_| ||   <|  __/| |  | || ||  __/
+# |_| |_| |_| \__,_||_|\_\\___||_|  |_||_| \___|
+#
 
-
-# Uso de Variables
+# Uso de Variables en makes
 # https://ftp.gnu.org/old-gnu/Manuals/make-3.79.1/html_chapter/make_6.html
 
 TEMPLATE = "./templates/dswm-template.tex"
@@ -25,30 +31,9 @@ TITLECHAPTER08 = "Monitoring and Continuos Improvement"
 INTERMEDIATE_OUTPUT = "book"
 INFO = "pdf.info"
 
+all: dswm pdfchapter01 pdfchapter02 pdfchapter03 pdfchapter04 pdfchapter05 pdfchapter06 pdfchapter07 pdfchapter08
 
-all: book pdfchapter01 pdfchapter02 pdfchapter03 pdfchapter04 pdfchapter05 pdfchapter06 pdfchapter07 pdfchapter08
-
-epub:
-
-	pandoc book/000_title.md \
-		book/010_introduction.md \
-		book/020_fundamentals_of_data_science.md \
-		book/030_workflow_management_concepts.md \
-		book/040_project_plannig.md \
-		book/050_data_adquisition_and_preparation.md \
-		book/060_exploratory_data_analysis.md \
-		book/070_modeling_and_data_validation.md \
-		book/080_model_implementation_and_maintenance.md \
-		book/090_monitoring_and_continuos_improvement.md \
-		-f markdown+emoji \
-		--output $(TITLE)".epub" \
-		--standalone \
-		--css style.css \
-		--toc \
-		--metadata=title:$(TITLEBOOK) \
-		--metadata=author:$(AUTHOR)
-
-book:
+dswm:
 	pandoc book/000_title.md \
 		book/010_introduction.md \
 		book/020_fundamentals_of_data_science.md \
@@ -80,18 +65,26 @@ book:
 		--metadata=title:$(TITLEBOOK) \
 		--metadata=author:$(AUTHOR)
 
+	# Con pdftk aǹadimos la cubierta y la página de los autores
 	pdftk templates/figures/cover.pdf \
 	      templates/figures/page-white-template.pdf \
 	      templates/figures/page-authors-template.pdf \
 	      templates/figures/page-white-template.pdf \
 	      $(INTERMEDIATE_OUTPUT)".pdf" cat output $(INTERMEDIATE_OUTPUT)"2.pdf"
+
+	# Con pdftk aǹadimos información al documento en pdf
 	pdftk $(INTERMEDIATE_OUTPUT)"2.pdf" update_info_utf8 $(INFO) output $(TITLEBOOK)".pdf"
+
+	# Eliminamos los documentos auxiliares que hemos generado para construir el documento final
 	rm $(INTERMEDIATE_OUTPUT)".pdf" $(INTERMEDIATE_OUTPUT)"2.pdf"
 
+	# Con este comando reducimos el tamaño del documento final
 	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$(TITLEBOOK)"2.pdf" $(TITLEBOOK)".pdf"
 
+	# Eliminamos un fichero auxiliar
 	rm $(TITLEBOOK)".pdf"
 
+	# Renombramos el documento final
 	mv $(TITLEBOOK)"2.pdf" $(TITLEBOOK)".pdf"
 
 
