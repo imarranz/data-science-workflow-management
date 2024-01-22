@@ -215,36 +215,20 @@ By leveraging these diverse resources, learners and practitioners in the field o
 <img src="https://m.media-amazon.com/images/I/41ZHhv1MT4L._SY445_SX342_.jpg" alt="Python for Data Analysis" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"Python for Data Analysis" by Wes McKinney**: Essential for learning data manipulation in Python using pandas, offering practical guidance with real-world examples.
 <br clear="left"/>
 
+<img src="https://m.media-amazon.com/images/I/71zoLTSAWNL._SY342_.jpg" alt="The Art of Data Science" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"The Art of Data Science" by Roger D. Peng & Elizabeth Matsui**: Delves into the philosophical and practical aspects of data analysis, providing unique perspectives.
+<ber clear="left">
 
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="https://m.media-amazon.com/images/I/41ZHhv1MT4L._SY445_SX342_.jpg" alt="Python for Data Analysis" style="width: 100px; height: 150px; margin-right: 20px;">
-    <p style="margin: 0:"><strong>"Python for Data Analysis" by Wes McKinney:</strong> Essential for learning data manipulation in Python using pandas, offering practical guidance with real-world examples.</p>
-</div>
+<img src="https://m.media-amazon.com/images/I/51pn2LKGkmL._SY445_SX342_.jpg" alt="R for Data Science" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"R for Data Science" by Hadley Wickham & Garrett Grolemund**: A comprehensive guide to using R for data importing, tidying, transforming, and visualizing.
+<br clear="left">
 
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <img src="https://m.media-amazon.com/images/I/71zoLTSAWNL._SY342_.jpg" style="width: 100px; height: 150px; margin-right: 20px;">
-    <p><strong>"The Art of Data Science" by Roger D. Peng & Elizabeth Matsui:</strong> Delves into the philosophical and practical aspects of data analysis, providing unique perspectives.</p>
-</div>
+<img src="https://mashimo.files.wordpress.com/2016/12/screen-shot-2016-12-04-at-18-50-21.png?w=373&h=464" align="left" alt="Machine Learning Yearning" style="width: 100px; height: 150px; margin-right: 20px;"> **"Machine Learning Yearning" by Andrew Ng**: Offers practical strategies for structuring machine learning projects, by a leading figure in the field.
+<br clear="left">
 
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <img src="https://m.media-amazon.com/images/I/51pn2LKGkmL._SY445_SX342_.jpg" style="width: 100px; height: 150px; margin-right: 20px;">
-    <p><strong>"R for Data Science" by Hadley Wickham & Garrett Grolemund:</strong> A comprehensive guide to using R for data importing, tidying, transforming, and visualizing.</p>
-</div>
+<img src="https://m.media-amazon.com/images/I/51d4ivN7DGL._SY445_SX342_.jpg" align="left" alt="Introduction to Machine Learning with Python" style="width: 100px; height: 150px; margin-right: 20px;"> **"Introduction to Machine Learning with Python" by Andreas C. Müller & Sarah Guido**: A hands-on approach to learning with Python, focusing on practical applications.
+<br clear="left">
 
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <img src="https://mashimo.files.wordpress.com/2016/12/screen-shot-2016-12-04-at-18-50-21.png?w=373&h=464" style="width: 100px; height: 150px; margin-right: 20px;">
-    <p><strong>"Machine Learning Yearning" by Andrew Ng:</strong> Offers practical strategies for structuring machine learning projects, by a leading figure in the field.</p>
-</div>
-
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <img src="https://m.media-amazon.com/images/I/51d4ivN7DGL._SY445_SX342_.jpg" style="width: 100px; height: 150px; margin-right: 20px;">
-    <p><strong>"Introduction to Machine Learning with Python" by Andreas C. Müller & Sarah Guido:</strong> A hands-on approach to learning with Python, focusing on practical applications.</p>
-</div>
-
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <img src="https://pictures.abebooks.com/inventory/md/md30569898145.jpg" style="width: 100px; height: 150px; margin-right: 20px;">
-    <p><strong>"Machine Learning Pocket Reference" by Matt Harrison:</strong> A compact guide filled with practical tips, ideal for quick consultations during project work.</p>
-</div>
+<img src="https://pictures.abebooks.com/inventory/md/md30569898145.jpg" align="left" alt="Machine Learning Pocket Reference" style="width: 100px; height: 150px; margin-right: 20px;"> **"Machine Learning Pocket Reference" by Matt Harrison**: A compact guide filled with practical tips, ideal for quick consultations during project work.
+<br clear="left">
 
 ### Project Documentation
 
