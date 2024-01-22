@@ -213,10 +213,8 @@ By leveraging these diverse resources, learners and practitioners in the field o
 #### Expanded List of Books
 
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
-    <img src="https://m.media-amazon.com/images/I/41ZHhv1MT4L._SY445_SX342_.jpg" style="width: 100px; height: 150px; margin-right: 20px;">
-    <div style="flex-grow: 1;">
-        <p><strong>"Python for Data Analysis" by Wes McKinney:</strong> Essential for learning data manipulation in Python using pandas, offering practical guidance with real-world examples.</p>
-    </div>
+  <img src="https://m.media-amazon.com/images/I/41ZHhv1MT4L._SY445_SX342_.jpg" alt="Python for Data Analysis" style="width: 100px; height: 150px; margin-right: 20px;">
+    <p style="margin: 0:"><strong>"Python for Data Analysis" by Wes McKinney:</strong> Essential for learning data manipulation in Python using pandas, offering practical guidance with real-world examples.</p>
 </div>
 
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
