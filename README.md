@@ -216,7 +216,7 @@ By leveraging these diverse resources, learners and practitioners in the field o
 <br clear="left"/>
 
 <img src="https://m.media-amazon.com/images/I/71zoLTSAWNL._SY342_.jpg" alt="The Art of Data Science" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"The Art of Data Science" by Roger D. Peng & Elizabeth Matsui**: Delves into the philosophical and practical aspects of data analysis, providing unique perspectives.
-<ber clear="left">
+<br clear="left">
 
 <img src="https://m.media-amazon.com/images/I/51pn2LKGkmL._SY445_SX342_.jpg" alt="R for Data Science" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"R for Data Science" by Hadley Wickham & Garrett Grolemund**: A comprehensive guide to using R for data importing, tidying, transforming, and visualizing.
 <br clear="left">
