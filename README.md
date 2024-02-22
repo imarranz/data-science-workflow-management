@@ -219,6 +219,9 @@ By leveraging these diverse resources, learners and practitioners in the field o
 
 #### Expanded List of Books
 
+<details>
+<summary><b>Books</b></summary>
+
 <!-- Python for Data Analysis -->
 <img src="https://m.media-amazon.com/images/I/41ZHhv1MT4L._SY445_SX342_.jpg" alt="Python for Data Analysis" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"Python for Data Analysis" by Wes McKinney**: This book is an indispensable resource for anyone aiming to utilize Python for data manipulation and analysis. Authored by Wes McKinney, the creator of the pandas library, it provides a comprehensive and practical approach to working with data in Python. The book covers basics to advanced techniques in pandas, making it accessible to both novices and seasoned practitioners. It's an essential read for those aspiring to excel in data analysis using Python.
 <br clear="left"/>
@@ -242,6 +245,8 @@ By leveraging these diverse resources, learners and practitioners in the field o
 <!-- Machine Learning Pocket Reference -->
 <img src="https://pictures.abebooks.com/inventory/md/md30569898145.jpg" align="left" alt="Machine Learning Pocket Reference" style="width: 100px; height: 150px; margin-right: 20px;"> **"Machine Learning Pocket Reference" by Matt Harrison**: Authored by Matt Harrison, this compact book is a quick-reference tool for data science professionals. It offers practical tips and concise examples covering the essential aspects of machine learning. Ideal for quick consultations and specific problem-solving in machine learning projects, it's a handy resource for on-the-go reference.
 <br clear="left">
+
+</details>
 
 ### Project Documentation
 
