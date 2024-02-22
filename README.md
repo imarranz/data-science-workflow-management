@@ -133,19 +133,26 @@ Websites are invaluable for staying current with the latest developments and for
 
 Documents and books provide a more in-depth look into topics, offering structured learning and comprehensive knowledge. Notable mentions include:
 
-  * **"Python for Data Analysis" by Wes McKinney:** A key resource for learning data manipulation in Python using pandas.
+  * **"Python for Data Analysis" by Wes McKinney**: A key resource for learning data manipulation in Python using pandas.
 
-  * **"The Art of Data Science" by Roger D. Peng & Elizabeth Matsui:** This book focuses on the philosophical and practical aspects of data analysis.
+  * **"The Art of Data Science" by Roger D. Peng & Elizabeth Matsui**: This book focuses on the philosophical and practical aspects of data analysis.
 
-  * **"R for Data Science" by Hadley Wickham & Garrett Grolemund:** A guide to using R for data importing, tidying, transforming, and visualizing.
+  * **"R for Data Science" by Hadley Wickham & Garrett Grolemund**: A guide to using R for data importing, tidying, transforming, and visualizing.
 
-  * **"Machine Learning Yearning" by Andrew Ng:** A practical guide to the strategies for structuring machine learning projects.
+  * **"Machine Learning Yearning" by Andrew Ng**: A practical guide to the strategies for structuring machine learning projects.
 
-  * **"Introduction to Machine Learning with Python" by Andreas C. Müller & Sarah Guido:** This book is a fantastic starting point for those new to machine learning. It provides a hands-on approach to learning with Python, focusing on practical applications and easy-to-understand explanations.
+  * **"Introduction to Machine Learning with Python" by Andreas C. Müller & Sarah Guido**: This book is a fantastic starting point for those new to machine learning. It provides a hands-on approach to learning with Python, focusing on practical applications and easy-to-understand explanations.
 
-  * **"Machine Learning Pocket Reference" by Matt Harrison:** This compact guide is perfect for practitioners who need a quick reference to common machine learning algorithms and tasks. It's filled with practical tips and is an excellent resource for quick consultations during project work.
+  * **"Machine Learning Pocket Reference" by Matt Harrison**: This compact guide is perfect for practitioners who need a quick reference to common machine learning algorithms and tasks. It's filled with practical tips and is an excellent resource for quick consultations during project work.
 
-  * **[icebreakeR]**(https://cran.r-project.org/doc/contrib/Robinson-icebreaker.pdf)
+  * **[icebreakeR](https://cran.r-project.org/doc/contrib/Robinson-icebreaker.pdf)**: This document is designed to seamlessly introduce beginners to the fundamentals of data science, blending key concepts with practical applications. Whether you're taking your first steps in data science or seeking to understand its core principles, "icebreaker" offers a clear and concise pathway.
+
+| Document Name | Brief Description | Link |
+|---------------|-------------------|------|
+| **Automate the Boring Stuff with Python** by Al Sweigart | Learn to automate daily tasks using Python. | [Link](https://automatetheboringstuff.com/) |
+| **R for Data Science** by Hadley Wickham & Garrett Grolemund | Comprehensive guide on data manipulation, visualization, and analysis using R. | [Link](https://r4ds.had.co.nz/) |
+| **Deep Learning** by Ian Goodfellow, Yoshua Bengio, and Aaron Courville | Introduction to the fundamentals of deep learning. | [Link](https://www.deeplearningbook.org/) |
+| **Fundamental of data Visualization** by Claus O. Wilke | A primer on making informative and compelling figures | [Link](https://clauswilke.com/dataviz/) |
 
 Each of these books offers a unique perspective and depth of knowledge in various aspects of data science and machine learning. Whether you're a beginner or an experienced practitioner, these resources can significantly enhance your understanding and skills in the field.
 
@@ -212,22 +219,28 @@ By leveraging these diverse resources, learners and practitioners in the field o
 
 #### Expanded List of Books
 
-<img src="https://m.media-amazon.com/images/I/41ZHhv1MT4L._SY445_SX342_.jpg" alt="Python for Data Analysis" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"Python for Data Analysis" by Wes McKinney**: Essential for learning data manipulation in Python using pandas, offering practical guidance with real-world examples.
+<!-- Python for Data Analysis -->
+<img src="https://m.media-amazon.com/images/I/41ZHhv1MT4L._SY445_SX342_.jpg" alt="Python for Data Analysis" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"Python for Data Analysis" by Wes McKinney**: This book is an indispensable resource for anyone aiming to utilize Python for data manipulation and analysis. Authored by Wes McKinney, the creator of the pandas library, it provides a comprehensive and practical approach to working with data in Python. The book covers basics to advanced techniques in pandas, making it accessible to both novices and seasoned practitioners. It's an essential read for those aspiring to excel in data analysis using Python.
 <br clear="left"/>
 
-<img src="https://m.media-amazon.com/images/I/71zoLTSAWNL._SY342_.jpg" alt="The Art of Data Science" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"The Art of Data Science" by Roger D. Peng & Elizabeth Matsui**: Delves into the philosophical and practical aspects of data analysis, providing unique perspectives.
+<!-- The Art of Data Science -->
+<img src="https://m.media-amazon.com/images/I/71zoLTSAWNL._SY342_.jpg" alt="The Art of Data Science" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"The Art of Data Science" by Roger D. Peng & Elizabeth Matsui**: This book offers a unique blend of philosophy and practicality in data analysis, delving into the decision-making process and key question formulation. Authored by Roger D. Peng and Elizabeth Matsui, it emphasizes a holistic approach in data science, extending beyond techniques to encompass the art of deriving insights from data. An essential read for a comprehensive understanding of data science as a discipline.
 <br clear="left">
 
-<img src="https://m.media-amazon.com/images/I/51pn2LKGkmL._SY445_SX342_.jpg" alt="R for Data Science" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"R for Data Science" by Hadley Wickham & Garrett Grolemund**: A comprehensive guide to using R for data importing, tidying, transforming, and visualizing.
+<!-- R for Data Science -->
+<img src="https://m.media-amazon.com/images/I/51pn2LKGkmL._SY445_SX342_.jpg" alt="R for Data Science" align="left" style="width: 100px; height: 150px; margin-right: 20px;"> **"R for Data Science" by Hadley Wickham & Garrett Grolemund**: This book is a must-have for those interested in delving into the R programming language. Hadley Wickham, a prominent figure in the R community, along with Garrett Grolemund, guide readers through importing, tidying, transforming, visualizing, and modeling data in R. Ideal for both beginners to R and seasoned analysts looking to enhance their skills, it provides a comprehensive tour through the most important parts of R for data science.
 <br clear="left">
 
-<img src="https://mashimo.files.wordpress.com/2016/12/screen-shot-2016-12-04-at-18-50-21.png?w=373&h=464" align="left" alt="Machine Learning Yearning" style="width: 100px; height: 150px; margin-right: 20px;"> **"Machine Learning Yearning" by Andrew Ng**: Offers practical strategies for structuring machine learning projects, by a leading figure in the field.
+<!-- Machine Learning Yearning -->
+<img src="https://mashimo.files.wordpress.com/2016/12/screen-shot-2016-12-04-at-18-50-21.png?w=373&h=464" align="left" alt="Machine Learning Yearning" style="width: 100px; height: 150px; margin-right: 20px;"> **"Machine Learning Yearning" by Andrew Ng**: Authored by Andrew Ng, a leading figure in machine learning, this book focuses on structuring machine learning projects. It discusses strategies to make intelligent decisions during the development of machine learning algorithms. A great resource for strategic thinking in machine learning, it's valuable for professionals aiming to enhance their project management and strategic skills in the field.
 <br clear="left">
 
-<img src="https://m.media-amazon.com/images/I/51d4ivN7DGL._SY445_SX342_.jpg" align="left" alt="Introduction to Machine Learning with Python" style="width: 100px; height: 150px; margin-right: 20px;"> **"Introduction to Machine Learning with Python" by Andreas C. Müller & Sarah Guido**: A hands-on approach to learning with Python, focusing on practical applications.
+<!-- Introduction to Machine Learning with Python -->
+<img src="https://m.media-amazon.com/images/I/51d4ivN7DGL._SY445_SX342_.jpg" align="left" alt="Introduction to Machine Learning with Python" style="width: 100px; height: 150px; margin-right: 20px;"> **"Introduction to Machine Learning with Python" by Andreas C. Müller & Sarah Guido**: Introduction to Machine Learning with Python" by Andreas C. Müller & Sarah Guido</strong>: This book serves as an accessible introduction to machine learning using Python. Authors Andreas C. Müller and Sarah Guido focus on practical application, utilizing the scikit-learn library. It's an excellent starting point for beginners and a solid resource for practitioners seeking to deepen their understanding of machine learning fundamentals.
 <br clear="left">
 
-<img src="https://pictures.abebooks.com/inventory/md/md30569898145.jpg" align="left" alt="Machine Learning Pocket Reference" style="width: 100px; height: 150px; margin-right: 20px;"> **"Machine Learning Pocket Reference" by Matt Harrison**: A compact guide filled with practical tips, ideal for quick consultations during project work.
+<!-- Machine Learning Pocket Reference -->
+<img src="https://pictures.abebooks.com/inventory/md/md30569898145.jpg" align="left" alt="Machine Learning Pocket Reference" style="width: 100px; height: 150px; margin-right: 20px;"> **"Machine Learning Pocket Reference" by Matt Harrison**: Authored by Matt Harrison, this compact book is a quick-reference tool for data science professionals. It offers practical tips and concise examples covering the essential aspects of machine learning. Ideal for quick consultations and specific problem-solving in machine learning projects, it's a handy resource for on-the-go reference.
 <br clear="left">
 
 ### Project Documentation
