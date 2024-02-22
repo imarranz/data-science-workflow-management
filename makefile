@@ -13,12 +13,15 @@ TEMPLATE = "./templates/dswm-template.tex"
 TOP_LEVEL_DIVISION = "chapter"
 TITLEPAGE_COLOR = "EEEEEE"
 TITLEPAGE_RULE_HEIGHT = 8
-TITLEPAGE_BACKGROUND = "./templates/figures/titlepage-background-template.pdf"
-PAGE_BACKGROUND = "./templates/figures/page-background-template.pdf"
+TITLEPAGE_BACKGROUND = "./templates/figures/titlepage-background-template-a5.pdf"
+PAGE_BACKGROUND = "./templates/figures/page-background-template-a5.pdf"
 PAGE_BACKGROUND_OPACITY = 0.8
 FOOTER_RIGHT = "Page \thepage"
 INSTITUTE = "Ibon Martínez-Arranz"
 AUTHOR = "Ibon Martínez-Arranz"
+PAPERSIZE = "a5"
+FONTSIZE = 10
+GEOMETRY = 1.5cm
 TITLEBOOK = "Data Science Workflow Management"
 TITLECHAPTER01 = "Fundamentals of Data Science"
 TITLECHAPTER02 = "Workflow Management Concepts"
@@ -31,9 +34,69 @@ TITLECHAPTER08 = "Monitoring and Continuos Improvement"
 INTERMEDIATE_OUTPUT = "book"
 INFO = "pdf.info"
 
-all: dswm pdfchapter01 pdfchapter02 pdfchapter03 pdfchapter04 pdfchapter05 pdfchapter06 pdfchapter07 pdfchapter08
+all: dswma4 dswma5 pdfchapter01 pdfchapter02 pdfchapter03 pdfchapter04 pdfchapter05 pdfchapter06 pdfchapter07 pdfchapter08
 
-dswm:
+dswma5:
+	pandoc book/000_title.md \
+		book/010_introduction.md \
+		book/020_fundamentals_of_data_science.md \
+		book/030_workflow_management_concepts.md \
+		book/040_project_plannig.md \
+		book/050_data_adquisition_and_preparation.md \
+		book/060_exploratory_data_analysis.md \
+		book/070_modeling_and_data_validation.md \
+		book/080_model_implementation_and_maintenance.md \
+		book/090_monitoring_and_continuos_improvement.md \
+		--output $(INTERMEDIATE_OUTPUT)".pdf" \
+		--from markdown \
+		--template $(TEMPLATE) \
+		--toc \
+		--variable book=True \
+		--top-level-division $(TOP_LEVEL_DIVISION) \
+		--listings \
+		--variable titlepage=True \
+		--variable titlepage-color=$(TITLEPAGE_COLOR) \
+		--variable titlepage-rule-height=$(TITLEPAGE_RULE_HEIGHT) \
+		--variable titlepage-background=$(TITLEPAGE_BACKGROUND) \
+		--variable page-background-opacity=$(PAGE_BACKGROUND_OPACITY) \
+		--variable footer-right=$(FOOTER_RIGHT) \
+		--variable linkcolor=primaryowlorange \
+		--variable urlcolor=primaryowlorange \
+		--variable institute=$(INSTITUTE) \
+		--variable papersize=$(PAPERSIZE) \
+		--variable fontsize=$(FONTSIZE) \
+		--variable geometry:left=$(GEOMETRY) \
+		--variable geometry:right=$(GEOMETRY) \
+		--variable geometry:top=2.5cm \
+		--variable geometry:bottom=2.5cm \
+		--filter pandoc-latex-environment \
+		--metadata=title:$(TITLEBOOK) \
+		--metadata=author:$(AUTHOR)
+
+	# Con pdftk aǹadimos la cubierta y la página de los autores
+	pdftk templates/figures/cover-a5.pdf \
+	      templates/figures/page-white-template-a5.pdf \
+	      templates/figures/page-authors-template-a5.pdf \
+	      templates/figures/page-white-template-a5.pdf \
+	      $(INTERMEDIATE_OUTPUT)".pdf" cat output $(INTERMEDIATE_OUTPUT)"2.pdf"
+
+	# Con pdftk aǹadimos información al documento en pdf
+	pdftk $(INTERMEDIATE_OUTPUT)"2.pdf" update_info_utf8 $(INFO) output $(TITLEBOOK)".pdf"
+
+	# Eliminamos los documentos auxiliares que hemos generado para construir el documento final
+	rm $(INTERMEDIATE_OUTPUT)".pdf" $(INTERMEDIATE_OUTPUT)"2.pdf"
+
+	# Con este comando reducimos el tamaño del documento final
+	gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$(TITLEBOOK)"2.pdf" $(TITLEBOOK)".pdf"
+
+	# Eliminamos un fichero auxiliar
+	rm $(TITLEBOOK)".pdf"
+
+	# Renombramos el documento final
+	mv $(TITLEBOOK)"2.pdf" $(TITLEBOOK)"-a5.pdf"
+
+
+dswma4:
 	pandoc book/000_title.md \
 		book/010_introduction.md \
 		book/020_fundamentals_of_data_science.md \
@@ -61,15 +124,16 @@ dswm:
 		--variable linkcolor=primaryowlorange \
 		--variable urlcolor=primaryowlorange \
 		--variable institute=$(INSTITUTE) \
+		--variable papersize=a4 \
 		--filter pandoc-latex-environment \
 		--metadata=title:$(TITLEBOOK) \
 		--metadata=author:$(AUTHOR)
 
 	# Con pdftk aǹadimos la cubierta y la página de los autores
-	pdftk templates/figures/cover.pdf \
-	      templates/figures/page-white-template.pdf \
-	      templates/figures/page-authors-template.pdf \
-	      templates/figures/page-white-template.pdf \
+	pdftk templates/figures/cover-a4.pdf \
+	      templates/figures/page-white-template-a4.pdf \
+	      templates/figures/page-authors-template-a4.pdf \
+	      templates/figures/page-white-template-a4.pdf \
 	      $(INTERMEDIATE_OUTPUT)".pdf" cat output $(INTERMEDIATE_OUTPUT)"2.pdf"
 
 	# Con pdftk aǹadimos información al documento en pdf
@@ -85,7 +149,7 @@ dswm:
 	rm $(TITLEBOOK)".pdf"
 
 	# Renombramos el documento final
-	mv $(TITLEBOOK)"2.pdf" $(TITLEBOOK)".pdf"
+	mv $(TITLEBOOK)"2.pdf" $(TITLEBOOK)"-a4.pdf"
 
 
 pdfchapter01:
