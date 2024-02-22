@@ -246,6 +246,23 @@ By leveraging these diverse resources, learners and practitioners in the field o
 <img src="https://pictures.abebooks.com/inventory/md/md30569898145.jpg" align="left" alt="Machine Learning Pocket Reference" style="width: 100px; height: 150px; margin-right: 20px;"> **"Machine Learning Pocket Reference" by Matt Harrison**: Authored by Matt Harrison, this compact book is a quick-reference tool for data science professionals. It offers practical tips and concise examples covering the essential aspects of machine learning. Ideal for quick consultations and specific problem-solving in machine learning projects, it's a handy resource for on-the-go reference.
 <br clear="left">
 
+<!-- Big Data: A Revolution That Will Transform How We Live, Work, and Think -->
+<img src="https://m.media-amazon.com/images/I/71sF9y+S3hL._AC_UF1000,1000_QL80_.jpg" align="left" alt="Big Data: A Revolution That Will Transform How We Live, Work, and Think" style="width: 100px; height: 150px; margin-right: 20px;"> **"Big Data: A Revolution That Will Transform How We Live, Work, and Think" by Viktor Mayer-Schönberger and Kenneth Cukier**: This book offers a broad perspective on how big data is changing our understanding of the world. It's an essential read for anyone interested in the implications of big data on society and business, exploring both the opportunities and challenges presented by vast amounts of data.
+<br clear="left">
+
+<!-- Practical Statistics for Data Scientists: 50 Essential Concepts -->
+<img src="https://m.media-amazon.com/images/I/81Sdk02bg+L._AC_UF894,1000_QL80_.jpg" align="left" alt="Practical Statistics for Data Scientists: 50 Essential Concepts" style="width: 100px; height: 150px; margin-right: 20px;"> **"Practical Statistics for Data Scientists: 50 Essential Concepts" by Andrew Bruce and Peter Bruce**: Perfect for those seeking a solid grounding in statistics applied to data science, this book covers essential concepts and provides practical examples. It's extremely useful for understanding how statistics are applied in data science projects, bridging the gap between theoretical concepts and real-world applications.
+<br clear="left">
+
+<!-- Pattern Recognition and Machine Learning -->
+<img src="https://m.media-amazon.com/images/I/71fqxXDY2ZL._AC_UF894,1000_QL80_.jpg" align="left" alt="Pattern Recognition and Machine Learning" style="width: 100px; height: 150px; margin-right: 20px;"> **"Pattern Recognition and Machine Learning" by Christopher M. Bishop**: A bit more advanced, this book focuses on the technical aspects of pattern recognition and machine learning. Ideal for those with a foundation in data science and looking to delve deeper into these topics, it offers a comprehensive and detailed exploration of the techniques and algorithms in machine learning and pattern recognition.
+<br clear="left">
+
+<!-- Storytelling with Data: A Data Visualization Guide for Business Professionals -->
+<img src="https://m.media-amazon.com/images/I/71EN1l+uQKL._SY466_.jpg" align="left" alt="Storytelling with Data: A Data Visualization Guide for Business Professionals" style="width: 100px; height: 150px; margin-right: 20px;"> **"Storytelling with Data: A Data Visualization Guide for Business Professionals" by Cole Nussbaumer Knaflic**: This book is fantastic for learning how to effectively present data. It teaches the skills necessary to turn data into clear and compelling visualizations, a key skill for any data scientist. The book focuses on the art of storytelling with data, making it a valuable resource for professionals who need to communicate data-driven insights effectively.
+<br clear="left">
+
+
 </details>
 
 ### Project Documentation
