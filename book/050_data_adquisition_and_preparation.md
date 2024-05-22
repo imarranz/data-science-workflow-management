@@ -278,6 +278,8 @@ In this practical example, we will explore the process of using a data extractio
 
 The first step in the workflow is to extract data from different sources. This may involve retrieving data from databases, APIs, web scraping, or accessing data stored in different file formats such as CSV, Excel, or JSON. Popular tools for data extraction include Python libraries like pandas, BeautifulSoup, and requests, which provide functionalities for fetching and parsing data from different sources.
 
+\clearpage
+
 #### CSV
 
 \begin{figure}[h]
@@ -308,6 +310,8 @@ The first step in the workflow is to extract data from different sources. This m
 
 \clearpage
 \vfill
+
+\clearpage
 
 #### Excel
 

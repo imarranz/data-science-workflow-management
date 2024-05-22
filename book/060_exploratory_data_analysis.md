@@ -343,33 +343,23 @@ Data transformation plays a vital role in preparing the data for analysis. It he
 \begin{table}[H]
 \centering
 
-\begin{tabularx}{\textwidth}{|>{\hsize=0.5\hsize}X|>{\hsize=0.7\hsize}X|>{\hsize=2.1\hsize}X|>{\hsize=0.7\hsize}X|}
+\begin{tabularx}{\textwidth}{|>{\hsize=0.7\hsize}X|>{\hsize=0.7\hsize}X|>{\hsize=1.9\hsize}X|>{\hsize=0.7\hsize}X|}
 \hline\hline
 \textbf{Purpose} & \textbf{Library Name} & \textbf{Description} & \textbf{Website} \\
 \hline
-\multicolumn{4}{|l|}{\textbf{Data Cleaning}} \\
-\hline
-& Pandas (Python) & A powerful data manipulation library for \mbox{cleaning} and preprocessing data. & \href{https://pandas.pydata.org/}{Pandas} \\
+Data \mbox{Cleaning} & Pandas (Python) & A powerful data manipulation library for \mbox{cleaning} and preprocessing data. & \href{https://pandas.pydata.org/}{Pandas} \\
 & dplyr (R) & Provides a set of functions for data wrangling and data manipulation tasks. & \href{https://dplyr.tidyverse.org/}{dplyr} \\
 \hline
-\multicolumn{4}{|l|}{\textbf{Normalization}} \\
-\hline
-& scikit-learn (Python) & Offers various normalization techniques such as Min-Max scaling and Z-score normalization. & \href{https://scikit-learn.org/}{scikit-learn} \\
+Normalization & scikit-learn (Python) & Offers various normalization techniques such as Min-Max scaling and Z-score normalization. & \href{https://scikit-learn.org/}{scikit-learn} \\
 & caret (R) & Provides pre-processing functions, including normalization, for building machine learning models. & \href{https://topepo.github.io/caret/}{caret} \\
 \hline
-\multicolumn{4}{|l|}{\textbf{Feature Engineering}} \\
-\hline
-& Featuretools (Python) & A library for automated feature engineering that can generate new features from existing ones. & \href{https://www.featuretools.com/}{Featuretools} \\
+Feature \mbox{Engineering} & Featuretools (Python) & A library for automated feature engineering that can generate new features from existing ones. & \href{https://www.featuretools.com/}{Featuretools} \\
 & recipes (R) & Offers a framework for feature engineering, \mbox{allowing} users to create custom feature \mbox{transformation} pipelines. & \href{https://recipes.tidymodels.org/}{recipes} \\
 \hline
-\multicolumn{4}{|l|}{\textbf{Non-Linearity Handling}} \\
-\hline
-& TensorFlow (Python) & A deep learning library that supports building and training non-linear models using neural \mbox{networks}. & \href{https://www.tensorflow.org/}{TensorFlow} \\
+Non-Linearity Handling & TensorFlow (Python) & A deep learning library that supports building and training non-linear models using neural \mbox{networks}. & \href{https://www.tensorflow.org/}{TensorFlow} \\
 & keras (R) & Provides high-level interfaces for building and training neural networks with non-linear \mbox{activation} functions. & \href{https://keras.io/}{keras} \\
 \hline
-\multicolumn{4}{|l|}{\textbf{Outlier Treatment}} \\
-\hline
-& PyOD (Python) & A comprehensive library for outlier detection and removal using various algorithms and \mbox{models}. & \href{https://pyod.readthedocs.io/}{PyOD} \\
+Outlier Treatment & PyOD (Python) & A comprehensive library for outlier detection and removal using various algorithms and \mbox{models}. & \href{https://pyod.readthedocs.io/}{PyOD} \\
 & outliers (R) & Implements various methods for detecting and handling outliers in datasets. & \href{https://cran.r-project.org/web/packages/outliers/index.html}{outliers} \\
 \hline\hline
 \end{tabularx}
