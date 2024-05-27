@@ -1,7 +1,7 @@
 # Data Science Workflow Management
 
 **Project Title** Data Science Workflow Management
-**Project Logo** (Include the logo image here)
+**Project Logo**
 
 **Version and Activity**
 
