@@ -42,6 +42,10 @@ header-includes:
       bookmarksopen=true,
       pdfborder={0 0 0}
   }
+  \hyphenation{
+      learning
+      providing
+  }
 
   ```
 pandoc-latex-environment:
