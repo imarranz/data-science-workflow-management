@@ -29,6 +29,7 @@
     * [Websites](#websites)
     * [Documents & Books](#documents-books)
     * [Articles](#articles)
+    * [YouTube Playlists for Data Science](#youtube-playlists-for-data-science)
     * [Online Reference Hub](#online-reference-hub)
   * [Project Documentation](#project-documentation)
     * [Documentation Process](#documentation-process)
