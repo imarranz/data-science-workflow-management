@@ -188,6 +188,11 @@ Explore this selection of YouTube playlists designed to enhance your skills in D
 
   * [Deep Learning](https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI): Dedicated to deep learning, the videos explore neural networks, learning algorithms, and training techniques, suitable for those looking to apply these technologies to complex data problems.
 
+
+<iframe width="420" height="315"
+src="https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU&loop=1">
+</iframe>
+
 #### Online Reference Hub
 
 **Clean Data**
