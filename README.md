@@ -164,6 +164,28 @@ Articles provide quick, focused insights into specific topics, trends, or issues
 
 By leveraging these diverse resources, learners and practitioners in the field of data science can gain a well-rounded understanding of the subject, keep abreast of new developments, and apply best practices in their projects.
 
+Certainly! Here’s an English version of the descriptions for each YouTube playlist, organized under a suitable heading:
+
+#### YouTube Playlists for Data Science
+
+Explore this selection of YouTube playlists designed to enhance your skills in Data Science, covering topics from Python programming to advanced Machine Learning.
+
+  * [Python](https://www.youtube.com/playlist?list=PL-osiE80TeTt2d9bfVyTiXJA-UTHn6WwU): This playlist covers Python tutorials from beginner to advanced levels, focusing on essential concepts, data structures, and algorithms specifically applied to data science.
+
+  * [SQL](https://www.youtube.com/playlist?list=PLD20298E653A970F8): An exhaustive resource for learning SQL, from fundamentals to complex querying, ideal for analysts and data scientists who need to extract and manipulate data from relational databases.
+
+  * [Machine Learning](https://www.youtube.com/playlist?list=PLQVvvaa0QuDfKTOs3Keq_kaG2P55YRn5v): Videos that introduce the principles of machine learning, including regression algorithms, classification, and neural networks, suitable for beginners and professionals looking to delve into advanced techniques.
+
+  * [Data Analysis](https://www.youtube.com/playlist?list=PLrRPvpgDmw0ks5W7U5NmDCU2ydSnNZA_1): This playlist provides a comprehensive look at data analysis, offering techniques and tools for handling, processing, and visualizing large datasets in various contexts.
+
+  * [Data Analyst](https://www.youtube.com/playlist?list=PLUaB-1hjhk8FE_XZ87vPPSfHqb6OcM0cF): Focused on the practical skills needed for a data analyst, these videos cover everything from data cleansing to advanced analysis and data presentation techniques.
+
+  * [Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab): Ideal for those looking to understand the mathematics behind data science algorithms, this playlist covers vectors, matrices, linear transformations, and more, applied to data science.
+
+  * [Calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr): This series covers fundamental calculus concepts such as derivatives, integrals, and series, essential for models and algorithms in machine learning and data science.
+
+  * [Deep Learning](https://www.youtube.com/playlist?list=PLtBw6njQRU-rwp5__7C0oIVt26ZgjG9NI): Dedicated to deep learning, the videos explore neural networks, learning algorithms, and training techniques, suitable for those looking to apply these technologies to complex data problems.
+
 #### Online Reference Hub
 
 **Clean Data**
