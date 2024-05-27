@@ -1,10 +1,6 @@
 
 # Data Acquisition and Preparation
 
-**Data Acquisition and Preparation: Unlocking the Power of Data in Data Science Projects**
-
-In the realm of data science projects, data acquisition and preparation are fundamental steps that lay the foundation for successful analysis and insights generation. This stage involves obtaining relevant data from various sources, transforming it into a suitable format, and performing necessary preprocessing steps to ensure its quality and usability. Let's delve into the intricacies of data acquisition and preparation and understand their significance in the context of data science projects.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/050_data_adquisition_and_preparation.png}
@@ -13,6 +9,10 @@ In the realm of data science projects, data acquisition and preparation are fund
 
 \clearpage
 \vfill
+
+**Data Acquisition and Preparation: Unlocking the Power of Data in Data Science Projects**
+
+In the realm of data science projects, data acquisition and preparation are fundamental steps that lay the foundation for successful analysis and insights generation. This stage involves obtaining relevant data from various sources, transforming it into a suitable format, and performing necessary preprocessing steps to ensure its quality and usability. Let's delve into the intricacies of data acquisition and preparation and understand their significance in the context of data science projects.
 
 **Data Acquisition: Gathering the Raw Materials**
 
@@ -102,8 +102,6 @@ The power of data extraction and transformation lies in their ability to convert
 | API Integration     | requests                 | A Python library for making HTTP requests, commonly used for interacting with APIs and retrieving data from web services.    | [requests](https://requests.readthedocs.io)      |
 |                      | httr                     | An R package for making HTTP requests, providing functions for interacting with web services and APIs.                     | [httr](https://cran.r-project.org/package=httr)   |
 -->
-\vfill
-\clearpage
 
 \begin{table}[H]
 \centering

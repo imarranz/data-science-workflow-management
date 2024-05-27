@@ -9,6 +9,9 @@ In the field of data science, modeling plays a crucial role in deriving insights
     \caption*{In Data Science area, modeling holds an important position in extracting insights, making predictions, and addressing intricate challenges. Image generated with DALL-E.}
 \end{figure}
 
+\clearpage
+\vfill
+
 The process of modeling involves creating mathematical or statistical representations that capture the patterns, relationships, and trends present in the data. By building models, data scientists can gain a deeper understanding of the underlying mechanisms driving the data and make informed decisions based on the model's outputs.
 
 But before delving into modeling, it is paramount to address the issue of data validation. Data validation encompasses the process of ensuring the accuracy, completeness, and reliability of the data used for modeling. Without proper data validation, the results obtained from the models may be misleading or inaccurate, leading to flawed conclusions and erroneous decision-making.
@@ -229,7 +232,11 @@ Group K-Fold \mbox{Cross-Validation} & Designed for datasets with groups or clus
 
 ## Model Interpretability
 
-Interpreting machine learning models has become a challenge due to the complexity and black-box nature of some advanced models. However, there are libraries like `SHAP` (SHapley Additive exPlanations) that can help shed light on model predictions and feature importance. SHAP provides tools to explain individual predictions and understand the contribution of each feature in the model's output. By leveraging SHAP, data scientists can gain insights into complex models and make informed decisions based on the interpretation of the underlying algorithms. It offers a valuable approach to interpretability, making it easier to understand and trust the predictions made by machine learning models. To explore more about `SHAP` and its interpretation capabilities, refer to the official documentation: [SHAP](https://github.com/slundberg/shap)
+Interpreting machine learning models has become a challenge due to the complexity and black-box nature of some advanced models. However, there are libraries like `SHAP` (SHapley Additive exPlanations) that can help shed light on model predictions and feature importance. SHAP provides tools to explain individual predictions and understand the contribution of each feature in the model's output. By leveraging SHAP, data scientists can gain insights into complex models and make informed decisions based on the interpretation of the underlying algorithms. It offers a valuable approach to interpretability, making it easier to understand and trust the predictions made by machine learning models. To explore more about `SHAP` and its interpretation capabilities, refer to the official documentation: [SHAP](https://github.com/slundberg/shap).
+
+\clearpage
+\vfill
+
 
 <!--
 | Library     | Description                                                | Website                                          |

@@ -2,15 +2,19 @@
 
 # Exploratory Data Analysis
 
-::: important
-**Exploratory Data Analysis (EDA)** is a crucial step in the data science workflow that involves analyzing and visualizing data to gain insights, identify patterns, and understand the underlying structure of the dataset. It plays a vital role in uncovering relationships, detecting anomalies, and informing subsequent modeling and decision-making processes.
-:::
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/060_exploratory_data_analysis.png}
     \caption*{Exploratory Data Analysis (EDA) stands as an important phase within the data science workflow, encompassing the examination and visualization of data to glean insights, detect patterns, and comprehend the inherent structure of the dataset. Image generated with DALL-E.}
 \end{figure}
+
+\clearpage
+\vfill
+
+::: important
+**Exploratory Data Analysis (EDA)** is a crucial step in the data science workflow that involves analyzing and visualizing data to gain insights, identify patterns, and understand the underlying structure of the dataset. It plays a vital role in uncovering relationships, detecting anomalies, and informing subsequent modeling and decision-making processes.
+:::
+
 
 The importance of EDA lies in its ability to provide a comprehensive understanding of the dataset before diving into more complex analysis or modeling techniques. By exploring the data, data scientists can identify potential issues such as missing values, outliers, or inconsistencies that need to be addressed before proceeding further. EDA also helps in formulating hypotheses, generating ideas, and guiding the direction of the analysis.
 
@@ -50,6 +54,9 @@ There are several key descriptive statistics commonly used to summarize data:
 
 Now, let's see some examples of how to calculate these descriptive statistics using Python:
 
+\clearpage
+\vfill
+
 ```python
 import numpy as npy
 
@@ -79,6 +86,9 @@ In the above example, we use the NumPy library in Python to calculate the descri
 Descriptive statistics provide a concise summary of data, allowing data scientists to understand its central tendencies, variability, and distribution characteristics. These statistics serve as a foundation for further data analysis and decision-making in various fields, including data science, finance, social sciences, and more.
 
 With pandas library, it's even easier.
+
+\clearpage
+\vfill
 
 ```python
 import pandas as pd
@@ -134,6 +144,9 @@ max    32.000000    180.00000    85.000000
 
 The code creates a DataFrame with sample data about names, ages, heights, and weights and then uses `describe()` to obtain basic descriptive statistics such as count, mean, standard deviation, minimum, maximum, and quartiles for the numeric columns in the DataFrame.
 
+\clearpage
+\vfill
+
 ## Data Visualization
 
 Data visualization is a critical component of exploratory data analysis (EDA) that allows us to visually represent data in a meaningful and intuitive way. It involves creating graphical representations of data to uncover patterns, relationships, and insights that may not be apparent from raw data alone. By leveraging various visual techniques, data visualization enables us to communicate complex information effectively and make data-driven decisions.
@@ -170,6 +183,9 @@ Discrete & Scatter Plot & Examines the relationship between variables & \texttt{
 \end{tabularx}
 \caption{Types of charts and their descriptions in Python.}
 \end{table}
+
+\clearpage
+\vfill
 
 ### Categorical Variables
 
@@ -275,6 +291,9 @@ There are several types of correlation analysis commonly used:
   * **Spearman Correlation**: Spearman correlation coefficient assesses the monotonic relationship between variables. It ranks the values of the variables and calculates the correlation based on the rank order. Spearman correlation is used when the variables are not necessarily linearly related but show a consistent trend.
 
 Calculation of correlation coefficients can be performed using Python:
+
+\clearpage
+\vfill
 
 ```python
 import pandas as pd

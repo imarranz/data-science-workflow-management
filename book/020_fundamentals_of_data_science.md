@@ -1,13 +1,16 @@
 
 # Fundamentals of Data Science
 
-Data science is an interdisciplinary field that combines techniques from statistics, mathematics, and computer science to extract knowledge and insights from data. The rise of big data and the increasing complexity of modern systems have made data science an essential tool for decision-making across a wide range of industries, from finance and healthcare to transportation and retail.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/020_fundamentals_of_data_science.png}
     \caption*{Data science is a multidisciplinary area that blends methods from statistics, mathematics, and computer science to derive wisdom and gain understanding from data. The emergence of big data and the growing intricacy of contemporary systems have transformed data science into a crucial instrument for informed decision-making in various sectors, including finance, healthcare, transportation, and retail. Image generated with DALL-E.}
 \end{figure}
+
+\clearpage
+\vfill
+
+Data science is an interdisciplinary field that combines techniques from statistics, mathematics, and computer science to extract knowledge and insights from data. The rise of big data and the increasing complexity of modern systems have made data science an essential tool for decision-making across a wide range of industries, from finance and healthcare to transportation and retail.
 
 The field of data science has a rich history, with roots in statistics and data analysis dating back to the 19th century. However, it was not until the 21st century that data science truly came into its own, as advancements in computing power and the development of sophisticated algorithms made it possible to analyze larger and more complex datasets than ever before.
 

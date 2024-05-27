@@ -1,14 +1,16 @@
 
 # Project Planning
 
-Effective project planning is essential for successful data science projects. Planning involves defining clear objectives, outlining project tasks, estimating resources, and establishing timelines. In the field of data science, where complex analysis and modeling are involved, proper project planning becomes even more critical to ensure smooth execution and achieve desired outcomes.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/040_project_plannig.png}
     \caption*{Efficient project planning plays an important role in the success of data science projects. This entails setting well-defined goals, delineating project responsibilities, gauging resource requirements, and establishing timeframes. In the realm of data science, where intricate analysis and modeling are central, meticulous project planning becomes even more vital to facilitate seamless execution and attain the desired results. Image generated with DALL-E.}
 \end{figure}
 
+\clearpage
+\vfill
+
+Effective project planning is essential for successful data science projects. Planning involves defining clear objectives, outlining project tasks, estimating resources, and establishing timelines. In the field of data science, where complex analysis and modeling are involved, proper project planning becomes even more critical to ensure smooth execution and achieve desired outcomes.
 
 In this chapter, we will explore the intricacies of project planning specifically tailored to data science projects. We will delve into the key elements and strategies that help data scientists effectively plan their projects from start to finish. A well-structured and thought-out project plan sets the foundation for efficient teamwork, mitigates risks, and maximizes the chances of delivering actionable insights.
 
@@ -118,6 +120,9 @@ Version control systems, such as Git, are essential for managing code and collab
 In conclusion, the selection of tools and technologies is a crucial aspect of project planning in data science. Data scientists carefully evaluate programming languages, IDEs, data storage solutions, distributed computing frameworks, visualization tools, and version control systems to create a well-rounded and efficient workflow. The chosen tools and technologies should align with the project requirements, data characteristics, and computational resources available. By leveraging the right set of tools, data scientists can streamline their workflows, enhance productivity, and deliver high-quality and impactful results in their data science projects.
 :::
 
+\clearpage
+\vfill
+
 <!--
 | Purpose       | Library        | Description                                                    | Website                                      |
 |---------------|----------------|----------------------------------------------------------------|----------------------------------------------|
@@ -170,6 +175,10 @@ Visualization & Matplotlib & Matplotlib is a Python library for creating various
 \caption{Data visualization libraries in Python.}
 \end{table}
 
+
+\clearpage
+\vfill
+
 <!--
 | Purpose       | Library        | Description                                                    | Website                                      |
 |---------------|----------------|----------------------------------------------------------------|----------------------------------------------|
@@ -217,6 +226,9 @@ Database & SQLAlchemy & SQL toolkit and Object-Relational Mapping (ORM) library 
 \end{tabularx}
 \caption{Database libraries in Python.}
 \end{table}
+
+\clearpage
+\vfill
 
 <!--
 | Purpose       | Library        | Description                                                    | Website                                      |

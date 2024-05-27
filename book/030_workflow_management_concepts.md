@@ -1,13 +1,16 @@
 
 # Workflow Management Concepts
 
-Data science is a complex and iterative process that involves numerous steps and tools, from data acquisition to model deployment. To effectively manage this process, it is essential to have a solid understanding of workflow management concepts. Workflow management involves defining, executing, and monitoring processes to ensure they are executed efficiently and effectively.
-
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/030_workflow_management_concepts.png}
     \caption*{The field of data science is characterized by its intricate and iterative nature, encompassing a multitude of stages and tools, from data gathering to model deployment. To proficiently oversee this procedure, a comprehensive grasp of workflow management principles is indispensable. Workflow management encompasses the definition, execution, and supervision of processes to guarantee their efficient and effective implementation. Image generated with DALL-E.}
 \end{figure}
+
+\clearpage
+\vfill
+
+Data science is a complex and iterative process that involves numerous steps and tools, from data acquisition to model deployment. To effectively manage this process, it is essential to have a solid understanding of workflow management concepts. Workflow management involves defining, executing, and monitoring processes to ensure they are executed efficiently and effectively.
 
 In the context of data science, workflow management involves managing the process of data collection, cleaning, analysis, modeling, and deployment. It requires a systematic approach to handling data and leveraging appropriate tools and technologies to ensure that data science projects are delivered on time, within budget, and to the satisfaction of stakeholders.
 
@@ -109,6 +112,11 @@ By including this information, you enable others to understand the environment i
 
 Moreover, detailed documentation in a notebook improves collaboration among team members, making it easier to share knowledge and understand the rationale behind the analysis. It serves as a valuable resource for future reference, ensuring that others can follow your work and build upon it effectively.
 
+By prioritizing reproducibility and adopting effective project documentation practices, data science teams can enhance collaboration, promote transparency, and foster trust in their work. Reproducible projects not only benefit individual researchers but also contribute to the advancement of the field by enabling others to build upon existing knowledge and drive further discoveries.
+
+\clearpage
+\vfill
+
 ```python
 %load_ext watermark
 %watermark \
@@ -148,7 +156,7 @@ Git hash: ----------------------------------------
 Git repo: ----------------------------------------
 ```
 
-By prioritizing reproducibility and adopting effective project documentation practices, data science teams can enhance collaboration, promote transparency, and foster trust in their work. Reproducible projects not only benefit individual researchers but also contribute to the advancement of the field by enabling others to build upon existing knowledge and drive further discoveries.
+
 
 <!--
 | Name            | Description                                                 | Website                                              |

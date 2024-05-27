@@ -45,6 +45,7 @@ header-includes:
   \hyphenation{
       learning
       providing
+      Transfor-ma-tion
   }
 
   ```

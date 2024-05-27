@@ -2,13 +2,17 @@
 
 # Monitoring and Continuous Improvement
 
-The final chapter of this book focuses on the critical aspect of monitoring and continuous improvement in the context of data science projects. While developing and implementing a model is an essential part of the data science lifecycle, it is equally important to monitor the model's performance over time and make necessary improvements to ensure its effectiveness and relevance.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{figures/chapters/090_monitoring_and_continuos_improvement.png}
     \caption*{The concluding chapter of this book centers around the essential topic of monitoring and continuous improvement within the context of data science projects. Image generated with DALL-E.}
 \end{figure}
+
+\clearpage
+\vfill
+
+The final chapter of this book focuses on the critical aspect of monitoring and continuous improvement in the context of data science projects. While developing and implementing a model is an essential part of the data science lifecycle, it is equally important to monitor the model's performance over time and make necessary improvements to ensure its effectiveness and relevance.
 
 Monitoring refers to the ongoing observation and assessment of the model's performance and behavior. It involves tracking key performance metrics, identifying any deviations or anomalies, and taking proactive measures to address them. Continuous improvement, on the other hand, emphasizes the iterative process of refining the model, incorporating feedback and new data, and enhancing its predictive capabilities.
 
@@ -219,6 +223,9 @@ In summary, A/B testing is a powerful technique in data science that enables the
 | pyAB         | A library specifically designed for conducting A/B tests in Python. It provides a user-friendly interface for designing and running A/B experiments, calculating performance metrics, and performing statistical analysis. | [pyAB](https://github.com/rahulpsathyaraj/pyAB)                     |
 | Evan         | Evan is a Python library for A/B testing. It offers functions for random treatment assignment, performance statistic calculation, and report generation. | [Evan](https://evan.readthedocs.io/en/latest/)              |
 -->
+
+\clearpage
+\vfill
 
 \begin{table}[H]
 \centering
