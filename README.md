@@ -286,6 +286,17 @@ Explore this selection of YouTube playlists designed to enhance your skills in D
 <img src="https://m.media-amazon.com/images/I/71EN1l+uQKL._SY466_.jpg" align="left" alt="Storytelling with Data: A Data Visualization Guide for Business Professionals" style="width: 100px; height: 150px; margin-right: 20px;"> **"Storytelling with Data: A Data Visualization Guide for Business Professionals" by Cole Nussbaumer Knaflic**: This book is fantastic for learning how to effectively present data. It teaches the skills necessary to turn data into clear and compelling visualizations, a key skill for any data scientist. The book focuses on the art of storytelling with data, making it a valuable resource for professionals who need to communicate data-driven insights effectively.
 <br clear="left">
 
+<!-- Data Visualization: A Practical Introduction -->
+<img src="https://m.media-amazon.com/images/I/41HmUOpNQKL._SX342_SY445_.jpg" align="left" alt="Storytelling with Data: A Data Visualization Guide for Business Professionals" style="width: 100px; height: 150px; margin-right: 20px;"> **"Data Visualization: A Practical Introduction" by Kieran Healy**: This book is a vital guide for anyone looking to deepen their understanding of visual data representation. Written by Kieran Healy, it emphasizes practical skills for creating effective visualizations that communicate insights clearly and effectively. The book integrates theory with step-by-step examples, teaching readers how to transform raw data into meaningful visuals. Ideal for students and professionals alike, it offers invaluable lessons in crafting visual narratives that stand out in the digital age.
+<br clear="left">
+
+<!-- Fundamentals of Data Visualization -->
+<img src="https://m.media-amazon.com/images/I/517DybM0hSL._SY445_SX342_.jpg" align="left" alt="Storytelling with Data: A Data Visualization Guide for Business Professionals" style="width: 100px; height: 150px; margin-right: 20px;"> **"Fundamentals of Data Visualization" by Claus O. Wilke**: Claus O. Wilke's book serves as an essential primer on the art and science of data visualization. It covers a range of strategies to present complex data with clarity and precision. Through detailed illustrations and examples, Wilke demonstrates how to avoid common pitfalls and create impactful visual representations of data. This book is perfect for researchers, data scientists, and anyone interested in the fundamentals of how to effectively communicate information visually.
+<br clear="left">
+
+<!-- R Programming for Data Science -->
+<img src="https://m.media-amazon.com/images/I/61oiBeQa-1L._SY466_.jpg" align="left" alt="Storytelling with Data: A Data Visualization Guide for Business Professionals" style="width: 100px; height: 150px; margin-right: 20px;"> **"R Programming for Data Science" by Roger D. Peng**: This book is a comprehensive introduction to using R for data science. Roger D. Peng, a renowned statistician, focuses on the practical aspects of coding in R for data analysis and statistical modeling. The book covers basic programming in R, data handling and processing, and how to perform statistical analyses. It is a crucial resource for anyone starting their journey in data science or for those seeking to solidify their R programming skills in a data-driven world.
+<br clear="left">
 
 </details>
 
