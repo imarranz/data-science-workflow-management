@@ -1,8 +1,8 @@
 # Data Science Workflow Management
 
-**Project Title** Data Science Workflow Management
-
-**Project Logo**
+<p align="center">
+  <img src="https://repository-images.githubusercontent.com/428254657/e5d82c29-6b41-4d2b-b115-3e17ab3f8de7" alt="Data Science Workflow Management">
+</p>
 
 **Version and Activity**
 
