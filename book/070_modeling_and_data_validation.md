@@ -164,7 +164,7 @@ Proper model evaluation helps to identify potential issues such as overfitting o
 | Recall (Sensitivity)          | Measures the proportion of true positive predictions among all actual positive instances in classification tasks. | scikit-learn: `recall_score`              |
 | F1 Score                      | Combines precision and recall into a single metric, providing a balanced measure of model performance. | scikit-learn: `f1_score`                  |
 | ROC AUC                       | Quantifies the model's ability to distinguish between classes by plotting the true positive rate against the false positive rate. | scikit-learn: `roc_auc_score`             |
--->
+
 
 \begin{table}[H]
 \centering
@@ -185,6 +185,29 @@ ROC AUC & Quantifies the model's ability to distinguish between classes by plott
 \end{tabularx}
 \caption{Common machine learning evaluation metrics and their corresponding libraries.}
 \end{table}
+
+-->
+
+In machine learning, evaluation metrics are crucial for assessing model performance. The **Mean Squared Error (MSE)** measures the average squared difference between the predicted and actual values in regression tasks. This metric is computed using the `mean_squared_error` function in the `scikit-learn` library.
+
+Another related metric is the **Root Mean Squared Error (RMSE)**, which represents the square root of the MSE to provide a measure of the average magnitude of the error. It is typically calculated by taking the square root of the MSE value obtained from `scikit-learn`.
+
+The **Mean Absolute Error (MAE)** computes the average absolute difference between predicted and actual values, also in regression tasks. This metric can be calculated using the `mean_absolute_error` function from `scikit-learn`.
+
+**R-squared** is used to measure the proportion of the variance in the dependent variable that is predictable from the independent variables. It is a key performance metric for regression models and can be found in the `statsmodels` library.
+
+For classification tasks, **Accuracy** calculates the ratio of correctly classified instances to the total number of instances. This metric is obtained using the `accuracy_score` function in `scikit-learn`.
+
+**Precision** represents the proportion of true positive predictions among all positive predictions. It helps determine the accuracy of the positive class predictions and is computed using `precision_score` from `scikit-learn`.
+
+**Recall**, or Sensitivity, measures the proportion of true positive predictions among all actual positives in classification tasks, using the `recall_score` function from `scikit-learn`.
+
+The **F1 Score** combines precision and recall into a single metric, providing a balanced measure of a model's accuracy and recall. It is calculated using the `f1_score` function in `scikit-learn`.
+
+Lastly, the **ROC AUC** quantifies a model's ability to distinguish between classes. It plots the true positive rate against the false positive rate and can be calculated using the `roc_auc_score` function from `scikit-learn`.
+
+These metrics are essential for evaluating the effectiveness of machine learning models, helping developers understand model performance in various tasks. Each metric offers a different perspective on model accuracy and error, allowing for comprehensive performance assessments.
+
 
 \clearpage
 \vfill

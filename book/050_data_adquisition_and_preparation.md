@@ -191,6 +191,18 @@ Data \mbox{Validation} & pandas-schema & A Python library that enables the \mbox
     \caption{Essential data preparation steps: From handling missing data to data transformation.}
 \end{figure}
 
+**Handling Missing Data**:Dealing with missing values by imputation, deletion, or interpolation methods to avoid biased or erroneous analyses.
+
+**Outlier Detection**: Identifying and addressing outliers, which can significantly impact statistical measures and model predictions.
+
+**Data Deduplication**: Identifying and removing duplicate entries to avoid duplication bias and ensure data integrity.
+
+**Standardization and Formatting**: Converting data into a consistent format, ensuring uniformity and compatibility across variables.
+
+**Data Validation and Verification**: Verifying the accuracy, completeness, and consistency of the data through various validation techniques.
+
+**Data Transformation**: Converting data into a suitable format, such as scaling numerical variables or transforming categorical variables.
+
 \hfill
 \clearpage
 

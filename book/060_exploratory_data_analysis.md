@@ -329,61 +329,15 @@ Data transformation is a crucial step in the exploratory data analysis process. 
 
 Data transformation plays a vital role in preparing the data for analysis. It helps in achieving the following objectives:
 
-  * **Data Cleaning:** Transformation techniques help in handling missing values, outliers, and inconsistent data entries. By addressing these issues, we ensure the accuracy and reliability of our analysis.
+  * **Data Cleaning:** Transformation techniques help in handling missing values, outliers, and inconsistent data entries. By addressing these issues, we ensure the accuracy and reliability of our analysis. For data cleaning, libraries like **Pandas** in Python provide powerful data manipulation capabilities (more details on [Pandas website](https://pandas.pydata.org/)). In R, the **dplyr** library offers a set of functions tailored for data wrangling and manipulation tasks (learn more at [dplyr](https://dplyr.tidyverse.org/)).
 
-  * **Normalization:** Different variables in a dataset may have different scales, units, or ranges. Normalization techniques such as min-max scaling or z-score normalization bring all variables to a common scale, enabling fair comparisons and avoiding bias in subsequent analyses.
+  * **Normalization:** Different variables in a dataset may have different scales, units, or ranges. Normalization techniques such as min-max scaling or z-score normalization bring all variables to a common scale, enabling fair comparisons and avoiding bias in subsequent analyses. The **scikit-learn** library in Python includes various normalization techniques (see [scikit-learn](https://scikit-learn.org/)), while in R, **caret** provides pre-processing functions including normalization for building machine learning models (details at [caret](https://topepo.github.io/caret/)).
 
-  * **Feature Engineering:** Transformation allows us to create new features or derive meaningful information from existing variables. This process involves extracting relevant information, creating interaction terms, or encoding categorical variables for better representation and predictive power.
+  * **Feature Engineering:** Transformation allows us to create new features or derive meaningful information from existing variables. This process involves extracting relevant information, creating interaction terms, or encoding categorical variables for better representation and predictive power. In Python, **Featuretools** is a library dedicated to automated feature engineering, enabling the generation of new features from existing data (visit [Featuretools](https://www.featuretools.com/)). For R users, **recipes** offers a framework to design custom feature transformation pipelines (more on [recipes](https://recipes.tidymodels.org/)).
 
-  * **Non-linearity Handling:** In some cases, relationships between variables may not be linear. Transforming variables using functions like logarithm, exponential, or power transformations can help capture non-linear patterns and improve model performance.
+  * **Non-linearity Handling:** In some cases, relationships between variables may not be linear. Transforming variables using functions like logarithm, exponential, or power transformations can help capture non-linear patterns and improve model performance. Python's **TensorFlow** library supports building and training complex non-linear models using neural networks (explore [TensorFlow](https://www.tensorflow.org/)), while **keras** in R provides high-level interfaces for neural networks with non-linear activation functions (find out more at [keras](https://keras.io/)).
 
-  * **Outlier Treatment:** Outliers can significantly impact the analysis and model performance. Transformations such as winsorization or logarithmic transformation can help reduce the influence of outliers without losing valuable information.
-
-<!--
-| **Purpose** | **Library Name** | **Description** | **Website** |
-|-------------------|-----------------|-----------------|--------------|
-| **Data Cleaning** |                 |                 |              |
-|                   | Pandas (Python) | A powerful data manipulation library for cleaning and preprocessing data. | [Pandas](https://pandas.pydata.org/) |
-|                   | dplyr (R)       | Provides a set of functions for data wrangling and data manipulation tasks. | [dplyr](https://dplyr.tidyverse.org/) |
-| **Normalization** |                 |                 |              |
-|                   | scikit-learn (Python) | Offers various normalization techniques such as Min-Max scaling and Z-score normalization. | [scikit-learn](https://scikit-learn.org/) |
-|                   | caret (R)       | Provides pre-processing functions, including normalization, for building machine learning models. | [caret](https://topepo.github.io/caret/) |
-| **Feature Engineering** |            |                 |              |
-|                   | Featuretools (Python) | A library for automated feature engineering that can generate new features from existing ones. | [Featuretools](https://www.featuretools.com/) |
-|                   | recipes (R)     | Offers a framework for feature engineering, allowing users to create custom feature transformation pipelines. | [recipes](https://recipes.tidymodels.org/) |
-| **Non-Linearity Handling** |         |                 |              |
-|                   | TensorFlow (Python) | A deep learning library that supports building and training non-linear models using neural networks. | [TensorFlow](https://www.tensorflow.org/) |
-|                   | keras (R)       | Provides high-level interfaces for building and training neural networks with non-linear activation functions. | [keras](https://keras.io/) |
-| **Outlier Treatment** |              |                 |              |
-|                   | PyOD (Python)   | A comprehensive library for outlier detection and removal using various algorithms and models. | [PyOD](https://pyod.readthedocs.io/) |
-|                   | outliers (R)    | Implements various methods for detecting and handling outliers in datasets. | [outliers](https://cran.r-project.org/web/packages/outliers/index.html) |
--->
-
-\begin{table}[H]
-\centering
-
-\begin{tabularx}{\textwidth}{|>{\hsize=0.7\hsize}X|>{\hsize=0.7\hsize}X|>{\hsize=1.9\hsize}X|>{\hsize=0.7\hsize}X|}
-\hline\hline
-\textbf{Purpose} & \textbf{Library Name} & \textbf{Description} & \textbf{Website} \\
-\hline
-Data \mbox{Cleaning} & Pandas (Python) & A powerful data manipulation library for \mbox{cleaning} and preprocessing data. & \href{https://pandas.pydata.org/}{Pandas} \\
-& dplyr (R) & Provides a set of functions for data wrangling and data manipulation tasks. & \href{https://dplyr.tidyverse.org/}{dplyr} \\
-\hline
-Normalization & scikit-learn (Python) & Offers various normalization techniques such as Min-Max scaling and Z-score normalization. & \href{https://scikit-learn.org/}{scikit-learn} \\
-& caret (R) & Provides pre-processing functions, including normalization, for building machine learning models. & \href{https://topepo.github.io/caret/}{caret} \\
-\hline
-Feature \mbox{Engineering} & Featuretools (Python) & A library for automated feature engineering that can generate new features from existing ones. & \href{https://www.featuretools.com/}{Featuretools} \\
-& recipes (R) & Offers a framework for feature engineering, \mbox{allowing} users to create custom feature \mbox{transformation} pipelines. & \href{https://recipes.tidymodels.org/}{recipes} \\
-\hline
-Non-Linearity Handling & TensorFlow (Python) & A deep learning library that supports building and training non-linear models using neural \mbox{networks}. & \href{https://www.tensorflow.org/}{TensorFlow} \\
-& keras (R) & Provides high-level interfaces for building and training neural networks with non-linear \mbox{activation} functions. & \href{https://keras.io/}{keras} \\
-\hline
-Outlier Treatment & PyOD (Python) & A comprehensive library for outlier detection and removal using various algorithms and \mbox{models}. & \href{https://pyod.readthedocs.io/}{PyOD} \\
-& outliers (R) & Implements various methods for detecting and handling outliers in datasets. & \href{https://cran.r-project.org/web/packages/outliers/index.html}{outliers} \\
-\hline\hline
-\end{tabularx}
-\caption{Data preprocessing and machine learning libraries.}
-\end{table}
+  * **Outlier Treatment:** Outliers can significantly impact the analysis and model performance. Transformations such as winsorization or logarithmic transformation can help reduce the influence of outliers without losing valuable information. **PyOD** in Python offers a comprehensive suite of tools for detecting and treating outliers using various algorithms and models (details at [PyOD](https://pyod.readthedocs.io/)).
 
 \clearpage
 \vfill

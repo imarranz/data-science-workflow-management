@@ -11,6 +11,8 @@ header-includes:
   \definecolor{secundaryowlgreen}{rgb}{0.63,0.83,0.29}
   \definecolor{secundaryowlgray}{rgb}{0.57,0.56,0.56}
   \definecolor{secundaryowlmagenta}{rgb}{0.57,0.06,0.33}
+  \definecolor{yellowcover}{rgb}{1.00,0.80,0.09}
+  \definecolor{browncover}{rgb}{0.25,0.22,0.14}
   \usepackage{tcolorbox}
   \usepackage{tabularx}
   \usepackage{float}
