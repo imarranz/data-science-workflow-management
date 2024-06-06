@@ -8,7 +8,7 @@ This project aims to provide a comprehensive guide for data science workflow man
 <div class="cover">
     <div class="cover-content">
         <div class="cover-image">
-            <img src="../figures/cover-dswm.png" alt="Data Science Workflow Management">
+            <img src="/../figures/cover-dswm.png" alt="Data Science Workflow Management">
         </div>
         <div class="cover-text">
             <p style="color: #403724; font-size: 1.2rem;"><b>Strategies and Best Practices for Efficient Data Analysis: Exploring Advanced Techniques and Tools for Effective Workflow Management in Data Science</b></p>
