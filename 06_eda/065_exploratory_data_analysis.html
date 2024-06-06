@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ibon Martínez-Arranz">
+  <link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/06_eda/065_exploratory_data_analysis.html">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Data Transformation - Data Science Workflow Management</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/custom.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Data Transformation";
+    var mkdocs_page_input_path = "06_eda/065_exploratory_data_analysis.md";
+    var mkdocs_page_url = "/imarranz/data-science-workflow-management/06_eda/065_exploratory_data_analysis.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Data Science Workflow Management</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../index.html">Data Science Workflow Management</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Introduction</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/011_introduction.html">Introduction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/012_introduction.html">What is Data Science Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/013_introduction.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fundamentals of Data Science</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/021_fundamentals_of_data_science.html">Fundamentals of Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/022_fundamentals_of_data_science.html">What is Data Science?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/023_fundamentals_of_data_science.html">Data Science Process</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/024_fundamentals_of_data_science.html">Programming Languages for Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/025_fundamentals_of_data_science.html">Data Science Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/026_fundamentals_of_data_science.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Workflow Management Concepts</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/031_workflow_management_concepts.html">Workflow Management Concepts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/032_workflow_management_concepts.html">What is Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/033_workflow_management_concepts.html">Why is Workflow Management Important?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/034_workflow_management_concepts.html">Workflow Management Models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/035_workflow_management_concepts.html">Workflow Management Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/036_workflow_management_concepts.html">Enhancing Collaboration and Reproducibility through Project Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/037_workflow_management_concepts.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/038_workflow_management_concepts.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Project Planning</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/041_project_plannig.html">Project Planning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/042_project_plannig.html">What is Project Planning?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/043_project_plannig.html">Problem Definition and Objectives</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/044_project_plannig.html">Selection of Modelling Techniques</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/045_project_plannig.html">Selection Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/046_project_plannig.html">Workflow Design</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/047_project_plannig.html">Practical Example</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Data Adquisition</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/055_data_adquisition_and_preparation.html">Data Cleaning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/056_data_adquisition_and_preparation.html">Data Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/057_data_adquisition_and_preparation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/058_data_adquisition_and_preparation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="061_exploratory_data_analysis.html">Exploratory Data Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="062_exploratory_data_analysis.html">Descriptive Statistics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="063_exploratory_data_analysis.html">Data Visualization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="064_exploratory_data_analysis.html">Correlation Analysis</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="065_exploratory_data_analysis.html">Data Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="066_exploratory_data_analysis.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="067_exploratory_data_analysis.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Modelling and Data Validation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/071_modeling_and_data_validation.html">Modelling and Data Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/072_modeling_and_data_validation.html">What is Data Modelling</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/073_modeling_and_data_validation.html">Selection of Modelling Algortihms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/074_modeling_and_data_validation.html">Model Training and Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/075_modeling_and_data_validation.html">selection of Best Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/076_modeling_and_data_validation.html">Model Evaluation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/077_modeling_and_data_validation.html">Model Interpretability</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/078_modeling_and_data_validation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/079_modeling_and_data_validation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Model Implementation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/081_model_implementation_and_maintenance.html">Model Implementation and Maintenance</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/082_model_implementation_and_maintenance.html">What is Model Implementation?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/083_model_implementation_and_maintenance.html">selection of Implementation Platform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/084_model_implementation_and_maintenance.html">Integration with Existing Systems</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/085_model_implementation_and_maintenance.html">Testing and Validation of the Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/086_model_implementation_and_maintenance.html">Model Maintenance and Updating</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Monitoring and Improvement</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/091_monitoring_and_continuos_improvement.html">Monitoring and Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/092_monitoring_and_continuos_improvement.html">What is Monitoring and Continuous Improvement?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/093_monitoring_and_continuos_improvement.html">Model Performance Monitoring</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/094_monitoring_and_continuos_improvement.html">Problem Identification</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/095_monitoring_and_continuos_improvement.html">Continuous Model Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/096_monitoring_and_continuos_improvement.html">References</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Data Science Workflow Management</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Exploratory Data Analysis &raquo;</li>
+        
+      
+    
+    <li>Data Transformation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/06_eda/065_exploratory_data_analysis.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+    <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+        <a href="066_exploratory_data_analysis.html" class="btn btn-neutral float-right" title="Practical Example">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="064_exploratory_data_analysis.html" class="btn btn-neutral" title="Correlation Analysis"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="data_transformation">Data Transformation<a class="headerlink" href="#data_transformation" title="Permanent link">#</a></h2>
+<p>Data transformation is a crucial step in the exploratory data analysis process. It involves modifying the original dataset to improve its quality, address data issues, and prepare it for further analysis. By applying various transformations, we can uncover hidden patterns, reduce noise, and make the data more suitable for modeling and visualization.</p>
+<h3 id="importance_of_data_transformation">Importance of Data Transformation<a class="headerlink" href="#importance_of_data_transformation" title="Permanent link">#</a></h3>
+<p>Data transformation plays a vital role in preparing the data for analysis. It helps in achieving the following objectives:</p>
+<ul>
+<li>
+<p><strong>Data Cleaning:</strong> Transformation techniques help in handling missing values, outliers, and inconsistent data entries. By addressing these issues, we ensure the accuracy and reliability of our analysis. For data cleaning, libraries like <strong>Pandas</strong> in Python provide powerful data manipulation capabilities (more details on <a href="https://pandas.pydata.org/">Pandas website</a>). In R, the <strong>dplyr</strong> library offers a set of functions tailored for data wrangling and manipulation tasks (learn more at <a href="https://dplyr.tidyverse.org/">dplyr</a>).</p>
+</li>
+<li>
+<p><strong>Normalization:</strong> Different variables in a dataset may have different scales, units, or ranges. Normalization techniques such as min-max scaling or z-score normalization bring all variables to a common scale, enabling fair comparisons and avoiding bias in subsequent analyses. The <strong>scikit-learn</strong> library in Python includes various normalization techniques (see <a href="https://scikit-learn.org/">scikit-learn</a>), while in R, <strong>caret</strong> provides pre-processing functions including normalization for building machine learning models (details at <a href="https://topepo.github.io/caret/">caret</a>).</p>
+</li>
+<li>
+<p><strong>Feature Engineering:</strong> Transformation allows us to create new features or derive meaningful information from existing variables. This process involves extracting relevant information, creating interaction terms, or encoding categorical variables for better representation and predictive power. In Python, <strong>Featuretools</strong> is a library dedicated to automated feature engineering, enabling the generation of new features from existing data (visit <a href="https://www.featuretools.com/">Featuretools</a>). For R users, <strong>recipes</strong> offers a framework to design custom feature transformation pipelines (more on <a href="https://recipes.tidymodels.org/">recipes</a>).</p>
+</li>
+<li>
+<p><strong>Non-linearity Handling:</strong> In some cases, relationships between variables may not be linear. Transforming variables using functions like logarithm, exponential, or power transformations can help capture non-linear patterns and improve model performance. Python's <strong>TensorFlow</strong> library supports building and training complex non-linear models using neural networks (explore <a href="https://www.tensorflow.org/">TensorFlow</a>), while <strong>keras</strong> in R provides high-level interfaces for neural networks with non-linear activation functions (find out more at <a href="https://keras.io/">keras</a>).</p>
+</li>
+<li>
+<p><strong>Outlier Treatment:</strong> Outliers can significantly impact the analysis and model performance. Transformations such as winsorization or logarithmic transformation can help reduce the influence of outliers without losing valuable information. <strong>PyOD</strong> in Python offers a comprehensive suite of tools for detecting and treating outliers using various algorithms and models (details at <a href="https://pyod.readthedocs.io/">PyOD</a>).</p>
+</li>
+</ul>
+<h3 id="types_of_data_transformation">Types of Data Transformation<a class="headerlink" href="#types_of_data_transformation" title="Permanent link">#</a></h3>
+<p>There are several common types of data transformation techniques used in exploratory data analysis:</p>
+<ul>
+<li>
+<p><strong>Scaling and Standardization:</strong> These techniques adjust the scale and distribution of variables, making them comparable and suitable for analysis. Examples include min-max scaling, z-score normalization, and robust scaling.</p>
+</li>
+<li>
+<p><strong>Logarithmic Transformation:</strong> This transformation is useful for handling variables with skewed distributions or exponential growth. It helps in stabilizing variance and bringing extreme values closer to the mean.</p>
+</li>
+<li>
+<p><strong>Power Transformation:</strong> Power transformations, such as square root, cube root, or Box-Cox transformation, can be applied to handle variables with non-linear relationships or heteroscedasticity.</p>
+</li>
+<li>
+<p><strong>Binning and Discretization:</strong> Binning involves dividing a continuous variable into categories or intervals, simplifying the analysis and reducing the impact of outliers. Discretization transforms continuous variables into discrete ones by assigning them to specific ranges or bins.</p>
+</li>
+<li>
+<p><strong>Encoding Categorical Variables:</strong> Categorical variables often need to be converted into numerical representations for analysis. Techniques like one-hot encoding, label encoding, or ordinal encoding are used to transform categorical variables into numeric equivalents.</p>
+</li>
+<li>
+<p><strong>Feature Scaling:</strong> Feature scaling techniques, such as mean normalization or unit vector scaling, ensure that different features have similar scales, avoiding dominance by variables with larger magnitudes.</p>
+</li>
+</ul>
+<p>By employing these transformation techniques, data scientists can enhance the quality of the dataset, uncover hidden patterns, and enable more accurate and meaningful analyses.</p>
+<p>Keep in mind that the selection and application of specific data transformation techniques depend on the characteristics of the dataset and the objectives of the analysis. It is essential to understand the data and choose the appropriate transformations to derive valuable insights.</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Data transformation methods in statistics.</caption>
+    <tr>
+        <th style="width: 15%;">Transformation</th>
+        <th style="width: 20%;">Mathematical Equation</th>
+        <th style="width: 30%;">Advantages</th>
+        <th style="width: 35%;">Disadvantages</th>
+    </tr>
+    <tr>
+        <td>Logarithmic</td>
+        <td>\(y = \log(x)\)</td>
+        <td>- Reduces the impact of extreme values</td>
+        <td>- Does not work with zero or negative values</td>
+    </tr>
+    <tr>
+        <td>Square Root</td>
+        <td>\(y = \sqrt{x}\)</td>
+        <td>- Reduces the impact of extreme values</td>
+        <td>- Does not work with negative values</td>
+    </tr>
+    <tr>
+        <td>Exponential</td>
+        <td>\(y = \exp^x\)</td>
+        <td>- Increases separation between small values</td>
+        <td>- Amplifies the differences between large values</td>
+    </tr>
+    <tr>
+        <td>Box-Cox</td>
+        <td>\(y = \frac{x^\lambda -1}{\lambda}\)</td>
+        <td>- Adapts to different types of data</td>
+        <td>- Requires estimation of the \(\lambda\) parameter</td>
+    </tr>
+    <tr>
+        <td>Power</td>
+        <td>\(y = x^p\)</td>
+        <td>- Allows customization of the transformation</td>
+        <td>- Sensitivity to the choice of power value</td>
+    </tr>
+    <tr>
+        <td>Square</td>
+        <td>\(y = x^2\)</td>
+        <td>- Preserves the order of values</td>
+        <td>- Amplifies the differences between large values</td>
+    </tr>
+    <tr>
+        <td>Inverse</td>
+        <td>\(y = \frac{1}{x}\)</td>
+        <td>- Reduces the impact of large values</td>
+        <td>- Does not work with zero or negative values</td>
+    </tr>
+    <tr>
+        <td>Min-Max Scaling</td>
+        <td>\(y = \frac{x - min_x}{max_x - min_x}\)</td>
+        <td>- Scales the data to a specific range</td>
+        <td>- Sensitive to outliers</td>
+    </tr>
+    <tr>
+        <td>Z-Score Scaling</td>
+        <td>\(y = \frac{x - \bar{x}}{\sigma_{x}}\)</td>
+        <td>- Centers the data around zero and scales with standard deviation</td>
+        <td>- Sensitive to outliers</td>
+    </tr>
+    <tr>
+        <td>Rank Transformation</td>
+        <td>Assigns rank values to the data points</td>
+        <td>- Preserves the order of values and handles ties gracefully</td>
+        <td>- Loss of information about the original values</td>
+    </tr>
+</table>
+
+<p><br></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p><b>Data Science Workflow Management</b><br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/imarranz/data-science-workflow-management/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="064_exploratory_data_analysis.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="066_exploratory_data_analysis.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ibon Martínez-Arranz">
+  <link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/06_eda/063_exploratory_data_analysis.html">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Data Visualization - Data Science Workflow Management</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/custom.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Data Visualization";
+    var mkdocs_page_input_path = "06_eda/063_exploratory_data_analysis.md";
+    var mkdocs_page_url = "/imarranz/data-science-workflow-management/06_eda/063_exploratory_data_analysis.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Data Science Workflow Management</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../index.html">Data Science Workflow Management</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Introduction</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/011_introduction.html">Introduction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/012_introduction.html">What is Data Science Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/013_introduction.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fundamentals of Data Science</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/021_fundamentals_of_data_science.html">Fundamentals of Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/022_fundamentals_of_data_science.html">What is Data Science?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/023_fundamentals_of_data_science.html">Data Science Process</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/024_fundamentals_of_data_science.html">Programming Languages for Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/025_fundamentals_of_data_science.html">Data Science Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/026_fundamentals_of_data_science.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Workflow Management Concepts</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/031_workflow_management_concepts.html">Workflow Management Concepts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/032_workflow_management_concepts.html">What is Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/033_workflow_management_concepts.html">Why is Workflow Management Important?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/034_workflow_management_concepts.html">Workflow Management Models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/035_workflow_management_concepts.html">Workflow Management Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/036_workflow_management_concepts.html">Enhancing Collaboration and Reproducibility through Project Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/037_workflow_management_concepts.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/038_workflow_management_concepts.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Project Planning</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/041_project_plannig.html">Project Planning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/042_project_plannig.html">What is Project Planning?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/043_project_plannig.html">Problem Definition and Objectives</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/044_project_plannig.html">Selection of Modelling Techniques</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/045_project_plannig.html">Selection Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/046_project_plannig.html">Workflow Design</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/047_project_plannig.html">Practical Example</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Data Adquisition</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/055_data_adquisition_and_preparation.html">Data Cleaning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/056_data_adquisition_and_preparation.html">Data Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/057_data_adquisition_and_preparation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/058_data_adquisition_and_preparation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="061_exploratory_data_analysis.html">Exploratory Data Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="062_exploratory_data_analysis.html">Descriptive Statistics</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="063_exploratory_data_analysis.html">Data Visualization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="064_exploratory_data_analysis.html">Correlation Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="065_exploratory_data_analysis.html">Data Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="066_exploratory_data_analysis.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="067_exploratory_data_analysis.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Modelling and Data Validation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/071_modeling_and_data_validation.html">Modelling and Data Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/072_modeling_and_data_validation.html">What is Data Modelling</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/073_modeling_and_data_validation.html">Selection of Modelling Algortihms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/074_modeling_and_data_validation.html">Model Training and Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/075_modeling_and_data_validation.html">selection of Best Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/076_modeling_and_data_validation.html">Model Evaluation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/077_modeling_and_data_validation.html">Model Interpretability</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/078_modeling_and_data_validation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/079_modeling_and_data_validation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Model Implementation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/081_model_implementation_and_maintenance.html">Model Implementation and Maintenance</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/082_model_implementation_and_maintenance.html">What is Model Implementation?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/083_model_implementation_and_maintenance.html">selection of Implementation Platform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/084_model_implementation_and_maintenance.html">Integration with Existing Systems</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/085_model_implementation_and_maintenance.html">Testing and Validation of the Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/086_model_implementation_and_maintenance.html">Model Maintenance and Updating</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Monitoring and Improvement</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/091_monitoring_and_continuos_improvement.html">Monitoring and Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/092_monitoring_and_continuos_improvement.html">What is Monitoring and Continuous Improvement?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/093_monitoring_and_continuos_improvement.html">Model Performance Monitoring</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/094_monitoring_and_continuos_improvement.html">Problem Identification</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/095_monitoring_and_continuos_improvement.html">Continuous Model Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/096_monitoring_and_continuos_improvement.html">References</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Data Science Workflow Management</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Exploratory Data Analysis &raquo;</li>
+        
+      
+    
+    <li>Data Visualization</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/06_eda/063_exploratory_data_analysis.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+    <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+        <a href="064_exploratory_data_analysis.html" class="btn btn-neutral float-right" title="Correlation Analysis">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="062_exploratory_data_analysis.html" class="btn btn-neutral" title="Descriptive Statistics"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="data_visualization">Data Visualization<a class="headerlink" href="#data_visualization" title="Permanent link">#</a></h2>
+<p>Data visualization is a critical component of exploratory data analysis (EDA) that allows us to visually represent data in a meaningful and intuitive way. It involves creating graphical representations of data to uncover patterns, relationships, and insights that may not be apparent from raw data alone. By leveraging various visual techniques, data visualization enables us to communicate complex information effectively and make data-driven decisions.</p>
+<p>Effective data visualization relies on selecting appropriate chart types based on the type of variables being analyzed. We can broadly categorize variables into three types:</p>
+<h3 id="quantitative_variables">Quantitative Variables<a class="headerlink" href="#quantitative_variables" title="Permanent link">#</a></h3>
+<p>These variables represent numerical data and can be further classified into continuous or discrete variables. Common chart types for visualizing quantitative variables include:</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Types of charts and their descriptions in Python.</caption>
+    <tr>
+        <th style="width: 20%;">Variable Type</th>
+        <th style="width: 15%;">Chart Type</th>
+        <th style="width: 45%;">Description</th>
+        <th style="width: 20%;">Python Code</th>
+    </tr>
+    <tr>
+        <td>Continuous</td>
+        <td>Line Plot</td>
+        <td>Shows the trend and patterns over time</td>
+        <td><code>plt.plot(x, y)</code></td>
+    </tr>
+    <tr>
+        <td>Continuous</td>
+        <td>Histogram</td>
+        <td>Displays the distribution of values</td>
+        <td><code>plt.hist(data)</code></td>
+    </tr>
+    <tr>
+        <td>Discrete</td>
+        <td>Bar Chart</td>
+        <td>Compares values across different categories</td>
+        <td><code>plt.bar(x, y)</code></td>
+    </tr>
+    <tr>
+        <td>Discrete</td>
+        <td>Scatter Plot</td>
+        <td>Examines the relationship between variables</td>
+        <td><code>plt.scatter(x, y)</code></td>
+    </tr>
+</table>
+
+<p><br></p>
+<h3 id="categorical_variables">Categorical Variables<a class="headerlink" href="#categorical_variables" title="Permanent link">#</a></h3>
+<p>These variables represent qualitative data that fall into distinct categories. Common chart types for visualizing categorical variables include:</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Types of charts for categorical data visualization in Python.</caption>
+    <tr>
+        <th style="width: 20%;">Variable Type</th>
+        <th style="width: 15%;">Chart Type</th>
+        <th style="width: 45%;">Description</th>
+        <th style="width: 20%;">Python Code</th>
+    </tr>
+    <tr>
+        <td>Categorical</td>
+        <td>Bar Chart</td>
+        <td>Displays the frequency or count of categories</td>
+        <td><code>plt.bar(x, y)</code></td>
+    </tr>
+    <tr>
+        <td>Categorical</td>
+        <td>Pie Chart</td>
+        <td>Represents the proportion of each category</td>
+        <td><code>plt.pie(data, labels=labels)</code></td>
+    </tr>
+    <tr>
+        <td>Categorical</td>
+        <td>Heatmap</td>
+        <td>Shows the relationship between two categorical variables</td>
+        <td><code>sns.heatmap(data)</code></td>
+    </tr>
+</table>
+
+<p><br></p>
+<h3 id="ordinal_variables">Ordinal Variables<a class="headerlink" href="#ordinal_variables" title="Permanent link">#</a></h3>
+<p>These variables have a natural order or hierarchy. Chart types suitable for visualizing ordinal variables include:</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Types of charts for ordinal data visualization in Python.</caption>
+    <tr>
+        <th style="width: 20%;">Variable Type</th>
+        <th style="width: 15%;">Chart Type</th>
+        <th style="width: 45%;">Description</th>
+        <th style="width: 20%;">Python Code</th>
+    </tr>
+    <tr>
+        <td>Ordinal</td>
+        <td>Bar Chart</td>
+        <td>Compares values across different categories</td>
+        <td><code>plt.bar(x, y)</code></td>
+    </tr>
+    <tr>
+        <td>Ordinal</td>
+        <td>Box Plot</td>
+        <td>Displays the distribution and outliers</td>
+        <td><code>sns.boxplot(x, y)</code></td>
+    </tr>
+</table>
+
+<p><br></p>
+<p>Data visualization libraries like Matplotlib, Seaborn, and Plotly in Python provide a wide range of functions and tools to create these visualizations. By utilizing these libraries and their corresponding commands, we can generate visually appealing and informative plots for EDA.</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Python data visualization libraries.</caption>
+    <tr>
+        <th style="width: 15%;">Library</th>
+        <th style="width: 70%;">Description</th>
+        <th style="width: 15%;">Website</th>
+    </tr>
+    <tr>
+        <td>Matplotlib</td>
+        <td>Matplotlib is a versatile plotting library for creating static, animated, and interactive visualizations in Python. It offers a wide range of chart types and customization options.</td>
+        <td><a href="https://matplotlib.org">Matplotlib</a></td>
+    </tr>
+    <tr>
+        <td>Seaborn</td>
+        <td>Seaborn is a statistical data visualization library built on top of Matplotlib. It provides a high-level interface for creating attractive and informative statistical graphics.</td>
+        <td><a href="https://seaborn.pydata.org">Seaborn</a></td>
+    </tr>
+    <tr>
+        <td>Altair</td>
+        <td>Altair is a declarative statistical visualization library in Python. It allows users to create interactive visualizations with concise and expressive syntax, based on the Vega-Lite grammar.</td>
+        <td><a href="https://altair-viz.github.io">Altair</a></td>
+    </tr>
+    <tr>
+        <td>Plotly</td>
+        <td>Plotly is an open-source, web-based library for creating interactive visualizations. It offers a wide range of chart types, including 2D and 3D plots, and supports interactivity and sharing capabilities.</td>
+        <td><a href="https://plotly.com/python">Plotly</a></td>
+    </tr>
+    <tr>
+        <td>ggplot</td>
+        <td>ggplot is a plotting system for Python based on the Grammar of Graphics. It provides a powerful and flexible way to create aesthetically pleasing and publication-quality visualizations.</td>
+        <td><a href="http://ggplot.yhathq.com">ggplot</a></td>
+    </tr>
+    <tr>
+        <td>Bokeh</td>
+        <td>Bokeh is a Python library for creating interactive visualizations for the web. It focuses on providing elegant and concise APIs for creating dynamic plots with interactivity and streaming capabilities.</td>
+        <td><a href="https://bokeh.org">Bokeh</a></td>
+    </tr>
+    <tr>
+        <td>Plotnine</td>
+        <td>Plotnine is a Python implementation of the Grammar of Graphics. It allows users to create visually appealing and highly customizable plots using a simple and intuitive syntax.</td>
+        <td><a href="https://plotnine.readthedocs.io">Plotnine</a></td>
+    </tr>
+</table>
+
+<p><br></p>
+<p>Please note that the descriptions provided above are simplified summaries, and for more detailed information, it is recommended to visit the respective websites of each library. Please note that the Python code provided above is a simplified representation and may require additional customization based on the specific data and plot requirements.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p><b>Data Science Workflow Management</b><br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/imarranz/data-science-workflow-management/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="062_exploratory_data_analysis.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="064_exploratory_data_analysis.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

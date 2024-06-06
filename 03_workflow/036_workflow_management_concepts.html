@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ibon Martínez-Arranz">
+  <link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/03_workflow/036_workflow_management_concepts.html">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Enhancing Collaboration and Reproducibility through Project Documentation - Data Science Workflow Management</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/custom.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Enhancing Collaboration and Reproducibility through Project Documentation";
+    var mkdocs_page_input_path = "03_workflow/036_workflow_management_concepts.md";
+    var mkdocs_page_url = "/imarranz/data-science-workflow-management/03_workflow/036_workflow_management_concepts.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Data Science Workflow Management</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../index.html">Data Science Workflow Management</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Introduction</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/011_introduction.html">Introduction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/012_introduction.html">What is Data Science Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/013_introduction.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fundamentals of Data Science</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/021_fundamentals_of_data_science.html">Fundamentals of Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/022_fundamentals_of_data_science.html">What is Data Science?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/023_fundamentals_of_data_science.html">Data Science Process</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/024_fundamentals_of_data_science.html">Programming Languages for Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/025_fundamentals_of_data_science.html">Data Science Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/026_fundamentals_of_data_science.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Workflow Management Concepts</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="031_workflow_management_concepts.html">Workflow Management Concepts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="032_workflow_management_concepts.html">What is Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="033_workflow_management_concepts.html">Why is Workflow Management Important?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="034_workflow_management_concepts.html">Workflow Management Models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="035_workflow_management_concepts.html">Workflow Management Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="036_workflow_management_concepts.html">Enhancing Collaboration and Reproducibility through Project Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="037_workflow_management_concepts.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="038_workflow_management_concepts.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Project Planning</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/041_project_plannig.html">Project Planning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/042_project_plannig.html">What is Project Planning?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/043_project_plannig.html">Problem Definition and Objectives</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/044_project_plannig.html">Selection of Modelling Techniques</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/045_project_plannig.html">Selection Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/046_project_plannig.html">Workflow Design</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/047_project_plannig.html">Practical Example</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Data Adquisition</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/055_data_adquisition_and_preparation.html">Data Cleaning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/056_data_adquisition_and_preparation.html">Data Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/057_data_adquisition_and_preparation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/058_data_adquisition_and_preparation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/061_exploratory_data_analysis.html">Exploratory Data Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/062_exploratory_data_analysis.html">Descriptive Statistics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/063_exploratory_data_analysis.html">Data Visualization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/064_exploratory_data_analysis.html">Correlation Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/065_exploratory_data_analysis.html">Data Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/066_exploratory_data_analysis.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/067_exploratory_data_analysis.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Modelling and Data Validation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/071_modeling_and_data_validation.html">Modelling and Data Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/072_modeling_and_data_validation.html">What is Data Modelling</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/073_modeling_and_data_validation.html">Selection of Modelling Algortihms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/074_modeling_and_data_validation.html">Model Training and Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/075_modeling_and_data_validation.html">selection of Best Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/076_modeling_and_data_validation.html">Model Evaluation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/077_modeling_and_data_validation.html">Model Interpretability</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/078_modeling_and_data_validation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/079_modeling_and_data_validation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Model Implementation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/081_model_implementation_and_maintenance.html">Model Implementation and Maintenance</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/082_model_implementation_and_maintenance.html">What is Model Implementation?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/083_model_implementation_and_maintenance.html">selection of Implementation Platform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/084_model_implementation_and_maintenance.html">Integration with Existing Systems</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/085_model_implementation_and_maintenance.html">Testing and Validation of the Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/086_model_implementation_and_maintenance.html">Model Maintenance and Updating</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Monitoring and Improvement</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/091_monitoring_and_continuos_improvement.html">Monitoring and Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/092_monitoring_and_continuos_improvement.html">What is Monitoring and Continuous Improvement?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/093_monitoring_and_continuos_improvement.html">Model Performance Monitoring</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/094_monitoring_and_continuos_improvement.html">Problem Identification</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/095_monitoring_and_continuos_improvement.html">Continuous Model Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/096_monitoring_and_continuos_improvement.html">References</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Data Science Workflow Management</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Workflow Management Concepts &raquo;</li>
+        
+      
+    
+    <li>Enhancing Collaboration and Reproducibility through Project Documentation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/03_workflow/036_workflow_management_concepts.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+    <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+        <a href="037_workflow_management_concepts.html" class="btn btn-neutral float-right" title="Practical Example">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="035_workflow_management_concepts.html" class="btn btn-neutral" title="Workflow Management Tools and Technologies"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="enhancing_collaboration_and_reproducibility_through_project_documentation">Enhancing Collaboration and Reproducibility through Project Documentation<a class="headerlink" href="#enhancing_collaboration_and_reproducibility_through_project_documentation" title="Permanent link">#</a></h2>
+<p>In data science projects, effective documentation plays a crucial role in promoting collaboration, facilitating knowledge sharing, and ensuring reproducibility. Documentation serves as a comprehensive record of the project's goals, methodologies, and outcomes, enabling team members, stakeholders, and future researchers to understand and reproduce the work. This section focuses on the significance of reproducibility in data science projects and explores strategies for enhancing collaboration through project documentation.</p>
+<h3 id="importance_of_reproducibility">Importance of Reproducibility<a class="headerlink" href="#importance_of_reproducibility" title="Permanent link">#</a></h3>
+<p>Reproducibility is a fundamental principle in data science that emphasizes the ability to obtain consistent and identical results when re-executing a project or analysis. It ensures that the findings and insights derived from a project are valid, reliable, and transparent. The importance of reproducibility in data science can be summarized as follows:</p>
+<ul>
+<li>
+<p><strong>Validation and Verification</strong>: Reproducibility allows others to validate and verify the findings, methods, and models used in a project. It enables the scientific community to build upon previous work, reducing the chances of errors or biases going unnoticed.</p>
+</li>
+<li>
+<p><strong>Transparency and Trust</strong>: Transparent documentation and reproducibility build trust among team members, stakeholders, and the wider data science community. By providing detailed information about data sources, preprocessing steps, feature engineering, and model training, reproducibility enables others to understand and trust the results.</p>
+</li>
+<li>
+<p><strong>Collaboration and Knowledge Sharing</strong>: Reproducible projects facilitate collaboration among team members and encourage knowledge sharing. With well-documented workflows, other researchers can easily replicate and build upon existing work, accelerating the progress of scientific discoveries.</p>
+</li>
+</ul>
+<h3 id="strategies_for_enhancing_collaboration_through_project_documentation">Strategies for Enhancing Collaboration through Project Documentation<a class="headerlink" href="#strategies_for_enhancing_collaboration_through_project_documentation" title="Permanent link">#</a></h3>
+<p>To enhance collaboration and reproducibility in data science projects, effective project documentation is essential. Here are some strategies to consider:</p>
+<ul>
+<li>
+<p><strong>Comprehensive Documentation</strong>: Document the project's objectives, data sources, data preprocessing steps, feature engineering techniques, model selection and evaluation, and any assumptions made during the analysis. Provide clear explanations and include code snippets, visualizations, and interactive notebooks whenever possible.</p>
+</li>
+<li>
+<p><strong>Version Control</strong>: Use version control systems like Git to track changes, collaborate with team members, and maintain a history of project iterations. This allows for easy comparison and identification of modifications made at different stages of the project.</p>
+</li>
+<li>
+<p><strong>Readme Files</strong>: Create README files that provide an overview of the project, its dependencies, and instructions on how to reproduce the results. Include information on how to set up the development environment, install required libraries, and execute the code.</p>
+<ul>
+<li><strong>Project's Title</strong>: The title of the project, summarizing the main goal and aim.</li>
+<li><strong>Project Description</strong>: A well-crafted description showcasing what the application does, technologies used, and future features.</li>
+<li><strong>Table of Contents</strong>: Helps users navigate through the README easily, especially for longer documents.</li>
+<li><strong>How to Install and Run the Project</strong>: Step-by-step instructions to set up and run the project, including required dependencies.</li>
+<li><strong>How to Use the Project</strong>: Instructions and examples for users/contributors to understand and utilize the project effectively, including authentication if applicable.</li>
+<li><strong>Credits</strong>: Acknowledge team members, collaborators, and referenced materials with links to their profiles.</li>
+<li><strong>License</strong>: Inform other developers about the permissions and restrictions on using the project, recommending the GPL License as a common option.</li>
+</ul>
+</li>
+<li>
+<p><strong>Documentation Tools</strong>: Leverage documentation tools such as MkDocs, Jupyter Notebooks, or Jupyter Book to create structured, user-friendly documentation. These tools enable easy navigation, code execution, and integration of rich media elements like images, tables, and interactive visualizations.</p>
+</li>
+</ul>
+<p>Documenting your notebook provides valuable context and information about the analysis or code contained within it, enhancing its readability and reproducibility. <a href="https://pypi.org/project/watermark/">watermark</a>, specifically, allows you to add essential metadata, such as the version of Python, the versions of key libraries, and the execution time of the notebook.</p>
+<p>By including this information, you enable others to understand the environment in which your notebook was developed, ensuring they can reproduce the results accurately. It also helps identify potential issues related to library versions or package dependencies. Additionally, documenting the execution time provides insights into the time required to run specific cells or the entire notebook, allowing for better performance optimization.</p>
+<p>Moreover, detailed documentation in a notebook improves collaboration among team members, making it easier to share knowledge and understand the rationale behind the analysis. It serves as a valuable resource for future reference, ensuring that others can follow your work and build upon it effectively.</p>
+<p>By prioritizing reproducibility and adopting effective project documentation practices, data science teams can enhance collaboration, promote transparency, and foster trust in their work. Reproducible projects not only benefit individual researchers but also contribute to the advancement of the field by enabling others to build upon existing knowledge and drive further discoveries.</p>
+<pre><code class="language-python">%load_ext watermark
+%watermark \
+    --author &quot;Ibon Martínez-Arranz&quot; \
+    --updated --time --date \
+    --python --machine\
+    --packages pandas,numpy,matplotlib,seaborn,scipy,yaml \
+    --githash --gitrepo
+</code></pre>
+<pre><code class="language-bash">Author: Ibon Martínez-Arranz
+
+Last updated: 2023-03-09 09:58:17
+
+Python implementation: CPython
+Python version       : 3.7.9
+IPython version      : 7.33.0
+
+pandas    : 1.3.5
+numpy     : 1.21.6
+matplotlib: 3.3.3
+seaborn   : 0.12.1
+scipy     : 1.7.3
+yaml      : 6.0
+
+Compiler    : GCC 9.3.0
+OS          : Linux
+Release     : 5.4.0-144-generic
+Machine     : x86_64
+Processor   : x86_64
+CPU cores   : 4
+Architecture: 64bit
+
+Git hash: ----------------------------------------
+
+Git repo: ----------------------------------------
+</code></pre>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Overview of tools for documentation generation and conversion.</caption>
+    <tr>
+        <th style="width: 20%;">Name</th>
+        <th style="width: 60%;">Description</th>
+        <th style="width: 20%;">Website</th>
+    </tr>
+    <tr>
+        <td>Jupyter nbconvert</td>
+        <td>A command-line tool to convert Jupyter notebooks to various formats, including HTML, PDF, and Markdown.</td>
+        <td><a href="https://nbconvert.readthedocs.io">nbconvert</a></td>
+    </tr>
+    <tr>
+        <td>MkDocs</td>
+        <td>A static site generator specifically designed for creating project documentation from Markdown files.</td>
+        <td><a href="https://www.mkdocs.org">mkdocs</a></td>
+    </tr>
+    <tr>
+        <td>Jupyter Book</td>
+        <td>A tool for building online books with Jupyter Notebooks, including features like page navigation, cross-referencing, and interactive outputs.</td>
+        <td><a href="https://jupyterbook.org">jupyterbook</a></td>
+    </tr>
+    <tr>
+        <td>Sphinx</td>
+        <td>A documentation generator that allows you to write documentation in reStructuredText or Markdown and can output various formats, including HTML and PDF.</td>
+        <td><a href="https://www.sphinx-doc.org">sphinx</a></td>
+    </tr>
+    <tr>
+        <td>GitBook</td>
+        <td>A modern documentation platform that allows you to write documentation using Markdown and provides features like versioning, collaboration, and publishing options.</td>
+        <td><a href="https://www.gitbook.com">gitbook</a></td>
+    </tr>
+    <tr>
+        <td>DocFX</td>
+        <td>A documentation generation tool specifically designed for API documentation, supporting multiple programming languages and output formats.</td>
+        <td><a href="https://dotnet.github.io/docfx">docfx</a></td>
+    </tr>
+</table>
+
+<p><br><br></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p><b>Data Science Workflow Management</b><br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/imarranz/data-science-workflow-management/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="035_workflow_management_concepts.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="037_workflow_management_concepts.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

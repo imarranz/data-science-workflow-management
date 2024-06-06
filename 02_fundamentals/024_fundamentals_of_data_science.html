@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ibon Martínez-Arranz">
+  <link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/02_fundamentals/024_fundamentals_of_data_science.html">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Programming Languages for Data Science - Data Science Workflow Management</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/custom.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Programming Languages for Data Science";
+    var mkdocs_page_input_path = "02_fundamentals/024_fundamentals_of_data_science.md";
+    var mkdocs_page_url = "/imarranz/data-science-workflow-management/02_fundamentals/024_fundamentals_of_data_science.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Data Science Workflow Management</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../index.html">Data Science Workflow Management</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Introduction</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/011_introduction.html">Introduction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/012_introduction.html">What is Data Science Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/013_introduction.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fundamentals of Data Science</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="021_fundamentals_of_data_science.html">Fundamentals of Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="022_fundamentals_of_data_science.html">What is Data Science?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="023_fundamentals_of_data_science.html">Data Science Process</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="024_fundamentals_of_data_science.html">Programming Languages for Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="025_fundamentals_of_data_science.html">Data Science Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="026_fundamentals_of_data_science.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Workflow Management Concepts</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/031_workflow_management_concepts.html">Workflow Management Concepts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/032_workflow_management_concepts.html">What is Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/033_workflow_management_concepts.html">Why is Workflow Management Important?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/034_workflow_management_concepts.html">Workflow Management Models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/035_workflow_management_concepts.html">Workflow Management Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/036_workflow_management_concepts.html">Enhancing Collaboration and Reproducibility through Project Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/037_workflow_management_concepts.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/038_workflow_management_concepts.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Project Planning</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/041_project_plannig.html">Project Planning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/042_project_plannig.html">What is Project Planning?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/043_project_plannig.html">Problem Definition and Objectives</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/044_project_plannig.html">Selection of Modelling Techniques</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/045_project_plannig.html">Selection Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/046_project_plannig.html">Workflow Design</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/047_project_plannig.html">Practical Example</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Data Adquisition</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/055_data_adquisition_and_preparation.html">Data Cleaning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/056_data_adquisition_and_preparation.html">Data Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/057_data_adquisition_and_preparation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/058_data_adquisition_and_preparation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/061_exploratory_data_analysis.html">Exploratory Data Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/062_exploratory_data_analysis.html">Descriptive Statistics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/063_exploratory_data_analysis.html">Data Visualization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/064_exploratory_data_analysis.html">Correlation Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/065_exploratory_data_analysis.html">Data Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/066_exploratory_data_analysis.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/067_exploratory_data_analysis.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Modelling and Data Validation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/071_modeling_and_data_validation.html">Modelling and Data Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/072_modeling_and_data_validation.html">What is Data Modelling</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/073_modeling_and_data_validation.html">Selection of Modelling Algortihms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/074_modeling_and_data_validation.html">Model Training and Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/075_modeling_and_data_validation.html">selection of Best Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/076_modeling_and_data_validation.html">Model Evaluation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/077_modeling_and_data_validation.html">Model Interpretability</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/078_modeling_and_data_validation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/079_modeling_and_data_validation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Model Implementation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/081_model_implementation_and_maintenance.html">Model Implementation and Maintenance</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/082_model_implementation_and_maintenance.html">What is Model Implementation?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/083_model_implementation_and_maintenance.html">selection of Implementation Platform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/084_model_implementation_and_maintenance.html">Integration with Existing Systems</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/085_model_implementation_and_maintenance.html">Testing and Validation of the Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/086_model_implementation_and_maintenance.html">Model Maintenance and Updating</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Monitoring and Improvement</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/091_monitoring_and_continuos_improvement.html">Monitoring and Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/092_monitoring_and_continuos_improvement.html">What is Monitoring and Continuous Improvement?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/093_monitoring_and_continuos_improvement.html">Model Performance Monitoring</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/094_monitoring_and_continuos_improvement.html">Problem Identification</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/095_monitoring_and_continuos_improvement.html">Continuous Model Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/096_monitoring_and_continuos_improvement.html">References</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Data Science Workflow Management</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Fundamentals of Data Science &raquo;</li>
+        
+      
+    
+    <li>Programming Languages for Data Science</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/02_fundamentals/024_fundamentals_of_data_science.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+    <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+        <a href="025_fundamentals_of_data_science.html" class="btn btn-neutral float-right" title="Data Science Tools and Technologies">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="023_fundamentals_of_data_science.html" class="btn btn-neutral" title="Data Science Process"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="programming_languages_for_data_science">Programming Languages for Data Science<a class="headerlink" href="#programming_languages_for_data_science" title="Permanent link">#</a></h2>
+<p>Data Science is an interdisciplinary field that combines statistical and computational methodologies to extract insights and knowledge from data. Programming is an essential part of this process, as it allows us to manipulate and analyze data using software tools specifically designed for data science tasks. There are several programming languages that are widely used in data science, each with its strengths and weaknesses.</p>
+<p>R is a language that was specifically designed for statistical computing and graphics. It has an extensive library of statistical and graphical functions that make it a popular choice for data exploration and analysis. Python, on the other hand, is a general-purpose programming language that has become increasingly popular in data science due to its versatility and powerful libraries such as NumPy, Pandas, and Scikit-learn. SQL is a language used to manage and manipulate relational databases, making it an essential tool for working with large datasets.</p>
+<p>In addition to these popular languages, there are also domain-specific languages used in data science, such as SAS, MATLAB, and Julia. Each language has its own unique features and applications, and the choice of language will depend on the specific requirements of the project.</p>
+<p>In this chapter, we will provide an overview of the most commonly used programming languages in data science and discuss their strengths and weaknesses. We will also explore how to choose the right language for a given project and discuss best practices for programming in data science.</p>
+<h3 id="r">R<a class="headerlink" href="#r" title="Permanent link">#</a></h3>
+<div class="info">
+R is a programming language specifically designed for statistical computing and graphics. It is an open-source language that is widely used in data science for tasks such as data cleaning, visualization, and statistical modeling. R has a vast library of packages that provide tools for data manipulation, machine learning, and visualization.
+</div>
+
+<p>One of the key strengths of R is its flexibility and versatility. It allows users to easily import and manipulate data from a wide range of sources and provides a wide range of statistical techniques for data analysis. R also has an active and supportive community that provides regular updates and new packages for users.</p>
+<p>Some popular applications of R include data exploration and visualization, statistical modeling, and machine learning. R is also commonly used in academic research and has been used in many published papers across a variety of fields.</p>
+<h3 id="python">Python<a class="headerlink" href="#python" title="Permanent link">#</a></h3>
+<div class="info">
+Python is a popular general-purpose programming language that has become increasingly popular in data science due to its versatility and powerful libraries such as NumPy, Pandas, and Scikit-learn. Python's simplicity and readability make it an excellent choice for data analysis and machine learning tasks.
+</div>
+
+<p>One of the key strengths of Python is its extensive library of packages. The NumPy package, for example, provides powerful tools for mathematical operations, while Pandas is a package designed for data manipulation and analysis. Scikit-learn is a machine learning package that provides tools for classification, regression, clustering, and more.</p>
+<p>Python is also an excellent language for data visualization, with packages such as Matplotlib, Seaborn, and Plotly providing tools for creating a wide range of visualizations.</p>
+<p>Python's popularity in the data science community has led to the development of many tools and frameworks specifically designed for data analysis and machine learning. Some popular tools include Jupyter Notebook, Anaconda, and TensorFlow.</p>
+<h3 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link">#</a></h3>
+<div class="info">
+Structured Query Language (SQL) is a specialized language designed for managing and manipulating relational databases. SQL is widely used in data science for managing and extracting information from databases.
+</div>
+
+<p>SQL allows users to retrieve and manipulate data stored in a relational database. Users can create tables, insert data, update data, and delete data. SQL also provides powerful tools for querying and aggregating data.</p>
+<p>One of the key strengths of SQL is its ability to handle large amounts of data efficiently. SQL is a declarative language, which means that users can specify what they want to retrieve or manipulate, and the database management system (DBMS) handles the implementation details. This makes SQL an excellent choice for working with large datasets.</p>
+<p>There are several popular implementations of SQL, including MySQL, Oracle, Microsoft SQL Server, and PostgreSQL. Each implementation has its own specific syntax and features, but the core concepts of SQL are the same across all implementations.</p>
+<p>In data science, SQL is often used in combination with other tools and languages, such as Python or R, to extract and manipulate data from databases.</p>
+<h4 id="how_to_use">How to Use<a class="headerlink" href="#how_to_use" title="Permanent link">#</a></h4>
+<p>In this section, we will explore the usage of SQL commands with two tables: <code>iris</code> and <code>species</code>. The <code>iris</code> table contains information about flower measurements, while the <code>species</code> table provides details about different species of flowers. SQL (Structured Query Language) is a powerful tool for managing and manipulating relational databases.</p>
+<p><strong>iris table</strong></p>
+<pre><code>| slength | swidth | plength | pwidth | species   |
+|---------|--------|---------|--------|-----------|
+| 5.1     | 3.5    | 1.4     | 0.2    | Setosa    |
+| 4.9     | 3.0    | 1.4     | 0.2    | Setosa    |
+| 4.7     | 3.2    | 1.3     | 0.2    | Setosa    |
+| 4.6     | 3.1    | 1.5     | 0.2    | Setosa    |
+| 5.0     | 3.6    | 1.4     | 0.2    | Setosa    |
+| 5.4     | 3.9    | 1.7     | 0.4    | Setosa    |
+| 4.6     | 3.4    | 1.4     | 0.3    | Setosa    |
+| 5.0     | 3.4    | 1.5     | 0.2    | Setosa    |
+| 4.4     | 2.9    | 1.4     | 0.2    | Setosa    |
+| 4.9     | 3.1    | 1.5     | 0.1    | Setosa    |
+</code></pre>
+<p><strong>species table</strong></p>
+<pre><code>| id         | name           | category   | color      |
+|------------|----------------|------------|------------|
+| 1          | Setosa         | Flower     | Red        |
+| 2          | Versicolor     | Flower     | Blue       |
+| 3          | Virginica      | Flower     | Purple     |
+| 4          | Pseudacorus    | Plant      | Yellow     |
+| 5          | Sibirica       | Plant      | White      |
+| 6          | Spiranthes     | Plant      | Pink       |
+| 7          | Colymbada      | Animal     | Brown      |
+| 8          | Amanita        | Fungus     | Red        |
+| 9          | Cerinthe       | Plant      | Orange     |
+| 10         | Holosericeum   | Fungus     | Yellow     |
+</code></pre>
+<p>Using the <code>iris</code> and <code>species</code> tables as examples, we can perform various SQL operations to extract meaningful insights from the data. Some of the commonly used SQL commands with these tables include:</p>
+<p><strong>Data Retrieval:</strong></p>
+<p>SQL (Structured Query Language) is essential for accessing and retrieving data stored in relational databases. The primary command used for data retrieval is <code>SELECT</code>, which allows users to specify exactly what data they want to see. This command can be combined with other clauses like <code>WHERE</code> for filtering, <code>ORDER BY</code> for sorting, and <code>JOIN</code> for merging data from multiple tables. Mastery of these commands enables users to efficiently query large databases, extracting only the relevant information needed for analysis or reporting.</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Common SQL commands for data retrieval.</caption>
+    <tr>
+        <th style="width: 15%;">SQL Command</th>
+        <th style="width: 30%;">Purpose</th>
+        <th style="width: 55%;">Example</th>
+    </tr>
+    <tr>
+        <td>SELECT</td>
+        <td>Retrieve data from a table</td>
+        <td>SELECT * FROM iris</td>
+    </tr>
+    <tr>
+        <td>WHERE</td>
+        <td>Filter rows based on a condition</td>
+        <td>SELECT * FROM iris WHERE slength > 5.0</td>
+    </tr>
+    <tr>
+        <td>ORDER BY</td>
+        <td>Sort the result set</td>
+        <td>SELECT * FROM iris ORDER BY swidth DESC</td>
+    </tr>
+    <tr>
+        <td>LIMIT</td>
+        <td>Limit the number of rows returned</td>
+        <td>SELECT * FROM iris LIMIT 10</td>
+    </tr>
+    <tr>
+        <td>JOIN</td>
+        <td>Combine rows from multiple tables</td>
+        <td>SELECT * FROM iris JOIN species ON iris.species = species.name</td>
+    </tr>
+</table>
+
+<p><br><br></p>
+<p><strong>Data Manipulation:</strong></p>
+<p>Data manipulation is a critical aspect of database management, allowing users to modify existing data, add new data, or delete unwanted data. The key SQL commands for data manipulation are <code>INSERT INTO</code> for adding new records, <code>UPDATE</code> for modifying existing records, and <code>DELETE FROM</code> for removing records. These commands are powerful tools for maintaining and updating the content within a database, ensuring that the data remains current and accurate.</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Common SQL commands for modifying and managing data.</caption>
+    <tr>
+        <th style="width: 15%;">SQL Command</th>
+        <th style="width: 30%;">Purpose</th>
+        <th style="width: 55%;">Example</th>
+    </tr>
+    <tr>
+        <td>INSERT INTO</td>
+        <td>Insert new records into a table</td>
+        <td>INSERT INTO iris (slength, swidth) VALUES (6.3, 2.8)</td>
+    </tr>
+    <tr>
+        <td>UPDATE</td>
+        <td>Update existing records in a table</td>
+        <td>UPDATE iris SET plength = 1.5 WHERE species = 'Setosa'</td>
+    </tr>
+    <tr>
+        <td>DELETE FROM</td>
+        <td>Delete records from a table</td>
+        <td>DELETE FROM iris WHERE species = 'Versicolor'</td>
+    </tr>
+</table>
+
+<p><br><br></p>
+<p><strong>Data Aggregation:</strong></p>
+<p>SQL provides robust functionality for aggregating data, which is essential for statistical analysis and generating meaningful insights from large datasets. Commands like <code>GROUP BY</code> enable grouping of data based on one or more columns, while <code>SUM</code>, <code>AVG</code>, <code>COUNT</code>, and other aggregation functions allow for the calculation of sums, averages, and counts. The <code>HAVING</code> clause can be used in conjunction with <code>GROUP BY</code> to filter groups based on specific conditions. These aggregation capabilities are crucial for summarizing data, facilitating complex analyses, and supporting decision-making processes.</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Common SQL commands for data aggregation and analysis.</caption>
+    <tr>
+        <th style="width: 15%;">SQL Command</th>
+        <th style="width: 30%;">Purpose</th>
+        <th style="width: 55%;">Example</th>
+    </tr>
+    <tr>
+        <td>GROUP BY</td>
+        <td>Group rows by a column(s)</td>
+        <td>SELECT species, COUNT(*) FROM iris GROUP BY species</td>
+    </tr>
+    <tr>
+        <td>HAVING</td>
+        <td>Filter groups based on a condition</td>
+        <td>SELECT species, COUNT(*) FROM iris GROUP BY species HAVING COUNT(*) &gt; 5</td>
+    </tr>
+    <tr>
+        <td>SUM</td>
+        <td>Calculate the sum of a column</td>
+        <td>SELECT species, SUM(plength) FROM iris GROUP BY species</td>
+    </tr>
+    <tr>
+        <td>AVG</td>
+        <td>Calculate the average of a column</td>
+        <td>SELECT species, AVG(swidth) FROM iris GROUP BY species</td>
+    </tr>
+</table>
+
+<p><br><br></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p><b>Data Science Workflow Management</b><br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/imarranz/data-science-workflow-management/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="023_fundamentals_of_data_science.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="025_fundamentals_of_data_science.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

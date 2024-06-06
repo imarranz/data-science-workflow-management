@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ibon Martínez-Arranz">
+  <link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/07_modelling/076_modeling_and_data_validation.html">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Model Evaluation - Data Science Workflow Management</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/custom.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Model Evaluation";
+    var mkdocs_page_input_path = "07_modelling/076_modeling_and_data_validation.md";
+    var mkdocs_page_url = "/imarranz/data-science-workflow-management/07_modelling/076_modeling_and_data_validation.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Data Science Workflow Management</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../index.html">Data Science Workflow Management</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Introduction</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/011_introduction.html">Introduction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/012_introduction.html">What is Data Science Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/013_introduction.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fundamentals of Data Science</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/021_fundamentals_of_data_science.html">Fundamentals of Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/022_fundamentals_of_data_science.html">What is Data Science?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/023_fundamentals_of_data_science.html">Data Science Process</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/024_fundamentals_of_data_science.html">Programming Languages for Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/025_fundamentals_of_data_science.html">Data Science Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/026_fundamentals_of_data_science.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Workflow Management Concepts</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/031_workflow_management_concepts.html">Workflow Management Concepts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/032_workflow_management_concepts.html">What is Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/033_workflow_management_concepts.html">Why is Workflow Management Important?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/034_workflow_management_concepts.html">Workflow Management Models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/035_workflow_management_concepts.html">Workflow Management Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/036_workflow_management_concepts.html">Enhancing Collaboration and Reproducibility through Project Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/037_workflow_management_concepts.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/038_workflow_management_concepts.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Project Planning</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/041_project_plannig.html">Project Planning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/042_project_plannig.html">What is Project Planning?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/043_project_plannig.html">Problem Definition and Objectives</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/044_project_plannig.html">Selection of Modelling Techniques</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/045_project_plannig.html">Selection Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/046_project_plannig.html">Workflow Design</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/047_project_plannig.html">Practical Example</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Data Adquisition</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/055_data_adquisition_and_preparation.html">Data Cleaning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/056_data_adquisition_and_preparation.html">Data Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/057_data_adquisition_and_preparation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/058_data_adquisition_and_preparation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/061_exploratory_data_analysis.html">Exploratory Data Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/062_exploratory_data_analysis.html">Descriptive Statistics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/063_exploratory_data_analysis.html">Data Visualization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/064_exploratory_data_analysis.html">Correlation Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/065_exploratory_data_analysis.html">Data Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/066_exploratory_data_analysis.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/067_exploratory_data_analysis.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Modelling and Data Validation</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="071_modeling_and_data_validation.html">Modelling and Data Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="072_modeling_and_data_validation.html">What is Data Modelling</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="073_modeling_and_data_validation.html">Selection of Modelling Algortihms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="074_modeling_and_data_validation.html">Model Training and Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="075_modeling_and_data_validation.html">selection of Best Model</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="076_modeling_and_data_validation.html">Model Evaluation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="077_modeling_and_data_validation.html">Model Interpretability</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="078_modeling_and_data_validation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="079_modeling_and_data_validation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Model Implementation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/081_model_implementation_and_maintenance.html">Model Implementation and Maintenance</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/082_model_implementation_and_maintenance.html">What is Model Implementation?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/083_model_implementation_and_maintenance.html">selection of Implementation Platform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/084_model_implementation_and_maintenance.html">Integration with Existing Systems</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/085_model_implementation_and_maintenance.html">Testing and Validation of the Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/086_model_implementation_and_maintenance.html">Model Maintenance and Updating</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Monitoring and Improvement</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/091_monitoring_and_continuos_improvement.html">Monitoring and Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/092_monitoring_and_continuos_improvement.html">What is Monitoring and Continuous Improvement?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/093_monitoring_and_continuos_improvement.html">Model Performance Monitoring</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/094_monitoring_and_continuos_improvement.html">Problem Identification</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/095_monitoring_and_continuos_improvement.html">Continuous Model Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/096_monitoring_and_continuos_improvement.html">References</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Data Science Workflow Management</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Modelling and Data Validation &raquo;</li>
+        
+      
+    
+    <li>Model Evaluation</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/07_modelling/076_modeling_and_data_validation.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+    <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+        <a href="077_modeling_and_data_validation.html" class="btn btn-neutral float-right" title="Model Interpretability">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="075_modeling_and_data_validation.html" class="btn btn-neutral" title="selection of Best Model"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="model_evaluation">Model Evaluation<a class="headerlink" href="#model_evaluation" title="Permanent link">#</a></h2>
+<p>Model evaluation is a crucial step in the modeling and data validation process. It involves assessing the performance of a trained model to determine its accuracy and generalizability. The goal is to understand how well the model performs on unseen data and to make informed decisions about its effectiveness.</p>
+<p>There are various metrics used for evaluating models, depending on whether the task is regression or classification. In regression tasks, common evaluation metrics include mean squared error (MSE), root mean squared error (RMSE), mean absolute error (MAE), and R-squared. These metrics provide insights into the model's ability to predict continuous numerical values accurately.</p>
+<p>For classification tasks, evaluation metrics focus on the model's ability to classify instances correctly. These metrics include accuracy, precision, recall, F1 score, and area under the receiver operating characteristic curve (ROC AUC). Accuracy measures the overall correctness of predictions, while precision and recall evaluate the model's performance on positive and negative instances. The F1 score combines precision and recall into a single metric, balancing their trade-off. ROC AUC quantifies the model's ability to distinguish between classes.</p>
+<p>Additionally, cross-validation techniques are commonly employed to evaluate model performance. K-fold cross-validation divides the data into K equally-sized folds, where each fold serves as both training and validation data in different iterations. This approach provides a robust estimate of the model's performance by averaging the results across multiple iterations.</p>
+<p>Proper model evaluation helps to identify potential issues such as overfitting or underfitting, allowing for model refinement and selection of the best performing model. By understanding the strengths and limitations of the model, data scientists can make informed decisions and enhance the overall quality of their modeling efforts.</p>
+<p>In machine learning, evaluation metrics are crucial for assessing model performance. The <strong>Mean Squared Error (MSE)</strong> measures the average squared difference between the predicted and actual values in regression tasks. This metric is computed using the <code>mean_squared_error</code> function in the <code>scikit-learn</code> library.</p>
+<p>Another related metric is the <strong>Root Mean Squared Error (RMSE)</strong>, which represents the square root of the MSE to provide a measure of the average magnitude of the error. It is typically calculated by taking the square root of the MSE value obtained from <code>scikit-learn</code>.</p>
+<p>The <strong>Mean Absolute Error (MAE)</strong> computes the average absolute difference between predicted and actual values, also in regression tasks. This metric can be calculated using the <code>mean_absolute_error</code> function from <code>scikit-learn</code>.</p>
+<p><strong>R-squared</strong> is used to measure the proportion of the variance in the dependent variable that is predictable from the independent variables. It is a key performance metric for regression models and can be found in the <code>statsmodels</code> library.</p>
+<p>For classification tasks, <strong>Accuracy</strong> calculates the ratio of correctly classified instances to the total number of instances. This metric is obtained using the <code>accuracy_score</code> function in <code>scikit-learn</code>.</p>
+<p><strong>Precision</strong> represents the proportion of true positive predictions among all positive predictions. It helps determine the accuracy of the positive class predictions and is computed using <code>precision_score</code> from <code>scikit-learn</code>.</p>
+<p><strong>Recall</strong>, or Sensitivity, measures the proportion of true positive predictions among all actual positives in classification tasks, using the <code>recall_score</code> function from <code>scikit-learn</code>.</p>
+<p>The <strong>F1 Score</strong> combines precision and recall into a single metric, providing a balanced measure of a model's accuracy and recall. It is calculated using the <code>f1_score</code> function in <code>scikit-learn</code>.</p>
+<p>Lastly, the <strong>ROC AUC</strong> quantifies a model's ability to distinguish between classes. It plots the true positive rate against the false positive rate and can be calculated using the <code>roc_auc_score</code> function from <code>scikit-learn</code>.</p>
+<p>These metrics are essential for evaluating the effectiveness of machine learning models, helping developers understand model performance in various tasks. Each metric offers a different perspective on model accuracy and error, allowing for comprehensive performance assessments.</p>
+<h3 id="common_cross-validation_techniques_for_model_evaluation">Common Cross-Validation Techniques for Model Evaluation<a class="headerlink" href="#common_cross-validation_techniques_for_model_evaluation" title="Permanent link">#</a></h3>
+<p>Cross-validation is a fundamental technique in machine learning for robustly estimating model performance. Below, I describe some of the most common cross-validation techniques:</p>
+<ul>
+<li>
+<p><strong>K-Fold Cross-Validation</strong>: In this technique, the dataset is divided into approximately equal-sized k partitions (folds). The model is trained and evaluated k times, each time using k-1 folds as training data and 1 fold as test data. The evaluation metric (e.g., accuracy, mean squared error, etc.) is calculated for each iteration, and the results are averaged to obtain an estimate of the model's performance.</p>
+</li>
+<li>
+<p><strong>Leave-One-Out (LOO) Cross-Validation</strong>: In this approach, the number of folds is equal to the number of samples in the dataset. In each iteration, the model is trained with all samples except one, and the excluded sample is used for testing. This method can be computationally expensive and may not be practical for large datasets, but it provides a precise estimate of model performance.</p>
+</li>
+<li>
+<p><strong>Stratified Cross-Validation</strong>: Similar to k-fold cross-validation, but it ensures that the class distribution in each fold is similar to the distribution in the original dataset. Particularly useful for imbalanced datasets where one class has many more samples than others.</p>
+</li>
+<li>
+<p><strong>Randomized Cross-Validation (Shuffle-Split)</strong>: Instead of fixed k-fold splits, random divisions are made in each iteration. Useful when you want to perform a specific number of iterations with random splits rather than a predefined k.</p>
+</li>
+<li>
+<p><strong>Group K-Fold Cross-Validation</strong>: Used when the dataset contains groups or clusters of related samples, such as subjects in a clinical study or users on a platform. Ensures that samples from the same group are in the same fold, preventing the model from learning information that doesn't generalize to new groups.</p>
+</li>
+</ul>
+<p>These are some of the most commonly used cross-validation techniques. The choice of the appropriate technique depends on the nature of the data and the problem you are addressing, as well as computational constraints. Cross-validation is essential for fair model evaluation and reducing the risk of overfitting or underfitting.</p>
+<p><img alt="" src="../figures/model-selection.png" /></p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Cross-Validation techniques in machine learning. Functions from module <code>sklearn.model_selection</code>.</caption>
+    <tr>
+        <th style="width: 20%;">Cross-Validation Technique</th>
+        <th style="width: 60%;">Description</th>
+        <th style="width: 20%;">Python Function</th>
+    </tr>
+    <tr>
+        <td>K-Fold Cross-Validation</td>
+        <td>Divides the dataset into k partitions and trains/tests the model k times. It's widely used and versatile.</td>
+        <td><code>.KFold()</code></td>
+    </tr>
+    <tr>
+        <td>Leave-One-Out (LOO) Cross-Validation</td>
+        <td>Uses the number of partitions equal to the number of samples in the dataset, leaving one sample as the test set in each iteration. Precise but computationally expensive.</td>
+        <td><code>.LeaveOneOut()</code></td>
+    </tr>
+    <tr>
+        <td>Stratified Cross-Validation</td>
+        <td>Similar to k-fold but ensures that the class distribution is similar in each fold. Useful for imbalanced datasets.</td>
+        <td><code>.StratifiedKFold()</code></td>
+    </tr>
+    <tr>
+        <td>Randomized Cross-Validation (Shuffle-Split)</td>
+        <td>Performs random splits in each iteration. Useful for a specific number of iterations with random splits.</td>
+        <td><code>.ShuffleSplit()</code></td>
+    </tr>
+    <tr>
+        <td>Group K-Fold Cross-Validation</td>
+        <td>Designed for datasets with groups or clusters of related samples. Ensures that samples from the same group are in the same fold.</td>
+        <td>Custom implementation (use group indices and customize splits).</td>
+    </tr>
+</table>
+
+<p><br><br></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p><b>Data Science Workflow Management</b><br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/imarranz/data-science-workflow-management/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="075_modeling_and_data_validation.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="077_modeling_and_data_validation.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

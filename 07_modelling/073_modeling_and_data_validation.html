@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="author" content="Ibon Martínez-Arranz">
+  <link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/07_modelling/073_modeling_and_data_validation.html">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Selection of Modelling Algortihms - Data Science Workflow Management</title>
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="../css/custom.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Selection of Modelling Algortihms";
+    var mkdocs_page_input_path = "07_modelling/073_modeling_and_data_validation.md";
+    var mkdocs_page_url = "/imarranz/data-science-workflow-management/07_modelling/073_modeling_and_data_validation.html";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Data Science Workflow Management</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../index.html">Data Science Workflow Management</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Introduction</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/011_introduction.html">Introduction</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/012_introduction.html">What is Data Science Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/013_introduction.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Fundamentals of Data Science</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/021_fundamentals_of_data_science.html">Fundamentals of Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/022_fundamentals_of_data_science.html">What is Data Science?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/023_fundamentals_of_data_science.html">Data Science Process</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/024_fundamentals_of_data_science.html">Programming Languages for Data Science</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/025_fundamentals_of_data_science.html">Data Science Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/026_fundamentals_of_data_science.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Workflow Management Concepts</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/031_workflow_management_concepts.html">Workflow Management Concepts</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/032_workflow_management_concepts.html">What is Workflow Management?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/033_workflow_management_concepts.html">Why is Workflow Management Important?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/034_workflow_management_concepts.html">Workflow Management Models</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/035_workflow_management_concepts.html">Workflow Management Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/036_workflow_management_concepts.html">Enhancing Collaboration and Reproducibility through Project Documentation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/037_workflow_management_concepts.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/038_workflow_management_concepts.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Project Planning</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/041_project_plannig.html">Project Planning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/042_project_plannig.html">What is Project Planning?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/043_project_plannig.html">Problem Definition and Objectives</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/044_project_plannig.html">Selection of Modelling Techniques</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/045_project_plannig.html">Selection Tools and Technologies</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/046_project_plannig.html">Workflow Design</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../04_project/047_project_plannig.html">Practical Example</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Data Adquisition</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/055_data_adquisition_and_preparation.html">Data Cleaning</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/056_data_adquisition_and_preparation.html">Data Integration</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/057_data_adquisition_and_preparation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/058_data_adquisition_and_preparation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/061_exploratory_data_analysis.html">Exploratory Data Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/062_exploratory_data_analysis.html">Descriptive Statistics</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/063_exploratory_data_analysis.html">Data Visualization</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/064_exploratory_data_analysis.html">Correlation Analysis</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/065_exploratory_data_analysis.html">Data Transformation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/066_exploratory_data_analysis.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/067_exploratory_data_analysis.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Modelling and Data Validation</span></p>
+                <ul class="current">
+                    <li class="toctree-l1"><a class="reference internal" href="071_modeling_and_data_validation.html">Modelling and Data Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="072_modeling_and_data_validation.html">What is Data Modelling</a>
+                    </li>
+                    <li class="toctree-l1 current"><a class="reference internal current" href="073_modeling_and_data_validation.html">Selection of Modelling Algortihms</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="074_modeling_and_data_validation.html">Model Training and Validation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="075_modeling_and_data_validation.html">selection of Best Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="076_modeling_and_data_validation.html">Model Evaluation</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="077_modeling_and_data_validation.html">Model Interpretability</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="078_modeling_and_data_validation.html">Practical Example</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="079_modeling_and_data_validation.html">References</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Model Implementation</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/081_model_implementation_and_maintenance.html">Model Implementation and Maintenance</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/082_model_implementation_and_maintenance.html">What is Model Implementation?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/083_model_implementation_and_maintenance.html">selection of Implementation Platform</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/084_model_implementation_and_maintenance.html">Integration with Existing Systems</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/085_model_implementation_and_maintenance.html">Testing and Validation of the Model</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/086_model_implementation_and_maintenance.html">Model Maintenance and Updating</a>
+                    </li>
+                </ul>
+                <p class="caption"><span class="caption-text">Monitoring and Improvement</span></p>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/091_monitoring_and_continuos_improvement.html">Monitoring and Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/092_monitoring_and_continuos_improvement.html">What is Monitoring and Continuous Improvement?</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/093_monitoring_and_continuos_improvement.html">Model Performance Monitoring</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/094_monitoring_and_continuos_improvement.html">Problem Identification</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/095_monitoring_and_continuos_improvement.html">Continuous Model Improvement</a>
+                    </li>
+                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/096_monitoring_and_continuos_improvement.html">References</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Data Science Workflow Management</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>Modelling and Data Validation &raquo;</li>
+        
+      
+    
+    <li>Selection of Modelling Algortihms</li>
+    <li class="wy-breadcrumbs-aside">
+      
+        <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/07_modelling/073_modeling_and_data_validation.md"
+          class="icon icon-github"> Edit on GitHub</a>
+      
+    </li>
+  </ul>
+  
+    <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+        <a href="074_modeling_and_data_validation.html" class="btn btn-neutral float-right" title="Model Training and Validation">Next <span class="icon icon-circle-arrow-right"></span></a>
+        <a href="072_modeling_and_data_validation.html" class="btn btn-neutral" title="What is Data Modelling"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h2 id="selection_of_modeling_algorithms">Selection of Modeling Algorithms<a class="headerlink" href="#selection_of_modeling_algorithms" title="Permanent link">#</a></h2>
+<p>In data science, selecting the right modeling algorithm is a crucial step in building predictive or descriptive models. The choice of algorithm depends on the nature of the problem at hand, whether it involves regression or classification tasks. Let's explore the process of selecting modeling algorithms and list some of the important algorithms for each type of task.</p>
+<h3 id="regression_modeling">Regression Modeling<a class="headerlink" href="#regression_modeling" title="Permanent link">#</a></h3>
+<p>When dealing with regression problems, the goal is to predict a continuous numerical value. The selection of a regression algorithm depends on factors such as the linearity of the relationship between variables, the presence of outliers, and the complexity of the underlying data. Here are some commonly used regression algorithms:</p>
+<ul>
+<li>
+<p><strong>Linear Regression</strong>: Linear regression assumes a linear relationship between the independent variables and the dependent variable. It is widely used for modeling continuous variables and provides interpretable coefficients that indicate the strength and direction of the relationships.</p>
+</li>
+<li>
+<p><strong>Decision Trees</strong>: Decision trees are versatile algorithms that can handle both regression and classification tasks. They create a tree-like structure to make decisions based on feature splits. Decision trees are intuitive and can capture nonlinear relationships, but they may overfit the training data.</p>
+</li>
+<li>
+<p><strong>Random Forest</strong>: Random Forest is an ensemble method that combines multiple decision trees to make predictions. It reduces overfitting by averaging the predictions of individual trees. Random Forest is known for its robustness and ability to handle high-dimensional data.</p>
+</li>
+<li>
+<p><strong>Gradient Boosting</strong>: Gradient Boosting is another ensemble technique that combines weak learners to create a strong predictive model. It sequentially fits new models to correct the errors made by previous models. Gradient Boosting algorithms like XGBoost and LightGBM are popular for their high predictive accuracy.</p>
+</li>
+</ul>
+<h3 id="classification_modeling">Classification Modeling<a class="headerlink" href="#classification_modeling" title="Permanent link">#</a></h3>
+<p>For classification problems, the objective is to predict a categorical or discrete class label. The choice of classification algorithm depends on factors such as the nature of the data, the number of classes, and the desired interpretability. Here are some commonly used classification algorithms:</p>
+<ul>
+<li>
+<p><strong>Logistic Regression</strong>: Logistic regression is a popular algorithm for binary classification. It models the probability of belonging to a certain class using a logistic function. Logistic regression can be extended to handle multi-class classification problems.</p>
+</li>
+<li>
+<p><strong>Support Vector Machines (SVM)</strong>: SVM is a powerful algorithm for both binary and multi-class classification. It finds a hyperplane that maximizes the margin between different classes. SVMs can handle complex decision boundaries and are effective with high-dimensional data.</p>
+</li>
+<li>
+<p><strong>Random Forest and Gradient Boosting</strong>: These ensemble methods can also be used for classification tasks. They can handle both binary and multi-class problems and provide good performance in terms of accuracy.</p>
+</li>
+<li>
+<p><strong>Naive Bayes</strong>: Naive Bayes is a probabilistic algorithm based on Bayes' theorem. It assumes independence between features and calculates the probability of belonging to a class. Naive Bayes is computationally efficient and works well with high-dimensional data.</p>
+</li>
+</ul>
+<h3 id="packages">Packages<a class="headerlink" href="#packages" title="Permanent link">#</a></h3>
+<h4 id="r_libraries">R Libraries:<a class="headerlink" href="#r_libraries" title="Permanent link">#</a></h4>
+<ul>
+<li>
+<p><strong>caret</strong>: <code>Caret</code> (Classification And REgression Training) is a comprehensive machine learning library in R that provides a unified interface for training and evaluating various models. It offers a wide range of algorithms for classification, regression, clustering, and feature selection, making it a powerful tool for data modeling. <code>Caret</code> simplifies the model training process by automating tasks such as data preprocessing, feature selection, hyperparameter tuning, and model evaluation. It also supports parallel computing, allowing for faster model training on multi-core systems. <code>Caret</code> is widely used in the R community and is known for its flexibility, ease of use, and extensive documentation. To learn more about <code>Caret</code>, you can visit the official website: <a href="https://topepo.github.io/caret/">Caret</a></p>
+</li>
+<li>
+<p><strong>glmnet</strong>: <code>GLMnet</code> is a popular R package for fitting generalized linear models with regularization. It provides efficient implementations of elastic net, lasso, and ridge regression, which are powerful techniques for variable selection and regularization in high-dimensional datasets. <code>GLMnet</code> offers a flexible and user-friendly interface for fitting these models, allowing users to easily control the amount of regularization and perform cross-validation for model selection. It also provides useful functions for visualizing the regularization paths and extracting model coefficients. <code>GLMnet</code> is widely used in various domains, including genomics, economics, and social sciences. For more information about <code>GLMnet</code>, you can refer to the official documentation: <a href="https://web.stanford.edu/~hastie/glmnet/glmnet_alpha.html">GLMnet</a></p>
+</li>
+<li>
+<p><strong>randomForest</strong>: <code>randomForest</code> is a powerful R package for building random forest models, which are an ensemble learning method that combines multiple decision trees to make predictions. The package provides an efficient implementation of the random forest algorithm, allowing users to easily train and evaluate models for both classification and regression tasks. <code>randomForest</code> offers various options for controlling the number of trees, the size of the random feature subsets, and other parameters, providing flexibility and control over the model's behavior. It also includes functions for visualizing the importance of features and making predictions on new data. <code>randomForest</code> is widely used in many fields, including bioinformatics, finance, and ecology. For more information about <code>randomForest</code>, you can refer to the official documentation: <a href="https://cran.r-project.org/web/packages/randomForest/index.html">randomForest</a></p>
+</li>
+<li>
+<p><strong>xgboost</strong>: <code>XGBoost</code> is an efficient and scalable R package for gradient boosting, a popular machine learning algorithm that combines multiple weak predictive models to create a strong ensemble model. <code>XGBoost</code> stands for eXtreme Gradient Boosting and is known for its speed and accuracy in handling large-scale datasets. It offers a range of advanced features, including regularization techniques, cross-validation, and early stopping, which help prevent overfitting and improve model performance. <code>XGBoost</code> supports both classification and regression tasks and provides various tuning parameters to optimize model performance. It has gained significant popularity and is widely used in various domains, including data science competitions and industry applications. To learn more about <code>XGBoost</code> and its capabilities, you can visit the official documentation: <a href="https://xgboost.readthedocs.io/en/latest/">XGBoost</a></p>
+</li>
+</ul>
+<h4 id="python_libraries">Python Libraries:<a class="headerlink" href="#python_libraries" title="Permanent link">#</a></h4>
+<ul>
+<li>
+<p><strong>scikit-learn</strong>: <code>Scikit-learn</code> is a versatile machine learning library for Python that offers a wide range of tools and algorithms for data modeling and analysis. It provides an intuitive and efficient API for tasks such as classification, regression, clustering, dimensionality reduction, and more. With scikit-learn, data scientists can easily preprocess data, select and tune models, and evaluate their performance. The library also includes helpful utilities for model selection, feature engineering, and cross-validation. <code>Scikit-learn</code> is known for its extensive documentation, strong community support, and integration with other popular data science libraries. To explore more about <code>scikit-learn</code>, visit their official website: <a href="https://scikit-learn.org/">scikit-learn</a></p>
+</li>
+<li>
+<p><strong>statsmodels</strong>: <code>Statsmodels</code> is a powerful Python library that focuses on statistical modeling and analysis. With a comprehensive set of functions, it enables researchers and data scientists to perform a wide range of statistical tasks, including regression analysis, time series analysis, hypothesis testing, and more. The library provides a user-friendly interface for estimating and interpreting statistical models, making it an essential tool for data exploration, inference, and model diagnostics. Statsmodels is widely used in academia and industry for its robust functionality and its ability to handle complex statistical analyses with ease. Explore more about <code>Statsmodels</code> at their official website: <a href="https://www.statsmodels.org/">Statsmodels</a></p>
+</li>
+<li>
+<p><strong>pycaret</strong>: <code>PyCaret</code> is a high-level, low-code Python library designed for automating end-to-end machine learning workflows. It simplifies the process of building and deploying machine learning models by providing a wide range of functionalities, including data preprocessing, feature selection, model training, hyperparameter tuning, and model evaluation. With PyCaret, data scientists can quickly prototype and iterate on different models, compare their performance, and generate valuable insights. The library integrates with popular machine learning frameworks and provides a user-friendly interface for both beginners and experienced practitioners. PyCaret's ease of use, extensive library of prebuilt algorithms, and powerful experimentation capabilities make it an excellent choice for accelerating the development of machine learning models. Explore more about <code>PyCaret</code> at their official website: <a href="https://www.pycaret.org/">PyCaret</a></p>
+</li>
+<li>
+<p><strong>MLflow</strong>: <code>MLflow</code> is a comprehensive open-source platform for managing the end-to-end machine learning lifecycle. It provides a set of intuitive APIs and tools to track experiments, package code and dependencies, deploy models, and monitor their performance. With MLflow, data scientists can easily organize and reproduce their experiments, enabling better collaboration and reproducibility. The platform supports multiple programming languages and seamlessly integrates with popular machine learning frameworks. MLflow's extensive capabilities, including experiment tracking, model versioning, and deployment options, make it an invaluable tool for managing machine learning projects. To learn more about <code>MLflow</code>, visit their official website: <a href="https://mlflow.org/">MLflow</a></p>
+</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+      <p><b>Data Science Workflow Management</b><br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+          <a href="https://github.com/imarranz/data-science-workflow-management/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
+      
+      
+        <span><a href="072_modeling_and_data_validation.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="074_modeling_and_data_validation.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
