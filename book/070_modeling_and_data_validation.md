@@ -363,6 +363,6 @@ Finally, we print the cross-validation accuracy, which is the mean of the accura
 
   * Silberschatz, A., Korth, H. F., & Sudarshan, S. (2010). Database System Concepts. McGraw-Hill Education.
 
-## Scientific Articles
+### Scientific Articles
 
   * Lundberg SM, Nair B, Vavilala MS, Horibe M, Eisses MJ, Adams T, Liston DE, Low DK, Newman SF, Kim J, Lee SI. (2018). Explainable machine-learning predictions for the prevention of hypoxaemia during surgery. Nat Biomed Eng. 2018 Oct;2(10):749-760. doi: 10.1038/s41551-018-0304-0.
