@@ -127,7 +127,7 @@ By prioritizing reproducibility and adopting effective project documentation pra
     --githash --gitrepo
 ```
 
-```
+```bash
 Author: Ibon Martínez-Arranz
 
 Last updated: 2023-03-09 09:58:17
