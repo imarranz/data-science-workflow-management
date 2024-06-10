@@ -8,7 +8,7 @@ This project aims to provide a comprehensive guide for data science workflow man
 <div class="cover">
     <div class="cover-content">
         <div class="cover-image">
-            <img src="../figures/cover-dswm.png" alt="Data Science Workflow Management" />
+            <img src="figures/cover-dswm.png" alt="Data Science Workflow Management" />
         </div>
         <div class="cover-text">
             <p style="color: #403724; font-size: 1.2rem;"><b>Strategies and Best Practices for Efficient Data Analysis: Exploring Advanced Techniques and Tools for Effective Workflow Management in Data Science</b></p>
@@ -41,7 +41,7 @@ For any inquiries or further information about this project, please feel free to
             <img src="https://avatars.githubusercontent.com/u/37185918?v=4" alt="Data Science Workflow Management" />
         </div>
         <div class="cover-text">
-            <p style="color: #403724; font-size: 1.0rem;">I'm Ibon Martínez-Arranz, with a BSc in Mathematics and MScs in Applied Statistics and Mathematical Modeling. Since 2010, I've been with <a href="https://owlmetabolomics.com/">OWL Metabolomics</a>, initially as a researcher and now head of the Data Science Department, focusing on prediction, statistical computations, and supporting R&D projects.</p>
+            <p style="color: #403724; font-size: 1.0rem;">I'm Ibon Martínez-Arranz, with a BSc in Mathematics and MScs in Applied Statistics and Mathematical Modeling. Since 2010, I've been with <a href="https://owlmetabolomics.com/">OWL Metabolomics</a>, initially as a researcher and now Head of the Data Science Department, focusing on Machine Learning Prediction, Statistical Computations, and supporting R&D projects.</p>
             <a href="https://github.com/imarranz">
                 <img alt="Github" src="https://img.shields.io/badge/GitHub-FFFFFF.svg?&style=for-the-badge&logo=Github&logoColor=black" />
             </a>

@@ -1,6 +1,43 @@
 
 ## References
 
+### Cheatsheets
+
+  * Foundations:
+    * [Python](https://www.pythoncheatsheet.org/)
+    * [SQL](https://www.sqltutorial.org/sql-cheat-sheet/)
+    * [Git](https://education.github.com/git-cheat-sheet-education.pdf)
+  * Data Manipulation:
+    * [Pandas](https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf)
+    * [NumPy](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Numpy_Python_Cheat_Sheet.pdf)
+  * Data Visualization:
+    * [Matplotlib](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Matplotlib_Cheat_Sheet.pdf)
+    * [Matplotlib](https://matplotlib.org/cheatsheets/)
+    * [Seaborn](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf)
+    * [Seaborn](https://www.kaggle.com/code/themlphdstudent/cheat-sheet-seaborn-charts)
+  * Machine Learning Libraries:
+    * [Scikit-Learn](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Scikit_Learn_Cheat_Sheet_Python.pdf)
+    * [TensorFlow](https://www.altoros.com/blog/tensorflow-cheat-sheet/)
+    * [Keras](https://www.datacamp.com/cheat-sheet/keras-cheat-sheet-neural-networks-in-python)
+  * Data Analysis Techniques:
+    * [Statistical Inference](https://web.mit.edu/~csvoss/Public/usabo/stats_handout.pdf)
+    * [Probability](https://www.wzchen.com/probability-cheatsheet/)
+    * [Linear Algebra](https://souravsengupta.com/cds2016/lectures/Savov_Notes.pdf)
+    * [Calulus](https://tutorial.math.lamar.edu/pdf/Calculus_Cheat_Sheet_All.pdf)
+  * Advanced Topics:
+    * [Natural Language Processing](https://www.kdnuggets.com/2022/12/top-5-nlp-cheat-sheets-beginners-professional.html)
+    * [Neural Networks and Deep Learning](https://medium.com/hackernoon/deep-learning-cheat-sheet-25421411e460)
+  * Big Data Technologies:
+    * [Apache Spark](https://s3.amazonaws.com/assets.datacamp.com/blog_assets/PySpark_Cheat_Sheet_Python.pdf)
+    * [Hadoop](https://medium.com/geekculture/hdfs-commands-cheat-sheet-1cd7bf22e795)
+  * Other Useful Skills:
+    * [Regular Expressions](https://www.rexegg.com/regex-quickstart.php)
+    * [Python String Formatting](https://www.pythoncheatsheet.org/#python-3-string-formatting)
+  * Databases:
+    * [PostgreSQL](https://www.postgresqltutorial.com/postgresql-cheat-sheet/)
+    * [MySQL](https://gist.github.com/bradtraversy/c831baaad44343cc945e76c2e30927b3)
+    * [SQLite](https://www.sqlitetutorial.net/sqlite-cheat-sheet/)
+
 ### Books
 
   * Peng, R. D. (2015). Exploratory Data Analysis with R. Springer.
