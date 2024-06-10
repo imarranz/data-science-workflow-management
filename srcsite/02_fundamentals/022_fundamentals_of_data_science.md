@@ -79,9 +79,9 @@ The **Bias-Variance Tradeoff** is a fundamental problem in supervised learning w
 
 **Evaluation Metrics** are used to measure the performance of a model. In classification problems, common metrics include:
 
-    - **Accuracy**: The proportion of true results among the total number of cases examined.
-    - **Precision**: The ratio of true positive predictions to the total predicted positives.
-    - **Recall (Sensitivity)**: The ratio of true positive predictions to the total actual positives.
-    - **F1-Score**: The harmonic mean of precision and recall.
-    - **Specificity**: The proportion of true negative predictions to the total actual negatives.
-    - **AUC-ROC**: The area under the receiver operating characteristic curve, which is a graphical representation of the sensitivity versus (1-specificity).
+  * **Accuracy**: The proportion of true results among the total number of cases examined.
+  * **Precision**: The ratio of true positive predictions to the total predicted positives.
+  * **Recall (Sensitivity)**: The ratio of true positive predictions to the total actual positives.
+  * **F1-Score**: The harmonic mean of precision and recall.
+  * **Specificity**: The proportion of true negative predictions to the total actual negatives.
+  * **AUC-ROC**: The area under the receiver operating characteristic curve, which is a graphical representation of the sensitivity versus (1-specificity).
