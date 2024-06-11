@@ -4,6 +4,33 @@
   <img src="https://repository-images.githubusercontent.com/428254657/e5d82c29-6b41-4d2b-b115-3e17ab3f8de7" alt="Data Science Workflow Management">
 </p>
 
+<p align="center">
+  <a href="https://github.com/imarranz/data-science-workflow-management/pulls">
+    <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?longCache=true" alt="Pull Requests">
+  </a>
+  <a href="LICENSE.md">
+    <img src="https://img.shields.io/badge/License-MIT-red.svg?longCache=true" alt="MIT License">
+  </a>
+   <a href="https://github.com/imarranz/data-science-workflow-management"><img src="https://img.shields.io/github/stars/imarranz/data-science-workflow-management" alt="Stars"/>
+  </a>
+   <a href="https://imarranz.github.iodata-science-workflow-management/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fimarranz.github.io%2Fdata-science-workflow-management%2F&up_message=Data%20Science%20Workflow%20Management" alt="Web"/>
+  </a>
+</p>
+
+<!--
+
+<p align="center">
+  <a href="https://twitter.com/imarranz" target="_blank">
+    <img src="https://img.shields.io/twitter/follow/imarranz.svg?logo=twitter">
+  </a>
+</p>
+
+
+
+<p align="center">
+  <img src="https://repository-images.githubusercontent.com/428254657/e5d82c29-6b41-4d2b-b115-3e17ab3f8de7" alt="Data Science Workflow Management">
+</p>
+
 **Version and Activity**
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/imarranz/data-science-workflow-management)
@@ -15,6 +42,8 @@
 
 ![GitHub top language](https://img.shields.io/github/languages/top/imarranz/data-science-workflow-management)
 ![GitHub language count](https://img.shields.io/github/languages/count/imarranz/data-science-workflow-management)<br>
+
+-->
 
 ## Table of Contents
 
