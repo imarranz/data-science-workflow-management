@@ -13,7 +13,7 @@
   </a>
    <a href="https://github.com/imarranz/data-science-workflow-management"><img src="https://img.shields.io/github/stars/imarranz/data-science-workflow-management" alt="Stars"/>
   </a>
-   <a href="https://imarranz.github.iodata-science-workflow-management/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fimarranz.github.io%2Fdata-science-workflow-management%2F&up_message=Data%20Science%20Workflow%20Management" alt="Web"/>
+   <a href="https://imarranz.github.io/data-science-workflow-management/"><img src="https://img.shields.io/website?url=https%3A%2F%2Fimarranz.github.io%2Fdata-science-workflow-management%2F&up_message=Data%20Science%20Workflow%20Management" alt="Web"/>
   </a>
 </p>
 
