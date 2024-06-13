@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ibon Martínez-Arranz" /><link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/05_adquisition/054_data_adquisition_and_preparation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ibon Martínez-Arranz" /><link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/05_acquisition/0530_data_acquisition_and_preparation.html" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Data Extraction and Transformation - Data Science Workflow Management</title>
+    <title>Selection of Data Sources - Data Science Workflow Management</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,9 +13,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Data Extraction and Transformation";
-        var mkdocs_page_input_path = "05_adquisition/054_data_adquisition_and_preparation.md";
-        var mkdocs_page_url = "/imarranz/data-science-workflow-management/05_adquisition/054_data_adquisition_and_preparation.html";
+        var mkdocs_page_name = "Selection of Data Sources";
+        var mkdocs_page_input_path = "05_acquisition/0530_data_acquisition_and_preparation.md";
+        var mkdocs_page_url = "/imarranz/data-science-workflow-management/05_acquisition/0530_data_acquisition_and_preparation.html";
       </script>
     
     <!--[if lt IE 9]>
@@ -110,23 +110,25 @@
                   <li class="toctree-l1"><a class="reference internal" href="../04_project/047_project_plannig.html">Practical Example</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Data Adquisition</span></p>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0510_data_acquisition_and_preparation.html">Data Acquisition and Preparation</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0520_data_acquisition_and_preparation.html">What is Data Acquisition?</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="0530_data_acquisition_and_preparation.html">Selection of Data Sources</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0541_data_acquisition_and_preparation.html">Data Extraction and Transformation</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="055_data_adquisition_and_preparation.html">Data Cleaning</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0542_data_acquisition_and_preparation.html">Data Profiling</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="056_data_adquisition_and_preparation.html">Data Integration</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0550_data_acquisition_and_preparation.html">Data Cleaning</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="057_data_adquisition_and_preparation.html">Practical Example</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0560_data_acquisition_and_preparation.html">Data Integration</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="058_data_adquisition_and_preparation.html">References</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0570_data_acquisition_and_preparation.html">Practical Example</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="0580_data_acquisition_and_preparation.html">References</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
@@ -211,80 +213,31 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-          <li>Data Adquisition &raquo;</li>
-      <li class="breadcrumb-item active">Data Extraction and Transformation</li>
+          <li>Data Acquisition &raquo;</li>
+      <li class="breadcrumb-item active">Selection of Data Sources</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/05_adquisition/054_data_adquisition_and_preparation.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/05_acquisition/0530_data_acquisition_and_preparation.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
     <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Breadcrumb Navigation">
-        <a href="053_data_adquisition_and_preparation.html" class="btn btn-neutral float-left" title="Selection of Data Sources"><span class="icon icon-circle-arrow-left" aria-hidden="true"></span> Previous</a>
-        <a href="055_data_adquisition_and_preparation.html" class="btn btn-neutral float-right" title="Data Cleaning">Next <span class="icon icon-circle-arrow-right" aria-hidden="true"></span></a>
+        <a href="0520_data_acquisition_and_preparation.html" class="btn btn-neutral float-left" title="What is Data Acquisition?"><span class="icon icon-circle-arrow-left" aria-hidden="true"></span> Previous</a>
+        <a href="0541_data_acquisition_and_preparation.html" class="btn btn-neutral float-right" title="Data Extraction and Transformation">Next <span class="icon icon-circle-arrow-right" aria-hidden="true"></span></a>
     </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="data_extraction_and_transformation">Data Extraction and Transformation<a class="headerlink" href="#data_extraction_and_transformation" title="Permanent link">#</a></h2>
-<p>In the dynamic field of data science, data extraction and transformation are fundamental processes that enable organizations to extract valuable insights from raw data and make it suitable for analysis. These processes involve gathering data from various sources, cleaning, reshaping, and integrating it into a unified and meaningful format that can be effectively utilized for further exploration and analysis.</p>
-<p>Data extraction encompasses the retrieval and acquisition of data from diverse sources such as databases, web pages, APIs, spreadsheets, or text files. The choice of extraction technique depends on the nature of the data source and the desired output format. Common techniques include web scraping, database querying, file parsing, and API integration. These techniques allow data scientists to access and collect structured, semi-structured, or unstructured data.</p>
-<p>Once the data is acquired, it often requires transformation to ensure its quality, consistency, and compatibility with the analysis process. Data transformation involves a series of operations, including cleaning, filtering, aggregating, normalizing, and enriching the data. These operations help eliminate inconsistencies, handle missing values, deal with outliers, and convert data into a standardized format. Transformation also involves creating new derived variables, combining datasets, or integrating external data sources to enhance the overall quality and usefulness of the data.</p>
-<p>In the realm of data science, several powerful programming languages and packages offer extensive capabilities for data extraction and transformation. In Python, the pandas library is widely used for data manipulation, providing a rich set of functions and tools for data cleaning, filtering, aggregation, and merging. It offers convenient data structures, such as DataFrames, which enable efficient handling of tabular data.</p>
-<p>R, another popular language in the data science realm, offers various packages for data extraction and transformation. The dplyr package provides a consistent and intuitive syntax for data manipulation tasks, including filtering, grouping, summarizing, and joining datasets. The tidyr package focuses on reshaping and tidying data, allowing for easy handling of missing values and reshaping data into the desired format.</p>
-<p>In addition to pandas and dplyr, several other Python and R packages play significant roles in data extraction and transformation. BeautifulSoup and Scrapy are widely used Python libraries for web scraping, enabling data extraction from HTML and XML documents. In R, the XML and rvest packages offer similar capabilities. For working with APIs, requests and httr packages in Python and R, respectively, provide straightforward methods for retrieving data from web services.</p>
-<p>The power of data extraction and transformation lies in their ability to convert raw data into a clean, structured, and unified form that facilitates efficient analysis and meaningful insights. These processes are essential for data scientists to ensure the accuracy, reliability, and integrity of the data they work with. By leveraging the capabilities of programming languages and packages designed for data extraction and transformation, data scientists can unlock the full potential of their data and drive impactful discoveries in the field of data science.</p>
-<table border="1" style="width: 100%; border-collapse: collapse;">
-    <caption>Libraries and packages for data manipulation, web scraping, and API integration.</caption>
-    <tr>
-        <th style="width: 15%;">Purpose</th>
-        <th style="width: 20%;">Library/Package</th>
-        <th style="width: 50%;">Description</th>
-        <th style="width: 15%;">Website</th>
-    </tr>
-    <tr>
-        <td rowspan="2">Data Manipulation</td>
-        <td>pandas</td>
-        <td>A powerful library for data manipulation and analysis in Python, providing data structures and functions for data cleaning and transformation.</td>
-        <td><a href="https://pandas.pydata.org">pandas</a></td>
-    </tr>
-    <tr>
-        <td>dplyr</td>
-        <td>A popular package in R for data manipulation, offering a consistent syntax and functions for filtering, grouping, and summarizing data.</td>
-        <td><a href="https://dplyr.tidyverse.org">dplyr</a></td>
-    </tr>
-    <tr>
-        <td rowspan="3">Web Scraping</td>
-        <td>BeautifulSoup</td>
-        <td>A Python library for parsing HTML and XML documents, commonly used for web scraping and extracting data from web pages.</td>
-        <td><a href="https://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a></td>
-    </tr>
-    <tr>
-        <td>Scrapy</td>
-        <td>A Python framework for web scraping, providing a high-level API for extracting data from websites efficiently.</td>
-        <td><a href="https://scrapy.org">Scrapy</a></td>
-    </tr>
-    <tr>
-        <td>XML</td>
-        <td>An R package for working with XML data, offering functions to parse, manipulate, and extract information from XML documents.</td>
-        <td><a href="https://cran.r-project.org/package=XML">XML</a></td>
-    </tr>
-    <tr>
-        <td rowspan="2">API Integration</td>
-        <td>requests</td>
-        <td>A Python library for making HTTP requests, commonly used for interacting with APIs and retrieving data from web services.</td>
-        <td><a href="https://requests.readthedocs.io">requests</a></td>
-    </tr>
-    <tr>
-        <td>httr</td>
-        <td>An R package for making HTTP requests, providing functions for interacting with web services and APIs.</td>
-        <td><a href="https://cran.r-project.org/package=httr">httr</a></td>
-    </tr>
-</table>
-
-<p><br></p>
-<p>These libraries and packages are widely used in the data science community and offer powerful functionalities for various data-related tasks, such as data manipulation, web scraping, and API integration. Feel free to explore their respective websites for more information, documentation, and examples of their usage.</p>
-<p><br></p>
+                <h2 id="selection_of_data_sources_choosing_the_right_path_to_data_exploration">Selection of Data Sources: Choosing the Right Path to Data Exploration<a class="headerlink" href="#selection_of_data_sources_choosing_the_right_path_to_data_exploration" title="Permanent link">#</a></h2>
+<p>In data science, the selection of data sources plays a crucial role in determining the success and efficacy of any data-driven project. Choosing the right data sources is a critical step that involves identifying, evaluating, and selecting the most relevant and reliable sources of data for analysis. The selection process requires careful consideration of the project's objectives, data requirements, quality standards, and available resources.</p>
+<p>Data sources can vary widely, encompassing internal organizational databases, publicly available datasets, third-party data providers, web APIs, social media platforms, and IoT devices, among others. Each source offers unique opportunities and challenges, and selecting the appropriate sources is vital to ensure the accuracy, relevance, and validity of the collected data.</p>
+<p>The first step in the selection of data sources is defining the project's objectives and identifying the specific data requirements. This involves understanding the questions that need to be answered, the variables of interest, and the context in which the analysis will be conducted. By clearly defining the scope and goals of the project, data scientists can identify the types of data needed and the potential sources that can provide relevant information.</p>
+<p>Once the objectives and requirements are established, the next step is to evaluate the available data sources. This evaluation process entails assessing the quality, reliability, and accessibility of the data sources. Factors such as data accuracy, completeness, timeliness, and relevance need to be considered. Additionally, it is crucial to evaluate the credibility and reputation of the data sources to ensure the integrity of the collected data.</p>
+<p>Furthermore, data scientists must consider the feasibility and practicality of accessing and acquiring data from various sources. This involves evaluating technical considerations, such as data formats, data volume, data transfer mechanisms, and any legal or ethical considerations associated with the data sources. It is essential to ensure compliance with data privacy regulations and ethical guidelines when dealing with sensitive or personal data.</p>
+<p>The selection of data sources requires a balance between the richness of the data and the available resources. Sometimes, compromises may need to be made due to limitations in terms of data availability, cost, or time constraints. Data scientists must weigh the potential benefits of using certain data sources against the associated costs and effort required for data acquisition and preparation.</p>
+<div class="important">
+The selection of data sources is a critical step in any data science project. By carefully considering the project's objectives, data requirements, quality standards, and available resources, data scientists can choose the most relevant and reliable sources of data for analysis. This thoughtful selection process sets the stage for accurate, meaningful, and impactful data exploration and analysis, leading to valuable insights and informed decision-making.
+</div>
               
             </div>
           </div><footer>
@@ -314,10 +267,10 @@
         </span>
     
     
-      <span><a href="053_data_adquisition_and_preparation.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="0520_data_acquisition_and_preparation.html" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="055_data_adquisition_and_preparation.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="0541_data_acquisition_and_preparation.html" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

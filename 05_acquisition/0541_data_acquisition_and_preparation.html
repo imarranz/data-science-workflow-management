@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ibon Martínez-Arranz" /><link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/05_adquisition/057_data_adquisition_and_preparation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ibon Martínez-Arranz" /><link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/05_acquisition/0541_data_acquisition_and_preparation.html" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Practical Example - Data Science Workflow Management</title>
+    <title>Data Extraction and Transformation - Data Science Workflow Management</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,9 +13,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Practical Example";
-        var mkdocs_page_input_path = "05_adquisition/057_data_adquisition_and_preparation.md";
-        var mkdocs_page_url = "/imarranz/data-science-workflow-management/05_adquisition/057_data_adquisition_and_preparation.html";
+        var mkdocs_page_name = "Data Extraction and Transformation";
+        var mkdocs_page_input_path = "05_acquisition/0541_data_acquisition_and_preparation.md";
+        var mkdocs_page_url = "/imarranz/data-science-workflow-management/05_acquisition/0541_data_acquisition_and_preparation.html";
       </script>
     
     <!--[if lt IE 9]>
@@ -110,23 +110,25 @@
                   <li class="toctree-l1"><a class="reference internal" href="../04_project/047_project_plannig.html">Practical Example</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Data Adquisition</span></p>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0510_data_acquisition_and_preparation.html">Data Acquisition and Preparation</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0520_data_acquisition_and_preparation.html">What is Data Acquisition?</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0530_data_acquisition_and_preparation.html">Selection of Data Sources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="0541_data_acquisition_and_preparation.html">Data Extraction and Transformation</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="055_data_adquisition_and_preparation.html">Data Cleaning</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0542_data_acquisition_and_preparation.html">Data Profiling</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="056_data_adquisition_and_preparation.html">Data Integration</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0550_data_acquisition_and_preparation.html">Data Cleaning</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="057_data_adquisition_and_preparation.html">Practical Example</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0560_data_acquisition_and_preparation.html">Data Integration</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="058_data_adquisition_and_preparation.html">References</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0570_data_acquisition_and_preparation.html">Practical Example</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="0580_data_acquisition_and_preparation.html">References</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
@@ -211,57 +213,80 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-          <li>Data Adquisition &raquo;</li>
-      <li class="breadcrumb-item active">Practical Example</li>
+          <li>Data Acquisition &raquo;</li>
+      <li class="breadcrumb-item active">Data Extraction and Transformation</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/05_adquisition/057_data_adquisition_and_preparation.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/05_acquisition/0541_data_acquisition_and_preparation.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
     <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Breadcrumb Navigation">
-        <a href="056_data_adquisition_and_preparation.html" class="btn btn-neutral float-left" title="Data Integration"><span class="icon icon-circle-arrow-left" aria-hidden="true"></span> Previous</a>
-        <a href="058_data_adquisition_and_preparation.html" class="btn btn-neutral float-right" title="References">Next <span class="icon icon-circle-arrow-right" aria-hidden="true"></span></a>
+        <a href="0530_data_acquisition_and_preparation.html" class="btn btn-neutral float-left" title="Selection of Data Sources"><span class="icon icon-circle-arrow-left" aria-hidden="true"></span> Previous</a>
+        <a href="0542_data_acquisition_and_preparation.html" class="btn btn-neutral float-right" title="Data Profiling">Next <span class="icon icon-circle-arrow-right" aria-hidden="true"></span></a>
     </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="practical_example_how_to_use_a_data_extraction_and_cleaning_tool_to_prepare_a_dataset_for_use_in_a_data_science_project">Practical Example: How to Use a Data Extraction and Cleaning Tool to Prepare a Dataset for Use in a Data Science Project<a class="headerlink" href="#practical_example_how_to_use_a_data_extraction_and_cleaning_tool_to_prepare_a_dataset_for_use_in_a_data_science_project" title="Permanent link">#</a></h2>
-<p>In this practical example, we will explore the process of using a data extraction and cleaning tool to prepare a dataset for analysis in a data science project. This workflow will demonstrate how to extract data from various sources, perform necessary data cleaning operations, and create a well-prepared dataset ready for further analysis.</p>
-<h3 id="data_extraction">Data Extraction<a class="headerlink" href="#data_extraction" title="Permanent link">#</a></h3>
-<p>The first step in the workflow is to extract data from different sources. This may involve retrieving data from databases, APIs, web scraping, or accessing data stored in different file formats such as CSV, Excel, or JSON. Popular tools for data extraction include Python libraries like pandas, BeautifulSoup, and requests, which provide functionalities for fetching and parsing data from different sources.</p>
-<h4 id="csv">CSV<a class="headerlink" href="#csv" title="Permanent link">#</a></h4>
-<div class="info">
-<b>CSV (Comma-Separated Values)</b> files are a common and simple way to store structured data. They consist of plain text where each line represents a data record, and fields within each record are separated by commas. CSV files are widely supported by various programming languages and data analysis tools. They are easy to create and manipulate using tools like Microsoft Excel, Python's Pandas library, or R. CSV files are an excellent choice for tabular data, making them suitable for tasks like storing datasets, exporting data, or sharing information in a machine-readable format.
-</div>
+                <h2 id="data_extraction_and_transformation">Data Extraction and Transformation<a class="headerlink" href="#data_extraction_and_transformation" title="Permanent link">#</a></h2>
+<p>In the dynamic field of data science, data extraction and transformation are fundamental processes that enable organizations to extract valuable insights from raw data and make it suitable for analysis. These processes involve gathering data from various sources, cleaning, reshaping, and integrating it into a unified and meaningful format that can be effectively utilized for further exploration and analysis.</p>
+<p>Data extraction encompasses the retrieval and acquisition of data from diverse sources such as databases, web pages, APIs, spreadsheets, or text files. The choice of extraction technique depends on the nature of the data source and the desired output format. Common techniques include web scraping, database querying, file parsing, and API integration. These techniques allow data scientists to access and collect structured, semi-structured, or unstructured data.</p>
+<p>Once the data is acquired, it often requires transformation to ensure its quality, consistency, and compatibility with the analysis process. Data transformation involves a series of operations, including cleaning, filtering, aggregating, normalizing, and enriching the data. These operations help eliminate inconsistencies, handle missing values, deal with outliers, and convert data into a standardized format. Transformation also involves creating new derived variables, combining datasets, or integrating external data sources to enhance the overall quality and usefulness of the data.</p>
+<p>In the realm of data science, several powerful programming languages and packages offer extensive capabilities for data extraction and transformation. In Python, the pandas library is widely used for data manipulation, providing a rich set of functions and tools for data cleaning, filtering, aggregation, and merging. It offers convenient data structures, such as DataFrames, which enable efficient handling of tabular data.</p>
+<p>R, another popular language in the data science realm, offers various packages for data extraction and transformation. The dplyr package provides a consistent and intuitive syntax for data manipulation tasks, including filtering, grouping, summarizing, and joining datasets. The tidyr package focuses on reshaping and tidying data, allowing for easy handling of missing values and reshaping data into the desired format.</p>
+<p>In addition to pandas and dplyr, several other Python and R packages play significant roles in data extraction and transformation. BeautifulSoup and Scrapy are widely used Python libraries for web scraping, enabling data extraction from HTML and XML documents. In R, the XML and rvest packages offer similar capabilities. For working with APIs, requests and httr packages in Python and R, respectively, provide straightforward methods for retrieving data from web services.</p>
+<p>The power of data extraction and transformation lies in their ability to convert raw data into a clean, structured, and unified form that facilitates efficient analysis and meaningful insights. These processes are essential for data scientists to ensure the accuracy, reliability, and integrity of the data they work with. By leveraging the capabilities of programming languages and packages designed for data extraction and transformation, data scientists can unlock the full potential of their data and drive impactful discoveries in the field of data science.</p>
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <caption>Libraries and packages for data manipulation, web scraping, and API integration.</caption>
+    <tr>
+        <th style="width: 15%;">Purpose</th>
+        <th style="width: 20%;">Library/Package</th>
+        <th style="width: 50%;">Description</th>
+        <th style="width: 15%;">Website</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Data Manipulation</td>
+        <td>pandas</td>
+        <td>A powerful library for data manipulation and analysis in Python, providing data structures and functions for data cleaning and transformation.</td>
+        <td><a href="https://pandas.pydata.org">pandas</a></td>
+    </tr>
+    <tr>
+        <td>dplyr</td>
+        <td>A popular package in R for data manipulation, offering a consistent syntax and functions for filtering, grouping, and summarizing data.</td>
+        <td><a href="https://dplyr.tidyverse.org">dplyr</a></td>
+    </tr>
+    <tr>
+        <td rowspan="3">Web Scraping</td>
+        <td>BeautifulSoup</td>
+        <td>A Python library for parsing HTML and XML documents, commonly used for web scraping and extracting data from web pages.</td>
+        <td><a href="https://www.crummy.com/software/BeautifulSoup/">BeautifulSoup</a></td>
+    </tr>
+    <tr>
+        <td>Scrapy</td>
+        <td>A Python framework for web scraping, providing a high-level API for extracting data from websites efficiently.</td>
+        <td><a href="https://scrapy.org">Scrapy</a></td>
+    </tr>
+    <tr>
+        <td>XML</td>
+        <td>An R package for working with XML data, offering functions to parse, manipulate, and extract information from XML documents.</td>
+        <td><a href="https://cran.r-project.org/package=XML">XML</a></td>
+    </tr>
+    <tr>
+        <td rowspan="2">API Integration</td>
+        <td>requests</td>
+        <td>A Python library for making HTTP requests, commonly used for interacting with APIs and retrieving data from web services.</td>
+        <td><a href="https://requests.readthedocs.io">requests</a></td>
+    </tr>
+    <tr>
+        <td>httr</td>
+        <td>An R package for making HTTP requests, providing functions for interacting with web services and APIs.</td>
+        <td><a href="https://cran.r-project.org/package=httr">httr</a></td>
+    </tr>
+</table>
 
-<h4 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">#</a></h4>
-<div class="info">
-<b>JSON (JavaScript Object Notation)</b> files are a lightweight and flexible data storage format. They are human-readable and easy to understand, making them a popular choice for both data exchange and configuration files. JSON stores data in a key-value pair format, allowing for nested structures. It is particularly useful for semi-structured or hierarchical data, such as configuration settings, API responses, or complex data objects in web applications. JSON files can be easily parsed and generated using programming languages like Python, JavaScript, and many others.
-</div>
-
-<h4 id="excel">Excel<a class="headerlink" href="#excel" title="Permanent link">#</a></h4>
-<div class="info">
-<b>Excel</b> files, often in the <b>XLSX</b> format, are widely used for data storage and analysis, especially in business and finance. They provide a spreadsheet-based interface that allows users to organize data in tables and perform calculations, charts, and visualizations. Excel offers a rich set of features for data manipulation and visualization. While primarily known for its user-friendly interface, Excel files can be programmatically accessed and manipulated using libraries like Python's openpyxl or libraries in other languages. They are suitable for storing structured data that requires manual data entry, complex calculations, or polished presentation.
-</div>
-
-<h3 id="data_cleaning">Data Cleaning<a class="headerlink" href="#data_cleaning" title="Permanent link">#</a></h3>
-<p>Once the data is extracted, the next crucial step is data cleaning. This involves addressing issues such as missing values, inconsistent formats, outliers, and data inconsistencies. Data cleaning ensures that the dataset is accurate, complete, and ready for analysis. Tools like pandas, NumPy, and dplyr (in R) offer powerful functionalities for data cleaning, including handling missing values, transforming data types, removing duplicates, and performing data validation.</p>
-<h3 id="data_transformation_and_feature_engineering">Data Transformation and Feature Engineering<a class="headerlink" href="#data_transformation_and_feature_engineering" title="Permanent link">#</a></h3>
-<p>After cleaning the data, it is often necessary to perform data transformation and feature engineering to create new variables or modify existing ones. This step involves applying mathematical operations, aggregations, and creating derived features that are relevant to the analysis. Python libraries such as scikit-learn, TensorFlow, and PyTorch, as well as R packages like caret and tidymodels, offer a wide range of functions and methods for data transformation and feature engineering.</p>
-<h3 id="data_integration_and_merging">Data Integration and Merging<a class="headerlink" href="#data_integration_and_merging" title="Permanent link">#</a></h3>
-<p>In some cases, data from multiple sources may need to be integrated and merged into a single dataset. This can involve combining datasets based on common identifiers or merging datasets with shared variables. Tools like pandas, dplyr, and SQL (Structured Query Language) enable seamless data integration and merging by providing join and merge operations.</p>
-<h3 id="data_quality_assurance">Data Quality Assurance<a class="headerlink" href="#data_quality_assurance" title="Permanent link">#</a></h3>
-<p>Before proceeding with the analysis, it is essential to ensure the quality and integrity of the dataset. This involves validating the data against defined criteria, checking for outliers or errors, and conducting data quality assessments. Tools like Great Expectations, data validation libraries in Python and R, and statistical techniques can be employed to perform data quality assurance and verification.</p>
-<h3 id="data_versioning_and_documentation">Data Versioning and Documentation<a class="headerlink" href="#data_versioning_and_documentation" title="Permanent link">#</a></h3>
-<p>To maintain the integrity and reproducibility of the data science project, it is crucial to implement data versioning and documentation practices. This involves tracking changes made to the dataset, maintaining a history of data transformations and cleaning operations, and documenting the data preprocessing steps. Version control systems like Git, along with project documentation tools like Jupyter Notebook, can be used to track and document changes made to the dataset.</p>
-<p>By following this practical workflow and leveraging the appropriate tools and libraries, data scientists can efficiently extract, clean, and prepare datasets for analysis. It ensures that the data used in the project is reliable, accurate, and in a suitable format for the subsequent stages of the data science pipeline.</p>
-<p>Example Tools and Libraries:</p>
-<ul>
-<li><strong>Python</strong>: pandas, NumPy, BeautifulSoup, requests, scikit-learn, TensorFlow, PyTorch, Git, ...</li>
-<li><strong>R</strong>: dplyr, tidyr, caret, tidymodels, SQLite, RSQLite, Git, ...</li>
-</ul>
-<p>This example highlights a selection of tools commonly used in data extraction and cleaning processes, but it is essential to choose the tools that best fit the specific requirements and preferences of the data science project.</p>
+<p><br></p>
+<p>These libraries and packages are widely used in the data science community and offer powerful functionalities for various data-related tasks, such as data manipulation, web scraping, and API integration. Feel free to explore their respective websites for more information, documentation, and examples of their usage.</p>
+<p><br></p>
               
             </div>
           </div><footer>
@@ -291,10 +316,10 @@
         </span>
     
     
-      <span><a href="056_data_adquisition_and_preparation.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="0530_data_acquisition_and_preparation.html" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="058_data_adquisition_and_preparation.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="0542_data_acquisition_and_preparation.html" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>

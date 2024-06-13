@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ibon Martínez-Arranz" /><link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/05_adquisition/055_data_adquisition_and_preparation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ibon Martínez-Arranz" /><link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/05_acquisition/0510_data_acquisition_and_preparation.html" />
       <link rel="shortcut icon" href="../img/favicon.ico" />
-    <title>Data Cleaning - Data Science Workflow Management</title>
+    <title>Data Acquisition and Preparation - Data Science Workflow Management</title>
     <link rel="stylesheet" href="../css/theme.css" />
     <link rel="stylesheet" href="../css/theme_extra.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
@@ -13,9 +13,9 @@
     
       <script>
         // Current page data
-        var mkdocs_page_name = "Data Cleaning";
-        var mkdocs_page_input_path = "05_adquisition/055_data_adquisition_and_preparation.md";
-        var mkdocs_page_url = "/imarranz/data-science-workflow-management/05_adquisition/055_data_adquisition_and_preparation.html";
+        var mkdocs_page_name = "Data Acquisition and Preparation";
+        var mkdocs_page_input_path = "05_acquisition/0510_data_acquisition_and_preparation.md";
+        var mkdocs_page_url = "/imarranz/data-science-workflow-management/05_acquisition/0510_data_acquisition_and_preparation.html";
       </script>
     
     <!--[if lt IE 9]>
@@ -110,23 +110,25 @@
                   <li class="toctree-l1"><a class="reference internal" href="../04_project/047_project_plannig.html">Practical Example</a>
                   </li>
               </ul>
-              <p class="caption"><span class="caption-text">Data Adquisition</span></p>
+              <p class="caption"><span class="caption-text">Data Acquisition</span></p>
               <ul class="current">
-                  <li class="toctree-l1"><a class="reference internal" href="051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="0510_data_acquisition_and_preparation.html">Data Acquisition and Preparation</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0520_data_acquisition_and_preparation.html">What is Data Acquisition?</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0530_data_acquisition_and_preparation.html">Selection of Data Sources</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0541_data_acquisition_and_preparation.html">Data Extraction and Transformation</a>
                   </li>
-                  <li class="toctree-l1 current"><a class="reference internal current" href="055_data_adquisition_and_preparation.html">Data Cleaning</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0542_data_acquisition_and_preparation.html">Data Profiling</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="056_data_adquisition_and_preparation.html">Data Integration</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0550_data_acquisition_and_preparation.html">Data Cleaning</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="057_data_adquisition_and_preparation.html">Practical Example</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0560_data_acquisition_and_preparation.html">Data Integration</a>
                   </li>
-                  <li class="toctree-l1"><a class="reference internal" href="058_data_adquisition_and_preparation.html">References</a>
+                  <li class="toctree-l1"><a class="reference internal" href="0570_data_acquisition_and_preparation.html">Practical Example</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="0580_data_acquisition_and_preparation.html">References</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
@@ -211,165 +213,37 @@
         <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
     <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
-          <li>Data Adquisition &raquo;</li>
-      <li class="breadcrumb-item active">Data Cleaning</li>
+          <li>Data Acquisition &raquo;</li>
+      <li class="breadcrumb-item active">Data Acquisition and Preparation</li>
     <li class="wy-breadcrumbs-aside">
-          <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/05_adquisition/055_data_adquisition_and_preparation.md" class="icon icon-github"> Edit on GitHub</a>
+          <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/05_acquisition/0510_data_acquisition_and_preparation.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
     <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Breadcrumb Navigation">
-        <a href="054_data_adquisition_and_preparation.html" class="btn btn-neutral float-left" title="Data Extraction and Transformation"><span class="icon icon-circle-arrow-left" aria-hidden="true"></span> Previous</a>
-        <a href="056_data_adquisition_and_preparation.html" class="btn btn-neutral float-right" title="Data Integration">Next <span class="icon icon-circle-arrow-right" aria-hidden="true"></span></a>
+        <a href="../04_project/047_project_plannig.html" class="btn btn-neutral float-left" title="Practical Example"><span class="icon icon-circle-arrow-left" aria-hidden="true"></span> Previous</a>
+        <a href="0520_data_acquisition_and_preparation.html" class="btn btn-neutral float-right" title="What is Data Acquisition?">Next <span class="icon icon-circle-arrow-right" aria-hidden="true"></span></a>
     </div>
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
             <div class="section" itemprop="articleBody">
               
-                <h2 id="data_cleaning">Data Cleaning<a class="headerlink" href="#data_cleaning" title="Permanent link">#</a></h2>
-<p><strong>Data Cleaning: Ensuring Data Quality for Effective Analysis</strong></p>
-<p>Data cleaning, also known as data cleansing or data scrubbing, is a crucial step in the data science workflow that focuses on identifying and rectifying errors, inconsistencies, and inaccuracies within datasets. It is an essential process that precedes data analysis, as the quality and reliability of the data directly impact the validity and accuracy of the insights derived from it.</p>
-<p>The importance of data cleaning lies in its ability to enhance data quality, reliability, and integrity. By addressing issues such as missing values, outliers, duplicate entries, and inconsistent formatting, data cleaning ensures that the data is accurate, consistent, and suitable for analysis. Clean data leads to more reliable and robust results, enabling data scientists to make informed decisions and draw meaningful insights.</p>
-<p>Several common techniques are employed in data cleaning, including:</p>
-<ul>
-<li>
-<p><strong>Handling Missing Data</strong>: Dealing with missing values by imputation, deletion, or interpolation methods to avoid biased or erroneous analyses.</p>
-</li>
-<li>
-<p><strong>Outlier Detection</strong>: Identifying and addressing outliers, which can significantly impact statistical measures and models.</p>
-</li>
-<li>
-<p><strong>Data Deduplication</strong>: Identifying and removing duplicate entries to avoid duplication bias and ensure data integrity.</p>
-</li>
-<li>
-<p><strong>Standardization and Formatting</strong>: Converting data into a consistent format, ensuring uniformity and compatibility across variables.</p>
-</li>
-<li>
-<p><strong>Data Validation and Verification</strong>: Verifying the accuracy, completeness, and consistency of the data through various validation techniques.</p>
-</li>
-<li>
-<p><strong>Data Transformation</strong>: Converting data into a suitable format, such as scaling numerical variables or transforming categorical variables.</p>
-</li>
-</ul>
-<p>Python and R offer a rich ecosystem of libraries and packages that aid in data cleaning tasks. Some widely used libraries and packages for data cleaning in Python include:</p>
-<table border="1" style="width: 100%; border-collapse: collapse;">
-    <caption>Key Python libraries and packages for data handling and processing.</caption>
-    <tr>
-        <th style="width: 15%;">Purpose</th>
-        <th style="width: 20%;">Library/Package</th>
-        <th style="width: 50%;">Description</th>
-        <th style="width: 15%;">Website</th>
-    </tr>
-    <tr>
-        <td>Missing Data Handling</td>
-        <td>pandas</td>
-        <td>A versatile library for data manipulation in Python, providing functions for handling missing data, imputation, and data cleaning.</td>
-        <td><a href="https://pandas.pydata.org">pandas</a></td>
-    </tr>
-    <tr>
-        <td>Outlier Detection</td>
-        <td>scikit-learn</td>
-        <td>A comprehensive machine learning library in Python that offers various outlier detection algorithms, enabling robust identification and handling of outliers.</td>
-        <td><a href="https://scikit-learn.org">scikit-learn</a></td>
-    </tr>
-    <tr>
-        <td>Data Deduplication</td>
-        <td>pandas</td>
-        <td>Alongside its data manipulation capabilities, pandas also provides methods for identifying and removing duplicate data entries, ensuring data integrity.</td>
-        <td><a href="https://pandas.pydata.org">pandas</a></td>
-    </tr>
-    <tr>
-        <td>Data Formatting</td>
-        <td>pandas</td>
-        <td>pandas offers extensive functionalities for data transformation, including data type conversion, formatting, and standardization.</td>
-        <td><a href="https://pandas.pydata.org">pandas</a></td>
-    </tr>
-    <tr>
-        <td>Data Validation</td>
-        <td>pandas-schema</td>
-        <td>A Python library that enables the validation and verification of data against predefined schema or constraints, ensuring data quality and integrity.</td>
-        <td><a href="https://github.com/alexrsdesenv/pandas-schema">pandas-schema</a></td>
-    </tr>
-</table>
-
-<p><br></p>
-<p><img alt="" src="../figures/data-cleaning.png" /></p>
-<p><strong>Handling Missing Data</strong>: Dealing with missing values by imputation, deletion, or interpolation methods to avoid biased or erroneous analyses.</p>
-<p><strong>Outlier Detection</strong>: Identifying and addressing outliers, which can significantly impact statistical measures and model predictions.</p>
-<p><strong>Data Deduplication</strong>: Identifying and removing duplicate entries to avoid duplication bias and ensure data integrity.</p>
-<p><strong>Standardization and Formatting</strong>: Converting data into a consistent format, ensuring uniformity and compatibility across variables.</p>
-<p><strong>Data Validation and Verification</strong>: Verifying the accuracy, completeness, and consistency of the data through various validation techniques.</p>
-<p><strong>Data Transformation</strong>: Converting data into a suitable format, such as scaling numerical variables or transforming categorical variables.</p>
-<p>In R, various packages are specifically designed for data cleaning tasks:</p>
-<table border="1" style="width: 100%; border-collapse: collapse;">
-    <caption>Essential R packages for data handling and analysis.</caption>
-    <tr>
-        <th style="width: 20%;">Purpose</th>
-        <th style="width: 15%;">Package</th>
-        <th style="width: 55%;">Description</th>
-        <th style="width: 10%;">Website</th>
-    </tr>
-    <tr>
-        <td>Missing Data Handling</td>
-        <td>tidyr</td>
-        <td>A package in R that offers functions for handling missing data, reshaping data, and tidying data into a consistent format.</td>
-        <td><a href="https://tidyr.tidyverse.org">tidyr</a></td>
-    </tr>
-    <tr>
-        <td>Outlier Detection</td>
-        <td>dplyr</td>
-        <td>As a part of the tidyverse, dplyr provides functions for data manipulation in R, including outlier detection and handling.</td>
-        <td><a href="https://dplyr.tidyverse.org">dplyr</a></td>
-    </tr>
-    <tr>
-        <td>Data Formatting</td>
-        <td>lubridate</td>
-        <td>A package in R that facilitates handling and formatting dates and times, ensuring consistency and compatibility within the dataset.</td>
-        <td><a href="https://lubridate.tidyverse.org">lubridate</a></td>
-    </tr>
-    <tr>
-        <td>Data Validation</td>
-        <td>validate</td>
-        <td>An R package that provides a declarative approach for defining validation rules and validating data against them, ensuring data quality and integrity.</td>
-        <td><a href="https://cran.r-project.org/package=validate">validate</a></td>
-    </tr>
-    <tr>
-        <td rowspan="2">Data Transformation</td>
-        <td>tidyr</td>
-        <td>tidyr offers functions for reshaping and transforming data, facilitating tasks such as pivoting, gathering, and spreading variables.</td>
-        <td><a href="https://tidyr.tidyverse.org">tidyr</a></td>
-    </tr>
-    <tr>
-        <td>stringr</td>
-        <td>A package that provides various string manipulation functions in R, useful for data cleaning tasks involving text data.</td>
-        <td><a href="https://stringr.tidyverse.org">stringr</a></td>
-    </tr>
-</table>
-
-<p><br></p>
-<p>These libraries and packages offer a wide range of functionalities for data cleaning in both Python and R. They empower data scientists to efficiently handle missing data, detect outliers, remove duplicates, standardize formatting, validate data, and transform variables to ensure high-quality and reliable datasets for analysis. Feel free to explore their respective websites for more information, documentation, and examples of their usage.</p>
-<h3 id="the_importance_of_data_cleaning_in_omics_sciences_focus_on_metabolomics">The Importance of Data Cleaning in Omics Sciences: Focus on Metabolomics<a class="headerlink" href="#the_importance_of_data_cleaning_in_omics_sciences_focus_on_metabolomics" title="Permanent link">#</a></h3>
-<p>Omics sciences, such as metabolomics, play a crucial role in understanding the complex molecular mechanisms underlying biological systems. Metabolomics aims to identify and quantify small molecule metabolites in biological samples, providing valuable insights into various physiological and pathological processes. However, the success of metabolomics studies heavily relies on the quality and reliability of the data generated, making data cleaning an essential step in the analysis pipeline.</p>
-<p>Data cleaning is particularly critical in metabolomics due to the high dimensionality and complexity of the data. Metabolomic datasets often contain a large number of variables (metabolites) measured across multiple samples, leading to inherent challenges such as missing values, batch effects, and instrument variations. Failing to address these issues can introduce bias, affect statistical analyses, and hinder the accurate interpretation of metabolomic results.</p>
-<p>To ensure robust and reliable metabolomic data analysis, several techniques are commonly applied during the data cleaning process:</p>
-<ul>
-<li>
-<p><strong>Missing Data Imputation</strong>: Since metabolomic datasets may have missing values due to various reasons (e.g., analytical limitations, low abundance), imputation methods are employed to estimate and fill in the missing values, enabling the inclusion of complete data in subsequent analyses.</p>
-</li>
-<li>
-<p><strong>Batch Effect Correction</strong>: Batch effects, which arise from technical variations during sample processing, can obscure true biological signals in metabolomic data. Various statistical methods, such as ComBat, remove or adjust for batch effects, allowing for accurate comparisons and identification of significant metabolites.</p>
-</li>
-<li>
-<p><strong>Outlier Detection and Removal</strong>: Outliers can arise from experimental errors or biological variations, potentially skewing statistical analyses. Robust outlier detection methods, such as median absolute deviation (MAD) or robust regression, are employed to identify and remove outliers, ensuring the integrity of the data.</p>
-</li>
-<li>
-<p><strong>Normalization</strong>: Normalization techniques, such as median scaling or probabilistic quotient normalization (PQN), are applied to adjust for systematic variations and ensure comparability between samples, enabling meaningful comparisons across different experimental conditions.</p>
-</li>
-<li>
-<p><strong>Feature Selection</strong>: In metabolomics, feature selection methods help identify the most relevant metabolites associated with the biological question under investigation. By reducing the dimensionality of the data, these techniques improve model interpretability and enhance the detection of meaningful metabolic patterns.</p>
-</li>
-</ul>
-<p>Data cleaning in metabolomics is a rapidly evolving field, and several tools and algorithms have been developed to address these challenges. Notable software packages include XCMS, MetaboAnalyst, and MZmine, which offer comprehensive functionalities for data preprocessing, quality control, and data cleaning in metabolomics studies.</p>
+                <h2 id="data_acquisition_and_preparation">Data Acquisition and Preparation<a class="headerlink" href="#data_acquisition_and_preparation" title="Permanent link">#</a></h2>
+<p><img alt="" src="../figures/chapters/050_data_adquisition_and_preparation.png" /></p>
+<p><strong>Data Acquisition and Preparation: Unlocking the Power of Data in Data Science Projects</strong></p>
+<p>In the realm of data science projects, data acquisition and preparation are fundamental steps that lay the foundation for successful analysis and insights generation. This stage involves obtaining relevant data from various sources, transforming it into a suitable format, and performing necessary preprocessing steps to ensure its quality and usability. Let's delve into the intricacies of data acquisition and preparation and understand their significance in the context of data science projects.</p>
+<p><strong>Data Acquisition: Gathering the Raw Materials</strong></p>
+<p>Data acquisition encompasses the process of gathering data from diverse sources. This involves identifying and accessing relevant datasets, which can range from structured data in databases, unstructured data from text documents or images, to real-time streaming data. The sources may include internal data repositories, public datasets, APIs, web scraping, or even data generated from Internet of Things (IoT) devices.</p>
+<p>During the data acquisition phase, it is crucial to ensure data integrity, authenticity, and legality. Data scientists must adhere to ethical guidelines and comply with data privacy regulations when handling sensitive information. Additionally, it is essential to validate the data sources and assess the quality of the acquired data. This involves checking for missing values, outliers, and inconsistencies that might affect the subsequent analysis.</p>
+<h3 id="data_preparation_refining_the_raw_data">Data Preparation: Refining the Raw Data<a class="headerlink" href="#data_preparation_refining_the_raw_data" title="Permanent link">#</a></h3>
+<p>Once the data is acquired, it often requires preprocessing and preparation before it can be effectively utilized for analysis. Data preparation involves transforming the raw data into a structured format that aligns with the project's objectives and requirements. This process includes cleaning the data, handling missing values, addressing outliers, and encoding categorical variables.</p>
+<p>Cleaning the data involves identifying and rectifying any errors, inconsistencies, or anomalies present in the dataset. This may include removing duplicate records, correcting data entry mistakes, and standardizing formats. Furthermore, handling missing values is crucial, as they can impact the accuracy and reliability of the analysis. Techniques such as imputation or deletion can be employed to address missing data based on the nature and context of the project.</p>
+<p>Dealing with outliers is another essential aspect of data preparation. Outliers can significantly influence statistical measures and machine learning models. Detecting and treating outliers appropriately helps maintain the integrity of the analysis. Various techniques, such as statistical methods or domain knowledge, can be employed to identify and manage outliers effectively.</p>
+<p>Additionally, data preparation involves transforming categorical variables into numerical representations that machine learning algorithms can process. This may involve techniques like one-hot encoding, label encoding, or ordinal encoding, depending on the nature of the data and the analytical objectives.</p>
+<p>Data preparation also includes feature engineering, which involves creating new derived features or selecting relevant features that contribute to the analysis. This step helps to enhance the predictive power of models and improve overall performance.</p>
+<h3 id="conclusion_empowering_data_science_projects">Conclusion: Empowering Data Science Projects<a class="headerlink" href="#conclusion_empowering_data_science_projects" title="Permanent link">#</a></h3>
+<p>Data acquisition and preparation serve as crucial building blocks for successful data science projects. These stages ensure that the data is obtained from reliable sources, undergoes necessary transformations, and is prepared for analysis. The quality, accuracy, and appropriateness of the acquired and prepared data significantly impact the subsequent steps, such as exploratory data analysis, modeling, and decision-making.</p>
+<p>By investing time and effort in robust data acquisition and preparation, data scientists can unlock the full potential of the data and derive meaningful insights. Through careful data selection, validation, cleaning, and transformation, they can overcome data-related challenges and lay a solid foundation for accurate and impactful data analysis.</p>
               
             </div>
           </div><footer>
@@ -399,10 +273,10 @@
         </span>
     
     
-      <span><a href="054_data_adquisition_and_preparation.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+      <span><a href="../04_project/047_project_plannig.html" style="color: #fcfcfc">&laquo; Previous</a></span>
     
     
-      <span><a href="056_data_adquisition_and_preparation.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      <span><a href="0520_data_acquisition_and_preparation.html" style="color: #fcfcfc">Next &raquo;</a></span>
     
   </span>
 </div>
