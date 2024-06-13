@@ -96,15 +96,15 @@ nav:
     - 'Selection Tools and Technologies': 04_project/045_project_plannig.md
     - 'Workflow Design': 04_project/046_project_plannig.md
     - 'Practical Example': 04_project/047_project_plannig.md
-  - 'Data Adquisition':
-    - 'Data Adquisition and Preparation': 05_adquisition/051_data_adquisition_and_preparation.md
-    - 'What is Data Adqusition?': 05_adquisition/052_data_adquisition_and_preparation.md
-    - 'Selection of Data Sources': 05_adquisition/053_data_adquisition_and_preparation.md
-    - 'Data Extraction and Transformation': 05_adquisition/054_data_adquisition_and_preparation.md
-    - 'Data Cleaning': 05_adquisition/055_data_adquisition_and_preparation.md
-    - 'Data Integration': 05_adquisition/056_data_adquisition_and_preparation.md
-    - 'Practical Example': 05_adquisition/057_data_adquisition_and_preparation.md
-    - 'References': 05_adquisition/058_data_adquisition_and_preparation.md
+  - 'Data Acquisition':
+    - 'Data Acquisition and Preparation': 05_acquisition/051_data_acquisition_and_preparation.md
+    - 'What is Data Acquisition?': 05_acquisition/052_data_acquisition_and_preparation.md
+    - 'Selection of Data Sources': 05_acquisition/053_data_acquisition_and_preparation.md
+    - 'Data Extraction and Transformation': 05_acquisition/054_data_acquisition_and_preparation.md
+    - 'Data Cleaning': 05_acquisition/055_data_acquisition_and_preparation.md
+    - 'Data Integration': 05_acquisition/056_data_acquisition_and_preparation.md
+    - 'Practical Example': 05_acquisition/057_data_acquisition_and_preparation.md
+    - 'References': 05_acquisition/058_data_acquisition_and_preparation.md
   - 'Exploratory Data Analysis':
     - 'Exploratory Data Analysis': 06_eda/061_exploratory_data_analysis.md
     - 'Descriptive Statistics': 06_eda/062_exploratory_data_analysis.md

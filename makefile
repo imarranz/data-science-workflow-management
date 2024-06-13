@@ -26,7 +26,7 @@ TITLEBOOK = "Data Science Workflow Management"
 TITLECHAPTER01 = "Fundamentals of Data Science"
 TITLECHAPTER02 = "Workflow Management Concepts"
 TITLECHAPTER03 = "Project Planning"
-TITLECHAPTER04 = "Data Adquisition and Preparation"
+TITLECHAPTER04 = "Data Acquisition and Preparation"
 TITLECHAPTER05 = "Exploratory Data Analysis"
 TITLECHAPTER06 = "Modeling and Data Validation"
 TITLECHAPTER07 = "Model Implementation and Maintenance"
@@ -42,7 +42,7 @@ dswma5:
 		book/020_fundamentals_of_data_science.md \
 		book/030_workflow_management_concepts.md \
 		book/040_project_plannig.md \
-		book/050_data_adquisition_and_preparation.md \
+		book/050_data_acquisition_and_preparation.md \
 		book/060_exploratory_data_analysis.md \
 		book/070_modeling_and_data_validation.md \
 		book/080_model_implementation_and_maintenance.md \
