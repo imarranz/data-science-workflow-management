@@ -20,5 +20,5 @@ Furthermore, effective communication and collaboration play a vital role in proj
 It is also important to consider ethical considerations and data privacy regulations during project planning. Adhering to ethical guidelines and legal requirements ensures that data science projects are conducted responsibly and with integrity.
 
 <div class="tip">
-In summary, project planning forms the backbone of successful data science projects. By defining clear goals, breaking down tasks, estimating resources, establishing timelines, fostering communication, and considering ethical considerations, data scientists can navigate the complexities of project management and increase the likelihood of delivering impactful results.
+Project planning forms the backbone of successful data science projects. By defining clear goals, breaking down tasks, estimating resources, establishing timelines, fostering communication, and considering ethical considerations, data scientists can navigate the complexities of project management and increase the likelihood of delivering impactful results.
 </div>

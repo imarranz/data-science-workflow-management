@@ -2,7 +2,7 @@
 ## What is Data Modeling?
 
 <div class="important">
-**Data modeling** is a crucial step in the data science process that involves creating a structured representation of the underlying data and its relationships. It is the process of designing and defining a conceptual, logical, or physical model that captures the essential elements of the data and how they relate to each other.
+<b>Data modeling</b> is a crucial step in the data science process that involves creating a structured representation of the underlying data and its relationships. It is the process of designing and defining a conceptual, logical, or physical model that captures the essential elements of the data and how they relate to each other.
 </div>
 
 Data modeling helps data scientists and analysts understand the data better and provides a blueprint for organizing and manipulating it effectively. By creating a formal model, we can identify the entities, attributes, and relationships within the data, enabling us to analyze, query, and derive insights from it more efficiently.

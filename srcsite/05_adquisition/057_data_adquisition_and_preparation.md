@@ -9,15 +9,21 @@ The first step in the workflow is to extract data from different sources. This m
 
 #### CSV
 
-CSV (Comma-Separated Values) files are a common and simple way to store structured data. They consist of plain text where each line represents a data record, and fields within each record are separated by commas. CSV files are widely supported by various programming languages and data analysis tools. They are easy to create and manipulate using tools like Microsoft Excel, Python's Pandas library, or R. CSV files are an excellent choice for tabular data, making them suitable for tasks like storing datasets, exporting data, or sharing information in a machine-readable format.
+<div class="info">
+<b>CSV (Comma-Separated Values)</b> files are a common and simple way to store structured data. They consist of plain text where each line represents a data record, and fields within each record are separated by commas. CSV files are widely supported by various programming languages and data analysis tools. They are easy to create and manipulate using tools like Microsoft Excel, Python's Pandas library, or R. CSV files are an excellent choice for tabular data, making them suitable for tasks like storing datasets, exporting data, or sharing information in a machine-readable format.
+</div>
 
 #### JSON
 
-JSON (JavaScript Object Notation) files are a lightweight and flexible data storage format. They are human-readable and easy to understand, making them a popular choice for both data exchange and configuration files. JSON stores data in a key-value pair format, allowing for nested structures. It is particularly useful for semi-structured or hierarchical data, such as configuration settings, API responses, or complex data objects in web applications. JSON files can be easily parsed and generated using programming languages like Python, JavaScript, and many others.
+<div class="info">
+<b>JSON (JavaScript Object Notation)</b> files are a lightweight and flexible data storage format. They are human-readable and easy to understand, making them a popular choice for both data exchange and configuration files. JSON stores data in a key-value pair format, allowing for nested structures. It is particularly useful for semi-structured or hierarchical data, such as configuration settings, API responses, or complex data objects in web applications. JSON files can be easily parsed and generated using programming languages like Python, JavaScript, and many others.
+</div>
 
 #### Excel
 
-Excel files, often in the XLSX format, are widely used for data storage and analysis, especially in business and finance. They provide a spreadsheet-based interface that allows users to organize data in tables and perform calculations, charts, and visualizations. Excel offers a rich set of features for data manipulation and visualization. While primarily known for its user-friendly interface, Excel files can be programmatically accessed and manipulated using libraries like Python's openpyxl or libraries in other languages. They are suitable for storing structured data that requires manual data entry, complex calculations, or polished presentation.
+<div class="info">
+<b>Excel</b> files, often in the <b>XLSX</b> format, are widely used for data storage and analysis, especially in business and finance. They provide a spreadsheet-based interface that allows users to organize data in tables and perform calculations, charts, and visualizations. Excel offers a rich set of features for data manipulation and visualization. While primarily known for its user-friendly interface, Excel files can be programmatically accessed and manipulated using libraries like Python's openpyxl or libraries in other languages. They are suitable for storing structured data that requires manual data entry, complex calculations, or polished presentation.
+</div>
 
 ### Data Cleaning
 
