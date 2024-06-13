@@ -1,248 +1,230 @@
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Ibon Martínez-Arranz">
-  <link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/04_project/042_project_plannig.html">
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>What is Project Planning? - Data Science Workflow Management</title>
-  <link rel="stylesheet" href="../css/theme.css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  <link href="../css/custom.css" rel="stylesheet" />
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "What is Project Planning?";
-    var mkdocs_page_input_path = "04_project/042_project_plannig.md";
-    var mkdocs_page_url = "/imarranz/data-science-workflow-management/04_project/042_project_plannig.html";
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Ibon Martínez-Arranz" /><link rel="canonical" href="https://github.com/imarranz/data-science-workflow-management/04_project/042_project_plannig.html" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>What is Project Planning? - Data Science Workflow Management</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/custom.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "What is Project Planning?";
+        var mkdocs_page_input_path = "04_project/042_project_plannig.md";
+        var mkdocs_page_url = "/imarranz/data-science-workflow-management/04_project/042_project_plannig.html";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/python.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/bash.min.js"></script>
+      <script>hljs.highlightAll();</script> 
 </head>
 
 <body class="wy-body-for-nav" role="document">
 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
     <div class="wy-side-scroll">
       <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> Data Science Workflow Management</a>
-        <div role="search">
+          <a href="../index.html" class="icon icon-home"> Data Science Workflow Management
+        </a>
+        <div class="version">
+          1.0
+        </div><div role="search">
   <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
   </form>
 </div>
       </div>
 
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../index.html">Data Science Workflow Management</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Introduction</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/011_introduction.html">Introduction</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/012_introduction.html">What is Data Science Workflow Management?</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../01_introduction/013_introduction.html">References</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Fundamentals of Data Science</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/021_fundamentals_of_data_science.html">Fundamentals of Data Science</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/022_fundamentals_of_data_science.html">What is Data Science?</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/023_fundamentals_of_data_science.html">Data Science Process</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/024_fundamentals_of_data_science.html">Programming Languages for Data Science</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/025_fundamentals_of_data_science.html">Data Science Tools and Technologies</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/026_fundamentals_of_data_science.html">References</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Workflow Management Concepts</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/031_workflow_management_concepts.html">Workflow Management Concepts</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/032_workflow_management_concepts.html">What is Workflow Management?</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/033_workflow_management_concepts.html">Why is Workflow Management Important?</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/034_workflow_management_concepts.html">Workflow Management Models</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/035_workflow_management_concepts.html">Workflow Management Tools and Technologies</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/036_workflow_management_concepts.html">Enhancing Collaboration and Reproducibility through Project Documentation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/037_workflow_management_concepts.html">Practical Example</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../03_workflow/038_workflow_management_concepts.html">References</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Project Planning</span></p>
-                <ul class="current">
-                    <li class="toctree-l1"><a class="reference internal" href="041_project_plannig.html">Project Planning</a>
-                    </li>
-                    <li class="toctree-l1 current"><a class="reference internal current" href="042_project_plannig.html">What is Project Planning?</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="043_project_plannig.html">Problem Definition and Objectives</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="044_project_plannig.html">Selection of Modelling Techniques</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="045_project_plannig.html">Selection Tools and Technologies</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="046_project_plannig.html">Workflow Design</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="047_project_plannig.html">Practical Example</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Data Adquisition</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/055_data_adquisition_and_preparation.html">Data Cleaning</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/056_data_adquisition_and_preparation.html">Data Integration</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/057_data_adquisition_and_preparation.html">Practical Example</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/058_data_adquisition_and_preparation.html">References</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/061_exploratory_data_analysis.html">Exploratory Data Analysis</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/062_exploratory_data_analysis.html">Descriptive Statistics</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/063_exploratory_data_analysis.html">Data Visualization</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/064_exploratory_data_analysis.html">Correlation Analysis</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/065_exploratory_data_analysis.html">Data Transformation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/066_exploratory_data_analysis.html">Practical Example</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../06_eda/067_exploratory_data_analysis.html">References</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Modelling and Data Validation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/071_modeling_and_data_validation.html">Modelling and Data Validation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/072_modeling_and_data_validation.html">What is Data Modelling</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/073_modeling_and_data_validation.html">Selection of Modelling Algortihms</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/074_modeling_and_data_validation.html">Model Training and Validation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/075_modeling_and_data_validation.html">selection of Best Model</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/076_modeling_and_data_validation.html">Model Evaluation</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/077_modeling_and_data_validation.html">Model Interpretability</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/078_modeling_and_data_validation.html">Practical Example</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../07_modelling/079_modeling_and_data_validation.html">References</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Model Implementation</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/081_model_implementation_and_maintenance.html">Model Implementation and Maintenance</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/082_model_implementation_and_maintenance.html">What is Model Implementation?</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/083_model_implementation_and_maintenance.html">selection of Implementation Platform</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/084_model_implementation_and_maintenance.html">Integration with Existing Systems</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/085_model_implementation_and_maintenance.html">Testing and Validation of the Model</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../08_implementation/086_model_implementation_and_maintenance.html">Model Maintenance and Updating</a>
-                    </li>
-                </ul>
-                <p class="caption"><span class="caption-text">Monitoring and Improvement</span></p>
-                <ul>
-                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/091_monitoring_and_continuos_improvement.html">Monitoring and Improvement</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/092_monitoring_and_continuos_improvement.html">What is Monitoring and Continuous Improvement?</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/093_monitoring_and_continuos_improvement.html">Model Performance Monitoring</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/094_monitoring_and_continuos_improvement.html">Problem Identification</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/095_monitoring_and_continuos_improvement.html">Continuous Model Improvement</a>
-                    </li>
-                    <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/096_monitoring_and_continuos_improvement.html">References</a>
-                    </li>
-                </ul>
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../index.html">Data Science Workflow Management</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../01_introduction/011_introduction.html">Introduction</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01_introduction/012_introduction.html">What is Data Science Workflow Management?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../01_introduction/013_introduction.html">References</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Fundamentals of Data Science</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/021_fundamentals_of_data_science.html">Fundamentals of Data Science</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/022_fundamentals_of_data_science.html">What is Data Science?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/023_fundamentals_of_data_science.html">Data Science Process</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/024_fundamentals_of_data_science.html">Programming Languages for Data Science</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/025_fundamentals_of_data_science.html">Data Science Tools and Technologies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../02_fundamentals/026_fundamentals_of_data_science.html">References</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Workflow Management Concepts</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../03_workflow/031_workflow_management_concepts.html">Workflow Management Concepts</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03_workflow/032_workflow_management_concepts.html">What is Workflow Management?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03_workflow/033_workflow_management_concepts.html">Why is Workflow Management Important?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03_workflow/034_workflow_management_concepts.html">Workflow Management Models</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03_workflow/035_workflow_management_concepts.html">Workflow Management Tools and Technologies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03_workflow/036_workflow_management_concepts.html">Enhancing Collaboration and Reproducibility through Project Documentation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03_workflow/037_workflow_management_concepts.html">Practical Example</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../03_workflow/038_workflow_management_concepts.html">References</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Project Planning</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="041_project_plannig.html">Project Planning</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="042_project_plannig.html">What is Project Planning?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="043_project_plannig.html">Problem Definition and Objectives</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="044_project_plannig.html">Selection of Modelling Techniques</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="045_project_plannig.html">Selection Tools and Technologies</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="046_project_plannig.html">Workflow Design</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="047_project_plannig.html">Practical Example</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Data Adquisition</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/051_data_adquisition_and_preparation.html">Data Adquisition and Preparation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/052_data_adquisition_and_preparation.html">What is Data Adqusition?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/053_data_adquisition_and_preparation.html">Selection of Data Sources</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/054_data_adquisition_and_preparation.html">Data Extraction and Transformation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/055_data_adquisition_and_preparation.html">Data Cleaning</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/056_data_adquisition_and_preparation.html">Data Integration</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/057_data_adquisition_and_preparation.html">Practical Example</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../05_adquisition/058_data_adquisition_and_preparation.html">References</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Exploratory Data Analysis</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../06_eda/061_exploratory_data_analysis.html">Exploratory Data Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06_eda/062_exploratory_data_analysis.html">Descriptive Statistics</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06_eda/063_exploratory_data_analysis.html">Data Visualization</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06_eda/064_exploratory_data_analysis.html">Correlation Analysis</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06_eda/065_exploratory_data_analysis.html">Data Transformation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06_eda/066_exploratory_data_analysis.html">Practical Example</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../06_eda/067_exploratory_data_analysis.html">References</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modelling and Data Validation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../07_modelling/071_modeling_and_data_validation.html">Modelling and Data Validation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../07_modelling/072_modeling_and_data_validation.html">What is Data Modelling</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../07_modelling/073_modeling_and_data_validation.html">Selection of Modelling Algortihms</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../07_modelling/074_modeling_and_data_validation.html">Model Training and Validation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../07_modelling/075_modeling_and_data_validation.html">selection of Best Model</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../07_modelling/076_modeling_and_data_validation.html">Model Evaluation</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../07_modelling/077_modeling_and_data_validation.html">Model Interpretability</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../07_modelling/078_modeling_and_data_validation.html">Practical Example</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../07_modelling/079_modeling_and_data_validation.html">References</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Model Implementation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../08_implementation/081_model_implementation_and_maintenance.html">Model Implementation and Maintenance</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../08_implementation/082_model_implementation_and_maintenance.html">What is Model Implementation?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../08_implementation/083_model_implementation_and_maintenance.html">selection of Implementation Platform</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../08_implementation/084_model_implementation_and_maintenance.html">Integration with Existing Systems</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../08_implementation/085_model_implementation_and_maintenance.html">Testing and Validation of the Model</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../08_implementation/086_model_implementation_and_maintenance.html">Model Maintenance and Updating</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Monitoring and Improvement</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/091_monitoring_and_continuos_improvement.html">Monitoring and Improvement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/092_monitoring_and_continuos_improvement.html">What is Monitoring and Continuous Improvement?</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/093_monitoring_and_continuos_improvement.html">Model Performance Monitoring</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/094_monitoring_and_continuos_improvement.html">Problem Identification</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/095_monitoring_and_continuos_improvement.html">Continuous Model Improvement</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../09_monitoring/096_monitoring_and_continuos_improvement.html">References</a>
+                  </li>
+              </ul>
       </div>
     </div>
     </nav>
 
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">Data Science Workflow Management</a>
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Data Science Workflow Management</a>
+        
       </nav>
-
-      
       <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
   <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-        
+    <li><a href="../index.html" class="icon icon-home" aria-label="Docs"></a> &raquo;</li>
           <li>Project Planning &raquo;</li>
-        
-      
-    
-    <li>What is Project Planning?</li>
+      <li class="breadcrumb-item active">What is Project Planning?</li>
     <li class="wy-breadcrumbs-aside">
-      
-        <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/04_project/042_project_plannig.md"
-          class="icon icon-github"> Edit on GitHub</a>
-      
+          <a href="https://github.com/imarranz/data-science-workflow-management/edit/master/docs/04_project/042_project_plannig.md" class="icon icon-github"> Edit on GitHub</a>
     </li>
   </ul>
-  
-    <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
-        <a href="043_project_plannig.html" class="btn btn-neutral float-right" title="Problem Definition and Objectives">Next <span class="icon icon-circle-arrow-right"></span></a>
-        <a href="041_project_plannig.html" class="btn btn-neutral" title="Project Planning"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="Breadcrumb Navigation">
+        <a href="041_project_plannig.html" class="btn btn-neutral float-left" title="Project Planning"><span class="icon icon-circle-arrow-left" aria-hidden="true"></span> Previous</a>
+        <a href="043_project_plannig.html" class="btn btn-neutral float-right" title="Problem Definition and Objectives">Next <span class="icon icon-circle-arrow-right" aria-hidden="true"></span></a>
     </div>
-  
   <hr/>
 </div>
-          <div role="main">
-            <div class="section">
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
               
                 <h2 id="what_is_project_planning">What is Project Planning?<a class="headerlink" href="#what_is_project_planning" title="Permanent link">#</a></h2>
 <p>Project planning is a systematic process that involves outlining the objectives, defining the scope, determining the tasks, estimating resources, establishing timelines, and creating a roadmap for the successful execution of a project. It is a fundamental phase that sets the foundation for the entire project lifecycle in data science.</p>
@@ -254,26 +236,22 @@
 <p>Effective project planning also involves identifying and managing project risks. This includes assessing potential risks, analyzing their impact, and developing strategies to mitigate or address them. By proactively identifying and managing risks, data scientists can minimize the likelihood of delays or failures and ensure smoother project execution.</p>
 <p>Communication and collaboration are integral parts of project planning. Data science projects often involve cross-functional teams, including data scientists, domain experts, business stakeholders, and IT professionals. Effective communication channels and collaboration platforms facilitate knowledge sharing, alignment of expectations, and coordination among team members. Regular project meetings, progress updates, and documentation ensure that everyone remains on the same page and can contribute effectively to project success.</p>
 <div class="tip">
-In conclusion, project planning is the systematic process of defining objectives, breaking down tasks, estimating resources, establishing timelines, and managing risks to ensure the successful execution of data science projects. It provides a clear roadmap for project teams, facilitates resource allocation and coordination, and increases the likelihood of delivering quality outcomes. Effective project planning is essential for data scientists to maximize their efficiency, mitigate risks, and achieve their project goals.
+Project planning is the systematic process of defining objectives, breaking down tasks, estimating resources, establishing timelines, and managing risks to ensure the successful execution of data science projects. It provides a clear roadmap for project teams, facilitates resource allocation and coordination, and increases the likelihood of delivering quality outcomes. Effective project planning is essential for data scientists to maximize their efficiency, mitigate risks, and achieve their project goals.
 </div>
               
             </div>
-          </div>
-          <footer>
-  
+          </div><footer>
 
   <hr/>
 
   <div role="contentinfo">
     <!-- Copyright etc -->
-    
       <p><b>Data Science Workflow Management</b><br>Copyright &#169; 2024 <a href="https://github.com/imarranz">Ibon Martínez-Arranz</a><br></p>
-    
   </div>
 
-  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
-      
+          
         </div>
       </div>
 
@@ -281,27 +259,31 @@ In conclusion, project planning is the systematic process of defining objectives
 
   </div>
 
-  <div class="rst-versions" role="note" aria-label="versions">
-    <span class="rst-current-version" data-toggle="rst-current-version">
-      
-          <a href="https://github.com/imarranz/data-science-workflow-management/" class="fa fa-github" style="float: left; color: #fcfcfc"> GitHub</a>
-      
-      
-        <span><a href="041_project_plannig.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="043_project_plannig.html" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/imarranz/data-science-workflow-management" class="fa fa-github" style="color: #fcfcfc"> GitHub</a>
+        </span>
+    
+    
+      <span><a href="041_project_plannig.html" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="043_project_plannig.html" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
 </div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
-      <script src="../search/main.js" defer></script>
-    <script defer>
-        window.onload = function () {
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
             SphinxRtdTheme.Navigation.enable(true);
-        };
+        });
     </script>
 
 </body>
