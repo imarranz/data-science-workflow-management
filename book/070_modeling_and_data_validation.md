@@ -70,11 +70,19 @@ When dealing with regression problems, the goal is to predict a continuous numer
 
   * **Gradient Boosting**: Gradient Boosting is another ensemble technique that combines weak learners to create a strong predictive model. It sequentially fits new models to correct the errors made by previous models. Gradient Boosting algorithms like XGBoost and LightGBM are popular for their high predictive accuracy.
 
+  * **Lasso Regression (Least Absolute Shrinkage and Selection Operator)**: A variant of linear regression that includes a penalty term in the cost function to achieve dimensionality reduction through feature selection. This method is particularly useful when dealing with data with multicollinearity or when improving model interpretation by removing less important variables is desired.
+
+  * **Support Vector Regression (SVR)**: Based on the principles of Support Vector Machines, SVR can be used for both linear and non-linear relationships between the independent variables and the dependent variable. It uses the same principles of maximizing the margin, but for regression.
+
 ### Classification Modeling
 
 For classification problems, the objective is to predict a categorical or discrete class label. The choice of classification algorithm depends on factors such as the nature of the data, the number of classes, and the desired interpretability. Here are some commonly used classification algorithms:
 
   * **Logistic Regression**: Logistic regression is a popular algorithm for binary classification. It models the probability of belonging to a certain class using a logistic function. Logistic regression can be extended to handle multi-class classification problems.
+
+  * **K-Nearest Neighbors (KNN)**: A simple and effective algorithm that classifies a new case based on a majority vote of its 'k' nearest neighbors. It is easy to implement and understand but can become computationally expensive as the dataset size grows.
+
+  * **Linear Discriminant Analysis (LDA)**: A statistical method used in pattern recognition that attempts to find a linear combination of features that characterizes or separates two or more classes of objects or events. It is very effective for dimensionality reduction combined with classification.
 
   * **Support Vector Machines (SVM)**: SVM is a powerful algorithm for both binary and multi-class classification. It finds a hyperplane that maximizes the margin between different classes. SVMs can handle complex decision boundaries and are effective with high-dimensional data.
 
