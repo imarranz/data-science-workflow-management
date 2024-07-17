@@ -171,7 +171,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../08_implementation/082_model_implementation_and_maintenance.html">What is Model Implementation?</a>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../08_implementation/083_model_implementation_and_maintenance.html">selection of Implementation Platform</a>
+<li class="toctree-l1"><a class="reference internal" href="../08_implementation/083_model_implementation_and_maintenance.html">Selection of Implementation Platform</a>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../08_implementation/084_model_implementation_and_maintenance.html">Integration with Existing Systems</a>
 </li>
@@ -244,9 +244,11 @@
         E(Evaluation)
         F(Deployment)
 
-        A &lt;--&gt; B
+        A --&gt; B
+        B --&gt; A
         B --&gt; C
-        C &lt;--&gt; D
+        C --&gt; D
+        D --&gt; C
 
         D --&gt; E
         E --&gt; F
@@ -255,12 +257,9 @@
 
     end
 
-    style A fill:#aaa,stroke:#333,stroke-width:2px
-    style B fill:#aaa,stroke:#333,stroke-width:2px
-    style C fill:#aaa,stroke:#333,stroke-width:2px
-    style D fill:#aaa,stroke:#333,stroke-width:2px
-    style E fill:#aaa,stroke:#333,stroke-width:2px
-    style F fill:#aaa,stroke:#333,stroke-width:2px
+    classDef miestilo fill:#8dc5e8,stroke:#333,stroke-width:2px
+    class A,B,C,D,E,F miestilo
+
 </div>
 </div>
 <h4 id="tdsp_team_data_science_process">TDSP (Team Data Science Process)<a class="headerlink" href="#tdsp_team_data_science_process" title="Permanent link">#</a></h4>
@@ -293,12 +292,9 @@
         E --&gt; F
     end
 
-    style A fill:#aaa,stroke:#333,stroke-width:2px
-    style B fill:#aaa,stroke:#333,stroke-width:2px
-    style C fill:#aaa,stroke:#333,stroke-width:2px
-    style D fill:#aaa,stroke:#333,stroke-width:2px
-    style E fill:#aaa,stroke:#333,stroke-width:2px
-    style F fill:#aaa,stroke:#333,stroke-width:2px
+    classDef miestilo fill:#8dc5e8,stroke:#333,stroke-width:2px
+    class A,B,C,D,E,F miestilo
+
 
 </div>
 </div>
@@ -328,14 +324,8 @@
 
         H --&gt; A
 
-        style A fill:#aaa,stroke:#333,stroke-width:2px
-        style B fill:#aaa,stroke:#333,stroke-width:2px
-        style C fill:#aaa,stroke:#333,stroke-width:2px
-        style D fill:#aaa,stroke:#333,stroke-width:2px
-        style E fill:#aaa,stroke:#333,stroke-width:2px
-        style F fill:#aaa,stroke:#333,stroke-width:2px
-        style G fill:#aaa,stroke:#333,stroke-width:2px
-        style H fill:#aaa,stroke:#333,stroke-width:2px
+        classDef miestilo fill:#8dc5e8,stroke:#333,stroke-width:2px
+        class A,B,C,D,E,F,G,H miestilo
 
     end
 
@@ -379,21 +369,6 @@
         REFLECTION --&gt; G[Explore Alternatives]
         G[Explore Alternatives] --&gt; ANALYSIS
 
-        subgraph REFLECTION
-            style REFLECTION fill:#EEEEEE, stroke:#333, stroke-width:2px
-            direction TB
-
-            H[Make Comparisons]
-            I[Take Notes]
-            J[Hold Meetings]
-
-            H --&gt; I
-            I --&gt; J
-            J --&gt; H
-        end
-
-        E --&gt; REFLECTION
-
         subgraph DISSEMINATION
             style DISSEMINATION fill:#EEEEEE, stroke:#333, stroke-width:2px
             direction TB
@@ -408,28 +383,28 @@
             M --&gt; N
         end
 
-        REFLECTION --&gt; DISSEMINATION
+        subgraph REFLECTION
+            style REFLECTION fill:#EEEEEE, stroke:#333, stroke-width:2px
+            direction TB
 
+            H[Make Comparisons]
+            I[Take Notes]
+            J[Hold Meetings]
+
+            H --&gt; I
+            I --&gt; J
+            J --&gt; H
+        end
+
+        E --&gt; REFLECTION
+        REFLECTION --&gt; DISSEMINATION
         D --&gt; O[(Data)]
         O[(Data)] --&gt; E
 
     end
 
-    style A fill:#aaa,stroke:#333,stroke-width:2px
-    style B fill:#aaa,stroke:#333,stroke-width:2px
-    style C fill:#aaa,stroke:#333,stroke-width:2px
-    style D fill:#aaa,stroke:#333,stroke-width:2px
-    style E fill:#aaa,stroke:#333,stroke-width:2px
-    style F fill:#aaa,stroke:#333,stroke-width:2px
-    style G fill:#aaa,stroke:#333,stroke-width:2px
-    style H fill:#aaa,stroke:#333,stroke-width:2px
-    style I fill:#aaa,stroke:#333,stroke-width:2px
-    style J fill:#aaa,stroke:#333,stroke-width:2px
-    style K fill:#aaa,stroke:#333,stroke-width:2px
-    style L fill:#aaa,stroke:#333,stroke-width:2px
-    style M fill:#aaa,stroke:#333,stroke-width:2px
-    style N fill:#aaa,stroke:#333,stroke-width:2px
-    style O fill:#aaa,stroke:#333,stroke-width:2px
+    classDef miestilo fill:#8dc5e8,stroke:#333,stroke-width:2px
+    class A,B,C,D,E,F,G,H,I,J,K,L,M,N,O miestilo
 
 </div>
 </div>
