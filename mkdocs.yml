@@ -55,6 +55,10 @@ markdown_extensions:
 
 plugins:
   - search
+  - mermaid2:
+      javascript: https://unpkg.com/mermaid@10.4.0/dist/mermaid.esm.min.mjs
+
+# https://mkdocs-mermaid2.readthedocs.io/en/latest/
 
 extra:
   version: 1.0
@@ -127,7 +131,7 @@ nav:
   - 'Model Implementation':
     - 'Model Implementation and Maintenance': 08_implementation/081_model_implementation_and_maintenance.md
     - 'What is Model Implementation?': 08_implementation/082_model_implementation_and_maintenance.md
-    - 'selection of Implementation Platform': 08_implementation/083_model_implementation_and_maintenance.md
+    - 'Selection of Implementation Platform': 08_implementation/083_model_implementation_and_maintenance.md
     - 'Integration with Existing Systems': 08_implementation/084_model_implementation_and_maintenance.md
     - 'Testing and Validation of the Model': 08_implementation/085_model_implementation_and_maintenance.md
     - 'Model Maintenance and Updating': 08_implementation/086_model_implementation_and_maintenance.md
