@@ -24,3 +24,14 @@
 
   * [You Cannot Build Large Data Projects Until You Learn Data Version Control!](https://www.dailydoseofds.com/you-cannot-build-large-data-projects-until-you-learn-data-version-control/)
 
+### Scientific Articles
+
+  * C. Ponsard, M. Touzani, and A. Majchrowski, Combining Process Guidance and Industrial Feedback for Successfully Deploying Big Data Project, Open Journal of Big Data, vol. 3, pp. 26-41, 2017.
+
+  * K. Crowston, A capability maturity model for scientific data management, BibSonomy, 2010.
+
+  * U. Fayyad, G. Piatetsky-shapiro, and P. Smyth, From data mining to knowledge discovery in databases, AI Magazine, vol. 17, pp. 37–54, 1996.
+
+  * C. Shearer, The CRISP-DM Model: The New Blueprint for Data Mining, Journal of Data Warehousing, vol. 5, no. 4, 2000.
+
+
