@@ -497,3 +497,11 @@ This bar plot provides a visual representation of the sales distribution, allowi
   * VanderPlas, J. (2016). Python Data Science Handbook. O'Reilly Media.
 
   * Bruce, P. and Bruce, A. (2017). Practical Statistics for Data Scientists. O'Reilly Media.
+
+### Software
+
+  * [ydata-profiling](https://pypi.org/project/ydata-profiling/)
+
+  * [pandas-profiling](https://pypi.org/project/pandas-profiling/)
+
+  * [dataprep](https://dataprep.ai/)
