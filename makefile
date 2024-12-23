@@ -12,10 +12,11 @@
 TEMPLATE = "./templates/dswm-template.tex"
 TOP_LEVEL_DIVISION = "chapter"
 TITLEPAGE_COLOR = "EEEEEE"
+TITLEPAGE_RULE_COLOR = "FFD015"
 TITLEPAGE_RULE_HEIGHT = 8
 TITLEPAGE_BACKGROUND = "./templates/figures/titlepage-background-template-a5.pdf"
 PAGE_BACKGROUND = "./templates/figures/page-background-template-a5.pdf"
-PAGE_BACKGROUND_OPACITY = 0.8
+PAGE_BACKGROUND_OPACITY = 0.1
 FOOTER_RIGHT = "Page \thepage"
 INSTITUTE = "Ibon Martínez-Arranz"
 AUTHOR = "Ibon Martínez-Arranz"
@@ -56,12 +57,14 @@ dswma5:
 		--listings \
 		--variable titlepage=True \
 		--variable titlepage-color=$(TITLEPAGE_COLOR) \
+		--variable titlepage-rule-color=$(TITLEPAGE_RULE_COLOR) \
 		--variable titlepage-rule-height=$(TITLEPAGE_RULE_HEIGHT) \
 		--variable titlepage-background=$(TITLEPAGE_BACKGROUND) \
+		--variable page-background=$(PAGE_BACKGROUND) \
 		--variable page-background-opacity=$(PAGE_BACKGROUND_OPACITY) \
 		--variable footer-right=$(FOOTER_RIGHT) \
-		--variable linkcolor=primaryowlorange \
-		--variable urlcolor=primaryowlorange \
+		--variable linkcolor=rubio-azul-apacible \
+		--variable urlcolor=rubio-azul-apacible \
 		--variable institute=$(INSTITUTE) \
 		--variable papersize=$(PAPERSIZE) \
 		--variable fontsize=$(FONTSIZE) \
