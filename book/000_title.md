@@ -3,6 +3,11 @@ header-includes:
 - |
   ```{=latex}
   \usepackage{awesomebox}
+  \definecolor{rubio-amarillo-ardiente}{HTML}{FFD015}
+  \definecolor{rubio-negro}{HTML}{000000}
+  \definecolor{rubio-azul-apacible}{HTML}{6B99A6}
+  \definecolor{rubio-verde-vibrante}{HTML}{82E6B8}
+  \definecolor{rubio-purpura-profundo}{HTML}{5C2959}
   \definecolor{primaryowlorange}{rgb}{0.96,0.5,0.12}
   \definecolor{primaryowlblue}{rgb}{0.16,0.35,0.68}
   \definecolor{primaryowlyellow}{rgb}{0.99,0.87,0.02}
