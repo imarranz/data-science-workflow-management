@@ -24,6 +24,9 @@ CRISP-DM is a widely adopted model that provides a comprehensive framework for c
 <div align='center'>
 
 ```mermaid
+---
+title: CRISP-DM (Cross-Industry Standard Process for Data Mining)
+---
 graph TD
     subgraph CRISP-DM
         style CRISP-DM fill:#EEEEEE, stroke:#333, stroke-width:2px
@@ -62,11 +65,16 @@ Developed by Microsoft, TDSP structures projects into five key phases: business 
 <div align='center'>
 
 ```mermaid
+---
+title: TDSP (Team Data Science Process)
+---
 graph TD
 
+    %% Definición del subgrafo y estilo
     subgraph TDSP
         style TDSP fill:#EEEEEE, stroke:#333, stroke-width:2px
 
+        %% Definición de los nodos
         A(Start)
         B(Business Understanding)
         C(Data Accquisition & Understanding)
@@ -74,22 +82,21 @@ graph TD
         E(Deployment)
         F(End)
 
-
+        %% Conexiones entre nodos
         A --> B
         B <--> C
-
         B <--> D
-
         C <--> D
-
         D <--> E
-
         E <--> C
-
         E --> F
     end
 
+    %% Definición de estilo personalizado para los nodos
     classDef miestilo fill:#8dc5e8,stroke:#333,stroke-width:2px
+    classDef subgraphTitle fill:#ffffff,stroke:#333,stroke-width:0px,font-size:16px
+
+    %% Aplicación del estilo personalizado a los nodos
     class A,B,C,D,E,F miestilo
 
 
@@ -104,6 +111,9 @@ KDD is a non-linear, iterative process focusing on the discovery of actionable k
 <div align='center'>
 
 ```mermaid
+---
+title: KDD (Knowledge Discovery in Databases)
+---
 graph TD
     subgraph KDD
         style KDD fill:#EEEEEE, stroke:#333, stroke-width:2px
@@ -143,6 +153,9 @@ Guo's model is particularly useful for ensuring that data science projects are r
 <div align='center'>
 
 ```mermaid
+---
+title: Guo's Data Science Workflow
+---
 graph LR
 
     subgraph GUO
@@ -218,3 +231,30 @@ graph LR
 ```
 
 </div>
+
+```mermaid
+sequenceDiagram
+
+    participant Sarah
+
+    participant John
+
+    Sarah->>John: Hello John, how are you?
+
+    John-->>Sarah: Not too bad, thanks!
+
+
+```
+
+```mermaid
+gantt
+ title Example Gantt diagram
+    dateFormat  YYYY-MM-DD
+    section Team 1
+    Research & requirements :done, a1, 2020-03-08, 2020-04-10
+    Review & documentation : after a1, 20d
+    section Team 2
+    Implementation      :crit, active, 2020-03-25  , 20d
+    Testing      :crit, 20d
+
+```
