@@ -81,7 +81,8 @@ dswma5:
 	      templates/figures/page-white-template-a5.pdf \
 	      templates/figures/page-authors-template-a5.pdf \
 	      templates/figures/page-white-template-a5.pdf \
-	      $(INTERMEDIATE_OUTPUT)".pdf" cat output $(INTERMEDIATE_OUTPUT)"2.pdf"
+	      $(INTERMEDIATE_OUTPUT)".pdf" \
+	      templates/figures/back-cover-a5.pdf cat output $(INTERMEDIATE_OUTPUT)"2.pdf"
 
 	# Con pdftk aǹadimos información al documento en pdf
 	pdftk $(INTERMEDIATE_OUTPUT)"2.pdf" update_info_utf8 $(INFO) output $(TITLEBOOK)".pdf"
